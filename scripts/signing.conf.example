@@ -1,0 +1,21 @@
+# Signing config for scripts/build-signed.sh
+#
+# Copy to ~/.config/weewxapp/signing.conf (or point WEEWXAPP_SIGNING_CONFIG
+# or --config at it) and chmod 600 it. Never commit the filled-in copy.
+#
+# KEY=value, one per line. Values are taken literally, so passwords need no
+# escaping; surrounding quotes are optional. Leave a password blank to be
+# prompted for it at build time. A blank key password defaults to the
+# keystore password.
+
+# Key for the .apk (e.g. GitHub releases)
+APK_STORE_FILE=~/keys/weewxapp-release.jks
+APK_STORE_PASSWORD=
+APK_KEY_ALIAS=release
+APK_KEY_PASSWORD=
+
+# Key for the .aab (Google Play upload key)
+AAB_STORE_FILE=~/keys/weewxapp-upload.jks
+AAB_STORE_PASSWORD=
+AAB_KEY_ALIAS=upload
+AAB_KEY_PASSWORD=
