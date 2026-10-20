@@ -1,0 +1,94 @@
+# Translated labels for scripts/play-release-notes.sh
+#
+# locale|Source label|Changelog label
+#
+# One line per Google Play store listing locale (the folders under metadata/).
+# Labels include their own punctuation, e.g. French puts a space before the
+# colon and Chinese/Japanese use a full-width colon.
+af|Bronkode:|Veranderingslog:
+am|ምንጭ ኮድ:|የለውጥ መዝገብ:
+ar|الشيفرة المصدرية:|سجل التغييرات:
+az-AZ|Mənbə kodu:|Dəyişikliklər jurnalı:
+be|Зыходны код:|Журнал змяненняў:
+bg|Изходен код:|Списък с промени:
+bn-BD|সোর্স কোড:|পরিবর্তনের তালিকা:
+ca|Codi font:|Registre de canvis:
+cs-CZ|Zdrojový kód:|Seznam změn:
+da-DK|Kildekode:|Ændringslog:
+de-DE|Quellcode:|Änderungsprotokoll:
+el-GR|Πηγαίος κώδικας:|Αρχείο αλλαγών:
+en-AU|Source:|Changelog:
+en-CA|Source:|Changelog:
+en-GB|Source:|Changelog:
+en-IN|Source:|Changelog:
+en-SG|Source:|Changelog:
+en-US|Source:|Changelog:
+en-ZA|Source:|Changelog:
+es-419|Código fuente:|Registro de cambios:
+es-ES|Código fuente:|Registro de cambios:
+es-US|Código fuente:|Registro de cambios:
+et|Lähtekood:|Muudatuste logi:
+eu-ES|Iturburu-kodea:|Aldaketen erregistroa:
+fa|کد منبع:|فهرست تغییرات:
+fa-AE|کد منبع:|فهرست تغییرات:
+fa-AF|کد منبع:|فهرست تغییرات:
+fa-IR|کد منبع:|فهرست تغییرات:
+fi-FI|Lähdekoodi:|Muutosloki:
+fil|Source code:|Talaan ng mga pagbabago:
+fr-CA|Code source :|Journal des modifications :
+fr-FR|Code source :|Journal des modifications :
+gl-ES|Código fonte:|Rexistro de cambios:
+gu|સોર્સ કોડ:|ફેરફારોની સૂચિ:
+hi-IN|सोर्स कोड:|बदलावों की सूची:
+hr|Izvorni kod:|Popis promjena:
+hu-HU|Forráskód:|Változásnapló:
+hy-AM|Ելակետային կոդ՝|Փոփոխությունների մատյան՝
+id|Kode sumber:|Log perubahan:
+is-IS|Frumkóði:|Breytingaskrá:
+it-IT|Codice sorgente:|Registro delle modifiche:
+iw-IL|קוד מקור:|יומן שינויים:
+ja-JP|ソースコード：|変更履歴：
+ka-GE|საწყისი კოდი:|ცვლილებების ჟურნალი:
+kk|Бастапқы код:|Өзгерістер журналы:
+km-KH|កូដប្រភព៖|កំណត់ហេតុនៃការផ្លាស់ប្តូរ៖
+kn-IN|ಮೂಲ ಕೋಡ್:|ಬದಲಾವಣೆಗಳ ಪಟ್ಟಿ:
+ko-KR|소스 코드:|변경 내역:
+ky-KG|Баштапкы код:|Өзгөрүүлөр журналы:
+lo-LA|ລະຫັດຕົ້ນສະບັບ:|ບັນທຶກການປ່ຽນແປງ:
+lt|Pirminis kodas:|Pakeitimų žurnalas:
+lv|Pirmkods:|Izmaiņu žurnāls:
+mk-MK|Изворен код:|Дневник на промени:
+ml-IN|സോഴ്സ് കോഡ്:|മാറ്റങ്ങളുടെ പട്ടിക:
+mn-MN|Эх код:|Өөрчлөлтийн бүртгэл:
+mr-IN|सोर्स कोड:|बदलांची यादी:
+ms|Kod sumber:|Log perubahan:
+ms-MY|Kod sumber:|Log perubahan:
+my-MM|ရင်းမြစ်ကုဒ် -|ပြောင်းလဲမှုမှတ်တမ်း -
+ne-NP|स्रोत कोड:|परिवर्तन सूची:
+nl-NL|Broncode:|Wijzigingslogboek:
+no-NO|Kildekode:|Endringslogg:
+pa|ਸਰੋਤ ਕੋਡ:|ਤਬਦੀਲੀਆਂ ਦੀ ਸੂਚੀ:
+pl-PL|Kod źródłowy:|Lista zmian:
+pt-BR|Código-fonte:|Registro de alterações:
+pt-PT|Código-fonte:|Registo de alterações:
+rm|Code da funtauna:|Protocol da midadas:
+ro|Cod sursă:|Jurnal de modificări:
+ru-RU|Исходный код:|Список изменений:
+si-LK|මූලාශ්‍ර කේතය:|වෙනස්කම් ලැයිස්තුව:
+sk|Zdrojový kód:|Zoznam zmien:
+sl|Izvorna koda:|Dnevnik sprememb:
+sq|Kodi burimor:|Regjistri i ndryshimeve:
+sr|Изворни код:|Дневник измена:
+sv-SE|Källkod:|Ändringslogg:
+sw|Msimbo chanzo:|Kumbukumbu ya mabadiliko:
+ta-IN|மூலக் குறியீடு:|மாற்றப் பதிவு:
+te-IN|సోర్స్ కోడ్:|మార్పుల జాబితా:
+th|ซอร์สโค้ด:|บันทึกการเปลี่ยนแปลง:
+tr-TR|Kaynak kodu:|Değişiklik günlüğü:
+uk|Вихідний код:|Журнал змін:
+ur|سورس کوڈ:|تبدیلیوں کی فہرست:
+vi|Mã nguồn:|Nhật ký thay đổi:
+zh-CN|源代码：|更新日志：
+zh-HK|原始碼：|更新日誌：
+zh-TW|原始碼：|更新日誌：
+zu|Ikhodi yomthombo:|Irekhodi lezinguquko:
