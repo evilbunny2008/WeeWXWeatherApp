@@ -3142,49 +3142,65 @@ public class MainActivity extends FragmentActivity
 		processCompass(mqttOutput2, labelKey, labelKey, labelKey, null);
 	}
 
+	private Double pendingNumber(String key)
+	{
+		if(pendingJSON == null || !pendingJSON.has(key) || pendingJSON.isNull(key))
+			return null;
+
+		double number = pendingJSON.optDouble(key, Double.NaN);
+		return Double.isFinite(number) ? number : null;
+	}
+
 	private Double pendingOrCachedNumber(String key)
 	{
-		if(pendingJSON != null && pendingJSON.has(key) && !pendingJSON.isNull(key))
-		{
-			double number = pendingJSON.optDouble(key, Double.NaN);
-			if(Double.isFinite(number))
-				return number;
-		}
-		if(WeeWXAppCommon.hasElement(key))
-		{
-			Object value = WeeWXAppCommon.getJson(key, Double.NaN);
-			if(value instanceof Number)
-				return ((Number)value).doubleValue();
-		}
+		Double number = pendingNumber(key);
+		if(number != null || !WeeWXAppCommon.hasElement(key))
+			return number;
+
+		double cached = (double)WeeWXAppCommon.getJson(key, Double.NaN);
+		return Double.isFinite(cached) ? cached : null;
+	}
+
+	// The wind speed that decides whether a direction label means calm/unavailable
+	private static String windSpeedKey(String directionKey)
+	{
+		if(directionKey.equals("current_windGustDir"))
+			return "current_windGust";
+
+		if(directionKey.endsWith("wind_vecdir"))
+			return directionKey.replaceFirst("wind_vecdir$", "wind_avg");
+
+		if(directionKey.endsWith("wind_gustdir"))
+			return directionKey.replaceFirst("wind_gustdir$", "wind_max");
+
 		return null;
+	}
+
+	// Map the numeric direction onto the plugin's localised labels, or return s unchanged
+	// for older plugins. When s came in this packet, only a direction from the same
+	// packet may override it, otherwise a stale cached direction would win.
+	private String localisedCompass(String jsonKey, String s)
+	{
+		if(!jsonKey.endsWith("_str") || KeyValue.ordinateNames.size() != 17)
+			return s;
+
+		String directionKey = jsonKey.substring(0, jsonKey.length() - 4);
+		Double degrees = s == null ? pendingOrCachedNumber(directionKey) : pendingNumber(directionKey);
+		if(degrees == null)
+			return s;
+
+		String speedKey = windSpeedKey(directionKey);
+		Double speed = speedKey == null ? null : pendingOrCachedNumber(speedKey);
+		if(speed != null && speed <= 0)
+			return WeeWXAppCommon.compassUnavailable();
+
+		String mapped = WeeWXAppCommon.compassFromDegrees(degrees);
+		return mapped != null ? mapped : s;
 	}
 
 	private void processCompass(JSONObject output, String key, String elementId, String jsonKey, String s)
 	{
-		if(jsonKey.endsWith("_str") && KeyValue.ordinateNames.size() == 17)
-		{
-			String directionKey = jsonKey.substring(0, jsonKey.length() - 4);
-			Double degrees = pendingOrCachedNumber(directionKey);
-			if(degrees != null)
-			{
-				String mapped = WeeWXAppCommon.compassFromDegrees(degrees);
-				if(mapped != null)
-				{
-					String speedKey = null;
-					if(directionKey.equals("current_windGustDir"))
-						speedKey = "current_windGust";
-					else if(directionKey.endsWith("wind_vecdir"))
-						speedKey = directionKey.substring(0, directionKey.length() - "wind_vecdir".length()) + "wind_avg";
-					else if(directionKey.endsWith("wind_gustdir"))
-						speedKey = directionKey.substring(0, directionKey.length() - "wind_gustdir".length()) + "wind_max";
-
-					Double speed = speedKey == null ? null : pendingOrCachedNumber(speedKey);
-					if(speed != null && Double.isFinite(speed) && speed <= 0)
-						mapped = WeeWXAppCommon.compassUnavailable();
-					s = mapped;
-				}
-			}
-		}
+		s = localisedCompass(jsonKey, s);
 
 		if(s == null || s.isBlank() || Objects.equals(KeyValue.values.get(key), s))
 			return;

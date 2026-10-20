@@ -493,7 +493,7 @@ public class Stats extends Fragment
 						Math.round((float)getJson(timeperiod + "wind_vecdir", 0f))) + "</span>",
 						"<p><span class='SmallText' id='" + timeperiod + "wind_avg'>" + formatString(timeperiod +
 							"wind_avg") + "</span>" + speedSym + " <span class='evenSmallerText' id='" + timeperiod +
-							"wind_vecdir_str'>" + deg2Str(timeperiod + "wind_vecdir_str") + "</span></p>",
+							"wind_vecdir_str'>" + deg2Str(timeperiod + "wind_vecdir_str", timeperiod + "wind_avg") + "</span></p>",
 						getAndroidString(R.string.avg)));
 			else
 				sb.append(createRowLeft());
