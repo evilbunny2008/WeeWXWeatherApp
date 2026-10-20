@@ -3,6 +3,7 @@ package com.odiousapps.weewxweather;
 import android.location.Location;
 import android.util.Log;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -64,6 +65,10 @@ class KeyValue
 
 	static final Map<String, Object> values = new HashMap<>();
 
+	// The 16 configured compass sector labels plus the unavailable-direction label.
+	// Empty until a compatible dictionary is loaded, retaining legacy behavior.
+	static volatile List<String> ordinateNames = List.of();
+
 	static JSONObject getDict(String dict_name, JSONObject jsonObject)
 	{
 		if(jsonObject == null || jsonObject.length() == 0)
@@ -84,6 +89,7 @@ class KeyValue
 		//LogMessage("KeyValue.parseDict(): Loading...");
 
 		JSONObject jsonObject;
+		ordinateNames = List.of();
 
 		String json_str = (String)readVar(json_keys[1] + "_str", "");
 		if(is_blank(json_str))
@@ -126,6 +132,26 @@ class KeyValue
 		{
 			LogMessage("label_dict == null || length() == 0", KeyValue.e);
 			return true;
+		}
+
+		// Optional InigoPlugin dictionary extension. Retain *_str fallback
+		// if absent or malformed. The final label represents unavailable wind.
+		JSONArray names = jsonObject.optJSONArray("ordinate_names");
+		if(names != null && names.length() == 17)
+		{
+			List<String> parsed = new ArrayList<>(17);
+			for(int idx = 0; idx < 17; idx++)
+			{
+				Object raw = names.opt(idx);
+				if(!(raw instanceof String label) || is_blank(label))
+				{
+					parsed.clear();
+					break;
+				}
+				parsed.add(label.strip());
+			}
+			if(parsed.size() == 17)
+				ordinateNames = List.copyOf(parsed);
 		}
 
 		Iterator<String> keys = group_dict.keys();

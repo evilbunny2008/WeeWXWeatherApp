@@ -5395,18 +5395,51 @@ class WeeWXAppCommon
 		return new NPWSLL(now, period, wait, start, lastStart, report_time);
 	}
 
+	// Converts numeric degrees to the 16 configured compass sectors.
+	// The 17th label represents an unavailable direction.
+	static String compassFromDegrees(Number direction)
+	{
+		List<String> labels = KeyValue.ordinateNames;
+		if(labels.size() != 17 || direction == null)
+			return null;
+
+		double degrees = direction.doubleValue();
+		if(!Double.isFinite(degrees) || degrees < 0 || degrees > 360)
+			return labels.get(16);
+
+		int sector = ((int)Math.floor(((degrees % 360) + 11.25) / 22.5)) % 16;
+		return labels.get(sector);
+	}
+
+	static String compassUnavailable()
+	{
+		List<String> labels = KeyValue.ordinateNames;
+		return labels.size() == 17 ? labels.get(16) : "N/A";
+	}
+
 	static String deg2Str(String direction_element, String speed_element)
 	{
 		float speed = (float)getJson(speed_element, 0f);
 
 		if(speed <= 0)
-			return "N/A";
+			return compassUnavailable();
 
 		return deg2Str(direction_element);
 	}
 
 	static String deg2Str(String direction_element)
 	{
-		return (String)getJson(direction_element, "N/A");
+		String legacy = (String)getJson(direction_element, "N/A");
+		String numericKey = direction_element.endsWith("_str")
+			? direction_element.substring(0, direction_element.length() - 4)
+			: direction_element;
+
+		if(!hasElement(numericKey))
+			return legacy;
+
+		Object numericValue = getJson(numericKey, Double.NaN);
+		String mapped = numericValue instanceof Number
+			? compassFromDegrees((Number)numericValue) : null;
+		return mapped != null ? mapped : legacy;
 	}
 }
