@@ -263,7 +263,7 @@ public class WeeWXApp extends Application
 	private static Colours colours;
 	private static int lastNightMode = -1;
 
-	final static int minimum_inigo_version = 2001007;
+	final static int minimum_inigo_version = 2001008;
 
 	final static boolean radarforecast_default = false;
 	final static boolean disableSwipeOnRadar_default = false;
