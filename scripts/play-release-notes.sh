@@ -14,7 +14,7 @@
 
 set -euo pipefail
 
-repo_url="https://github.com/evilbunny2008/weeWXWeatherApp"
+repo_url="https://github.com/evilbunny2008/WeeWXWeatherApp"
 
 repo="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$repo"
