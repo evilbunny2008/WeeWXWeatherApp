@@ -16,12 +16,12 @@ Binaries:
 Builds:
   - versionName: 2.2.0
     versionCode: 2002000
-    commit:
+    commit: cb79542303e89fc13b6e97b3de3b1ab62430e586
     subdir: app
     gradle:
       - yes
 
-AllowedAPKSigningKeys: 4359B957AA3AD74B5C4B19A8777699C1DECCD3CFBD50C2E31B365E88C0453201
+AllowedAPKSigningKeys: 4359b957aa3ad74b5c4b19a8777699c1deccd3cfbd50c2e31b365e88c0453201
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
