@@ -1,13 +1,12 @@
 Categories:
-  - Keyboard & IME
-  - System
-License: Unlicense
+  - Weather
+License: GPL-3.0-only
 AuthorName: evilbunny
 SourceCode: https://github.com/evilbunny2008/WeeWXWeatherApp
 IssueTracker: https://github.com/evilbunny2008/WeeWXWeatherApp/issues
 Changelog: https://github.com/evilbunny2008/WeeWXWeatherApp/releases
 
-AutoName: MX3 Button Mapper
+AutoName: WeeWX Weather App
 
 RepoType: git
 Repo: https://github.com/evilbunny2008/WeeWXWeatherApp.git
