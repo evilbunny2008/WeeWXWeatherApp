@@ -1,0 +1,2 @@
+• Sửa lỗi ứng dụng bị dừng khi kéo ô đánh dấu khóa vuốt
+• Sửa lỗi dự báo Weatherzone đôi khi không tải được

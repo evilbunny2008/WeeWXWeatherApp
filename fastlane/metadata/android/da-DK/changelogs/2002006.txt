@@ -1,0 +1,2 @@
+• Rettet nedbrud ved flytning af afkrydsningsfeltet for swipe-lås
+• Rettet Weatherzone-prognoser, der nogle gange ikke blev indlæst

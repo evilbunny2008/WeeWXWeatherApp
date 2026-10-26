@@ -1,0 +1,2 @@
+• Sürüşdürmə kilidi qutusunu sürükləyərkən baş verən çökmə düzəldildi
+• Weatherzone proqnozlarının bəzən yüklənməməsi düzəldildi

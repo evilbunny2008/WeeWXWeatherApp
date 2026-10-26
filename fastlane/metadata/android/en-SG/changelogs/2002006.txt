@@ -1,0 +1,2 @@
+• Fixed a crash when dragging the swipe lock checkbox
+• Fixed Weatherzone forecasts sometimes failing to load

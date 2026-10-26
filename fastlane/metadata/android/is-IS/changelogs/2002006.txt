@@ -1,0 +1,2 @@
+• Lagað hrun þegar gátreitur strokulæsingar er dreginn til
+• Lagað að Weatherzone-spár hlóðust stundum ekki

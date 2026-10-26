@@ -1,0 +1,2 @@
+• Corrigido um travamento ao arrastar a caixa de bloqueio do deslize
+• Corrigidas as previsões da Weatherzone que às vezes não carregavam

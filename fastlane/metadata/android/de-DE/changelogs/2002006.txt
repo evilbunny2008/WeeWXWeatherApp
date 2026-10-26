@@ -1,0 +1,2 @@
+• Absturz beim Verschieben des Kontrollkästchens für die Wischsperre behoben
+• Behoben, dass Weatherzone-Vorhersagen manchmal nicht geladen wurden

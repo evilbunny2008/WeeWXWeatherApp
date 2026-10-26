@@ -1,0 +1,2 @@
+• Se corrigió un cierre inesperado al arrastrar la casilla de bloqueo de deslizamiento
+• Se corrigió que los pronósticos de Weatherzone a veces no se cargaran

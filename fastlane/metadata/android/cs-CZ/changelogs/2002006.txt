@@ -1,0 +1,2 @@
+• Opraven pád při přetahování zaškrtávacího políčka zámku přejíždění
+• Opraveno občasné nenačtení předpovědí Weatherzone

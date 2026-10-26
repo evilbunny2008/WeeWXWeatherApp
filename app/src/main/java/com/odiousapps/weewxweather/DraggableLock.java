@@ -119,6 +119,6 @@ final class DraggableLock
 
 	private static float clamp(float val, float min, float max)
 	{
-		return Math.clamp(max, min, val);
+		return Math.clamp(val, min, max);
 	}
 }

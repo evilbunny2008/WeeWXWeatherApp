@@ -1,0 +1,2 @@
+• Naprawiono awarię podczas przeciągania pola wyboru blokady przesuwania
+• Naprawiono sporadyczne niewczytywanie prognoz Weatherzone

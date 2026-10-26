@@ -1,0 +1,2 @@
+• Åtgärdat krasch vid flytt av kryssrutan för svepspärr
+• Åtgärdat att prognoser från Weatherzone ibland inte laddades

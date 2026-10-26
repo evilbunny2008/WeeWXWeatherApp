@@ -1,0 +1,2 @@
+• Rettet krasj ved flytting av avkrysningsboksen for sveipelås
+• Rettet at Weatherzone-varsler noen ganger ikke ble lastet inn

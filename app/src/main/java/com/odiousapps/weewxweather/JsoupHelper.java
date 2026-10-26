@@ -1590,11 +1590,11 @@ class JsoupHelper
 
 		boolean lt = possrain.contains("&lt;") || possrain.contains("<");
 		if(lt)
-			possrain = possrain.substring(possrain.indexOf(" ")).strip();
+			possrain = possrain.replace("&lt;", "").replace("<", "").strip();
 
 		boolean gt = possrain.contains("&gt;") || possrain.contains(">");
 		if(!lt && gt)
-			possrain = possrain.substring(possrain.indexOf(" ")).strip();
+			possrain = possrain.replace("&gt;", "").replace(">", "").strip();
 
 		if(possrain.contains("-"))
 		{

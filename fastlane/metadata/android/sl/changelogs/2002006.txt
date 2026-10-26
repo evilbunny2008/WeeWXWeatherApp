@@ -1,0 +1,2 @@
+• Odpravljeno sesutje pri vlečenju potrditvenega polja zaklepa podrsavanja
+• Odpravljeno občasno nenalaganje napovedi Weatherzone
