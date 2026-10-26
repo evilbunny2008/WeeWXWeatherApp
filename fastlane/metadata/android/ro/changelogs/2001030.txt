@@ -1,0 +1,4 @@
+• Corectată afișarea diferită a vântului calm în funcție de modul în care soseau datele
+• Corectate datele vechi din cache care uneori înlocuiau citiri mai noi
+• Direcțiile busolei pot fi acum afișate în limba ta
+• Necesită acum InigoPlugin 2.1.11 sau mai nou

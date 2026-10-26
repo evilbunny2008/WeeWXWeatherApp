@@ -1,0 +1,4 @@
+• Correction de l'affichage du vent calme qui variait selon la façon dont les données arrivaient
+• Correction des anciennes données en cache qui remplaçaient parfois des relevés plus récents
+• Les directions de la boussole peuvent désormais s'afficher dans votre langue
+• Nécessite désormais InigoPlugin 2.1.11 ou plus récent

@@ -1,0 +1,4 @@
+• Ištaisytas skirtingas štilio rodymas priklausomai nuo duomenų gavimo būdo
+• Ištaisyta, kad seni talpyklos duomenys kartais pakeisdavo naujesnius rodmenis
+• Kompaso kryptys dabar gali būti rodomos jūsų kalba
+• Dabar reikia InigoPlugin 2.1.11 ar naujesnio

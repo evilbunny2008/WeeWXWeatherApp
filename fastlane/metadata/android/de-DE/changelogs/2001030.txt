@@ -1,0 +1,4 @@
+• Windstille wird jetzt einheitlich angezeigt, egal wie die Daten ankommen
+• Ältere zwischengespeicherte Daten ersetzen keine neueren Messwerte mehr
+• Himmelsrichtungen können jetzt in Ihrer Sprache angezeigt werden
+• Erfordert jetzt InigoPlugin 2.1.11 oder neuer

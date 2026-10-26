@@ -1,0 +1,4 @@
+• Parandatud tuulevaikuse erinev kuvamine olenevalt andmete saabumise viisist
+• Parandatud vanemate vahemälu andmete kirjutamine uuemate näitude asemele
+• Kompassi suundi saab nüüd näidata sinu keeles
+• Nõuab nüüd InigoPlugin 2.1.11 või uuemat

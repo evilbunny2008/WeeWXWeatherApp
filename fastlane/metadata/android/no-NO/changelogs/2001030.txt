@@ -1,0 +1,4 @@
+• Rettet at vindstille ble vist ulikt avhengig av hvordan dataene kom inn
+• Rettet at eldre bufrede data noen ganger erstattet nyere målinger
+• Kompassretninger kan nå vises på ditt språk
+• Krever nå InigoPlugin 2.1.11 eller nyere

@@ -1,0 +1,4 @@
+• Corrixido que o vento en calma se amosase distinto segundo como chegaban os datos
+• Corrixido que datos antigos da caché substituísen ás veces lecturas máis recentes
+• As direccións do compás xa poden amosarse no teu idioma
+• Agora require InigoPlugin 2.1.11 ou posterior

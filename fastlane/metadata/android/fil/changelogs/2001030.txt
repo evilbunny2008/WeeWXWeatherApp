@@ -1,0 +1,4 @@
+• Inayos ang magkakaibang pagpapakita ng kalmadong hangin depende sa kung paano dumating ang data
+• Inayos ang paminsan-minsang pagpapalit ng lumang naka-cache na data sa mas bagong mga reading
+• Maipapakita na ang mga direksyon ng compass sa iyong wika
+• Kailangan na ang InigoPlugin 2.1.11 o mas bago

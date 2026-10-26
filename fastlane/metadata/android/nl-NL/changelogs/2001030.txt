@@ -1,0 +1,4 @@
+• Windstilte wordt nu overal gelijk getoond, ongeacht hoe de gegevens binnenkomen
+• Oudere gegevens uit de cache vervangen niet langer nieuwere metingen
+• Windrichtingen kunnen nu in je eigen taal worden getoond
+• Vereist nu InigoPlugin 2.1.11 of nieuwer

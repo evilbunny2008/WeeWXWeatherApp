@@ -1,0 +1,4 @@
+• Sakin rüzgârın, verilerin geliş şekline göre farklı gösterilmesi düzeltildi
+• Eski önbellek verilerinin bazen daha yeni ölçümlerin yerini alması düzeltildi
+• Pusula yönleri artık kendi dilinizde gösterilebilir
+• Artık InigoPlugin 2.1.11 veya üzeri gerekiyor

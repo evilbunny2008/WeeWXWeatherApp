@@ -1,0 +1,4 @@
+• Javítva: a szélcsend az adatok érkezési módjától függően eltérően jelent meg
+• Javítva: a régebbi gyorsítótárazott adatok néha felülírták az újabb méréseket
+• Az égtájak mostantól az Ön nyelvén is megjeleníthetők
+• Mostantól InigoPlugin 2.1.11 vagy újabb szükséges

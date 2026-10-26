@@ -1,0 +1,4 @@
+• Labots bezvēja atšķirīgs attēlojums atkarībā no datu saņemšanas veida
+• Labota vecu kešatmiņas datu reizēm notikusi jaunāku rādījumu aizstāšana
+• Kompasa virzienus tagad var rādīt jūsu valodā
+• Tagad nepieciešams InigoPlugin 2.1.11 vai jaunāks

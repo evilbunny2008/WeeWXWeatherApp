@@ -1,0 +1,4 @@
+• U rregullua shfaqja e ndryshme e erës së qetë sipas mënyrës si mbërrinin të dhënat
+• U rregullua zëvendësimi i matjeve më të reja me të dhëna të vjetra nga memoria
+• Drejtimet e busullës tani mund të shfaqen në gjuhën tuaj
+• Tani kërkohet InigoPlugin 2.1.11 ose më i ri

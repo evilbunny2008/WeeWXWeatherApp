@@ -1,0 +1,4 @@
+• Curregì che la calma da vent vegniva mussada different tenor co las datas arrivavan
+• Curregì che datas veglias en il cache remplazzavan mintgatant mesiraziuns pli novas
+• Las direcziuns da la cumpass pon ussa vegnir mussadas en tia lingua
+• Ussa è InigoPlugin 2.1.11 u pli nov necessari

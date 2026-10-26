@@ -1,0 +1,4 @@
+• Lagað að logn birtist mismunandi eftir því hvernig gögnin bárust
+• Lagað að eldri gögn í skyndiminni komu stundum í stað nýrri mælinga
+• Áttir á áttavita geta nú birst á þínu tungumáli
+• Krefst nú InigoPlugin 2.1.11 eða nýrra

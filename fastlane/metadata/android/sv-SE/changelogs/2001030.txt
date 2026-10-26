@@ -1,0 +1,4 @@
+• Åtgärdat att vindstilla visades olika beroende på hur data kom in
+• Åtgärdat att äldre cachad data ibland ersatte nyare mätvärden
+• Väderstreck kan nu visas på ditt språk
+• Kräver nu InigoPlugin 2.1.11 eller senare

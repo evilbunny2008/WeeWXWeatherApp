@@ -1,0 +1,4 @@
+• Ispravljen različit prikaz tišine ovisno o načinu dolaska podataka
+• Ispravljeno povremeno zamjenjivanje novijih očitanja starijim podacima iz predmemorije
+• Smjerovi kompasa sada se mogu prikazati na vašem jeziku
+• Sada je potreban InigoPlugin 2.1.11 ili noviji

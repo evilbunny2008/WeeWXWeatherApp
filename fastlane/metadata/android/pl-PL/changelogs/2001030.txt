@@ -1,0 +1,4 @@
+• Naprawiono różne wyświetlanie ciszy w zależności od sposobu odbioru danych
+• Naprawiono zastępowanie nowszych odczytów starszymi danymi z pamięci podręcznej
+• Kierunki kompasu mogą być teraz wyświetlane w Twoim języku
+• Wymaga teraz InigoPlugin 2.1.11 lub nowszego

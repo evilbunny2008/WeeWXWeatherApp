@@ -1,0 +1,4 @@
+• Korjattu tyynen tuulen erilainen näyttäminen tiedon saapumistavasta riippuen
+• Korjattu vanhemman välimuistitiedon ajoittainen uudempien lukemien korvaaminen
+• Ilmansuunnat voidaan nyt näyttää omalla kielelläsi
+• Vaatii nyt InigoPlugin 2.1.11:n tai uudemman

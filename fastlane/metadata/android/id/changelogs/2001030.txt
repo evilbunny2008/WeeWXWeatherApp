@@ -1,0 +1,4 @@
+• Memperbaiki tampilan angin tenang yang berbeda tergantung cara data diterima
+• Memperbaiki data cache lama yang terkadang menggantikan pembacaan yang lebih baru
+• Arah kompas kini dapat ditampilkan dalam bahasa Anda
+• Kini memerlukan InigoPlugin 2.1.11 atau yang lebih baru

@@ -1,0 +1,4 @@
+• Sửa lỗi gió lặng hiển thị khác nhau tùy theo cách dữ liệu được nhận
+• Sửa lỗi dữ liệu bộ nhớ đệm cũ đôi khi thay thế số đo mới hơn
+• Hướng la bàn giờ có thể hiển thị bằng ngôn ngữ của bạn
+• Giờ yêu cầu InigoPlugin 2.1.11 trở lên

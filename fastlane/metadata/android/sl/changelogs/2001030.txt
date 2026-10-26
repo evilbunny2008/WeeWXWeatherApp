@@ -1,0 +1,4 @@
+• Popravljen različen prikaz brezvetrja glede na način prejema podatkov
+• Popravljeno občasno nadomeščanje novejših meritev s starejšimi podatki iz predpomnilnika
+• Smeri kompasa je zdaj mogoče prikazati v vašem jeziku
+• Zdaj zahteva InigoPlugin 2.1.11 ali novejši

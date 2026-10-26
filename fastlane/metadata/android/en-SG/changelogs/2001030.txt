@@ -1,0 +1,4 @@
+• Fixed calm wind showing differently depending on how the data arrived
+• Fixed older cached data sometimes replacing newer readings
+• Compass directions can now be shown in your language
+• Now requires InigoPlugin 2.1.11 or newer

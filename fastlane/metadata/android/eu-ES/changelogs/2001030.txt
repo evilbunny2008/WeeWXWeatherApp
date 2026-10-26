@@ -1,0 +1,4 @@
+• Konpondua: haize barea modu desberdinean erakusten zen datuak nola iristen ziren arabera
+• Konpondua: cacheko datu zaharrek batzuetan irakurketa berriagoak ordezkatzen zituzten
+• Iparrorratzaren norabideak zure hizkuntzan erakuts daitezke orain
+• InigoPlugin 2.1.11 edo berriagoa behar da orain

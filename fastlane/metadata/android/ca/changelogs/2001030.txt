@@ -1,0 +1,4 @@
+• S'ha corregit que el vent en calma es mostrés diferent segons com arribaven les dades
+• S'ha corregit que dades antigues de la memòria cau substituïssin lectures més noves
+• Les direccions de la brúixola ja es poden mostrar en el vostre idioma
+• Ara cal InigoPlugin 2.1.11 o posterior

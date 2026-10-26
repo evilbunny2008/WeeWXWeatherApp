@@ -1,0 +1,4 @@
+• Sakit külək məlumatın gəlmə yolundan asılı olaraq fərqli göstərilirdi – düzəldildi
+• Köhnə keş məlumatı bəzən yeni göstəriciləri əvəz edirdi – düzəldildi
+• Kompas istiqamətləri indi öz dilinizdə göstərilə bilər
+• İndi InigoPlugin 2.1.11 və ya daha yenisi tələb olunur

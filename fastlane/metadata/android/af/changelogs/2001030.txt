@@ -1,0 +1,4 @@
+• Kalm wind word nou eenvormig gewys, ongeag hoe die data aankom
+• Ouer gekasde data vervang nie meer nuwer lesings nie
+• Kompasrigtings kan nou in jou taal gewys word
+• Vereis nou InigoPlugin 2.1.11 of nuwer

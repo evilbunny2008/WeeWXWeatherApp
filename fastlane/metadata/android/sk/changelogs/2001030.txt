@@ -1,0 +1,4 @@
+• Opravené rozdielne zobrazenie bezvetria podľa spôsobu príjmu údajov
+• Opravené prepisovanie novších údajov starými údajmi z vyrovnávacej pamäte
+• Svetové strany kompasu sa teraz môžu zobrazovať vo vašom jazyku
+• Teraz vyžaduje InigoPlugin 2.1.11 alebo novší

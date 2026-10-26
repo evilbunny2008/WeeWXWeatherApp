@@ -1,0 +1,4 @@
+• Corregido que el viento en calma se mostrara distinto según cómo llegaban los datos
+• Corregido que datos antiguos en caché reemplazaran a veces lecturas más recientes
+• Las direcciones de la brújula ahora pueden mostrarse en tu idioma
+• Ahora requiere InigoPlugin 2.1.11 o posterior
