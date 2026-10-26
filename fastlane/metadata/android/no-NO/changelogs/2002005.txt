@@ -1,0 +1,2 @@
+• Byggendringer for å støtte F-Droids reproduserbare bygg
+• Ingen endringer i selve appen

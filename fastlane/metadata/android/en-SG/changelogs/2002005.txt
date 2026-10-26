@@ -1,0 +1,2 @@
+• Build changes to support F-Droid reproducible builds
+• No changes to the app itself

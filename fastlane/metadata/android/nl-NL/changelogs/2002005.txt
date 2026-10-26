@@ -1,0 +1,2 @@
+• Buildwijzigingen ter ondersteuning van de reproduceerbare builds van F-Droid
+• Geen wijzigingen aan de app zelf

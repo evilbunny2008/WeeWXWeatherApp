@@ -1,0 +1,2 @@
+• Fordítási módosítások az F-Droid reprodukálható buildjeinek támogatásához
+• Magában az alkalmazásban nincs változás

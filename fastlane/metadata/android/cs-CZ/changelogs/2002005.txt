@@ -1,0 +1,2 @@
+• Úpravy sestavení pro podporu reprodukovatelných sestavení F-Droid
+• Žádné změny v samotné aplikaci

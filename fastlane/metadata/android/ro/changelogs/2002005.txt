@@ -1,0 +1,2 @@
+• Modificări de compilare pentru a sprijini compilările reproductibile F-Droid
+• Nicio modificare în aplicația propriu-zisă

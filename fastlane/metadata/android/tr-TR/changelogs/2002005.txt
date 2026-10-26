@@ -1,0 +1,2 @@
+• F-Droid'in yeniden üretilebilir derlemelerini desteklemek için derleme değişiklikleri
+• Uygulamanın kendisinde değişiklik yok

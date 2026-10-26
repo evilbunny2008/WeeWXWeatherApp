@@ -1,0 +1,2 @@
+• Kompiliavimo pakeitimai, palaikantys atkuriamus F-Droid kompiliavimus
+• Pačioje programėlėje pakeitimų nėra

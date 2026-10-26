@@ -10,11 +10,12 @@ AutoName: WeeWX App
 
 RepoType: git
 Repo: https://github.com/evilbunny2008/WeeWXWeatherApp.git
-Binaries: https://github.com/evilbunny2008/WeeWXWeatherApp/releases/download/v%v/WeeWXApp-v%v.apk
+Binaries:
+  https://github.com/evilbunny2008/WeeWXWeatherApp/releases/download/v%v/WeeWXApp-v%v.apk
 
 Builds:
-  - versionName: 2.2.3
-    versionCode: 2002003
+  - versionName: 2.2.5
+    versionCode: 2002005
     commit:
     subdir: app
     gradle:
@@ -24,5 +25,5 @@ AllowedAPKSigningKeys: 4359b957aa3ad74b5c4b19a8777699c1deccd3cfbd50c2e31b365e88c
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.3
-CurrentVersionCode: 2002003
+CurrentVersion: 2.2.5
+CurrentVersionCode: 2002005

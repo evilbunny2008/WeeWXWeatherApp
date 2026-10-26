@@ -1,0 +1,2 @@
+• Thay đổi bản dựng để hỗ trợ bản dựng có thể tái tạo của F-Droid
+• Không có thay đổi nào trong ứng dụng

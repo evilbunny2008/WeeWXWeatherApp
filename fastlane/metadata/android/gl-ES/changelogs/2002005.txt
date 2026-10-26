@@ -1,0 +1,2 @@
+• Cambios na compilación para admitir as compilacións reproducibles de F-Droid
+• Sen cambios na aplicación

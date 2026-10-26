@@ -1,0 +1,2 @@
+• Canvis en la compilació per admetre les compilacions reproduïbles de F-Droid
+• Cap canvi a l'aplicació

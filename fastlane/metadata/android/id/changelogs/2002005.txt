@@ -1,0 +1,2 @@
+• Perubahan build untuk mendukung build yang dapat direproduksi di F-Droid
+• Tidak ada perubahan pada aplikasi
