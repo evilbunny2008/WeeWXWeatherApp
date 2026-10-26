@@ -1,0 +1,2 @@
+• Added store listing details for F-Droid
+• No changes to the app itself
