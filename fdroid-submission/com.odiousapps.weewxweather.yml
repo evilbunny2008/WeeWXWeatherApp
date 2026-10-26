@@ -6,12 +6,11 @@ SourceCode: https://github.com/evilbunny2008/WeeWXWeatherApp
 IssueTracker: https://github.com/evilbunny2008/WeeWXWeatherApp/issues
 Changelog: https://github.com/evilbunny2008/WeeWXWeatherApp/releases
 
-AutoName: WeeWX Weather App
+AutoName: WeeWX App
 
 RepoType: git
 Repo: https://github.com/evilbunny2008/WeeWXWeatherApp.git
-Binaries:
-  https://github.com/evilbunny2008/WeeWXWeatherApp/releases/download/v%v/WeeWXApp-%v.apk
+Binaries: https://github.com/evilbunny2008/WeeWXWeatherApp/releases/download/v%v/WeeWXApp-%v.apk
 
 Builds:
   - versionName: 2.2.0
