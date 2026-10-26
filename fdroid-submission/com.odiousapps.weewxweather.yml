@@ -1,6 +1,6 @@
 Categories:
   - Weather
-License: GPL-3.0-only
+License: GPL-3.0-or-later
 AuthorName: evilbunny
 SourceCode: https://github.com/evilbunny2008/WeeWXWeatherApp
 IssueTracker: https://github.com/evilbunny2008/WeeWXWeatherApp/issues
@@ -21,7 +21,7 @@ Builds:
     gradle:
       - yes
 
-AllowedAPKSigningKeys: 43:59:B9:57:AA:3A:D7:4B:5C:4B:19:A8:77:76:99:C1:DE:CC:D3:CF:BD:50:C2:E3:1B:36:5E:88:C0:45:32:01
+AllowedAPKSigningKeys: 4359B957AA3AD74B5C4B19A8777699C1DECCD3CFBD50C2E31B365E88C0453201
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
