@@ -1,0 +1,2 @@
+• Inayos ang pag-crash kapag hinihila ang checkbox ng swipe lock
+• Inayos ang mga forecast ng Weatherzone na kung minsan ay hindi naglo-load

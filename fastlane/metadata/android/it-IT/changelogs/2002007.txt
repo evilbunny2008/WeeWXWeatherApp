@@ -1,0 +1,2 @@
+• Corretto un arresto anomalo durante il trascinamento della casella di blocco dello scorrimento
+• Corrette le previsioni Weatherzone che a volte non si caricavano

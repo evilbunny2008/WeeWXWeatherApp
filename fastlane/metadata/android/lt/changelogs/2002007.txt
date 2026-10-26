@@ -1,0 +1,2 @@
+• Ištaisytas strigimas tempiant braukimo užrakto žymimąjį langelį
+• Ištaisyta, kad Weatherzone prognozės kartais neįsikeldavo

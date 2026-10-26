@@ -1,0 +1,2 @@
+• Kaydırma kilidi onay kutusu sürüklenirken oluşan çökme düzeltildi
+• Weatherzone tahminlerinin bazen yüklenmemesi düzeltildi

@@ -1,0 +1,2 @@
+• Opravený pád pri presúvaní začiarkavacieho políčka zámku potiahnutia
+• Opravené občasné nenačítanie predpovedí Weatherzone

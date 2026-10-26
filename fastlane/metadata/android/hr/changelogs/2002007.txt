@@ -1,0 +1,2 @@
+• Ispravljeno rušenje pri povlačenju potvrdnog okvira za zaključavanje prelaska
+• Ispravljeno povremeno neučitavanje prognoza s Weatherzonea

@@ -1,0 +1,2 @@
+• Novērsta avārija, velkot vilkšanas bloķēšanas izvēles rūtiņu
+• Novērsta Weatherzone prognožu reizēm neielādēšanās

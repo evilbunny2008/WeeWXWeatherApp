@@ -1,0 +1,2 @@
+• Korjattu kaatuminen pyyhkäisylukon valintaruutua siirrettäessä
+• Korjattu Weatherzonen ennusteiden ajoittainen latautumatta jääminen

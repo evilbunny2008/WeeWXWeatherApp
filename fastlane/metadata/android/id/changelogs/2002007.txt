@@ -1,0 +1,2 @@
+• Memperbaiki aplikasi mogok saat menggeser kotak centang kunci geser
+• Memperbaiki prakiraan Weatherzone yang terkadang gagal dimuat

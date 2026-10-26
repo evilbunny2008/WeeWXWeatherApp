@@ -1,0 +1,2 @@
+• Javítva az összeomlás a csúsztatászár jelölőnégyzetének áthúzásakor
+• Javítva, hogy a Weatherzone előrejelzései néha nem töltődtek be

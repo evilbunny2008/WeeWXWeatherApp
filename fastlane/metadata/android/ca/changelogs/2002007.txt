@@ -1,0 +1,2 @@
+• S'ha corregit un error en arrossegar la casella de bloqueig del lliscament
+• S'ha corregit que les previsions de Weatherzone de vegades no es carreguessin

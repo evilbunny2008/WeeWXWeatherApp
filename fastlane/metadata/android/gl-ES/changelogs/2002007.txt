@@ -1,0 +1,2 @@
+• Corrixido un peche inesperado ao arrastrar a caixa de bloqueo do desprazamento
+• Corrixido que as previsións de Weatherzone ás veces non se cargasen

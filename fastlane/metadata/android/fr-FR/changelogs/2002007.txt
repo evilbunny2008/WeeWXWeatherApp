@@ -1,0 +1,2 @@
+• Correction d'un plantage lors du déplacement de la case de verrouillage du balayage
+• Correction des prévisions Weatherzone qui ne se chargeaient parfois pas

@@ -1,0 +1,2 @@
+• Crash opgelost bij het verslepen van het selectievakje voor de veegvergrendeling
+• Opgelost dat Weatherzone-voorspellingen soms niet laadden

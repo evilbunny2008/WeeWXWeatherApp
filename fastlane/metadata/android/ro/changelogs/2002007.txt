@@ -1,0 +1,2 @@
+• Remediată o închidere neașteptată la tragerea casetei de blocare a glisării
+• Remediată încărcarea uneori eșuată a prognozelor Weatherzone
