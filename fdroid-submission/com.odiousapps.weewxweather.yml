@@ -14,8 +14,8 @@ Binaries:
   https://github.com/evilbunny2008/WeeWXWeatherApp/releases/download/v%v/WeeWXApp-v%v.apk
 
 Builds:
-  - versionName: 2.2.9
-    versionCode: 2002009
+  - versionName: 2.2.10
+    versionCode: 2002010
     commit:
     subdir: app
     gradle:
@@ -25,5 +25,5 @@ AllowedAPKSigningKeys: 4359b957aa3ad74b5c4b19a8777699c1deccd3cfbd50c2e31b365e88c
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.9
-CurrentVersionCode: 2002009
+CurrentVersion: 2.2.10
+CurrentVersionCode: 2002010
