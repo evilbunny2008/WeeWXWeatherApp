@@ -6,7 +6,8 @@
 # Usage: scripts/play-release-notes.sh [VERSION [PREVIOUS]]
 #
 # VERSION defaults to versionName in app/build.gradle.kts, PREVIOUS to the
-# highest v* tag below VERSION. The locales are the folders under metadata/,
+# highest v* tag below VERSION. The locales are the folders under
+# fastlane/metadata/android/,
 # and the translated Source/Changelog labels come from
 # scripts/play-release-notes.labels.
 # The result is saved to app/dist/release-notes-v<VERSION>.txt, ready to paste
@@ -59,14 +60,14 @@ then
 fi
 
 locales=()
-for dir in metadata/*/
+for dir in fastlane/metadata/android/*/
 do
 	locales+=("$(basename "$dir")")
 done
 
 if [[ ${#locales[@]} -eq 0 ]]
 then
-	echo "No locales found under metadata/" >&2
+	echo "No locales found under fastlane/metadata/android/" >&2
 	exit 1
 fi
 

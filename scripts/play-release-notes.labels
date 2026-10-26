@@ -2,7 +2,7 @@
 #
 # locale|Source label|Changelog label
 #
-# One line per Google Play store listing locale (the folders under metadata/).
+# One line per Google Play store listing locale (the folders under fastlane/metadata/android/).
 # Labels include their own punctuation, e.g. French puts a space before the
 # colon and Chinese/Japanese use a full-width colon.
 af|Bronkode:|Veranderingslog:
