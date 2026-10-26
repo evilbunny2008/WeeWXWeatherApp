@@ -24,8 +24,8 @@ android {
 		applicationId = "com.odiousapps.weewxweather"
 		minSdk = 30
 		targetSdk = 37
-		versionName = "2.1.30"
-		versionCode = 2001030
+		versionName = "2.2.0"
+		versionCode = 2002000
 	}
 
 	// Generates android:localeConfig from the values-*/ folders, so
@@ -163,13 +163,13 @@ dependencies {
 	implementation("androidx.core:core:1.19.1")
 	implementation("androidx.fragment:fragment:1.9.1")
 	implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0")
-	implementation("androidx.webkit:webkit:1.17.1")
+	implementation("androidx.webkit:webkit:1.18.0")
 
-	implementation("com.google.code.gson:gson:2.14.0")
+	implementation("com.google.code.gson:gson:2.15.0")
 
 	implementation("com.caverock:androidsvg:1.4")
 
-	implementation("com.squareup.okhttp3:okhttp:5.5.0")
+	implementation("com.squareup.okhttp3:okhttp:5.5.1")
 
 	implementation("org.jsoup:jsoup:1.23.2")
 
