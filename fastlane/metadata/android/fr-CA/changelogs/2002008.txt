@@ -1,0 +1,2 @@
+• Ajout de l'icône de l'application et de captures d'écran pour F-Droid
+• Aucune modification de l'application elle-même
