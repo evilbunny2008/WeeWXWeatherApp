@@ -22,7 +22,7 @@ Builds:
     gradle:
       - yes
 
-AllowedAPKSigningKeys:
+AllowedAPKSigningKeys: 43:59:B9:57:AA:3A:D7:4B:5C:4B:19:A8:77:76:99:C1:DE:CC:D3:CF:BD:50:C2:E3:1B:36:5E:88:C0:45:32:01
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
