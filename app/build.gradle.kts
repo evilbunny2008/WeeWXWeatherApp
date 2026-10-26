@@ -16,16 +16,27 @@ android {
 	namespace = "com.odiousapps.weewxweather"
 	compileSdk = 37
 
-	buildFeatures {
-		buildConfig = true
-	}
+    buildFeatures {
+         buildConfig = true
+         aidl = true
+     }
+
+     // Required for F-Droid's reproducible-build verification -- without
+     // this, Android's dependency-metadata block gets embedded slightly
+     // differently depending on the exact build environment, which makes
+     // F-Droid's independently-rebuilt APK fail to match byte-for-byte
+     // even when the actual app source is identical.
+     dependenciesInfo {
+         includeInApk = false
+         includeInBundle = false
+     }
 
 	defaultConfig {
 		applicationId = "com.odiousapps.weewxweather"
 		minSdk = 30
 		targetSdk = 37
-		versionName = "2.2.1"
-		versionCode = 2002001
+		versionName = "2.2.2"
+		versionCode = 2002002
 	}
 
 	// Generates android:localeConfig from the values-*/ folders, so
