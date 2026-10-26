@@ -1,0 +1,30 @@
+Categories:
+  - Keyboard & IME
+  - System
+License: Unlicense
+AuthorName: evilbunny
+SourceCode: https://github.com/evilbunny2008/WeeWXWeatherApp
+IssueTracker: https://github.com/evilbunny2008/WeeWXWeatherApp/issues
+Changelog: https://github.com/evilbunny2008/WeeWXWeatherApp/releases
+
+AutoName: MX3 Button Mapper
+
+RepoType: git
+Repo: https://github.com/evilbunny2008/WeeWXWeatherApp.git
+Binaries:
+  https://github.com/evilbunny2008/WeeWXWeatherApp/releases/download/v%v/WeeWXApp-%v.apk
+
+Builds:
+  - versionName: 2.2.0
+    versionCode: 2002000
+    commit:
+    subdir: app
+    gradle:
+      - yes
+
+AllowedAPKSigningKeys:
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 2.2.0
+CurrentVersionCode: 2002000
