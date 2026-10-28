@@ -1,0 +1,1 @@
+• Fanerne "Webcam" og "Tilpasset" skjules nu, når der ikke er angivet en URL

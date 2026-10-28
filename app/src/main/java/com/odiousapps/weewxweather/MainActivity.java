@@ -470,35 +470,42 @@ public class MainActivity extends FragmentActivity
 
 		TabLayout tabLayout = findViewById(R.id.tabs);
 
+		List<String> tabTitles = new ArrayList<>();
+
 		mSectionsPagerAdapter = new SectionsStateAdapter(getSupportFragmentManager(), getLifecycle());
 		mSectionsPagerAdapter.addFragment(new Weather());
+		tabTitles.add(getAndroidString(R.string.weather2));
 		mSectionsPagerAdapter.addFragment(new Stats());
+		tabTitles.add(getAndroidString(R.string.stats2));
 		mSectionsPagerAdapter.addFragment(new Forecast());
-		mSectionsPagerAdapter.addFragment(new Webcam());
-		mSectionsPagerAdapter.addFragment(new Custom());
+
+		if(KeyValue.isPrefSet("radarforecast") &&
+		   (boolean)KeyValue.readVar("radarforecast", WeeWXApp.radarforecast_default) == WeeWXApp.RadarOnHomeScreen)
+			tabTitles.add(getAndroidString(R.string.forecast2));
+		else
+			tabTitles.add(getAndroidString(R.string.radar));
+
+		// The webcam and custom tabs are optional, only show them when there's a URL to load
+		if(is_valid_url((String)KeyValue.readVar("WEBCAM_URL", "")))
+		{
+			mSectionsPagerAdapter.addFragment(new Webcam());
+			tabTitles.add(getAndroidString(R.string.webcam2));
+		}
+
+		if(is_valid_url((String)KeyValue.readVar(CUSTOM_URL, "")) ||
+		   is_valid_url((String)KeyValue.readVar(custom_url, "")))
+		{
+			mSectionsPagerAdapter.addFragment(new Custom());
+			tabTitles.add(getAndroidString(R.string.custom2));
+		}
 
 		mViewPager = findViewById(R.id.container);
 		mViewPager.setOffscreenPageLimit(mSectionsPagerAdapter.getItemCount());
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 		reduceViewPagerSwipeSensitivity(mViewPager);
 
-		String[] tabTitles;
-		if(KeyValue.isPrefSet("radarforecast") &&
-		   (boolean)KeyValue.readVar("radarforecast", WeeWXApp.radarforecast_default) == WeeWXApp.RadarOnHomeScreen)
-			tabTitles = new String[]{getAndroidString(R.string.weather2),
-									 getAndroidString(R.string.stats2),
-									 getAndroidString(R.string.forecast2),
-									 getAndroidString(R.string.webcam2),
-									 getAndroidString(R.string.custom2)};
-		else
-			tabTitles = new String[]{getAndroidString(R.string.weather2),
-									 getAndroidString(R.string.stats2),
-									 getAndroidString(R.string.radar),
-									 getAndroidString(R.string.webcam2),
-									 getAndroidString(R.string.custom2)};
-
 		new TabLayoutMediator(tabLayout, mViewPager,
-				((tab, position) -> tab.setText(tabTitles[position]))).attach();
+				((tab, position) -> tab.setText(tabTitles.get(position)))).attach();
 
 		if(savedInstanceState != null)
 		{

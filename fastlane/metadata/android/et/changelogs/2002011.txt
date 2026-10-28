@@ -1,0 +1,1 @@
+• Vahekaardid „Veebikaamera” ja „Kohandatud” peidetakse nüüd, kui URL-i pole määratud

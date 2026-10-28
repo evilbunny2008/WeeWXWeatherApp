@@ -1,0 +1,1 @@
+• Les onglets « Webcam » et « Personnalisé » sont désormais masqués lorsqu'aucune URL n'est définie

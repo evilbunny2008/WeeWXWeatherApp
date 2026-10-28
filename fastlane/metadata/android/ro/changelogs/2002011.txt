@@ -1,0 +1,1 @@
+• Filele „Cameră web” și „Personalizat” sunt acum ascunse atunci când nu este setat niciun URL

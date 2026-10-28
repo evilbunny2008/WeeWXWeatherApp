@@ -1,0 +1,1 @@
+• URL təyin edilmədikdə «Vebkamera» və «Fərdi» tabları artıq gizlədilir

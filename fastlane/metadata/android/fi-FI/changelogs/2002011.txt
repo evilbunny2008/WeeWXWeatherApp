@@ -1,0 +1,1 @@
+• Välilehdet ”Verkkokamera” ja ”Mukautettu” piilotetaan nyt, jos URL-osoitetta ei ole asetettu

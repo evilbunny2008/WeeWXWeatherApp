@@ -1,0 +1,1 @@
+• Kartice „Web kamera” i „Prilagođeno” sada su skrivene ako URL nije postavljen

@@ -1,0 +1,1 @@
+• Flikarna ”Webbkamera” och ”Anpassad” döljs nu när ingen URL har angetts

@@ -1,0 +1,1 @@
+• Tab "Kamera web" dan "Kustom" kini disembunyikan jika URL tidak diatur

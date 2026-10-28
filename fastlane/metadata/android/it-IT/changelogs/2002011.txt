@@ -1,0 +1,1 @@
+• Le schede «Webcam» e «Personalizzato» ora vengono nascoste quando non è impostato alcun URL

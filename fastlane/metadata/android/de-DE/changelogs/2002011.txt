@@ -1,0 +1,1 @@
+• Die Tabs „Webcam“ und „Benutzerdefiniert“ werden jetzt ausgeblendet, wenn keine URL festgelegt ist

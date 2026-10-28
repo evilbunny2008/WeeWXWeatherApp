@@ -1,0 +1,1 @@
+• Cilnes “Tīmekļa kamera” un “Pielāgots” tagad tiek paslēptas, ja nav iestatīts URL

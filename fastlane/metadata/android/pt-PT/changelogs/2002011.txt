@@ -1,0 +1,1 @@
+• Os separadores "Webcam" e "Personalizado" ficam agora ocultos quando não está definido nenhum URL

@@ -1,0 +1,1 @@
+• De tabbladen 'Webcam' en 'Aangepast' worden nu verborgen als er geen URL is ingesteld

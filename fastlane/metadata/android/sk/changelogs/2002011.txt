@@ -1,0 +1,1 @@
+• Karty „Webová kamera“ a „Vlastné“ sú teraz skryté, ak nie je nastavená URL adresa

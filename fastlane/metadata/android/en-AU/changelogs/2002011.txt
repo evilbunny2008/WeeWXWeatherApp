@@ -1,0 +1,1 @@
+• The Webcam and Custom tabs are now hidden when no URL is set

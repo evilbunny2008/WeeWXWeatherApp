@@ -1,0 +1,1 @@
+• URL ayarlanmadığında "Web kamerası" ve "Özel" sekmeleri artık gizleniyor

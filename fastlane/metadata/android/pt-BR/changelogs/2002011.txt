@@ -1,0 +1,1 @@
+• As abas "Webcam" e "Personalizado" agora ficam ocultas quando nenhuma URL está definida
