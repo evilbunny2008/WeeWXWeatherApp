@@ -1,0 +1,3 @@
+• Ispravljeno povremeno neprikazivanje kontrola web-stranice radara
+• Na televizorima stranice sada ispunjavaju cijeli zaslon, a ploča postavki je šira
+• Padajući popisi sada ističu trenutačni odabir pri korištenju daljinskog upravljača ili tipkovnice

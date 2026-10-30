@@ -1,0 +1,3 @@
+• Opgelost dat de bedieningselementen van de radarwebpagina soms niet werden getoond
+• Op tv’s vullen pagina’s nu het hele scherm en is het instellingenpaneel breder
+• Vervolgkeuzelijsten markeren nu de huidige keuze bij gebruik van een afstandsbediening of toetsenbord

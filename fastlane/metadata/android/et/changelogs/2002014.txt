@@ -1,0 +1,3 @@
+• Parandatud radari veebilehe juhtnuppude aeg-ajalt kuvamata jäämine
+• Telerites täidavad lehed nüüd kogu ekraani ja seadete paneel on laiem
+• Rippmenüüd tõstavad nüüd puldi või klaviatuuri kasutamisel praeguse valiku esile

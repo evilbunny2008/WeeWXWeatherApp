@@ -1,0 +1,3 @@
+• Correction des commandes de la page web du radar qui parfois ne s’affichaient pas
+• Sur les téléviseurs, les pages occupent désormais tout l’écran et le panneau des paramètres est plus large
+• Les listes déroulantes mettent désormais en évidence le choix actuel avec une télécommande ou un clavier

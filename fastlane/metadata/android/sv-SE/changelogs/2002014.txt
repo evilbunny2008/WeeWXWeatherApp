@@ -1,0 +1,3 @@
+• Åtgärdat att radarwebbsidans kontroller ibland inte visades
+• På tv fyller sidorna nu hela skärmen och inställningspanelen är bredare
+• Rullgardinslistor markerar nu det aktuella valet när du använder fjärrkontroll eller tangentbord

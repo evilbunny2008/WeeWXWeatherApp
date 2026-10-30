@@ -59,6 +59,8 @@ public class Forecast extends Fragment implements View.OnClickListener, Refresha
 	private RotateLayout rl;
 	private MaterialCheckBox floatingCheckBox;
 	private boolean isVisible = false;
+	// The radar web page waits until this tab is showing, see loadRadar()
+	private boolean radarLoadPending = false;
 	private MainActivity activity;
 
 	private final ExecutorService radarExecutor = Executors.newSingleThreadExecutor();
@@ -353,6 +355,19 @@ public class Forecast extends Fragment implements View.OnClickListener, Refresha
 			return;
 		}
 
+		// Pages like windy.com don't draw properly when they load while this tab is off
+		// screen, the WebView gets no tile memory and their controls go missing until the
+		// next reload. ViewPager2 only resumes the page that's showing, so wait for that.
+		if(!isResumed())
+		{
+			LogMessage("Radar tab isn't showing, loading the radar page when it is...");
+			radarLoadPending = true;
+			stopRefreshing();
+			return;
+		}
+
+		radarLoadPending = false;
+
 		LogMessage("Loading radar page... url: " + radarURL);
 
 		// Pages like windy.com size themselves to the viewport when they load, so wait
@@ -419,6 +434,9 @@ public class Forecast extends Fragment implements View.OnClickListener, Refresha
 			updateSwipe();
 			updateScreen();
 		}
+
+		if(radarLoadPending)
+			loadRadar(true);
 	}
 
 	public void onPause()

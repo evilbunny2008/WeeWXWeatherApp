@@ -1,0 +1,3 @@
+• S’ha corregit que els controls de la pàgina web del radar de vegades no es mostressin
+• Als televisors, les pàgines ara ocupen tota la pantalla i el tauler de configuració és més ample
+• Les llistes desplegables ara ressalten l’opció actual en fer servir un comandament o un teclat

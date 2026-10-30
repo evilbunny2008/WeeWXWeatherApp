@@ -70,6 +70,8 @@ public class Weather extends Fragment implements View.OnClickListener, Refreshab
 {
 	private boolean isVisible;
 	private String lastURL;
+	// The radar web page waits until this tab is showing, see loadWebViewURL()
+	private String pendingRadarURL;
 	private SafeWebView current = null, forecast = null;
 	private SwipeRefreshLayout swipeLayout;
 	private MaterialCheckBox floatingCheckBox;
@@ -929,6 +931,18 @@ public class Weather extends Fragment implements View.OnClickListener, Refreshab
 			return;
 		}
 
+		// Pages like windy.com don't draw properly when they load while this tab is off
+		// screen, the WebView gets no tile memory and their controls go missing until the
+		// next reload. ViewPager2 only resumes the page that's showing, so wait for that.
+		if(!isResumed())
+		{
+			LogMessage("loadWebViewURL() weather tab isn't showing, loading the radar page when it is...");
+			pendingRadarURL = url;
+			stopRefreshing();
+			return;
+		}
+
+		pendingRadarURL = null;
 		lastRunForecast = now;
 
 		if(url.equals(lastURL))
@@ -1277,6 +1291,9 @@ public class Weather extends Fragment implements View.OnClickListener, Refreshab
 		LogMessage("Weather.onResume() -- updating the value of the floating checkbox...");
 
 		updateFLL();
+
+		if(pendingRadarURL != null)
+			loadWebViewURL(true, pendingRadarURL);
 	}
 
 	public void onPause()

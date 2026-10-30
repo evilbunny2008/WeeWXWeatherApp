@@ -1,0 +1,3 @@
+• Rettet, at radarwebsidens knapper nogle gange ikke blev vist
+• På tv fylder siderne nu hele skærmen, og indstillingspanelet er bredere
+• Rullelister fremhæver nu det aktuelle valg, når du bruger en fjernbetjening eller et tastatur

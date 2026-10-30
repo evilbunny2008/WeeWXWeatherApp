@@ -1,0 +1,3 @@
+• Opraveno občasné nezobrazení ovládacích prvků webové stránky radaru
+• Na televizorech nyní stránky vyplňují celou obrazovku a panel nastavení je širší
+• Rozbalovací seznamy nyní zvýrazňují aktuální volbu při použití dálkového ovladače nebo klávesnice

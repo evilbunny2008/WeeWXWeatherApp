@@ -9,7 +9,9 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -69,6 +71,7 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.ColorUtils;
 import androidx.core.graphics.Insets;
 import androidx.core.text.HtmlCompat;
 import androidx.core.view.GravityCompat;
@@ -375,7 +378,8 @@ public class MainActivity extends FragmentActivity
 		LogMessage("MainActivity.onCreate() isTV: " + isTV);
 		if(isTV)
 		{
-			// Google's recommended TV margins, some TVs crop the edges of the picture
+			// Google's recommended TV margins. Only the buttons and drawer items use them,
+			// the web pages run to the edges of the screen like other TV apps
 			tvSafeH = Math.round(48 * WeeWXApp.getDensity());
 			tvSafeV = Math.round(27 * WeeWXApp.getDensity());
 
@@ -405,6 +409,15 @@ public class MainActivity extends FragmentActivity
 			//LogMessage("MainActivity.onCreate() cd.TouchedListener()");
 			handleTouch();
 		});
+
+		// TVs are always wide landscape screens, so give the settings more room
+		// than the 320dp phone drawer, about 60% of the screen
+		if(isTV)
+		{
+			ViewGroup.LayoutParams lp = cd.getLayoutParams();
+			lp.width = Math.round(getResources().getDisplayMetrics().widthPixels * 0.6f);
+			cd.setLayoutParams(lp);
+		}
 
 		AppBarLayout abl = findViewById(R.id.appbar);
 		FrameLayout rv = findViewById(R.id.root_view);
@@ -440,8 +453,9 @@ public class MainActivity extends FragmentActivity
 		ViewCompat.setOnApplyWindowInsetsListener(abl, (v, insets) ->
 		{
 			Insets sb = insets.getInsets(WindowInsetsCompat.Type.statusBars());
-			int top = appInitialTop + sb.top + tvSafeV;
-			v.setPadding(appInitialLeft, top, appInitialRight, appInitialBottom);
+			// TVs don't have a status bar, so there's nothing to leave room for at the top
+			int top = appInitialTop + sb.top;
+			v.setPadding(appInitialLeft + tvSafeH, top, appInitialRight + tvSafeH, appInitialBottom);
 			return insets;
 		});
 
@@ -484,10 +498,10 @@ public class MainActivity extends FragmentActivity
 			Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
 			// In landscape the nav bar and camera cutout can sit on either side
 			Insets side = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
-			int bottom = rvInitialBottom + Math.max(nb.bottom, ime.bottom) + tvSafeV;
+			int bottom = rvInitialBottom + Math.max(nb.bottom, ime.bottom);
 			view.setBackgroundColor(WeeWXApp.getColour(R.color.MyAppNavBarColour));
-			view.setPadding(rvInitialLeft + side.left + tvSafeH, rvInitialTop,
-							rvInitialRight + side.right + tvSafeH, bottom);
+			view.setPadding(rvInitialLeft + side.left, rvInitialTop,
+							rvInitialRight + side.right, bottom);
 
 			Insets gestureInsets = insets.getInsets(WindowInsetsCompat.Type.systemGestures());
 
@@ -1764,11 +1778,26 @@ public class MainActivity extends FragmentActivity
 			public View getDropDownView(int position, View convertView, @NonNull ViewGroup parent)
 			{
 				MaterialTextView view = (MaterialTextView)super.getDropDownView(position, convertView, parent);
-				view.setBackgroundColor(WeeWXApp.getColours().bgColour);
+				view.setBackground(dropDownItemBackground());
 				view.setTextColor(WeeWXApp.getColours().fgColour);
 				return view;
 			}
 		};
+	}
+
+	// A solid background hides the list's own selector, so draw the highlight here,
+	// otherwise moving through the list with a TV remote or keyboard shows nothing
+	private static StateListDrawable dropDownItemBackground()
+	{
+		int bg = WeeWXApp.getColours().bgColour;
+		int highlight = ColorUtils.blendARGB(bg, WeeWXApp.getColours().fgColour, 0.25f);
+
+		StateListDrawable sld = new StateListDrawable();
+		sld.addState(new int[]{android.R.attr.state_pressed}, new ColorDrawable(highlight));
+		sld.addState(new int[]{android.R.attr.state_selected}, new ColorDrawable(highlight));
+		sld.addState(new int[]{android.R.attr.state_focused}, new ColorDrawable(highlight));
+		sld.addState(new int[]{}, new ColorDrawable(bg));
+		return sld;
 	}
 
 	void closeKeyboard()

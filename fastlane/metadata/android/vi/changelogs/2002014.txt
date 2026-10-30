@@ -1,0 +1,3 @@
+• Đã sửa lỗi các nút điều khiển của trang web radar đôi khi không hiển thị
+• Trên TV, các trang giờ đây lấp đầy màn hình và bảng cài đặt rộng hơn
+• Danh sách thả xuống giờ đây làm nổi bật lựa chọn hiện tại khi dùng điều khiển từ xa hoặc bàn phím

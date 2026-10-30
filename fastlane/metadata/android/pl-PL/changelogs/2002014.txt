@@ -1,0 +1,3 @@
+• Naprawiono czasami niewyświetlanie się elementów sterujących strony radaru
+• Na telewizorach strony wypełniają teraz cały ekran, a panel ustawień jest szerszy
+• Listy rozwijane wyróżniają teraz bieżący wybór podczas korzystania z pilota lub klawiatury

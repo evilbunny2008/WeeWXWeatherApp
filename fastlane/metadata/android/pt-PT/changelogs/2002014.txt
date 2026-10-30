@@ -1,0 +1,3 @@
+• Corrigidos os controlos da página do radar que por vezes não apareciam
+• Nas TVs, as páginas ocupam agora todo o ecrã e o painel de definições é mais largo
+• As listas pendentes destacam agora a opção atual ao utilizar um comando ou teclado

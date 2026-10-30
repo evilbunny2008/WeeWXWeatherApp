@@ -1,0 +1,3 @@
+• Ištaisyta, kad radaro tinklalapio valdikliai kartais nebūdavo rodomi
+• Televizoriuose puslapiai dabar užpildo visą ekraną, o nustatymų skydelis platesnis
+• Išskleidžiamieji sąrašai dabar paryškina dabartinį pasirinkimą naudojant pultą ar klaviatūrą

@@ -1,0 +1,3 @@
+• Corrixiuse que os controis da páxina web do radar ás veces non se amosasen
+• Nos televisores, as páxinas agora ocupan toda a pantalla e o panel de axustes é máis largo
+• As listas despregables agora resaltan a opción actual ao usar un mando a distancia ou un teclado
