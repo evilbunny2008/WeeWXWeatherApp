@@ -1,0 +1,3 @@
+• Telefoanele pot fi rotite acum în modul peisaj
+• Solicită acces la rețeaua locală când serverul meteo se află în rețeaua de acasă, așa cum cere Android 17
+• Dialogul cu erorile fișierului JSON are acum opțiunile Vezi mai multe și Închide

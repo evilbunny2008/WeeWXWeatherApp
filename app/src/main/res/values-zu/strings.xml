@@ -9,6 +9,7 @@
 	<string name="avg">isilinganiso</string>
 	<string name="battery_warning">ISEXWAYISO: Ukunika amandla i-Over Option kungadonsa ibhethri lakho ngokushesha kunokujwayelekile</string>
 	<string name="bgColour">Umbala we-Widget wangemuva wangemuva</string>
+	<string name="close">Vala</string>
 	<string name="custom2">Ngokwezifiso</string>
 	<string name="custom_setting">Imibala yangokwezifiso</string>
 	<string name="custom_url">Ongakukhetha: Url wangokwezifiso</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Isihloko esikhanyayo</string>
 	<string name="local_network_permission_denied">Ukufinyelela esiteshini sesimo sezulu sasendaweni akutholakali uze unikeze imvume yamaDivayisi aseduze kumasethingi e-Android. Idatha yesimo sezulu ye-inthanethi yomphakathi isengabuyekezwa.</string>
 	<string name="local_network_permission_explanation">Vumela i-%1$s ifinyelele idatha yesimo sezulu kunethiwekhi yasekhaya lakho. Idatha yesimo sezulu ye-inthanethi yomphakathi izoqhubeka isebenza ngaphandle kwale mvume.</string>
+	<string name="local_network_permission_open_settings">Ukufinyelela kunethiwekhi yasendaweni kwenqatshiwe, ngakho-ke i-Android ngeke iphinde ibuze. Ukuze ufinyelele idatha yesimo sezulu kunethiwekhi yakho yasekhaya, vula okuthi Amadivayisi aseduze ku-%1$s kumasethingi e-Android. Vula amasethingi manje?</string>
 	<string name="local_network_permission_title">Ukufinyelela kunethiwekhi yasendaweni</string>
 	<string name="manual_update">Ukuvuselelwa Kwesandla</string>
 	<string name="manual_update_set_refresh_screen_to_load">Ukuvuselelwa Kwesandla Setha, Swipe Ukuvuselela Isikrini ukulayisha</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Kube nephutha elingu %1$d elitholwe ngenkathi kubuyekezwa, buka amalogi angu %2$s ukuze uthole imininingwane. Iphutha lokugcina lenzekile emaminithini angu %3$d edlule</item>
 		<item quantity="other">Kube namaphutha angu %1$d atholwe ngenkathi kubuyekezwa, buka amalogi angu %2$s ukuze uthole imininingwane. Iphutha lokugcina lenzekile emaminithini angu %3$d edlule</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Kutholwe iphutha elingu-%1$d efayeleni le-%2$s</item>
+		<item quantity="other">Kutholwe amaphutha angu-%1$d efayeleni le-%2$s</item>
 	</plurals>
 	<string name="radar">Ireda</string>
 	<string name="radar_download_failed">Yehlulekile ukulanda isithombe se-radar</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Uqinisekile ukuthi ufuna ukususa yonke imininingwane?</string>
 	<string name="save_app_debug_logs">Gcina izingodo zokulungisa ama-debug</string>
 	<string name="save_settings">Gcina Izilungiselelo</string>
+	<string name="see_more">Bona Okwengeziwe</string>
 	<string name="settings2">Buyela emuva kuzilungiselelo</string>
 	<string name="show_forecast">Khombisa Isimo sezulu</string>
 	<string name="show_radar">Khombisa i-radar</string>

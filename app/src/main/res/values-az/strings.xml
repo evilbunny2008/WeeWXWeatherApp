@@ -9,6 +9,7 @@
 	<string name="avg">orta</string>
 	<string name="battery_warning">Xəbərdarlıq: Yuxarıdakı seçimi aktivləşdirmək batareyanı adi haldan daha sürətli qurtara bilər</string>
 	<string name="bgColour">Widget fon rəng seçicisi</string>
+	<string name="close">Bağla</string>
 	<string name="custom2">Fərdi</string>
 	<string name="custom_setting">Xüsusi rənglər</string>
 	<string name="custom_url">İsteğe bağlı: Xüsusi URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">İşıq mövzusu</string>
 	<string name="local_network_permission_denied">Android parametrlərində Yaxınlıqdakı cihazlar icazəsini verənə qədər yerli hava stansiyasına giriş mümkün deyil. İctimai internet hava məlumatları yenə də yenilənə bilər.</string>
 	<string name="local_network_permission_explanation">%1$s-in ev şəbəkənizdəki hava məlumatlarına çatmasına icazə verin. İctimai internet hava məlumatları bu icazə olmadan da işləməyə davam edəcək.</string>
+	<string name="local_network_permission_open_settings">Yerli şəbəkəyə giriş rədd edildi, ona görə də Android bir daha soruşmayacaq. Ev şəbəkənizdəki hava məlumatlarına çatmaq üçün Android ayarlarında %1$s üçün Yaxındakı cihazlar icazəsini aktiv edin. Ayarlar indi açılsın?</string>
 	<string name="local_network_permission_title">Yerli şəbəkəyə giriş</string>
 	<string name="manual_update">Əl yeniləmələri</string>
 	<string name="manual_update_set_refresh_screen_to_load">Əl ilə yeniləmə dəsti, yükləmək üçün yeniləmə ekranı çalın</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Yeniləmə zamanı %1$d xəta aşkarlandı, təfərrüatlar üçün %2$s jurnalına baxın. Son xəta %3$d dəqiqə əvvəl baş verdi</item>
 		<item quantity="other">Yeniləmə zamanı %1$d xəta aşkar edildi, təfərrüatlar üçün %2$s jurnalına baxın. Son xəta %3$d dəqiqə əvvəl baş verdi</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s faylında %1$d xəta aşkarlandı</item>
+		<item quantity="other">%2$s faylında %1$d xəta aşkarlandı</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Radar görüntüsünü yükləyə bilmədi</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Bütün məlumatları silmək istədiyinizə əminsiniz?</string>
 	<string name="save_app_debug_logs">Tətbiq Debug qeydlərini qeyd edin</string>
 	<string name="save_settings">Parametrləri saxla</string>
+	<string name="see_more">Daha çox</string>
 	<string name="settings2">Parametrlərə qayıdın</string>
 	<string name="show_forecast">Proqnozu göstərmək</string>
 	<string name="show_radar">Radar göstərmək</string>

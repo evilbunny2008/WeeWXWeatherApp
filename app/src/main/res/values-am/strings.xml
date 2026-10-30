@@ -9,6 +9,7 @@
 	<string name="avg">አማካይ</string>
 	<string name="battery_warning">ማስጠንቀቂያ፦ ከላይ ያለውን አማራጭ ማንቃት ባትሪዎን ከወትሮው በበለጠ ፍጥነት ሊጨርስ ይችላል</string>
 	<string name="bgColour">የምግብር ዳራ ቀለም መምረጫ</string>
+	<string name="close">ዝጋ</string>
 	<string name="custom2">ብጁ</string>
 	<string name="custom_setting">ብጁ ቀለሞች</string>
 	<string name="custom_url">አማራጭ፦ ብጁ URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ብሩህ ገጽታ</string>
 	<string name="local_network_permission_denied">በAndroid ቅንብሮች ውስጥ የአቅራቢያ መሣሪያዎች ፈቃድ እስኪሰጡ ድረስ የአካባቢ የአየር ሁኔታ ጣቢያ መዳረሻ አይገኝም። ከበይነመረብ የሚመጣ ይፋዊ የአየር ሁኔታ ውሂብ አሁንም ሊዘምን ይችላል።</string>
 	<string name="local_network_permission_explanation">%1$s በቤትዎ አውታረ መረብ ላይ ያለውን የአየር ሁኔታ ውሂብ እንዲደርስ ይፍቀዱ። ከበይነመረብ የሚመጣ ይፋዊ የአየር ሁኔታ ውሂብ ያለዚህ ፈቃድም መሥራቱን ይቀጥላል።</string>
+	<string name="local_network_permission_open_settings">የአካባቢ አውታረ መረብ መዳረሻ ውድቅ ተደርጓል፣ ስለዚህ Android ዳግም አይጠይቅም። በቤት አውታረ መረብዎ ላይ ያለውን የአየር ሁኔታ ውሂብ ለመድረስ በAndroid ቅንብሮች ውስጥ ለ%1$s በአቅራቢያ ያሉ መሣሪያዎችን ያብሩ። ቅንብሮችን አሁን ይክፈቱ?</string>
 	<string name="local_network_permission_title">የአካባቢ አውታረ መረብ መዳረሻ</string>
 	<string name="manual_update">በእጅ ዝማኔዎች</string>
 	<string name="manual_update_set_refresh_screen_to_load">በእጅ ዝማኔ ተቀናብሯል፣ ለመጫን ማያ ገጹን ያንሸራትቱ</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">በማዘመን ጊዜ %1$d ስህተት ተገኝቷል፤ ለዝርዝሮች የ%2$s ምዝግብ ማስታወሻዎችን ይመልከቱ። የመጨረሻው ስህተት ከ%3$d ደቂቃዎች በፊት ተከስቷል</item>
 		<item quantity="other">በማዘመን ጊዜ %1$d ስህተቶች ተገኝተዋል፤ ለዝርዝሮች የ%2$s ምዝግብ ማስታወሻዎችን ይመልከቱ። የመጨረሻው ስህተት ከ%3$d ደቂቃዎች በፊት ተከስቷል</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">በ%2$s ፋይል ውስጥ %1$d ስህተት ተገኝቷል</item>
+		<item quantity="other">በ%2$s ፋይል ውስጥ %1$d ስህተቶች ተገኝተዋል</item>
 	</plurals>
 	<string name="radar">ራዳር</string>
 	<string name="radar_download_failed">የራዳር ምስሉን ማውረድ አልተሳካም</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">እርግጠኛ ነዎት ሁሉንም ውሂብ ማስወገድ ይፈልጋሉ?</string>
 	<string name="save_app_debug_logs">የመተግበሪያ ማረሚያ ምዝግብ ማስታወሻዎችን አስቀምጥ</string>
 	<string name="save_settings">ቅንብሮችን አስቀምጥ</string>
+	<string name="see_more">ተጨማሪ ይመልከቱ</string>
 	<string name="settings2">ወደ ቅንብሮች ተመለስ</string>
 	<string name="show_forecast">ትንበያ አሳይ</string>
 	<string name="show_radar">ራዳር አሳይ</string>

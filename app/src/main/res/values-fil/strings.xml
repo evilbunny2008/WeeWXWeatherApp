@@ -9,6 +9,7 @@
 	<string name="avg">avg</string>
 	<string name="battery_warning">Babala: Maaaring mas mabilis maubos ang iyong baterya kaysa karaniwan kapag pinagana ang opsyon sa itaas</string>
 	<string name="bgColour">Pagpili ng Kulay ng Background ng Widget</string>
+	<string name="close">Isara</string>
 	<string name="custom2">Pasadya</string>
 	<string name="custom_setting">Pasadyang Kulay</string>
 	<string name="custom_url">Opsyonal: Pasadyang URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Maliwanag na Tema</string>
 	<string name="local_network_permission_denied">Hindi available ang access sa lokal na weather station hangga\'t hindi mo ibinibigay ang pahintulot na Mga kalapit na device sa mga setting ng Android. Maaari pa ring mag-update ang data ng panahon mula sa pampublikong internet.</string>
 	<string name="local_network_permission_explanation">Payagan ang %1$s na maabot ang data ng panahon sa iyong home network. Patuloy na gagana ang data ng panahon mula sa pampublikong internet kahit wala ang pahintulot na ito.</string>
+	<string name="local_network_permission_open_settings">Tinanggihan ang access sa lokal na network, kaya hindi na muling magtatanong ang Android. Para maabot ang weather data sa iyong home network, i-on ang Mga kalapit na device para sa %1$s sa mga setting ng Android. Buksan ang mga setting ngayon?</string>
 	<string name="local_network_permission_title">Access sa lokal na network</string>
 	<string name="manual_update">Manwal na Pag-update</string>
 	<string name="manual_update_set_refresh_screen_to_load">Nakatakda sa manwal na pag-update, i-swipe para i-refresh ang screen at mag-load</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">May %1$d error na natukoy habang nag-a-update, tingnan ang mga log ng %2$s para sa mga detalye. Nangyari ang huling error %3$d minuto na ang nakalipas</item>
 		<item quantity="other">May %1$d error na natukoy habang nag-a-update, tingnan ang mga log ng %2$s para sa mga detalye. Nangyari ang huling error %3$d minuto na ang nakalipas</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">May %1$d error na nakita sa %2$s file</item>
+		<item quantity="other">May %1$d na error na nakita sa %2$s file</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Nabigong i-download ang larawan ng radar</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Sigurado ka bang gusto mong burahin ang lahat ng data?</string>
 	<string name="save_app_debug_logs">I-save ang mga debug log ng app</string>
 	<string name="save_settings">I-save ang mga Setting</string>
+	<string name="see_more">Tingnan Pa</string>
 	<string name="settings2">Bumalik sa mga Setting</string>
 	<string name="show_forecast">Ipakita ang Forecast</string>
 	<string name="show_radar">Ipakita ang Radar</string>

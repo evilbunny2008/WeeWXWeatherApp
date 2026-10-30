@@ -9,6 +9,7 @@
 	<string name="avg">গড়</string>
 	<string name="battery_warning">সতর্কতা: উপরের বিকল্পটি সক্ষম করলে আপনার ব্যাটারি স্বাভাবিকের চেয়ে দ্রুত নিষ্কাশন হতে পারে</string>
 	<string name="bgColour">উইজেট ব্যাকগ্রাউন্ড কালার পিকার</string>
+	<string name="close">বন্ধ করুন</string>
 	<string name="custom2">কাস্টম</string>
 	<string name="custom_setting">কাস্টম রং</string>
 	<string name="custom_url">ঐচ্ছিক: কাস্টম URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">হালকা থিম</string>
 	<string name="local_network_permission_denied">Android সেটিংসে কাছাকাছি থাকা ডিভাইসের অনুমতি না দেওয়া পর্যন্ত স্থানীয় আবহাওয়া স্টেশনে অ্যাক্সেস উপলভ্য নয়। পাবলিক ইন্টারনেটের আবহাওয়ার ডেটা এখনও আপডেট হতে পারে।</string>
 	<string name="local_network_permission_explanation">%1$s-কে আপনার হোম নেটওয়ার্কে থাকা আবহাওয়ার ডেটায় পৌঁছানোর অনুমতি দিন। এই অনুমতি ছাড়াও পাবলিক ইন্টারনেটের আবহাওয়ার ডেটা কাজ করতে থাকবে।</string>
+	<string name="local_network_permission_open_settings">লোকাল নেটওয়ার্ক অ্যাক্সেস প্রত্যাখ্যান করা হয়েছে, তাই Android আর জিজ্ঞাসা করবে না। আপনার হোম নেটওয়ার্কের আবহাওয়ার ডেটা পেতে Android সেটিংসে %1$s-এর জন্য আশেপাশের ডিভাইস চালু করুন। এখনই সেটিংস খুলবেন?</string>
 	<string name="local_network_permission_title">স্থানীয় নেটওয়ার্ক অ্যাক্সেস</string>
 	<string name="manual_update">ম্যানুয়াল আপডেট</string>
 	<string name="manual_update_set_refresh_screen_to_load">ম্যানুয়াল আপডেট সেট, লোড করতে রিফ্রেশ স্ক্রীন সোয়াইপ করুন</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">আপডেট করার সময় %1$d ত্রুটি শনাক্ত হয়েছে, বিশদ বিবরণের জন্য %2$s লগগুলি দেখুন৷ শেষ ত্রুটি %3$d মিনিট আগে ঘটেছে৷</item>
 		<item quantity="other">আপডেট করার সময় %1$dটি ত্রুটি শনাক্ত হয়েছে, বিশদ বিবরণের জন্য %2$s লগগুলি দেখুন৷ শেষ ত্রুটি %3$d মিনিট আগে ঘটেছে৷</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ফাইলে %1$dটি ত্রুটি পাওয়া গেছে</item>
+		<item quantity="other">%2$s ফাইলে %1$dটি ত্রুটি পাওয়া গেছে</item>
 	</plurals>
 	<string name="radar">রাডার</string>
 	<string name="radar_download_failed">রাডার ইমেজ ডাউনলোড করতে ব্যর্থ হয়েছে</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">আপনি কি নিশ্চিত যে আপনি সমস্ত ডেটা সরাতে চান?</string>
 	<string name="save_app_debug_logs">অ্যাপ ডিবাগ লগ সংরক্ষণ করুন</string>
 	<string name="save_settings">সেটিংস সংরক্ষণ করুন</string>
+	<string name="see_more">আরও দেখুন</string>
 	<string name="settings2">সেটিংসে ফিরে যান</string>
 	<string name="show_forecast">পূর্বাভাস দেখান</string>
 	<string name="show_radar">রাডার দেখান</string>

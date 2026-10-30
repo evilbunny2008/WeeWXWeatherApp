@@ -9,6 +9,7 @@
 	<string name="avg">сярэд.</string>
 	<string name="battery_warning">Увага: уключэнне гэтага параметра можа разраджаць акумулятар хутчэй, чым звычайна</string>
 	<string name="bgColour">Выбар колеру фону віджэта</string>
+	<string name="close">Закрыць</string>
 	<string name="custom2">Уласны</string>
 	<string name="custom_setting">Уласныя колеры</string>
 	<string name="custom_url">Неабавязкова: уласны URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Светлая тэма</string>
 	<string name="local_network_permission_denied">Доступ да мясцовай метэастанцыі недаступны, пакуль вы не дасце дазвол «Прылады паблізу» ў наладах Android. Агульнадаступныя даныя пра надвор’е з інтэрнэту могуць і далей абнаўляцца.</string>
 	<string name="local_network_permission_explanation">Дазволіць %1$s атрымліваць даныя пра надвор’е ў вашай хатняй сетцы. Агульнадаступныя даныя пра надвор’е з інтэрнэту будуць працаваць і без гэтага дазволу.</string>
+	<string name="local_network_permission_open_settings">Доступ да лакальнай сеткі быў адхілены, таму Android больш не будзе пытацца. Каб атрымліваць даныя аб надвор’і з хатняй сеткі, уключыце дазвол «Прылады побач» для %1$s у наладах Android. Адкрыць налады зараз?</string>
 	<string name="local_network_permission_title">Доступ да лакальнай сеткі</string>
 	<string name="manual_update">Ручныя абнаўленні</string>
 	<string name="manual_update_set_refresh_screen_to_load">Зададзена ручное абнаўленне, правядзіце па экране, каб абнавіць і загрузіць</string>
@@ -86,6 +88,12 @@
 		<item quantity="many">Падчас абнаўлення выяўлена %1$d памылак. Падрабязнасці глядзіце ў журналах %2$s. Апошняя памылка адбылася %3$d хв таму</item>
 		<item quantity="other">Падчас абнаўлення выяўлена %1$d памылкі. Падрабязнасці глядзіце ў журналах %2$s. Апошняя памылка адбылася %3$d хв таму</item>
 	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">У файле %2$s выяўлена %1$d памылка</item>
+		<item quantity="few">У файле %2$s выяўлена %1$d памылкі</item>
+		<item quantity="many">У файле %2$s выяўлена %1$d памылак</item>
+		<item quantity="other">У файле %2$s выяўлена %1$d памылкі</item>
+	</plurals>
 	<string name="radar">Радар</string>
 	<string name="radar_download_failed">Не ўдалося спампаваць радарную выяву</string>
 	<string name="radar_still_downloading">Радарная выява яшчэ спампоўваецца</string>
@@ -115,6 +123,7 @@
 	<string name="remove_all_data">Вы ўпэўнены, што хочаце выдаліць усе даныя?</string>
 	<string name="save_app_debug_logs">Захаваць журналы адладкі праграмы</string>
 	<string name="save_settings">Захаваць налады</string>
+	<string name="see_more">Падрабязней</string>
 	<string name="settings2">Вярнуцца да налад</string>
 	<string name="show_forecast">Паказваць прагноз</string>
 	<string name="show_radar">Паказваць радар</string>

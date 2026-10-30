@@ -9,6 +9,7 @@
 	<string name="avg">śr</string>
 	<string name="battery_warning">Ostrzeżenie: włączenie powyższej opcji może spowodować szybsze niż zwykle zużycie baterii</string>
 	<string name="bgColour">Próbnik koloru tła widgetu</string>
+	<string name="close">Zamknij</string>
 	<string name="custom2">Niestandardowe</string>
 	<string name="custom_setting">Niestandardowe kolory</string>
 	<string name="custom_url">Opcjonalnie: niestandardowy adres URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Lekki motyw</string>
 	<string name="local_network_permission_denied">Dostęp do lokalnej stacji pogodowej jest niedostępny, dopóki nie przyznasz uprawnienia Urządzenia w pobliżu w ustawieniach Androida. Dane pogodowe z publicznego internetu mogą być nadal aktualizowane.</string>
 	<string name="local_network_permission_explanation">Zezwól aplikacji %1$s na dostęp do danych pogodowych w sieci domowej. Dane pogodowe z publicznego internetu będą nadal działać bez tego uprawnienia.</string>
+	<string name="local_network_permission_open_settings">Odmówiono dostępu do sieci lokalnej, więc Android nie zapyta ponownie. Aby uzyskać dostęp do danych pogodowych w sieci domowej, włącz uprawnienie Urządzenia w pobliżu dla aplikacji %1$s w ustawieniach Androida. Otworzyć ustawienia teraz?</string>
 	<string name="local_network_permission_title">Dostęp do sieci lokalnej</string>
 	<string name="manual_update">Aktualizacje ręczne</string>
 	<string name="manual_update_set_refresh_screen_to_load">Ustawiono aktualizację ręczną. Przesuń ekran odświeżania, aby załadować</string>
@@ -86,6 +88,12 @@
 		<item quantity="one">Podczas aktualizacji wykryto błąd %1$d. Aby poznać szczegóły, przejrzyj dzienniki %2$s. Ostatni błąd wystąpił %3$d minut temu</item>
 		<item quantity="other">Podczas aktualizacji wykryto %1$d błędów. Aby poznać szczegóły, przejrzyj dzienniki %2$s. Ostatni błąd wystąpił %3$d minut temu</item>
 	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">W pliku %2$s wykryto %1$d błędy</item>
+		<item quantity="many">W pliku %2$s wykryto %1$d błędów</item>
+		<item quantity="one">W pliku %2$s wykryto %1$d błąd</item>
+		<item quantity="other">W pliku %2$s wykryto %1$d błędu</item>
+	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Nie udało się pobrać obrazu radarowego</string>
 	<string name="radar_still_downloading">Obraz radarowy nadal się pobiera</string>
@@ -115,6 +123,7 @@
 	<string name="remove_all_data">Czy na pewno chcesz usunąć wszystkie dane?</string>
 	<string name="save_app_debug_logs">Zapisz dzienniki debugowania aplikacji</string>
 	<string name="save_settings">Zapisz ustawienia</string>
+	<string name="see_more">Pokaż więcej</string>
 	<string name="settings2">Wróć do ustawień</string>
 	<string name="show_forecast">Pokaż prognozę</string>
 	<string name="show_radar">Pokaż Radar</string>

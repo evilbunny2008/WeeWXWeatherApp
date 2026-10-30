@@ -9,6 +9,7 @@
 	<string name="avg">prosj</string>
 	<string name="battery_warning">Upozorenje: Omogućavanje gornje opcije može isprazniti bateriju brže nego inače</string>
 	<string name="bgColour">Alat za odabir pozadinske boje widgeta</string>
+	<string name="close">Zatvori</string>
 	<string name="custom2">Prilagođeno</string>
 	<string name="custom_setting">Prilagođene boje</string>
 	<string name="custom_url">Izborno: prilagođeni URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Lagana tema</string>
 	<string name="local_network_permission_denied">Pristup lokalnoj meteorološkoj postaji nije dostupan dok ne date dopuštenje Uređaji u blizini u postavkama Androida. Vremenski podaci s javnog interneta i dalje se mogu ažurirati.</string>
 	<string name="local_network_permission_explanation">Dopustite %1$s-u pristup vremenskim podacima na vašoj kućnoj mreži. Vremenski podaci s javnog interneta nastavit će raditi i bez ovog dopuštenja.</string>
+	<string name="local_network_permission_open_settings">Pristup lokalnoj mreži je odbijen, pa Android više neće pitati. Za pristup meteorološkim podacima na kućnoj mreži uključite Uređaji u blizini za %1$s u postavkama Androida. Otvoriti postavke sada?</string>
 	<string name="local_network_permission_title">Pristup lokalnoj mreži</string>
 	<string name="manual_update">Ručna ažuriranja</string>
 	<string name="manual_update_set_refresh_screen_to_load">Postavljeno je ručno ažuriranje, prijeđite prstom osvježite zaslon za učitavanje</string>
@@ -83,6 +85,11 @@
 		<item quantity="few">Bilo je %1$d grešaka otkrivenih tijekom ažuriranja, pogledajte %2$s zapisnike za detalje. Zadnja pogreška dogodila se prije %3$d minute</item>
 		<item quantity="one">Tijekom ažuriranja otkrivena je %1$d pogreška, pogledajte zapise %2$s za detalje. Zadnja pogreška dogodila se prije %3$d minute</item>
 		<item quantity="other">Bilo je %1$d grešaka otkrivenih tijekom ažuriranja, pogledajte %2$s zapisnike za detalje. Zadnja pogreška dogodila se prije %3$d minute</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">U datoteci %2$s otkrivene su %1$d pogreške</item>
+		<item quantity="one">U datoteci %2$s otkrivena je %1$d pogreška</item>
+		<item quantity="other">U datoteci %2$s otkriveno je %1$d pogrešaka</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Preuzimanje radarske slike nije uspjelo</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">Jeste li sigurni da želite ukloniti sve podatke?</string>
 	<string name="save_app_debug_logs">Spremi zapisnike otklanjanja pogrešaka aplikacije</string>
 	<string name="save_settings">Spremi postavke</string>
+	<string name="see_more">Prikaži više</string>
 	<string name="settings2">Vratite se na postavke</string>
 	<string name="show_forecast">Prikaži prognozu</string>
 	<string name="show_radar">Prikaži Radar</string>

@@ -1,0 +1,3 @@
+• Nú er hægt að snúa símum í lárétta stöðu
+• Biður um aðgang að staðarneti þegar veðurþjónninn þinn er á heimanetinu, eins og Android 17 krefst
+• Villugluggi JSON-skrár býður nú upp á valkostina Sjá meira og Loka

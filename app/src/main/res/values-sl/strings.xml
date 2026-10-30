@@ -9,6 +9,7 @@
 	<string name="avg">povpr</string>
 	<string name="battery_warning">Opozorilo: Če omogočite zgornjo možnost, se lahko baterija izprazni hitreje kot običajno</string>
 	<string name="bgColour">Izbirnik barv ozadja pripomočka</string>
+	<string name="close">Zapri</string>
 	<string name="custom2">Po meri</string>
 	<string name="custom_setting">Barve po meri</string>
 	<string name="custom_url">Izbirno: URL po meri</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Svetla tema</string>
 	<string name="local_network_permission_denied">Dostop do lokalne vremenske postaje ni na voljo, dokler v nastavitvah Androida ne odobrite dovoljenja Naprave v bližini. Vremenski podatki iz javnega interneta se lahko še vedno posodabljajo.</string>
 	<string name="local_network_permission_explanation">Dovolite aplikaciji %1$s dostop do vremenskih podatkov v vašem domačem omrežju. Vremenski podatki iz javnega interneta bodo delovali tudi brez tega dovoljenja.</string>
+	<string name="local_network_permission_open_settings">Dostop do lokalnega omrežja je bil zavrnjen, zato Android ne bo več vprašal. Za dostop do vremenskih podatkov v domačem omrežju v nastavitvah Androida vklopite Naprave v bližini za %1$s. Želite odpreti nastavitve zdaj?</string>
 	<string name="local_network_permission_title">Dostop do lokalnega omrežja</string>
 	<string name="manual_update">Ročne posodobitve</string>
 	<string name="manual_update_set_refresh_screen_to_load">Ročna posodobitev je nastavljena, povlecite po zaslonu za nalaganje</string>
@@ -86,6 +88,12 @@
 		<item quantity="other">Med posodabljanjem je bilo zaznanih %1$d napak, za podrobnosti si oglejte dnevnike %2$s. Zadnja napaka se je zgodila pred %3$d minutami</item>
 		<item quantity="two">Med posodabljanjem je bilo zaznanih %1$d napak, za podrobnosti si oglejte dnevnike %2$s. Zadnja napaka se je zgodila pred %3$d minutami</item>
 	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">V datoteki %2$s so bile zaznane %1$d napake</item>
+		<item quantity="one">V datoteki %2$s je bila zaznana %1$d napaka</item>
+		<item quantity="other">V datoteki %2$s je bilo zaznanih %1$d napak</item>
+		<item quantity="two">V datoteki %2$s sta bili zaznani %1$d napaki</item>
+	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Prenos radarske slike ni uspel</string>
 	<string name="radar_still_downloading">Radarska slika se še nalaga</string>
@@ -115,6 +123,7 @@
 	<string name="remove_all_data">Ali ste prepričani, da želite odstraniti vse podatke?</string>
 	<string name="save_app_debug_logs">Shranite dnevnike odpravljanja napak aplikacije</string>
 	<string name="save_settings">Shrani nastavitve</string>
+	<string name="see_more">Prikaži več</string>
 	<string name="settings2">Nazaj na nastavitve</string>
 	<string name="show_forecast">Prikaži napoved</string>
 	<string name="show_radar">Pokaži Radar</string>

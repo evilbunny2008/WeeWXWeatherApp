@@ -9,6 +9,7 @@
 	<string name="avg">ສະເລ່ຍ</string>
 	<string name="battery_warning">ຄຳເຕືອນ: ການເປີດໃຊ້ຕົວເລືອກຂ້າງເທິງອາດເຮັດໃຫ້ແບັດເຕີຣີໝົດໄວກວ່າປົກກະຕິ</string>
 	<string name="bgColour">ຕົວເລືອກສີພື້ນຫຼັງວິດເຈັດ</string>
+	<string name="close">ປິດ</string>
 	<string name="custom2">ກຳນົດເອງ</string>
 	<string name="custom_setting">ສີກຳນົດເອງ</string>
 	<string name="custom_url">ທາງເລືອກ: URL ກຳນົດເອງ</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ຊຸດຮູບແບບແຈ້ງ</string>
 	<string name="local_network_permission_denied">ບໍ່ສາມາດເຂົ້າເຖິງສະຖານີສະພາບອາກາດທ້ອງຖິ່ນໄດ້ຈົນກວ່າທ່ານຈະອະນຸຍາດອຸປະກອນໃກ້ຄຽງໃນການຕັ້ງຄ່າ Android. ຂໍ້ມູນສະພາບອາກາດສາທາລະນະຈາກອິນເຕີເນັດຍັງສາມາດອັບເດດໄດ້.</string>
 	<string name="local_network_permission_explanation">ອະນຸຍາດໃຫ້ %1$s ເຂົ້າເຖິງຂໍ້ມູນສະພາບອາກາດໃນເຄືອຂ່າຍບ້ານຂອງທ່ານ. ຂໍ້ມູນສະພາບອາກາດສາທາລະນະຈາກອິນເຕີເນັດຈະຍັງເຮັດວຽກໄດ້ໂດຍບໍ່ຕ້ອງມີການອະນຸຍາດນີ້.</string>
+	<string name="local_network_permission_open_settings">ການເຂົ້າເຖິງເຄືອຂ່າຍທ້ອງຖິ່ນຖືກປະຕິເສດ, ສະນັ້ນ Android ຈະບໍ່ຖາມອີກ. ເພື່ອເຂົ້າເຖິງຂໍ້ມູນສະພາບອາກາດໃນເຄືອຂ່າຍບ້ານຂອງທ່ານ, ໃຫ້ເປີດ ອຸປະກອນທີ່ຢູ່ໃກ້ຄຽງ ສຳລັບ %1$s ໃນການຕັ້ງຄ່າ Android. ເປີດການຕັ້ງຄ່າດຽວນີ້ບໍ?</string>
 	<string name="local_network_permission_title">ການເຂົ້າເຖິງເຄືອຂ່າຍທ້ອງຖິ່ນ</string>
 	<string name="manual_update">ອັບເດດດ້ວຍຕົນເອງ</string>
 	<string name="manual_update_set_refresh_screen_to_load">ຕັ້ງເປັນອັບເດດດ້ວຍຕົນເອງແລ້ວ, ປັດໜ້າຈໍເພື່ອໂຫຼດຄືນ</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">ພົບຂໍ້ຜິດພາດ %1$d ລາຍການຂະນະອັບເດດ. ເບິ່ງບັນທຶກ %2$s ສຳລັບລາຍລະອຽດ. ຂໍ້ຜິດພາດຫຼ້າສຸດເກີດຂຶ້ນ %3$d ນາທີກ່ອນ</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">ພົບຂໍ້ຜິດພາດ %1$d ລາຍການໃນໄຟລ໌ %2$s</item>
 	</plurals>
 	<string name="radar">ເຣດາ</string>
 	<string name="radar_download_failed">ບໍ່ສາມາດດາວໂຫຼດຮູບເຣດາໄດ້</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບຂໍ້ມູນທັງໝົດ?</string>
 	<string name="save_app_debug_logs">ບັນທຶກບັນທຶກດີບັກຂອງແອັບ</string>
 	<string name="save_settings">ບັນທຶກການຕັ້ງຄ່າ</string>
+	<string name="see_more">ເບິ່ງເພີ່ມເຕີມ</string>
 	<string name="settings2">ກັບໄປທີ່ການຕັ້ງຄ່າ</string>
 	<string name="show_forecast">ສະແດງພະຍາກອນ</string>
 	<string name="show_radar">ສະແດງເຣດາ</string>

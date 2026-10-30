@@ -1,0 +1,3 @@
+• Telefóny teraz možno otočiť na šírku
+• Žiada o prístup k miestnej sieti, keď je váš meteorologický server v domácej sieti, ako to vyžaduje Android 17
+• Dialógové okno s chybami súboru JSON teraz ponúka možnosti Zobraziť viac a Zavrieť

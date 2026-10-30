@@ -9,6 +9,7 @@
 	<string name="avg">เฉลี่ย</string>
 	<string name="battery_warning">คำเตือน: การเปิดใช้งานตัวเลือกข้างต้นอาจทำให้แบตเตอรี่หมดเร็วกว่าปกติ</string>
 	<string name="bgColour">เครื่องมือเลือกสีพื้นหลังวิดเจ็ต</string>
+	<string name="close">ปิด</string>
 	<string name="custom2">กำหนดเอง</string>
 	<string name="custom_setting">สีที่กำหนดเอง</string>
 	<string name="custom_url">ทางเลือก: URL ที่กำหนดเอง</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ธีมแสง</string>
 	<string name="local_network_permission_denied">ไม่สามารถเข้าถึงสถานีตรวจอากาศภายในได้จนกว่าคุณจะให้สิทธิ์อุปกรณ์ที่อยู่ใกล้เคียงในการตั้งค่า Android ข้อมูลสภาพอากาศจากอินเทอร์เน็ตสาธารณะยังคงอัปเดตได้</string>
 	<string name="local_network_permission_explanation">อนุญาตให้ %1$s เข้าถึงข้อมูลสภาพอากาศในเครือข่ายภายในบ้านของคุณ ข้อมูลสภาพอากาศจากอินเทอร์เน็ตสาธารณะจะยังคงใช้งานได้โดยไม่ต้องมีสิทธิ์นี้</string>
+	<string name="local_network_permission_open_settings">การเข้าถึงเครือข่ายภายในถูกปฏิเสธ Android จึงจะไม่ถามอีก หากต้องการเข้าถึงข้อมูลสภาพอากาศในเครือข่ายภายในบ้าน ให้เปิด อุปกรณ์ที่อยู่ใกล้เคียง สำหรับ %1$s ในการตั้งค่า Android เปิดการตั้งค่าเลยไหม</string>
 	<string name="local_network_permission_title">การเข้าถึงเครือข่ายภายใน</string>
 	<string name="manual_update">การอัปเดตด้วยตนเอง</string>
 	<string name="manual_update_set_refresh_screen_to_load">ชุดอัปเดตด้วยตนเอง ปัดหน้าจอรีเฟรชเพื่อโหลด</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">ตรวจพบข้อผิดพลาด %1$d ขณะอัปเดต โปรดดูรายละเอียดบันทึก %2$s เกิดข้อผิดพลาดครั้งล่าสุดเมื่อ %3$d นาทีที่แล้ว</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">พบข้อผิดพลาด %1$d รายการในไฟล์ %2$s</item>
 	</plurals>
 	<string name="radar">เรดาร์</string>
 	<string name="radar_download_failed">ดาวน์โหลดภาพเรดาร์ไม่สำเร็จ</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลทั้งหมด</string>
 	<string name="save_app_debug_logs">บันทึกบันทึกการแก้ไขข้อบกพร่องของแอป</string>
 	<string name="save_settings">บันทึกการตั้งค่า</string>
+	<string name="see_more">ดูเพิ่มเติม</string>
 	<string name="settings2">กลับไปที่การตั้งค่า</string>
 	<string name="show_forecast">แสดงการพยากรณ์</string>
 	<string name="show_radar">แสดงเรดาร์</string>

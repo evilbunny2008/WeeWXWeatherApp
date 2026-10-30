@@ -9,6 +9,7 @@
 	<string name="avg">purata</string>
 	<string name="battery_warning">Amaran: Mendayakan pilihan di atas boleh menghabiskan bateri anda lebih cepat daripada biasa</string>
 	<string name="bgColour">Pemilih Warna Latar Belakang Widget</string>
+	<string name="close">Tutup</string>
 	<string name="custom2">Tersuai</string>
 	<string name="custom_setting">Warna Tersuai</string>
 	<string name="custom_url">Pilihan: URL Tersuai</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema Cerah</string>
 	<string name="local_network_permission_denied">Akses ke stesen cuaca setempat tidak tersedia sehingga anda memberikan kebenaran Peranti berdekatan dalam tetapan Android. Data cuaca awam daripada internet masih boleh dikemas kini.</string>
 	<string name="local_network_permission_explanation">Benarkan %1$s mencapai data cuaca pada rangkaian rumah anda. Data cuaca awam daripada internet akan terus berfungsi tanpa kebenaran ini.</string>
+	<string name="local_network_permission_open_settings">Akses rangkaian setempat telah ditolak, jadi Android tidak akan bertanya lagi. Untuk mencapai data cuaca pada rangkaian rumah anda, hidupkan Peranti berdekatan untuk %1$s dalam tetapan Android. Buka tetapan sekarang?</string>
 	<string name="local_network_permission_title">Akses rangkaian setempat</string>
 	<string name="manual_update">Kemas Kini Manual</string>
 	<string name="manual_update_set_refresh_screen_to_load">Kemas kini manual ditetapkan, leret untuk memuat semula skrin</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">Terdapat %1$d ralat dikesan semasa mengemas kini. Lihat log %2$s untuk butiran. Ralat terakhir berlaku %3$d minit yang lalu</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">%1$d ralat dikesan dalam fail %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Gagal memuat turun imej radar</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">Adakah anda pasti mahu mengalih keluar semua data?</string>
 	<string name="save_app_debug_logs">Simpan log nyahpepijat apl</string>
 	<string name="save_settings">Simpan Tetapan</string>
+	<string name="see_more">Lihat Lagi</string>
 	<string name="settings2">Kembali ke Tetapan</string>
 	<string name="show_forecast">Tunjukkan Ramalan</string>
 	<string name="show_radar">Tunjukkan Radar</string>

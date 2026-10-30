@@ -9,6 +9,7 @@
 	<string name="avg">keskm</string>
 	<string name="battery_warning">Hoiatus. Ülaltoodud valiku lubamine võib aku tavapärasest kiiremini tühjendada</string>
 	<string name="bgColour">Vidina taustavärvi valija</string>
+	<string name="close">Sulge</string>
 	<string name="custom2">Kohandatud</string>
 	<string name="custom_setting">Kohandatud värvid</string>
 	<string name="custom_url">Valikuline: kohandatud URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Valguse teema</string>
 	<string name="local_network_permission_denied">Juurdepääs kohalikule ilmajaamale pole saadaval enne, kui annad Androidi seadetes loa Läheduses olevad seadmed. Avaliku interneti ilmaandmeid saab endiselt värskendada.</string>
 	<string name="local_network_permission_explanation">Luba %1$s-il pääseda ligi ilmaandmetele sinu koduvõrgus. Avaliku interneti ilmaandmed töötavad ka ilma selle loata edasi.</string>
+	<string name="local_network_permission_open_settings">Kohaliku võrgu juurdepääsust keelduti, seega Android enam ei küsi. Koduvõrgu ilmaandmete kasutamiseks lülitage Androidi seadetes rakenduse %1$s jaoks sisse Läheduses olevad seadmed. Kas avada seaded kohe?</string>
 	<string name="local_network_permission_title">Kohtvõrgu juurdepääs</string>
 	<string name="manual_update">Käsitsi värskendused</string>
 	<string name="manual_update_set_refresh_screen_to_load">Käsitsi värskendus on määratud, laadimiseks pühkige värskenduskuva</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Värskendamisel tuvastati %1$d viga. Üksikasju vaadake %2$s logist. Viimane viga ilmnes %3$d minutit tagasi</item>
 		<item quantity="other">Värskendamise ajal tuvastati %1$d viga. Üksikasju vaadake %2$s logist. Viimane viga ilmnes %3$d minutit tagasi</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Failis %2$s tuvastati %1$d viga</item>
+		<item quantity="other">Failis %2$s tuvastati %1$d viga</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Radari kujutise allalaadimine ebaõnnestus</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Kas olete kindel, et soovite kõik andmed eemaldada?</string>
 	<string name="save_app_debug_logs">Salvestage rakenduse silumislogid</string>
 	<string name="save_settings">Salvesta sätted</string>
+	<string name="see_more">Kuva rohkem</string>
 	<string name="settings2">Minge tagasi seadete juurde</string>
 	<string name="show_forecast">Näita prognoosi</string>
 	<string name="show_radar">Näita radarit</string>

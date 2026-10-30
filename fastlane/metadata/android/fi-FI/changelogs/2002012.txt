@@ -1,0 +1,3 @@
+• Puhelimet voi nyt kääntää vaakasuuntaan
+• Pyytää lähiverkon käyttöoikeutta, kun sääpalvelimesi on kotiverkossa, kuten Android 17 edellyttää
+• JSON-tiedoston virheikkunassa on nyt vaihtoehdot Näytä lisää ja Sulje

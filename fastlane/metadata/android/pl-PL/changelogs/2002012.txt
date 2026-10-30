@@ -1,0 +1,3 @@
+• Telefony można teraz obracać do orientacji poziomej
+• Prosi o dostęp do sieci lokalnej, gdy serwer pogodowy znajduje się w sieci domowej, zgodnie z wymaganiami Androida 17
+• Okno błędów pliku JSON ma teraz opcje Pokaż więcej i Zamknij

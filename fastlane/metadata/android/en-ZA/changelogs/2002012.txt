@@ -1,0 +1,3 @@
+• Phones can now be rotated to landscape
+• Asks for local network access when your weather server is on your home network, as Android 17 requires
+• The JSON file errors dialog now has See More and Close options

@@ -1,0 +1,3 @@
+• Giờ đây có thể xoay điện thoại sang chế độ ngang
+• Yêu cầu quyền truy cập mạng cục bộ khi máy chủ thời tiết của bạn nằm trong mạng gia đình, theo yêu cầu của Android 17
+• Hộp thoại lỗi tệp JSON giờ có các tùy chọn Xem thêm và Đóng

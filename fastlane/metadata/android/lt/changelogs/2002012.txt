@@ -1,0 +1,3 @@
+• Telefonus dabar galima pasukti į gulsčią padėtį
+• Prašo prieigos prie vietinio tinklo, kai jūsų orų serveris yra namų tinkle, kaip reikalauja Android 17
+• JSON failo klaidų dialogo lange dabar yra parinktys „Rodyti daugiau“ ir „Uždaryti“

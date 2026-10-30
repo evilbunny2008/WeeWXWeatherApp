@@ -9,6 +9,7 @@
 	<string name="avg">media</string>
 	<string name="battery_warning">Attenziun: Sche Vus activais l’opziun survart, po la battaria sa svidar pli svelt che normal</string>
 	<string name="bgColour">Tscherna da la colur dal fund dal widget</string>
+	<string name="close">Serrar</string>
 	<string name="custom2">Persunalisà</string>
 	<string name="custom_setting">Colurs persunalisadas</string>
 	<string name="custom_url">Facultativ: URL persunalisà</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema cler</string>
 	<string name="local_network_permission_denied">L’access a la staziun meteorologica locala n’è betg disponibel fin che Vus concedais la permissiun per apparats en vischinanza en ils parameters dad Android. Las datas publicas da l’aura da l’internet pon vegnir actualisadas vinavant.</string>
 	<string name="local_network_permission_explanation">Permetter a %1$s d’acceder a las datas da l’aura en Voss rait da chasa. Las datas publicas da l’aura da l’internet funcziunan vinavant senza questa permissiun.</string>
+	<string name="local_network_permission_open_settings">L’access a la rait locala è vegnì refusà, perquai na dumonda Android betg pli. Per accedere a las datas da l’aura en Vossa rait da chasa, activai Apparats en la vischinanza per %1$s en ils parameters dad Android. Avrir ussa ils parameters?</string>
 	<string name="local_network_permission_title">Access a la rait locala</string>
 	<string name="manual_update">Actualisaziuns manualas</string>
 	<string name="manual_update_set_refresh_screen_to_load">Actualisaziun manuala definida, stritgai per rinfrestgar il visur e chargiar</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">%1$d errur è vegnida chattada durant l’actualisaziun. Guardai ils protocols da %2$s per detagls. L’ultima errur è capitada avant %3$d minutas</item>
 		<item quantity="other">%1$d errurs èn vegnidas chattadas durant l’actualisaziun. Guardai ils protocols da %2$s per detagls. L’ultima errur è capitada avant %3$d minutas</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%1$d sbagl è vegnì chattà en la datoteca %2$s</item>
+		<item quantity="other">%1$d sbagls èn vegnids chattads en la datoteca %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Impussibel da telechargiar il maletg dal radar</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Essas Vus segir che Vus vulais allontanar tut las datas?</string>
 	<string name="save_app_debug_logs">Memorisar ils protocols da debug da l’app</string>
 	<string name="save_settings">Memorisar ils parameters</string>
+	<string name="see_more">Mussar dapli</string>
 	<string name="settings2">Turnar als parameters</string>
 	<string name="show_forecast">Mussar la prognosa</string>
 	<string name="show_radar">Mussar il radar</string>

@@ -1,0 +1,3 @@
+• Telefoner kan nu drejes til liggende format
+• Beder om adgang til lokalnetværket, når din vejrserver er på dit hjemmenetværk, som Android 17 kræver
+• Dialogen med fejl i JSON-filen har nu valgmulighederne Se mere og Luk

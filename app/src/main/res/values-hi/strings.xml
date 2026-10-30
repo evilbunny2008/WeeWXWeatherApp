@@ -9,6 +9,7 @@
 	<string name="avg">औसत</string>
 	<string name="battery_warning">चेतावनी: उपरोक्त विकल्प को सक्षम करने से आपकी बैटरी सामान्य से अधिक तेजी से खत्म हो सकती है</string>
 	<string name="bgColour">विजेट पृष्ठभूमि रंग पिकर</string>
+	<string name="close">बंद करें</string>
 	<string name="custom2">कस्टम</string>
 	<string name="custom_setting">कस्टम रंग</string>
 	<string name="custom_url">वैकल्पिक: कस्टम यूआरएल</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">लाइट थीम</string>
 	<string name="local_network_permission_denied">जब तक आप Android सेटिंग में आस-पास के डिवाइस की अनुमति नहीं देते, तब तक लोकल मौसम स्टेशन का ऐक्सेस उपलब्ध नहीं है। सार्वजनिक इंटरनेट का मौसम डेटा अब भी अपडेट हो सकता है।</string>
 	<string name="local_network_permission_explanation">%1$s को आपके होम नेटवर्क पर मौसम डेटा तक पहुँचने की अनुमति दें। इस अनुमति के बिना भी सार्वजनिक इंटरनेट का मौसम डेटा काम करता रहेगा।</string>
+	<string name="local_network_permission_open_settings">लोकल नेटवर्क ऐक्सेस अस्वीकार कर दिया गया था, इसलिए Android दोबारा नहीं पूछेगा। अपने होम नेटवर्क का मौसम डेटा पाने के लिए Android सेटिंग में %1$s के लिए आस-पास मौजूद डिवाइस चालू करें। क्या अभी सेटिंग खोलें?</string>
 	<string name="local_network_permission_title">लोकल नेटवर्क ऐक्सेस</string>
 	<string name="manual_update">मैन्युअल अपडेट</string>
 	<string name="manual_update_set_refresh_screen_to_load">मैनुअल अपडेट सेट, लोड करने के लिए रिफ्रेश स्क्रीन को स्वाइप करें</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">अपडेट करते समय %1$d त्रुटि का पता चला, विवरण के लिए %2$s लॉग देखें। अंतिम त्रुटि %3$d मिनट पहले हुई</item>
 		<item quantity="other">अद्यतन करते समय %1$d त्रुटियाँ पाई गईं, विवरण के लिए %2$s लॉग देखें। अंतिम त्रुटि %3$d मिनट पहले हुई</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s फ़ाइल में %1$d गड़बड़ी मिली</item>
+		<item quantity="other">%2$s फ़ाइल में %1$d गड़बड़ियां मिलीं</item>
 	</plurals>
 	<string name="radar">राडार</string>
 	<string name="radar_download_failed">रडार छवि डाउनलोड करने में विफल</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">क्या आप वाकई सारा डेटा हटाना चाहते हैं?</string>
 	<string name="save_app_debug_logs">ऐप डिबग लॉग सहेजें</string>
 	<string name="save_settings">सेटिंग्स सेव करें</string>
+	<string name="see_more">और देखें</string>
 	<string name="settings2">सेटिंग्स पर वापस जाएं</string>
 	<string name="show_forecast">पूर्वानुमान दिखाएँ</string>
 	<string name="show_radar">राडार दिखाएँ</string>

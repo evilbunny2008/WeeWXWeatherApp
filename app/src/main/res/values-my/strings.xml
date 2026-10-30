@@ -9,6 +9,7 @@
 	<string name="avg">ပျမ်းမျှ</string>
 	<string name="battery_warning">သတိပေးချက် - အထက်ဖော်ပြပါရွေးချယ်မှုကိုပုံမှန်ထက်သင့်ဘက်ထရီကိုမြန်မြန်ဆန်ဆန်လျော့နည်းစေနိုင်သည်</string>
 	<string name="bgColour">ဝစ်ဂျက်နောက်ခံအရောင်ရွေးသူ</string>
+	<string name="close">ပိတ်ရန်</string>
 	<string name="custom2">စိတ်ကြိုက်</string>
 	<string name="custom_setting">စိတ်ကြိုက်အရောင်များ</string>
 	<string name="custom_url">ရွေးချယ်နိုင်သည်- စိတ်ကြိုက် URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">အလင်းရောင် Theme</string>
 	<string name="local_network_permission_denied">Android ဆက်တင်များတွင် အနီးရှိစက်များ ခွင့်ပြုချက်ကို မပေးမချင်း ဒေသတွင်း မိုးလေဝသစခန်းကို ဝင်ရောက်၍ မရပါ။ အများသုံးအင်တာနက် ရာသီဥတုဒေတာကို ဆက်လက် အပ်ဒိတ်လုပ်နိုင်ပါသည်။</string>
 	<string name="local_network_permission_explanation">သင့်အိမ်ကွန်ရက်ပေါ်ရှိ ရာသီဥတုဒေတာကို %1$s ရယူနိုင်ရန် ခွင့်ပြုပါ။ ဤခွင့်ပြုချက်မရှိဘဲလည်း အများသုံးအင်တာနက် ရာသီဥတုဒေတာ ဆက်လက်အလုပ်လုပ်ပါမည်။</string>
+	<string name="local_network_permission_open_settings">ဒေသတွင်းကွန်ရက် ဝင်ခွင့်ကို ငြင်းပယ်ထားသဖြင့် Android က ထပ်မမေးတော့ပါ။ သင့်အိမ်ကွန်ရက်ပေါ်ရှိ မိုးလေဝသဒေတာကို ရယူရန် Android ဆက်တင်များတွင် %1$s အတွက် အနီးရှိ စက်များကို ဖွင့်ပါ။ ဆက်တင်များကို ယခု ဖွင့်မလား။</string>
 	<string name="local_network_permission_title">ဒေသတွင်း ကွန်ရက် ဝင်ရောက်ခွင့်</string>
 	<string name="manual_update">လက်စွဲမွမ်းမံမှုများ</string>
 	<string name="manual_update_set_refresh_screen_to_load">လက်စွဲမွမ်းမံခြင်း SET, Swip Refresh မျက်နှာပြင်ကိုတင်ရန်</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">အပ်ဒိတ်လုပ်နေစဉ်တွင် အမှားအယွင်း %1$d ခု တွေ့ရှိခဲ့ပြီး အသေးစိတ်အချက်အလက်များအတွက် %2$s မှတ်တမ်းများကို ကြည့်ရှုပါ။ လွန်ခဲ့သည့် %3$d မိနစ်က နောက်ဆုံးအမှား ဖြစ်ပွားခဲ့သည်။</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">%2$s ဖိုင်တွင် အမှား %1$d ခု တွေ့ရှိခဲ့သည်</item>
 	</plurals>
 	<string name="radar">ရေဒါ</string>
 	<string name="radar_download_failed">ရေဒါပုံရိပ်ကိုဒေါင်းလုပ်ဆွဲရန်မအောင်မြင်ပါ</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">ဒေတာအားလုံးကိုဖယ်ရှားချင်တာသေချာလား။</string>
 	<string name="save_app_debug_logs">အက်ပ် ပြစ်ချက်ရှာ မှတ်တမ်းများကို သိမ်းရန်</string>
 	<string name="save_settings">ချိန်ညှိချက်များကိုသိမ်းဆည်းပါ</string>
+	<string name="see_more">ပိုမိုကြည့်ရန်</string>
 	<string name="settings2">နောက်သို့ Settings သို့ပြန်သွားပါ</string>
 	<string name="show_forecast">ခန့်မှန်းချက်ကိုပြသပါ</string>
 	<string name="show_radar">ရေဒါပြတယ်</string>

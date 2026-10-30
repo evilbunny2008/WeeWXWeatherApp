@@ -9,6 +9,7 @@
 	<string name="avg">орт</string>
 	<string name="battery_warning">Эскертүү: Жогорудагы опцияны көздөгөн вариант батарейкаңызды адаттагыдан тезирээк тазалашы мүмкүн</string>
 	<string name="bgColour">Виджет фон түсү Пикер</string>
+	<string name="close">Жабуу</string>
 	<string name="custom2">Ыңгайлаштырылган</string>
 	<string name="custom_setting">Өзгөчөлөштүрүлгөн түстөр</string>
 	<string name="custom_url">Кошумча: Ыңгайлаштырылган URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Жарык темасы</string>
 	<string name="local_network_permission_denied">Android жөндөөлөрүндө «Жакын жердеги түзмөктөр» уруксатын бермейинче жергиликтүү аба ырайы станциясына кирүү мүмкүн эмес. Коомдук интернеттеги аба ырайы маалыматтары дагы эле жаңырышы мүмкүн.</string>
 	<string name="local_network_permission_explanation">%1$s колдонмосуна үй тармагыңыздагы аба ырайы маалыматтарына жетүүгө уруксат бериңиз. Коомдук интернеттеги аба ырайы маалыматтары бул уруксатсыз да иштей берет.</string>
+	<string name="local_network_permission_open_settings">Жергиликтүү тармакка кирүүдөн баш тартылды, ошондуктан Android кайра сурабайт. Үй тармагыңыздагы аба ырайы маалыматтарын алуу үчүн Android жөндөөлөрүнөн %1$s үчүн «Жакын жердеги түзмөктөр» уруксатын күйгүзүңүз. Жөндөөлөрдү азыр ачасызбы?</string>
 	<string name="local_network_permission_title">Жергиликтүү тармакка кирүү</string>
 	<string name="manual_update">Кол менен жаңыртуулар</string>
 	<string name="manual_update_set_refresh_screen_to_load">Кол менен жаңыртуу топтому, жүктөө үчүн сергиңизди серпүү экраны</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Жаңыртуу учурунда %1$d ката табылды, чоо-жайы үчүн %2$s журналдарын көрүңүз. Акыркы ката %3$d мүнөт мурун болгон</item>
 		<item quantity="other">Жаңыртуу учурунда %1$d ката табылды, чоо-жайы үчүн %2$s журналдарын көрүңүз. Акыркы ката %3$d мүнөт мурун болгон</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s файлынан %1$d ката табылды</item>
+		<item quantity="other">%2$s файлынан %1$d ката табылды</item>
 	</plurals>
 	<string name="radar">Радар</string>
 	<string name="radar_download_failed">Радар сүрөтүн жүктөп алган жок</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Бардык маалыматтарды жок кылгыңыз келеби?</string>
 	<string name="save_app_debug_logs">Колдонмо оңдоо журналдарын сактаңыз</string>
 	<string name="save_settings">Жөндөөлөрдү сактоо</string>
+	<string name="see_more">Дагы көрүү</string>
 	<string name="settings2">Жөндөөлөргө кайтуу</string>
 	<string name="show_forecast">Болжолдоо көрсөт</string>
 	<string name="show_radar">Шоу радар</string>

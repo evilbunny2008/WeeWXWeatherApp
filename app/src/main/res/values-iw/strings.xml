@@ -9,6 +9,7 @@
 	<string name="avg">ממוצע</string>
 	<string name="battery_warning">אזהרה: הפעלת האפשרות שלמעלה עלולה לרוקן את הסוללה מהר מהרגיל</string>
 	<string name="bgColour">בחירת צבע הרקע של הווידג׳ט</string>
+	<string name="close">סגירה</string>
 	<string name="custom2">מותאם אישית</string>
 	<string name="custom_setting">צבעים מותאמים אישית</string>
 	<string name="custom_url">אופציונלי: כתובת URL מותאמת אישית</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ערכת נושא בהירה</string>
 	<string name="local_network_permission_denied">הגישה לתחנת מזג אוויר מקומית אינה זמינה עד שתעניק את ההרשאה ’מכשירים בקרבת מקום’ בהגדרות Android. נתוני מזג אוויר ציבוריים מהאינטרנט עדיין יכולים להתעדכן.</string>
 	<string name="local_network_permission_explanation">לאפשר ל-%1$s לגשת לנתוני מזג האוויר ברשת הביתית שלך. נתוני מזג אוויר ציבוריים מהאינטרנט ימשיכו לפעול גם בלי ההרשאה הזו.</string>
+	<string name="local_network_permission_open_settings">הגישה לרשת המקומית נדחתה, ולכן Android לא ישאל שוב. כדי לגשת לנתוני מזג האוויר ברשת הביתית, יש להפעיל את ההרשאה ״מכשירים בקרבת מקום״ עבור %1$s בהגדרות Android. לפתוח את ההגדרות עכשיו?</string>
 	<string name="local_network_permission_title">גישה לרשת המקומית</string>
 	<string name="manual_update">עדכונים ידניים</string>
 	<string name="manual_update_set_refresh_screen_to_load">הוגדר עדכון ידני, יש להחליק כדי לרענן את המסך ולטעון</string>
@@ -83,6 +85,11 @@
 		<item quantity="one">זוהתה %1$d שגיאה במהלך העדכון. לפרטים, ניתן לעיין ביומני %2$s. השגיאה האחרונה אירעה לפני %3$d דקות</item>
 		<item quantity="two">זוהו %1$d שגיאות במהלך העדכון. לפרטים, ניתן לעיין ביומני %2$s. השגיאה האחרונה אירעה לפני %3$d דקות</item>
 		<item quantity="other">זוהו %1$d שגיאות במהלך העדכון. לפרטים, ניתן לעיין ביומני %2$s. השגיאה האחרונה אירעה לפני %3$d דקות</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">זוהתה שגיאה אחת (%1$d) בקובץ %2$s</item>
+		<item quantity="two">זוהו %1$d שגיאות בקובץ %2$s</item>
+		<item quantity="other">זוהו %1$d שגיאות בקובץ %2$s</item>
 	</plurals>
 	<string name="radar">מכ״ם</string>
 	<string name="radar_download_failed">הורדת תמונת המכ״ם נכשלה</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">בטוח שברצונך להסיר את כל הנתונים?</string>
 	<string name="save_app_debug_logs">שמירת יומני ניפוי באגים של האפליקציה</string>
 	<string name="save_settings">שמירת ההגדרות</string>
+	<string name="see_more">הצגת פרטים נוספים</string>
 	<string name="settings2">חזרה להגדרות</string>
 	<string name="show_forecast">הצגת תחזית</string>
 	<string name="show_radar">הצגת מכ״ם</string>

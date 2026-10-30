@@ -1,0 +1,3 @@
+• Ara els telèfons es poden girar en horitzontal
+• Demana accés a la xarxa local quan el servidor meteorològic és a la xarxa de casa, tal com requereix Android 17
+• El diàleg d’errors del fitxer JSON ara té les opcions Mostra’n més i Tanca

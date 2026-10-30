@@ -9,6 +9,7 @@
 	<string name="avg">snitt</string>
 	<string name="battery_warning">Advarsel: Aktivering av alternativet ovenfor kan tømme batteriet raskere enn vanlig</string>
 	<string name="bgColour">Widget Bakgrunnsfargevelger</string>
+	<string name="close">Lukk</string>
 	<string name="custom2">Tilpasset</string>
 	<string name="custom_setting">Egendefinerte farger</string>
 	<string name="custom_url">Valgfritt: Egendefinert nettadresse</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Lys tema</string>
 	<string name="local_network_permission_denied">Tilgang til den lokale værstasjonen er utilgjengelig til du gir tillatelsen Enheter i nærheten i Android-innstillingene. Værdata fra det offentlige internettet kan fortsatt oppdateres.</string>
 	<string name="local_network_permission_explanation">Gi %1$s tilgang til værdata på hjemmenettverket ditt. Værdata fra det offentlige internettet vil fortsette å fungere uten denne tillatelsen.</string>
+	<string name="local_network_permission_open_settings">Tilgang til lokalt nettverk ble avslått, så Android spør ikke igjen. For å nå værdata på hjemmenettverket ditt må du slå på Enheter i nærheten for %1$s i Android-innstillingene. Vil du åpne innstillingene nå?</string>
 	<string name="local_network_permission_title">Tilgang til lokalt nettverk</string>
 	<string name="manual_update">Manuelle oppdateringer</string>
 	<string name="manual_update_set_refresh_screen_to_load">Manuell oppdateringssett, sveip oppdateringsskjermen for å laste</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Det ble oppdaget %1$d feil under oppdatering. Se %2$s logger for detaljer. Siste feil oppstod for %3$d minutter siden</item>
 		<item quantity="other">Det ble oppdaget %1$d feil under oppdatering. Se %2$s logger for detaljer. Siste feil oppstod for %3$d minutter siden</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Det ble funnet %1$d feil i filen %2$s</item>
+		<item quantity="other">Det ble funnet %1$d feil i filen %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Kunne ikke laste ned radarbildet</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Er du sikker på at du vil fjerne alle data?</string>
 	<string name="save_app_debug_logs">Lagre app-feilsøkingslogger</string>
 	<string name="save_settings">Lagre innstillinger</string>
+	<string name="see_more">Se mer</string>
 	<string name="settings2">Gå tilbake til innstillinger</string>
 	<string name="show_forecast">Vis værvarsel</string>
 	<string name="show_radar">Vis radar</string>

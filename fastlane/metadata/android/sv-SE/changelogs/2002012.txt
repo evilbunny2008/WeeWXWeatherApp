@@ -1,0 +1,3 @@
+• Telefoner kan nu vridas till liggande läge
+• Ber om åtkomst till det lokala nätverket när din väderserver finns på hemnätverket, som Android 17 kräver
+• Feldialogen för JSON-filer har nu alternativen Visa mer och Stäng

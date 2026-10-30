@@ -9,6 +9,7 @@
 	<string name="avg">media</string>
 	<string name="battery_warning">Aviso: activar a opción anterior pode esgotar a batería máis rápido do habitual</string>
 	<string name="bgColour">Selector de cor de fondo do widget</string>
+	<string name="close">Pechar</string>
 	<string name="custom2">Personalizado</string>
 	<string name="custom_setting">Cores personalizadas</string>
 	<string name="custom_url">Opcional: URL personalizado</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema lixeiro</string>
 	<string name="local_network_permission_denied">O acceso á estación meteorolóxica local non estará dispoñible ata que concedas o permiso de dispositivos próximos na configuración de Android. Os datos meteorolóxicos de Internet pública aínda se poden actualizar.</string>
 	<string name="local_network_permission_explanation">Permite que %1$s acceda aos datos meteorolóxicos da túa rede doméstica. Os datos meteorolóxicos de Internet pública seguirán funcionando sen este permiso.</string>
+	<string name="local_network_permission_open_settings">Denegouse o acceso á rede local, polo que Android non volverá preguntar. Para acceder aos datos meteorolóxicos da túa rede doméstica, activa Dispositivos próximos para %1$s na configuración de Android. Queres abrir a configuración agora?</string>
 	<string name="local_network_permission_title">Acceso á rede local</string>
 	<string name="manual_update">Actualizacións manuais</string>
 	<string name="manual_update_set_refresh_screen_to_load">Actualización manual configurada, desliza a pantalla de actualización para cargar</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Detectouse %1$d erro durante a actualización. Consulta os rexistros de %2$s para obter máis información. O último erro ocorreu hai %3$d minutos</item>
 		<item quantity="other">Detectáronse %1$d erros durante a actualización. Consulta os rexistros de %2$s para obter máis información. O último erro ocorreu hai %3$d minutos</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Detectouse %1$d erro no ficheiro %2$s</item>
+		<item quantity="other">Detectáronse %1$d erros no ficheiro %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Produciuse un erro ao descargar a imaxe do radar</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Estás seguro de que queres eliminar todos os datos?</string>
 	<string name="save_app_debug_logs">Garda os rexistros de depuración da aplicación</string>
 	<string name="save_settings">Gardar configuración</string>
+	<string name="see_more">Ver máis</string>
 	<string name="settings2">Volver á configuración</string>
 	<string name="show_forecast">Mostrar previsión</string>
 	<string name="show_radar">Mostrar radar</string>

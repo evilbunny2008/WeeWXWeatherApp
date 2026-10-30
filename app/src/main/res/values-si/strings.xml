@@ -9,6 +9,7 @@
 	<string name="avg">සාමාන්‍ය</string>
 	<string name="battery_warning">අවවාදයයි: ඉහත විකල්පය සක්‍රීය කිරීමෙන් ඔබේ බැටරිය සාමාන්‍යයට වඩා ඉක්මනින් බැස යා හැක</string>
 	<string name="bgColour">විජට් පසුබිම් වර්ණ තෝරනය</string>
+	<string name="close">වසන්න</string>
 	<string name="custom2">අභිරුචි</string>
 	<string name="custom_setting">අභිරුචි වර්ණ</string>
 	<string name="custom_url">විකල්ප: අභිරුචි URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ආලෝක තේමාව</string>
 	<string name="local_network_permission_denied">ඔබ Android සැකසීම් තුළ අසල උපාංග අවසරය ලබා දෙන තුරු ප්‍රාදේශීය කාලගුණ මධ්‍යස්ථාන ප්‍රවේශය නොමැත. අන්තර්ජාලයේ පොදු කාලගුණ දත්ත තවමත් යාවත්කාලීන විය හැක.</string>
 	<string name="local_network_permission_explanation">ඔබේ නිවසේ ජාලයේ ඇති කාලගුණ දත්ත වෙත ළඟා වීමට %1$s හට ඉඩ දෙන්න. අන්තර්ජාලයේ පොදු කාලගුණ දත්ත මෙම අවසරය නොමැතිව ද දිගටම ක්‍රියා කරයි.</string>
+	<string name="local_network_permission_open_settings">ස්ථානීය ජාල ප්‍රවේශය ප්‍රතික්ෂේප කළ නිසා Android නැවත නොඅසයි. ඔබේ නිවෙස් ජාලයේ කාලගුණ දත්ත ලබා ගැනීමට Android සැකසීම්හි %1$s සඳහා අවට උපාංග සක්‍රීය කරන්න. දැන් සැකසීම් විවෘත කරන්නද?</string>
 	<string name="local_network_permission_title">ප්‍රාදේශීය ජාල ප්‍රවේශය</string>
 	<string name="manual_update">අතින් යාවත්කාලීන කිරීම්</string>
 	<string name="manual_update_set_refresh_screen_to_load">අතින් යාවත්කාලීන කිරීම සකසා ඇත, පූරණය කිරීමට තිරය ස්වයිප් කර නැවුම් කරන්න</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">යාවත්කාලීන කිරීමේදී දෝෂ %1$d ක් හමු විය. විස්තර සඳහා %2$s ලොග බලන්න. අවසන් දෝෂය මිනිත්තු %3$d කට පෙර සිදු විය</item>
 		<item quantity="other">යාවත්කාලීන කිරීමේදී දෝෂ %1$d ක් හමු විය. විස්තර සඳහා %2$s ලොග බලන්න. අවසන් දෝෂය මිනිත්තු %3$d කට පෙර සිදු විය</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ගොනුවේ දෝෂ %1$dක් අනාවරණය විය</item>
+		<item quantity="other">%2$s ගොනුවේ දෝෂ %1$dක් අනාවරණය විය</item>
 	</plurals>
 	<string name="radar">රේඩාර්</string>
 	<string name="radar_download_failed">රේඩාර් රූපය බාගැනීමට අසමත් විය</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">ඔබට සියලු දත්ත ඉවත් කිරීමට අවශ්‍ය බව විශ්වාසද?</string>
 	<string name="save_app_debug_logs">යෙදුම් නිදොස් ලොග සුරකින්න</string>
 	<string name="save_settings">සැකසීම් සුරකින්න</string>
+	<string name="see_more">තව බලන්න</string>
 	<string name="settings2">සැකසීම් වෙත ආපසු යන්න</string>
 	<string name="show_forecast">අනාවැකිය පෙන්වන්න</string>
 	<string name="show_radar">රේඩාර් පෙන්වන්න</string>

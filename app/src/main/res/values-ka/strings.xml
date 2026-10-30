@@ -9,6 +9,7 @@
 	<string name="avg">საშ</string>
 	<string name="battery_warning">გაფრთხილება: ზემოაღნიშნული პარამეტრის ჩართვამ შესაძლოა თქვენი ბატარეა ჩვეულებრივზე უფრო სწრაფად დაასვენოს</string>
 	<string name="bgColour">ვიჯეტის ფონის ფერის ამომრჩევი</string>
+	<string name="close">დახურვა</string>
 	<string name="custom2">მორგებული</string>
 	<string name="custom_setting">მორგებული ფერები</string>
 	<string name="custom_url">სურვილისამებრ: მორგებული URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">მსუბუქი თემა</string>
 	<string name="local_network_permission_denied">ლოკალურ მეტეოსადგურზე წვდომა მიუწვდომელია, სანამ Android-ის პარამეტრებში ახლომდებარე მოწყობილობების ნებართვას არ მისცემთ. საჯარო ინტერნეტის ამინდის მონაცემები მაინც შეიძლება განახლდეს.</string>
 	<string name="local_network_permission_explanation">მიეცით %1$s-ს უფლება, მიაღწიოს ამინდის მონაცემებს თქვენს სახლის ქსელში. საჯარო ინტერნეტის ამინდის მონაცემები ამ ნებართვის გარეშეც გააგრძელებს მუშაობას.</string>
+	<string name="local_network_permission_open_settings">ლოკალურ ქსელზე წვდომა უარყოფილია, ამიტომ Android აღარ იკითხავს. სახლის ქსელში არსებული ამინდის მონაცემების მისაღებად Android-ის პარამეტრებში ჩართეთ „ახლომდებარე მოწყობილობები“ %1$s-ისთვის. გავხსნათ პარამეტრები ახლა?</string>
 	<string name="local_network_permission_title">ლოკალურ ქსელზე წვდომა</string>
 	<string name="manual_update">მექანიკური განახლებები</string>
 	<string name="manual_update_set_refresh_screen_to_load">ხელით განახლების ნაკრები, გადაფურცლეთ განახლების ეკრანი ჩასატვირთად</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">განახლებისას გამოვლინდა %1$d შეცდომა. დეტალებისთვის იხილეთ %2$s ჟურნალი. ბოლო შეცდომა მოხდა %3$d წუთის წინ</item>
 		<item quantity="other">განახლებისას გამოვლინდა %1$d შეცდომა. დეტალებისთვის იხილეთ %2$s ჟურნალი. ბოლო შეცდომა მოხდა %3$d წუთის წინ</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ფაილში აღმოჩენილია %1$d შეცდომა</item>
+		<item quantity="other">%2$s ფაილში აღმოჩენილია %1$d შეცდომა</item>
 	</plurals>
 	<string name="radar">რადარი</string>
 	<string name="radar_download_failed">რადარის სურათის ჩამოტვირთვა ვერ მოხერხდა</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">დარწმუნებული ხართ, რომ გსურთ წაშალოთ ყველა მონაცემი?</string>
 	<string name="save_app_debug_logs">შეინახეთ აპის გამართვის ჟურნალები</string>
 	<string name="save_settings">პარამეტრების შენახვა</string>
+	<string name="see_more">მეტის ნახვა</string>
 	<string name="settings2">დაუბრუნდით პარამეტრებს</string>
 	<string name="show_forecast">პროგნოზის ჩვენება</string>
 	<string name="show_radar">რადარის ჩვენება</string>

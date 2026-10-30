@@ -9,6 +9,7 @@
 	<string name="avg">ಸರಾಸರಿ</string>
 	<string name="battery_warning">ಎಚ್ಚರಿಕೆ: ಮೇಲಿನ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ ನಿಮ್ಮ ಬ್ಯಾಟರಿಯು ಸಾಮಾನ್ಯಕ್ಕಿಂತ ವೇಗವಾಗಿ ಖಾಲಿಯಾಗಬಹುದು</string>
 	<string name="bgColour">ವಿಜೆಟ್ ಹಿನ್ನೆಲೆ ಬಣ್ಣ ಪಿಕ್ಕರ್</string>
+	<string name="close">ಮುಚ್ಚಿ</string>
 	<string name="custom2">ಕಸ್ಟಮ್</string>
 	<string name="custom_setting">ಕಸ್ಟಮ್ ಬಣ್ಣಗಳು</string>
 	<string name="custom_url">ಐಚ್ಛಿಕ: ಕಸ್ಟಮ್ URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ಲೈಟ್ ಥೀಮ್</string>
 	<string name="local_network_permission_denied">Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಸಮೀಪದ ಸಾಧನಗಳ ಅನುಮತಿಯನ್ನು ನೀಡುವವರೆಗೆ ಸ್ಥಳೀಯ ಹವಾಮಾನ ಕೇಂದ್ರದ ಪ್ರವೇಶ ಲಭ್ಯವಿಲ್ಲ. ಸಾರ್ವಜನಿಕ ಇಂಟರ್ನೆಟ್ ಹವಾಮಾನ ಡೇಟಾ ಇನ್ನೂ ಅಪ್‌ಡೇಟ್ ಆಗಬಹುದು.</string>
 	<string name="local_network_permission_explanation">ನಿಮ್ಮ ಮನೆಯ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿರುವ ಹವಾಮಾನ ಡೇಟಾವನ್ನು ತಲುಪಲು %1$s ಗೆ ಅನುಮತಿಸಿ. ಈ ಅನುಮತಿ ಇಲ್ಲದೆಯೂ ಸಾರ್ವಜನಿಕ ಇಂಟರ್ನೆಟ್ ಹವಾಮಾನ ಡೇಟಾ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಲೇ ಇರುತ್ತದೆ.</string>
+	<string name="local_network_permission_open_settings">ಸ್ಥಳೀಯ ನೆಟ್‌ವರ್ಕ್ ಪ್ರವೇಶವನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ, ಆದ್ದರಿಂದ Android ಮತ್ತೆ ಕೇಳುವುದಿಲ್ಲ. ನಿಮ್ಮ ಹೋಮ್ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿರುವ ಹವಾಮಾನ ಡೇಟಾವನ್ನು ತಲುಪಲು Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ %1$s ಗಾಗಿ ಸಮೀಪದ ಸಾಧನಗಳನ್ನು ಆನ್ ಮಾಡಿ. ಈಗ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಬೇಕೇ?</string>
 	<string name="local_network_permission_title">ಸ್ಥಳೀಯ ನೆಟ್‌ವರ್ಕ್ ಪ್ರವೇಶ</string>
 	<string name="manual_update">ಹಸ್ತಚಾಲಿತ ನವೀಕರಣಗಳು</string>
 	<string name="manual_update_set_refresh_screen_to_load">ಹಸ್ತಚಾಲಿತ ಅಪ್‌ಡೇಟ್ ಸೆಟ್, ಲೋಡ್ ಮಾಡಲು ರಿಫ್ರೆಶ್ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಸ್ವೈಪ್ ಮಾಡಿ</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">ನವೀಕರಿಸುವಾಗ %1$d ದೋಷ ಕಂಡುಬಂದಿದೆ, ವಿವರಗಳಿಗಾಗಿ %2$s ಲಾಗ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ. %3$d ನಿಮಿಷಗಳ ಹಿಂದೆ ಕೊನೆಯ ದೋಷ ಸಂಭವಿಸಿದೆ</item>
 		<item quantity="other">ನವೀಕರಿಸುವಾಗ %1$d ದೋಷಗಳು ಕಂಡುಬಂದಿವೆ, ವಿವರಗಳಿಗಾಗಿ %2$s ಲಾಗ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ. %3$d ನಿಮಿಷಗಳ ಹಿಂದೆ ಕೊನೆಯ ದೋಷ ಸಂಭವಿಸಿದೆ</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ಫೈಲ್‌ನಲ್ಲಿ %1$d ದೋಷ ಪತ್ತೆಯಾಗಿದೆ</item>
+		<item quantity="other">%2$s ಫೈಲ್‌ನಲ್ಲಿ %1$d ದೋಷಗಳು ಪತ್ತೆಯಾಗಿವೆ</item>
 	</plurals>
 	<string name="radar">ರಾಡಾರ್</string>
 	<string name="radar_download_failed">ರಾಡಾರ್ ಚಿತ್ರವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ತೆಗೆದುಹಾಕಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?</string>
 	<string name="save_app_debug_logs">ಅಪ್ಲಿಕೇಶನ್ ಡೀಬಗ್ ಲಾಗ್‌ಗಳನ್ನು ಉಳಿಸಿ</string>
 	<string name="save_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಉಳಿಸಿ</string>
+	<string name="see_more">ಇನ್ನಷ್ಟು ನೋಡಿ</string>
 	<string name="settings2">ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹಿಂತಿರುಗಿ</string>
 	<string name="show_forecast">ಮುನ್ಸೂಚನೆಯನ್ನು ತೋರಿಸಿ</string>
 	<string name="show_radar">ರಾಡಾರ್ ತೋರಿಸಿ</string>

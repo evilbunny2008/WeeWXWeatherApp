@@ -1,0 +1,3 @@
+• Telefoner kan nå roteres til liggende format
+• Ber om tilgang til lokalt nettverk når værserveren din er på hjemmenettverket, slik Android 17 krever
+• Feildialogen for JSON-filer har nå valgene Se mer og Lukk

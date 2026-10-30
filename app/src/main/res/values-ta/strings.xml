@@ -9,6 +9,7 @@
 	<string name="avg">சராசரி</string>
 	<string name="battery_warning">எச்சரிக்கை: மேலே உள்ள விருப்பத்தை இயக்குவது உங்கள் பேட்டரி வழக்கத்தை விட வேகமாக வெளியேறக்கூடும்</string>
 	<string name="bgColour">விட்ஜெட் பின்னணி வண்ணத் தேர்வி</string>
+	<string name="close">மூடு</string>
 	<string name="custom2">தனிப்பயன்</string>
 	<string name="custom_setting">விருப்ப நிறங்கள்</string>
 	<string name="custom_url">விருப்பத்தேர்வு: தனிப்பயன் URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ஒளி தீம்</string>
 	<string name="local_network_permission_denied">Android அமைப்புகளில் அருகிலுள்ள சாதனங்கள் அனுமதியை வழங்கும் வரை உள்ளூர் வானிலை நிலைய அணுகல் கிடைக்காது. பொது இணைய வானிலைத் தரவு இன்னும் புதுப்பிக்கப்படலாம்.</string>
 	<string name="local_network_permission_explanation">உங்கள் வீட்டு நெட்வொர்க்கில் உள்ள வானிலைத் தரவை அணுக %1$s-ஐ அனுமதிக்கவும். இந்த அனுமதி இல்லாமலும் பொது இணைய வானிலைத் தரவு தொடர்ந்து செயல்படும்.</string>
+	<string name="local_network_permission_open_settings">உள்ளூர் நெட்வொர்க் அணுகல் மறுக்கப்பட்டதால், Android மீண்டும் கேட்காது. உங்கள் வீட்டு நெட்வொர்க்கில் உள்ள வானிலைத் தரவை அணுக, Android அமைப்புகளில் %1$s க்கான அருகிலுள்ள சாதனங்களை இயக்கவும். இப்போது அமைப்புகளைத் திறக்கவா?</string>
 	<string name="local_network_permission_title">உள்ளூர் நெட்வொர்க் அணுகல்</string>
 	<string name="manual_update">கைமுறை புதுப்பிப்புகள்</string>
 	<string name="manual_update_set_refresh_screen_to_load">கைமுறைப் புதுப்பிப்புத் தொகுப்பு, ஏற்றுவதற்கு புதுப்பித்தல் திரையை ஸ்வைப் செய்யவும்</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">புதுப்பிக்கும்போது %1$d பிழை கண்டறியப்பட்டது, விவரங்களுக்கு %2$s பதிவுகளைப் பார்க்கவும். %3$d நிமிடங்களுக்கு முன்பு கடைசிப் பிழை ஏற்பட்டது</item>
 		<item quantity="other">புதுப்பிக்கும்போது %1$d பிழைகள் கண்டறியப்பட்டன, விவரங்களுக்கு %2$s பதிவுகளைப் பார்க்கவும். %3$d நிமிடங்களுக்கு முன்பு கடைசிப் பிழை ஏற்பட்டது</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ஃபைலில் %1$d பிழை கண்டறியப்பட்டது</item>
+		<item quantity="other">%2$s ஃபைலில் %1$d பிழைகள் கண்டறியப்பட்டன</item>
 	</plurals>
 	<string name="radar">ரேடார்</string>
 	<string name="radar_download_failed">ரேடார் படத்தைப் பதிவிறக்குவதில் தோல்வி</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">எல்லா தரவையும் அகற்ற விரும்புகிறீர்களா?</string>
 	<string name="save_app_debug_logs">பயன்பாட்டு பிழைத்திருத்தப் பதிவுகளைச் சேமிக்கவும்</string>
 	<string name="save_settings">அமைப்புகளைச் சேமிக்கவும்</string>
+	<string name="see_more">மேலும் பார்</string>
 	<string name="settings2">அமைப்புகளுக்குச் செல்லவும்</string>
 	<string name="show_forecast">முன்னறிவிப்பைக் காட்டு</string>
 	<string name="show_radar">ரேடார் காட்டு</string>

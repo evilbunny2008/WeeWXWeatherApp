@@ -9,6 +9,7 @@
 	<string name="avg">meðalt.</string>
 	<string name="battery_warning">Viðvörun: Ef kveikt er á valkostinum hér að ofan getur rafhlaðan tæmst hraðar en venjulega</string>
 	<string name="bgColour">Litaval fyrir bakgrunn græju</string>
+	<string name="close">Loka</string>
 	<string name="custom2">Sérsniðið</string>
 	<string name="custom_setting">Sérsniðnir litir</string>
 	<string name="custom_url">Valfrjálst: Sérsniðin vefslóð</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Ljóst þema</string>
 	<string name="local_network_permission_denied">Aðgangur að staðbundinni veðurstöð er ekki tiltækur fyrr en þú veitir heimild fyrir nálæg tæki í stillingum Android. Opinber veðurgögn af netinu geta áfram uppfærst.</string>
 	<string name="local_network_permission_explanation">Leyfa %1$s að ná í veðurgögn á heimanetinu þínu. Opinber veðurgögn af netinu munu áfram virka án þessarar heimildar.</string>
+	<string name="local_network_permission_open_settings">Aðgangi að staðarneti var hafnað, svo Android spyr ekki aftur. Til að ná í veðurgögn á heimanetinu skaltu kveikja á Nálæg tæki fyrir %1$s í stillingum Android. Opna stillingar núna?</string>
 	<string name="local_network_permission_title">Aðgangur að staðarneti</string>
 	<string name="manual_update">Handvirkar uppfærslur</string>
 	<string name="manual_update_set_refresh_screen_to_load">Handvirk uppfærsla stillt, strjúktu til að endurnýja skjáinn og hlaða</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">%1$d villa fannst við uppfærslu. Skoðaðu %2$s-annála til að fá nánari upplýsingar. Síðasta villa kom upp fyrir %3$d mínútum</item>
 		<item quantity="other">%1$d villur fundust við uppfærslu. Skoðaðu %2$s-annála til að fá nánari upplýsingar. Síðasta villa kom upp fyrir %3$d mínútum</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%1$d villa fannst í skránni %2$s</item>
+		<item quantity="other">%1$d villur fundust í skránni %2$s</item>
 	</plurals>
 	<string name="radar">Ratsjá</string>
 	<string name="radar_download_failed">Ekki tókst að sækja ratsjármyndina</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Ertu viss um að þú viljir fjarlægja öll gögn?</string>
 	<string name="save_app_debug_logs">Vista villuleitarannála forritsins</string>
 	<string name="save_settings">Vista stillingar</string>
+	<string name="see_more">Sjá meira</string>
 	<string name="settings2">Fara aftur í stillingar</string>
 	<string name="show_forecast">Sýna spá</string>
 	<string name="show_radar">Sýna ratsjá</string>

@@ -9,6 +9,7 @@
 	<string name="avg">միջին</string>
 	<string name="battery_warning">Զգուշացում. վերը նշված տարբերակը միացնելը կարող է սովորականից ավելի արագ սպառել ձեր մարտկոցը</string>
 	<string name="bgColour">Վիջեթի ֆոնի գույնի ընտրիչ</string>
+	<string name="close">Փակել</string>
 	<string name="custom2">Անհատական</string>
 	<string name="custom_setting">Պատվերով Գույներ</string>
 	<string name="custom_url">Լրացուցիչ՝ հատուկ URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Թեթև թեմա</string>
 	<string name="local_network_permission_denied">Տեղական օդերևութաբանական կայանի հասանելիությունը անհասանելի է, մինչև Android-ի կարգավորումներում չտրամադրեք «Մոտակա սարքեր» թույլտվությունը։ Հանրային ինտերնետի եղանակային տվյալները դեռ կարող են թարմացվել։</string>
 	<string name="local_network_permission_explanation">Թույլ տվեք %1$s-ին հասնել ձեր տնային ցանցի եղանակային տվյալներին։ Հանրային ինտերնետի եղանակային տվյալները կշարունակեն աշխատել առանց այս թույլտվության։</string>
+	<string name="local_network_permission_open_settings">Տեղային ցանցի հասանելիությունը մերժվել է, ուստի Android-ն այլևս չի հարցնի։ Տնային ցանցի եղանակային տվյալներին հասնելու համար Android-ի կարգավորումներում միացրեք «Մոտակա սարքեր» թույլտվությունը %1$s-ի համար։ Բացե՞լ կարգավորումները հիմա։</string>
 	<string name="local_network_permission_title">Տեղական ցանցի հասանելիություն</string>
 	<string name="manual_update">Ձեռնարկի թարմացումներ</string>
 	<string name="manual_update_set_refresh_screen_to_load">Ձեռքով թարմացման հավաքածու, սահեցրեք թարմացման էկրանը՝ բեռնելու համար</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Թարմացնելիս հայտնաբերվեց %1$d սխալ, մանրամասների համար դիտեք %2$s մատյանները: Վերջին սխալը տեղի է ունեցել %3$d րոպե առաջ</item>
 		<item quantity="other">Թարմացման ժամանակ հայտնաբերվել են %1$d սխալներ, մանրամասների համար դիտեք %2$s մատյանները: Վերջին սխալը տեղի է ունեցել %3$d րոպե առաջ</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ֆայլում հայտնաբերվել է %1$d սխալ</item>
+		<item quantity="other">%2$s ֆայլում հայտնաբերվել է %1$d սխալ</item>
 	</plurals>
 	<string name="radar">Ռադար</string>
 	<string name="radar_download_failed">Չհաջողվեց ներբեռնել ռադարի պատկերը</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Իսկապե՞ս ուզում եք հեռացնել բոլոր տվյալները:</string>
 	<string name="save_app_debug_logs">Պահպանեք հավելվածների վրիպազերծման մատյանները</string>
 	<string name="save_settings">Պահպանել կարգավորումները</string>
+	<string name="see_more">Տեսնել ավելին</string>
 	<string name="settings2">Վերադառնալ Կարգավորումներ</string>
 	<string name="show_forecast">Ցույց տալ կանխատեսումը</string>
 	<string name="show_radar">Ցույց տալ Ռադարը</string>

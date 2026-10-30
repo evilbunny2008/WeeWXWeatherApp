@@ -9,6 +9,7 @@
 	<string name="avg">មធ្យម</string>
 	<string name="battery_warning">ការព្រមាន៖ ការបើកជម្រើសខាងលើអាចធ្វើឱ្យថ្មរបស់អ្នកអស់លឿនជាងធម្មតា</string>
 	<string name="bgColour">ឧបករណ៍ជ្រើសពណ៌ផ្ទៃខាងក្រោយវិដជិត</string>
+	<string name="close">បិទ</string>
 	<string name="custom2">ផ្ទាល់ខ្លួន</string>
 	<string name="custom_setting">ពណ៌ផ្ទាល់ខ្លួន</string>
 	<string name="custom_url">ស្រេចចិត្ត៖ URL ផ្ទាល់ខ្លួន</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">រចនាប័ទ្មភ្លឺ</string>
 	<string name="local_network_permission_denied">ការចូលប្រើស្ថានីយអាកាសធាតុក្នុងតំបន់មិនអាចប្រើបានទេ រហូតដល់អ្នកផ្ដល់ការអនុញ្ញាតឧបករណ៍នៅជិតក្នុងការកំណត់ Android។ ទិន្នន័យអាកាសធាតុសាធារណៈពីអ៊ីនធឺណិតនៅតែអាចធ្វើបច្ចុប្បន្នភាពបាន។</string>
 	<string name="local_network_permission_explanation">អនុញ្ញាតឱ្យ %1$s ចូលទៅកាន់ទិន្នន័យអាកាសធាតុនៅលើបណ្ដាញផ្ទះរបស់អ្នក។ ទិន្នន័យអាកាសធាតុសាធារណៈពីអ៊ីនធឺណិតនឹងបន្តដំណើរការដោយគ្មានការអនុញ្ញាតនេះ។</string>
+	<string name="local_network_permission_open_settings">ការចូលប្រើបណ្ដាញមូលដ្ឋានត្រូវបានបដិសេធ ដូច្នេះ Android នឹងមិនសួរម្ដងទៀតទេ។ ដើម្បីចូលប្រើទិន្នន័យអាកាសធាតុនៅលើបណ្ដាញផ្ទះរបស់អ្នក សូមបើក ឧបករណ៍នៅជិត សម្រាប់ %1$s នៅក្នុងការកំណត់ Android។ បើកការកំណត់ឥឡូវនេះឬ?</string>
 	<string name="local_network_permission_title">ការចូលប្រើបណ្ដាញមូលដ្ឋាន</string>
 	<string name="manual_update">ការធ្វើបច្ចុប្បន្នភាពដោយដៃ</string>
 	<string name="manual_update_set_refresh_screen_to_load">បានកំណត់ការធ្វើបច្ចុប្បន្នភាពដោយដៃ អូសអេក្រង់ដើម្បីផ្ទុកឡើងវិញ</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">បានរកឃើញកំហុស %1$d ពេលធ្វើបច្ចុប្បន្នភាព។ សូមមើលកំណត់ហេតុ %2$s សម្រាប់ព័ត៌មានលម្អិត។ កំហុសចុងក្រោយបានកើតឡើងកាលពី %3$d នាទីមុន</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">បានរកឃើញកំហុស %1$d នៅក្នុងឯកសារ %2$s</item>
 	</plurals>
 	<string name="radar">រ៉ាដា</string>
 	<string name="radar_download_failed">មិនអាចទាញយករូបភាពរ៉ាដាបានទេ</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">តើអ្នកប្រាកដថាចង់លុបទិន្នន័យទាំងអស់មែនទេ?</string>
 	<string name="save_app_debug_logs">រក្សាទុកកំណត់ហេតុបំបាត់កំហុសរបស់កម្មវិធី</string>
 	<string name="save_settings">រក្សាទុកការកំណត់</string>
+	<string name="see_more">មើលបន្ថែម</string>
 	<string name="settings2">ត្រឡប់ទៅការកំណត់</string>
 	<string name="show_forecast">បង្ហាញការព្យាករណ៍</string>
 	<string name="show_radar">បង្ហាញរ៉ាដា</string>

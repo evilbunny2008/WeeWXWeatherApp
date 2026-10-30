@@ -1,0 +1,3 @@
+• Telefone je zdaj mogoče zasukati v ležeči položaj
+• Zahteva dostop do lokalnega omrežja, ko je vaš vremenski strežnik v domačem omrežju, kot zahteva Android 17
+• Pogovorno okno z napakami datoteke JSON ima zdaj možnosti Prikaži več in Zapri

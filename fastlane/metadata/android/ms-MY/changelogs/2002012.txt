@@ -1,0 +1,3 @@
+• Telefon kini boleh diputar ke landskap
+• Meminta akses rangkaian setempat apabila pelayan cuaca anda berada pada rangkaian rumah, seperti yang dikehendaki oleh Android 17
+• Dialog ralat fail JSON kini mempunyai pilihan Lihat Lagi dan Tutup

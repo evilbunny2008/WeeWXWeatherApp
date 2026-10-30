@@ -9,6 +9,7 @@
 	<string name="avg">平均</string>
 	<string name="battery_warning">警告: 上記のオプションを有効にすると、バッテリーの消耗が通常より早くなる可能性があります</string>
 	<string name="bgColour">ウィジェットの背景カラーピッカー</string>
+	<string name="close">閉じる</string>
 	<string name="custom2">カスタム</string>
 	<string name="custom_setting">カスタムカラー</string>
 	<string name="custom_url">オプション: カスタム URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ライトテーマ</string>
 	<string name="local_network_permission_denied">Android の設定で「付近のデバイス」の権限を許可するまで、ローカル気象ステーションにはアクセスできません。公開インターネットの気象データは引き続き更新できます。</string>
 	<string name="local_network_permission_explanation">%1$s がホームネットワーク上の気象データにアクセスできるようにします。この権限がなくても、公開インターネットの気象データは引き続き利用できます。</string>
+	<string name="local_network_permission_open_settings">ローカル ネットワークへのアクセスが拒否されたため、Android から再度確認されることはありません。ホーム ネットワークの気象データにアクセスするには、Android の設定で %1$s の「付近のデバイス」をオンにしてください。今すぐ設定を開きますか？</string>
 	<string name="local_network_permission_title">ローカルネットワークへのアクセス</string>
 	<string name="manual_update">手動アップデート</string>
 	<string name="manual_update_set_refresh_screen_to_load">手動更新セット、画面をスワイプして更新します</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">更新中に %1$d エラーが検出されました。詳細については %2$s ログを参照してください。最後のエラーは %3$d 分前に発生しました</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">%2$s ファイルで %1$d 件のエラーが検出されました</item>
 	</plurals>
 	<string name="radar">レーダー</string>
 	<string name="radar_download_failed">レーダー画像のダウンロードに失敗しました</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">すべてのデータを削除してもよろしいですか?</string>
 	<string name="save_app_debug_logs">アプリのデバッグログを保存する</string>
 	<string name="save_settings">設定の保存</string>
+	<string name="see_more">詳細を表示</string>
 	<string name="settings2">設定に戻る</string>
 	<string name="show_forecast">天気予報を表示</string>
 	<string name="show_radar">レーダーを表示する</string>

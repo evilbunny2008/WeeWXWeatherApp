@@ -9,6 +9,7 @@
 	<string name="avg">ortalama</string>
 	<string name="battery_warning">Uyarı: Yukarıdaki seçeneğin etkinleştirilmesi pilinizin normalden daha hızlı tükenmesine neden olabilir</string>
 	<string name="bgColour">Widget Arka Plan Renk Seçici</string>
+	<string name="close">Kapat</string>
 	<string name="custom2">Özel</string>
 	<string name="custom_setting">Özel Renkler</string>
 	<string name="custom_url">İsteğe bağlı: Özel URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Işık Teması</string>
 	<string name="local_network_permission_denied">Android ayarlarında Yakındaki cihazlar iznini verene kadar yerel hava istasyonuna erişim kullanılamaz. Herkese açık internet hava durumu verileri yine de güncellenebilir.</string>
 	<string name="local_network_permission_explanation">%1$s\'in ev ağınızdaki hava durumu verilerine erişmesine izin verin. Herkese açık internet hava durumu verileri bu izin olmadan da çalışmaya devam edecektir.</string>
+	<string name="local_network_permission_open_settings">Yerel ağ erişimi reddedildi, bu nedenle Android bir daha sormayacak. Ev ağınızdaki hava durumu verilerine ulaşmak için Android ayarlarında %1$s için Yakındaki cihazlar iznini açın. Ayarlar şimdi açılsın mı?</string>
 	<string name="local_network_permission_title">Yerel ağ erişimi</string>
 	<string name="manual_update">Manuel Güncellemeler</string>
 	<string name="manual_update_set_refresh_screen_to_load">Manuel güncelleme ayarlandı, yüklemek için yenileme ekranını kaydırın</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Güncelleme sırasında %1$d hata algılandı. Ayrıntılar için %2$s günlüğünü görüntüleyin. Son hata %3$d dakika önce meydana geldi</item>
 		<item quantity="other">Güncelleme sırasında %1$d hata algılandı. Ayrıntılar için %2$s günlüğünü görüntüleyin. Son hata %3$d dakika önce meydana geldi</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s dosyasında %1$d hata algılandı</item>
+		<item quantity="other">%2$s dosyasında %1$d hata algılandı</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Radar görüntüsü indirilemedi</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Tüm verileri kaldırmak istediğinizden emin misiniz?</string>
 	<string name="save_app_debug_logs">Uygulama hata ayıklama günlüklerini kaydedin</string>
 	<string name="save_settings">Ayarları Kaydet</string>
+	<string name="see_more">Daha Fazla Gör</string>
 	<string name="settings2">Ayarlara Geri Dön</string>
 	<string name="show_forecast">Tahmini Göster</string>
 	<string name="show_radar">Radarı Göster</string>

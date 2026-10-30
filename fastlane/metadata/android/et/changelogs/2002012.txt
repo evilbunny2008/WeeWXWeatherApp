@@ -1,0 +1,3 @@
+• Telefone saab nüüd pöörata horisontaalpaigutusse
+• Küsib kohaliku võrgu juurdepääsu, kui teie ilmaserver on koduvõrgus, nagu nõuab Android 17
+• JSON-faili vigade dialoogil on nüüd valikud Kuva rohkem ja Sulge

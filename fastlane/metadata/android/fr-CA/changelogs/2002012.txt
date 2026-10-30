@@ -1,0 +1,3 @@
+• Les téléphones peuvent désormais passer en mode paysage
+• Demande l’accès au réseau local lorsque votre serveur météo se trouve sur votre réseau domestique, comme l’exige Android 17
+• La boîte de dialogue des erreurs du fichier JSON propose désormais les options Voir plus et Fermer

@@ -9,6 +9,7 @@
 	<string name="avg">tb</string>
 	<string name="battery_warning">Cảnh báo: Việc bật tùy chọn trên có thể làm hao pin nhanh hơn bình thường</string>
 	<string name="bgColour">Bộ chọn màu nền của widget</string>
+	<string name="close">Đóng</string>
 	<string name="custom2">Tùy chỉnh</string>
 	<string name="custom_setting">Màu tùy chỉnh</string>
 	<string name="custom_url">Tùy chọn: URL tùy chỉnh</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Chủ đề nhẹ nhàng</string>
 	<string name="local_network_permission_denied">Không thể truy cập trạm thời tiết cục bộ cho đến khi bạn cấp quyền Thiết bị lân cận trong phần cài đặt Android. Dữ liệu thời tiết từ Internet công cộng vẫn có thể cập nhật.</string>
 	<string name="local_network_permission_explanation">Cho phép %1$s truy cập dữ liệu thời tiết trên mạng gia đình của bạn. Dữ liệu thời tiết từ Internet công cộng sẽ tiếp tục hoạt động mà không cần quyền này.</string>
+	<string name="local_network_permission_open_settings">Quyền truy cập mạng cục bộ đã bị từ chối nên Android sẽ không hỏi lại. Để truy cập dữ liệu thời tiết trong mạng gia đình, hãy bật Thiết bị ở gần cho %1$s trong phần cài đặt Android. Mở cài đặt ngay?</string>
 	<string name="local_network_permission_title">Truy cập mạng cục bộ</string>
 	<string name="manual_update">Cập nhật thủ công</string>
 	<string name="manual_update_set_refresh_screen_to_load">Đã cài đặt cập nhật thủ công, vuốt màn hình làm mới để tải</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">Đã phát hiện thấy %1$d lỗi khi cập nhật, hãy xem nhật ký %2$s để biết chi tiết. Lỗi cuối cùng xảy ra %3$d phút trước</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">Đã phát hiện %1$d lỗi trong tệp %2$s</item>
 	</plurals>
 	<string name="radar">ra đa</string>
 	<string name="radar_download_failed">Không tải được hình ảnh radar</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">Bạn có chắc chắn muốn xóa tất cả dữ liệu không?</string>
 	<string name="save_app_debug_logs">Lưu nhật ký gỡ lỗi ứng dụng</string>
 	<string name="save_settings">Lưu cài đặt</string>
+	<string name="see_more">Xem thêm</string>
 	<string name="settings2">Quay lại cài đặt</string>
 	<string name="show_forecast">Hiển thị dự báo</string>
 	<string name="show_radar">Hiển thị Ra-đa</string>

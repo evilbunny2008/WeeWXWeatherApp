@@ -9,6 +9,7 @@
 	<string name="avg">ശരാശരി</string>
 	<string name="battery_warning">മുന്നറിയിപ്പ്: മുകളിലെ ഓപ്‌ഷൻ പ്രവർത്തനക്ഷമമാക്കുന്നത് നിങ്ങളുടെ ബാറ്ററി പതിവിലും വേഗത്തിൽ തീർന്നേക്കാം</string>
 	<string name="bgColour">വിജറ്റ് പശ്ചാത്തല വർണ്ണ പിക്കർ</string>
+	<string name="close">അടയ്ക്കുക</string>
 	<string name="custom2">കസ്റ്റം</string>
 	<string name="custom_setting">ഇഷ്ടാനുസൃത നിറങ്ങൾ</string>
 	<string name="custom_url">ഓപ്ഷണൽ: ഇഷ്‌ടാനുസൃത URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ലൈറ്റ് തീം</string>
 	<string name="local_network_permission_denied">Android ക്രമീകരണങ്ങളിൽ സമീപമുള്ള ഉപകരണങ്ങളുടെ അനുമതി നൽകുന്നത് വരെ ലോക്കൽ കാലാവസ്ഥാ സ്റ്റേഷൻ ആക്‌സസ് ലഭ്യമല്ല. പൊതു ഇന്റർനെറ്റ് കാലാവസ്ഥാ ഡാറ്റ ഇപ്പോഴും അപ്ഡേറ്റ് ചെയ്യാനാകും.</string>
 	<string name="local_network_permission_explanation">നിങ്ങളുടെ ഹോം നെറ്റ്‌വർക്കിലെ കാലാവസ്ഥാ ഡാറ്റയിൽ എത്താൻ %1$s-നെ അനുവദിക്കുക. ഈ അനുമതി ഇല്ലാതെയും പൊതു ഇന്റർനെറ്റ് കാലാവസ്ഥാ ഡാറ്റ പ്രവർത്തിക്കുന്നത് തുടരും.</string>
+	<string name="local_network_permission_open_settings">ലോക്കൽ നെറ്റ്‌വർക്ക് ആക്‌സസ് നിരസിച്ചതിനാൽ Android വീണ്ടും ചോദിക്കില്ല. ഹോം നെറ്റ്‌വർക്കിലെ കാലാവസ്ഥാ ഡാറ്റ ലഭിക്കാൻ Android ക്രമീകരണത്തിൽ %1$s-നുള്ള സമീപത്തുള്ള ഉപകരണങ്ങൾ ഓണാക്കുക. ഇപ്പോൾ ക്രമീകരണം തുറക്കണോ?</string>
 	<string name="local_network_permission_title">ലോക്കൽ നെറ്റ്‌വർക്ക് ആക്‌സസ്</string>
 	<string name="manual_update">മാനുവൽ അപ്ഡേറ്റുകൾ</string>
 	<string name="manual_update_set_refresh_screen_to_load">മാനുവൽ അപ്‌ഡേറ്റ് സെറ്റ്, ലോഡുചെയ്യാൻ സ്‌ക്രീൻ പുതുക്കുക</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">അപ്‌ഡേറ്റ് ചെയ്യുമ്പോൾ %1$d പിശക് കണ്ടെത്തി, വിശദാംശങ്ങൾക്കായി %2$s ലോഗുകൾ കാണുക. %3$d മിനിറ്റ് മുമ്പ് അവസാന പിശക് സംഭവിച്ചു</item>
 		<item quantity="other">അപ്‌ഡേറ്റ് ചെയ്യുമ്പോൾ %1$d പിശകുകൾ കണ്ടെത്തി, വിശദാംശങ്ങൾക്കായി %2$s ലോഗുകൾ കാണുക. %3$d മിനിറ്റ് മുമ്പ് അവസാന പിശക് സംഭവിച്ചു</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ഫയലിൽ %1$d പിശക് കണ്ടെത്തി</item>
+		<item quantity="other">%2$s ഫയലിൽ %1$d പിശകുകൾ കണ്ടെത്തി</item>
 	</plurals>
 	<string name="radar">റഡാർ</string>
 	<string name="radar_download_failed">റഡാർ ചിത്രം ഡൗൺലോഡ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">എല്ലാ ഡാറ്റയും നീക്കം ചെയ്യണമെന്ന് തീർച്ചയാണോ?</string>
 	<string name="save_app_debug_logs">ആപ്പ് ഡീബഗ് ലോഗുകൾ സംരക്ഷിക്കുക</string>
 	<string name="save_settings">ക്രമീകരണങ്ങൾ സംരക്ഷിക്കുക</string>
+	<string name="see_more">കൂടുതൽ കാണുക</string>
 	<string name="settings2">ക്രമീകരണങ്ങളിലേക്ക് മടങ്ങുക</string>
 	<string name="show_forecast">പ്രവചനം കാണിക്കുക</string>
 	<string name="show_radar">റഡാർ കാണിക്കുക</string>

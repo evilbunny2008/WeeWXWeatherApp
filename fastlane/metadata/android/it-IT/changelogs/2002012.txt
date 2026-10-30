@@ -1,0 +1,3 @@
+• Ora i telefoni possono essere ruotati in orizzontale
+• Richiede l’accesso alla rete locale quando il tuo server meteo si trova sulla rete domestica, come richiesto da Android 17
+• La finestra degli errori del file JSON ora offre le opzioni Mostra altro e Chiudi

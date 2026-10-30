@@ -1,0 +1,3 @@
+• Puwede na ngayong i-rotate ang mga telepono sa landscape
+• Humihingi ng access sa lokal na network kapag nasa home network mo ang iyong weather server, gaya ng hinihingi ng Android 17
+• May mga opsyong Tingnan Pa at Isara na ngayon ang dialog ng mga error sa JSON file

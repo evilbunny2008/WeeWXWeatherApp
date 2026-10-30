@@ -9,6 +9,7 @@
 	<string name="avg">сер</string>
 	<string name="battery_warning">Попередження: увімкнення вищезазначеної опції може розряджати акумулятор швидше, ніж зазвичай</string>
 	<string name="bgColour">Вибір кольору фону віджета</string>
+	<string name="close">Закрити</string>
 	<string name="custom2">Користувацьке</string>
 	<string name="custom_setting">Спеціальні кольори</string>
 	<string name="custom_url">Необов’язково: спеціальна URL-адреса</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Світла тема</string>
 	<string name="local_network_permission_denied">Доступ до локальної метеостанції недоступний, доки ви не надасте дозвіл «Пристрої поблизу» в налаштуваннях Android. Погодні дані з публічного інтернету все ще можуть оновлюватися.</string>
 	<string name="local_network_permission_explanation">Дозвольте %1$s отримувати погодні дані у вашій домашній мережі. Погодні дані з публічного інтернету й надалі працюватимуть без цього дозволу.</string>
+	<string name="local_network_permission_open_settings">Доступ до локальної мережі відхилено, тому Android більше не питатиме. Щоб отримувати дані про погоду з домашньої мережі, увімкніть дозвіл «Пристрої поблизу» для %1$s у налаштуваннях Android. Відкрити налаштування зараз?</string>
 	<string name="local_network_permission_title">Доступ до локальної мережі</string>
 	<string name="manual_update">Оновлення вручну</string>
 	<string name="manual_update_set_refresh_screen_to_load">Встановлено оновлення вручну, проведіть пальцем по екрану, щоб завантажити</string>
@@ -86,6 +88,12 @@
 		<item quantity="one">Під час оновлення виявлено %1$d помилку, подробиці перегляньте журнали %2$s. Остання помилка сталася %3$d хвилин тому</item>
 		<item quantity="other">Під час оновлення виявлено %1$d помилок, подробиці перегляньте журнали %2$s. Остання помилка сталася %3$d хвилин тому</item>
 	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">У файлі %2$s виявлено %1$d помилки</item>
+		<item quantity="many">У файлі %2$s виявлено %1$d помилок</item>
+		<item quantity="one">У файлі %2$s виявлено %1$d помилку</item>
+		<item quantity="other">У файлі %2$s виявлено %1$d помилки</item>
+	</plurals>
 	<string name="radar">радар</string>
 	<string name="radar_download_failed">Не вдалося завантажити радіолокаційне зображення</string>
 	<string name="radar_still_downloading">Радарне зображення ще завантажується</string>
@@ -115,6 +123,7 @@
 	<string name="remove_all_data">Ви впевнені, що хочете видалити всі дані?</string>
 	<string name="save_app_debug_logs">Зберігайте журнали налагодження програми</string>
 	<string name="save_settings">Зберегти налаштування</string>
+	<string name="see_more">Докладніше</string>
 	<string name="settings2">Повернутися до налаштувань</string>
 	<string name="show_forecast">Показати прогноз</string>
 	<string name="show_radar">Показати радар</string>

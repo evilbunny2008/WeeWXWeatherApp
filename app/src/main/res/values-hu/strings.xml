@@ -9,6 +9,7 @@
 	<string name="avg">átl</string>
 	<string name="battery_warning">Figyelmeztetés: A fenti opció engedélyezése a szokásosnál gyorsabban lemerítheti az akkumulátort</string>
 	<string name="bgColour">Widget háttérszínválasztó</string>
+	<string name="close">Bezárás</string>
 	<string name="custom2">Egyéni</string>
 	<string name="custom_setting">Egyedi színek</string>
 	<string name="custom_url">Nem kötelező: Egyéni URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Fény téma</string>
 	<string name="local_network_permission_denied">A helyi időjárás-állomás nem érhető el, amíg meg nem adod a Közeli eszközök engedélyt az Android beállításaiban. A nyilvános internetes időjárási adatok továbbra is frissülhetnek.</string>
 	<string name="local_network_permission_explanation">Engedélyezd, hogy a %1$s elérje az otthoni hálózatodon lévő időjárási adatokat. A nyilvános internetes időjárási adatok enélkül az engedély nélkül is működnek tovább.</string>
+	<string name="local_network_permission_open_settings">A helyi hálózati hozzáférést elutasította, ezért az Android nem kérdez rá újra. Az otthoni hálózat időjárási adatainak eléréséhez kapcsolja be a Közeli eszközök engedélyt a(z) %1$s számára az Android beállításaiban. Megnyitja most a beállításokat?</string>
 	<string name="local_network_permission_title">Helyi hálózati hozzáférés</string>
 	<string name="manual_update">Kézi frissítések</string>
 	<string name="manual_update_set_refresh_screen_to_load">Kézi frissítés beállítva, a betöltéshez húzza az ujját a frissítési képernyőn</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">%1$d hibát észleltünk a frissítés során. A részletekért tekintse meg a %2$s naplót. Az utolsó hiba %3$d perce történt</item>
 		<item quantity="other">A rendszer %1$d hibát észlelt a frissítés során. A részletekért tekintse meg a %2$s naplót. Az utolsó hiba %3$d perce történt</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%1$d hiba található a(z) %2$s fájlban</item>
+		<item quantity="other">%1$d hiba található a(z) %2$s fájlban</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Nem sikerült letölteni a radarképet</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Biztosan eltávolítja az összes adatot?</string>
 	<string name="save_app_debug_logs">Mentse el az alkalmazás hibakeresési naplóit</string>
 	<string name="save_settings">Beállítások mentése</string>
+	<string name="see_more">Továbbiak</string>
 	<string name="settings2">Menjen vissza a beállításokhoz</string>
 	<string name="show_forecast">Előrejelzés megjelenítése</string>
 	<string name="show_radar">Radar megjelenítése</string>

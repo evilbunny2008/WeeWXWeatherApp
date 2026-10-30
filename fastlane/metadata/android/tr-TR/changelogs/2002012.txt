@@ -1,0 +1,3 @@
+• Telefonlar artık yatay konuma döndürülebilir
+• Android 17’nin gerektirdiği gibi, hava durumu sunucunuz ev ağınızdaysa yerel ağ erişimi ister
+• JSON dosyası hataları iletişim kutusunda artık Daha Fazla Gör ve Kapat seçenekleri var

@@ -1,0 +1,3 @@
+• Telefoni se sada mogu zakrenuti u pejzažni način
+• Traži pristup lokalnoj mreži kada je vaš meteorološki poslužitelj na kućnoj mreži, kako zahtijeva Android 17
+• Dijalog s pogreškama JSON datoteke sada ima opcije Prikaži više i Zatvori

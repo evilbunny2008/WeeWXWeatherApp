@@ -1,0 +1,3 @@
+• Smartphones können jetzt ins Querformat gedreht werden
+• Fragt nach Zugriff auf das lokale Netzwerk, wenn sich dein Wetterserver im Heimnetzwerk befindet, wie es Android 17 verlangt
+• Der Fehlerdialog für JSON-Dateien bietet jetzt die Optionen „Mehr anzeigen“ und „Schließen“

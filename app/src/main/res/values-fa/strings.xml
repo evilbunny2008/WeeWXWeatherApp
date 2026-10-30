@@ -9,6 +9,7 @@
 	<string name="avg">میانگین</string>
 	<string name="battery_warning">هشدار: فعال کردن گزینه بالا ممکن است باتری شما را سریعتر از حد معمول تخلیه کند</string>
 	<string name="bgColour">انتخابگر رنگ پس زمینه ویجت</string>
+	<string name="close">بستن</string>
 	<string name="custom2">سفارشی</string>
 	<string name="custom_setting">رنگ های سفارشی</string>
 	<string name="custom_url">اختیاری: URL سفارشی</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">تم سبک</string>
 	<string name="local_network_permission_denied">دسترسی به ایستگاه هواشناسی محلی تا زمانی که مجوز دستگاه‌های اطراف را در تنظیمات Android ندهید در دسترس نیست. داده‌های آب‌وهوای اینترنت عمومی همچنان می‌توانند به‌روزرسانی شوند.</string>
 	<string name="local_network_permission_explanation">به %1$s اجازه دهید به داده‌های آب‌وهوا در شبکه خانگی شما دسترسی پیدا کند. داده‌های آب‌وهوای اینترنت عمومی بدون این مجوز همچنان کار خواهند کرد.</string>
+	<string name="local_network_permission_open_settings">دسترسی به شبکه محلی رد شد، بنابراین Android دوباره درخواست نمی‌کند. برای دسترسی به داده‌های هواشناسی در شبکه خانگی، اجازه «دستگاه‌های اطراف» را برای %1$s در تنظیمات Android روشن کنید. اکنون تنظیمات باز شود؟</string>
 	<string name="local_network_permission_title">دسترسی به شبکه محلی</string>
 	<string name="manual_update">به روز رسانی های دستی</string>
 	<string name="manual_update_set_refresh_screen_to_load">مجموعه به‌روزرسانی دستی، صفحه نمایش را به‌روزرسانی کنید تا بارگذاری شود</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">هنگام به‌روزرسانی %1$d خطا شناسایی شد، برای جزئیات، گزارش‌های %2$s را مشاهده کنید. آخرین خطا %3$d دقیقه پیش روی داد</item>
 		<item quantity="other">هنگام به‌روزرسانی %1$d خطا شناسایی شد، گزارش‌های %2$s را برای جزئیات مشاهده کنید. آخرین خطا %3$d دقیقه پیش روی داد</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%1$d خطا در فایل %2$s شناسایی شد</item>
+		<item quantity="other">%1$d خطا در فایل %2$s شناسایی شد</item>
 	</plurals>
 	<string name="radar">رادار</string>
 	<string name="radar_download_failed">تصویر رادار دانلود نشد</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">آیا مطمئن هستید که می خواهید همه داده ها را حذف کنید؟</string>
 	<string name="save_app_debug_logs">گزارش‌های اشکال‌زدایی برنامه را ذخیره کنید</string>
 	<string name="save_settings">تنظیمات را ذخیره کنید</string>
+	<string name="see_more">بیشتر ببینید</string>
 	<string name="settings2">به تنظیمات برگردید</string>
 	<string name="show_forecast">نمایش پیش بینی</string>
 	<string name="show_radar">نمایش رادار</string>

@@ -9,6 +9,7 @@
 	<string name="avg">mesatare</string>
 	<string name="battery_warning">Paralajmërim: Aktivizimi i opsionit të mësipërm mund ta shkarkojë baterinë tuaj më shpejt se zakonisht</string>
 	<string name="bgColour">Zgjedhësi i ngjyrës së sfondit të miniaplikacionit</string>
+	<string name="close">Mbyll</string>
 	<string name="custom2">I personalizuar</string>
 	<string name="custom_setting">Ngjyrat e personalizuara</string>
 	<string name="custom_url">Opsionale: URL e personalizuar</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema e lehtë</string>
 	<string name="local_network_permission_denied">Qasja në stacionin lokal të motit nuk është e disponueshme derisa të japësh lejen Pajisjet në afërsi te cilësimet e Android. Të dhënat e motit nga interneti publik mund të përditësohen ende.</string>
 	<string name="local_network_permission_explanation">Lejo %1$s të arrijë të dhënat e motit në rrjetin tënd të shtëpisë. Të dhënat e motit nga interneti publik do të vazhdojnë të funksionojnë edhe pa këtë leje.</string>
+	<string name="local_network_permission_open_settings">Qasja në rrjetin lokal u refuzua, prandaj Android nuk do të pyesë më. Për të arritur të dhënat e motit në rrjetin e shtëpisë, aktivizo Pajisjet në afërsi për %1$s te cilësimet e Android. Të hapen cilësimet tani?</string>
 	<string name="local_network_permission_title">Qasja në rrjetin lokal</string>
 	<string name="manual_update">Përditësimet manuale</string>
 	<string name="manual_update_set_refresh_screen_to_load">Caktimi i përditësimit manual, rrëshqitni ekranin e rifreskimit për t’u ngarkuar</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">U zbulua %1$d gabim gjatë përditësimit, shikoni regjistrat e %2$s për detaje. Gabimi i fundit ndodhi %3$d minuta më parë</item>
 		<item quantity="other">U zbuluan %1$d gabime gjatë përditësimit, shikoni regjistrat e %2$s për detaje. Gabimi i fundit ndodhi %3$d minuta më parë</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">U zbulua %1$d gabim në skedarin %2$s</item>
+		<item quantity="other">U zbuluan %1$d gabime në skedarin %2$s</item>
 	</plurals>
 	<string name="radar">Radari</string>
 	<string name="radar_download_failed">Shkarkimi i imazhit të radarit dështoi</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Jeni i sigurt që dëshironi të hiqni të gjitha të dhënat?</string>
 	<string name="save_app_debug_logs">Ruani regjistrat e korrigjimit të aplikacioneve</string>
 	<string name="save_settings">Ruaj Cilësimet</string>
+	<string name="see_more">Shiko më shumë</string>
 	<string name="settings2">Kthehu te Cilësimet</string>
 	<string name="show_forecast">Shfaq parashikimin</string>
 	<string name="show_radar">Shfaq Radarin</string>

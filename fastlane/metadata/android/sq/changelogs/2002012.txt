@@ -1,0 +1,3 @@
+• Telefonat tani mund të rrotullohen në pozicion horizontal
+• Kërkon qasje në rrjetin lokal kur serveri yt i motit është në rrjetin e shtëpisë, siç e kërkon Android 17
+• Dritarja e gabimeve të skedarit JSON tani ka opsionet Shiko më shumë dhe Mbyll

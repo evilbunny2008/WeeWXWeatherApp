@@ -9,6 +9,7 @@
 	<string name="avg">rata2</string>
 	<string name="battery_warning">Peringatan: Mengaktifkan opsi di atas dapat menguras baterai Anda lebih cepat dari biasanya</string>
 	<string name="bgColour">Pemilih Warna Latar Belakang Widget</string>
+	<string name="close">Tutup</string>
 	<string name="custom2">Kustom</string>
 	<string name="custom_setting">Warna Khusus</string>
 	<string name="custom_url">Opsional: URL Khusus</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema Ringan</string>
 	<string name="local_network_permission_denied">Akses ke stasiun cuaca lokal tidak tersedia hingga Anda memberikan izin Perangkat di sekitar di setelan Android. Data cuaca dari internet publik masih dapat diperbarui.</string>
 	<string name="local_network_permission_explanation">Izinkan %1$s menjangkau data cuaca di jaringan rumah Anda. Data cuaca dari internet publik akan tetap berfungsi tanpa izin ini.</string>
+	<string name="local_network_permission_open_settings">Akses jaringan lokal ditolak, jadi Android tidak akan bertanya lagi. Untuk menjangkau data cuaca di jaringan rumah Anda, aktifkan Perangkat di sekitar untuk %1$s di setelan Android. Buka setelan sekarang?</string>
 	<string name="local_network_permission_title">Akses jaringan lokal</string>
 	<string name="manual_update">Pembaruan Manual</string>
 	<string name="manual_update_set_refresh_screen_to_load">Pembaruan manual diatur, geser layar segarkan untuk memuat</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">Ada %1$d kesalahan terdeteksi saat memperbarui, lihat %2$s log untuk detailnya. Kesalahan terakhir terjadi %3$d menit yang lalu</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">Terdeteksi %1$d kesalahan di file %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Gagal mengunduh gambar radar</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">Apakah Anda yakin ingin menghapus semua data?</string>
 	<string name="save_app_debug_logs">Simpan log debug aplikasi</string>
 	<string name="save_settings">Simpan Pengaturan</string>
+	<string name="see_more">Lihat Selengkapnya</string>
 	<string name="settings2">Kembali Ke Pengaturan</string>
 	<string name="show_forecast">Tampilkan Prakiraan</string>
 	<string name="show_radar">Tampilkan Radar</string>

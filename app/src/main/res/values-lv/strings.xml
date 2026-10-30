@@ -9,6 +9,7 @@
 	<string name="avg">vid</string>
 	<string name="battery_warning">Brīdinājums. Iespējojot iepriekš minēto opciju, akumulators var izlādēties ātrāk nekā parasti</string>
 	<string name="bgColour">Logrīku fona krāsu atlasītājs</string>
+	<string name="close">Aizvērt</string>
 	<string name="custom2">Pielāgots</string>
 	<string name="custom_setting">Pielāgotas krāsas</string>
 	<string name="custom_url">Neobligāti: pielāgots URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Gaismas tēma</string>
 	<string name="local_network_permission_denied">Piekļuve vietējai meteostacijai nav pieejama, kamēr Android iestatījumos nepiešķirsiet atļauju “Tuvumā esošās ierīces”. Publiskā interneta laikapstākļu dati joprojām var atjaunināties.</string>
 	<string name="local_network_permission_explanation">Ļaujiet %1$s piekļūt laikapstākļu datiem jūsu mājas tīklā. Publiskā interneta laikapstākļu dati turpinās darboties arī bez šīs atļaujas.</string>
+	<string name="local_network_permission_open_settings">Piekļuve lokālajam tīklam tika noraidīta, tāpēc Android vairs nejautās. Lai piekļūtu laikapstākļu datiem mājas tīklā, Android iestatījumos ieslēdziet “Tuvumā esošās ierīces” lietotnei %1$s. Vai atvērt iestatījumus tagad?</string>
 	<string name="local_network_permission_title">Piekļuve lokālajam tīklam</string>
 	<string name="manual_update">Manuālie atjauninājumi</string>
 	<string name="manual_update_set_refresh_screen_to_load">Manuāla atjaunināšana ir iestatīta, velciet atsvaidzināšanas ekrānu, lai ielādētu</string>
@@ -83,6 +85,11 @@
 		<item quantity="one">Atjaunināšanas laikā tika konstatēta %1$d kļūda. Detalizētu informāciju skatiet %2$s žurnālos. Pēdējā kļūda radās pirms %3$d minūtēm</item>
 		<item quantity="other">Atjaunināšanas laikā tika konstatētas %1$d kļūdas. Detalizētu informāciju skatiet %2$s žurnālos. Pēdējā kļūda radās pirms %3$d minūtēm</item>
 		<item quantity="zero">Atjaunināšanas laikā tika konstatētas %1$d kļūdas. Detalizētu informāciju skatiet %2$s žurnālos. Pēdējā kļūda radās pirms %3$d minūtēm</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Failā %2$s konstatēta %1$d kļūda</item>
+		<item quantity="other">Failā %2$s konstatētas %1$d kļūdas</item>
+		<item quantity="zero">Failā %2$s konstatētas %1$d kļūdas</item>
 	</plurals>
 	<string name="radar">Radars</string>
 	<string name="radar_download_failed">Neizdevās lejupielādēt radara attēlu</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">Vai tiešām vēlaties noņemt visus datus?</string>
 	<string name="save_app_debug_logs">Saglabājiet lietotņu atkļūdošanas žurnālus</string>
 	<string name="save_settings">Saglabāt iestatījumus</string>
+	<string name="see_more">Skatīt vairāk</string>
 	<string name="settings2">Dodieties atpakaļ uz iestatījumiem</string>
 	<string name="show_forecast">Rādīt prognozi</string>
 	<string name="show_radar">Rādīt radaru</string>

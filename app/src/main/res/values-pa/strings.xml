@@ -9,6 +9,7 @@
 	<string name="avg">ਔਸਤ</string>
 	<string name="battery_warning">ਚੇਤਾਵਨੀ: ਉਪਰੋਕਤ ਵਿਕਲਪ ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਨਾਲ ਤੁਹਾਡੀ ਬੈਟਰੀ ਆਮ ਨਾਲੋਂ ਤੇਜ਼ੀ ਨਾਲ ਖਤਮ ਹੋ ਸਕਦੀ ਹੈ</string>
 	<string name="bgColour">ਵਿਜੇਟ ਬੈਕਗ੍ਰਾਊਂਡ ਰੰਗ ਚੋਣਕਾਰ</string>
+	<string name="close">ਬੰਦ ਕਰੋ</string>
 	<string name="custom2">ਕਸਟਮ</string>
 	<string name="custom_setting">ਕਸਟਮ ਰੰਗ</string>
 	<string name="custom_url">ਵਿਕਲਪਿਕ: ਕਸਟਮ URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">ਹਲਕਾ ਥੀਮ</string>
 	<string name="local_network_permission_denied">ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ Android ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਨਜ਼ਦੀਕੀ ਡੀਵਾਈਸਾਂ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਦਿੰਦੇ, ਸਥਾਨਕ ਮੌਸਮ ਸਟੇਸ਼ਨ ਤੱਕ ਪਹੁੰਚ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਜਨਤਕ ਇੰਟਰਨੈੱਟ ਦਾ ਮੌਸਮ ਡਾਟਾ ਹਾਲੇ ਵੀ ਅੱਪਡੇਟ ਹੋ ਸਕਦਾ ਹੈ।</string>
 	<string name="local_network_permission_explanation">%1$s ਨੂੰ ਤੁਹਾਡੇ ਘਰੇਲੂ ਨੈੱਟਵਰਕ \'ਤੇ ਮੌਸਮ ਡਾਟੇ ਤੱਕ ਪਹੁੰਚਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ। ਇਸ ਇਜਾਜ਼ਤ ਤੋਂ ਬਿਨਾਂ ਵੀ ਜਨਤਕ ਇੰਟਰਨੈੱਟ ਦਾ ਮੌਸਮ ਡਾਟਾ ਕੰਮ ਕਰਦਾ ਰਹੇਗਾ।</string>
+	<string name="local_network_permission_open_settings">ਸਥਾਨਕ ਨੈੱਟਵਰਕ ਪਹੁੰਚ ਅਸਵੀਕਾਰ ਕੀਤੀ ਗਈ ਸੀ, ਇਸ ਲਈ Android ਦੁਬਾਰਾ ਨਹੀਂ ਪੁੱਛੇਗਾ। ਆਪਣੇ ਘਰੇਲੂ ਨੈੱਟਵਰਕ ਦਾ ਮੌਸਮ ਡਾਟਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ Android ਸੈਟਿੰਗਾਂ ਵਿੱਚ %1$s ਲਈ ਨਜ਼ਦੀਕੀ ਡੀਵਾਈਸਾਂ ਚਾਲੂ ਕਰੋ। ਕੀ ਹੁਣੇ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹਣੀਆਂ ਹਨ?</string>
 	<string name="local_network_permission_title">ਸਥਾਨਕ ਨੈੱਟਵਰਕ ਪਹੁੰਚ</string>
 	<string name="manual_update">ਮੈਨੁਅਲ ਅੱਪਡੇਟ</string>
 	<string name="manual_update_set_refresh_screen_to_load">ਮੈਨੁਅਲ ਅੱਪਡੇਟ ਸੈੱਟ, ਲੋਡ ਕਰਨ ਲਈ ਰਿਫ੍ਰੈਸ਼ ਸਕ੍ਰੀਨ ਨੂੰ ਸਵਾਈਪ ਕਰੋ</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">ਅੱਪਡੇਟ ਕਰਨ ਦੌਰਾਨ %1$d ਗਲਤੀ ਦਾ ਪਤਾ ਲੱਗਾ, ਵੇਰਵਿਆਂ ਲਈ %2$s ਲੌਗ ਦੇਖੋ। ਪਿਛਲੀ ਤਰੁੱਟੀ %3$d ਮਿੰਟ ਪਹਿਲਾਂ ਹੋਈ ਸੀ</item>
 		<item quantity="other">ਅੱਪਡੇਟ ਕਰਨ ਦੌਰਾਨ %1$d ਤਰੁੱਟੀਆਂ ਲੱਭੀਆਂ ਗਈਆਂ, ਵੇਰਵਿਆਂ ਲਈ %2$s ਲੌਗ ਦੇਖੋ। ਪਿਛਲੀ ਤਰੁੱਟੀ %3$d ਮਿੰਟ ਪਹਿਲਾਂ ਹੋਈ ਸੀ</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ਫ਼ਾਈਲ ਵਿੱਚ %1$d ਗੜਬੜੀ ਮਿਲੀ</item>
+		<item quantity="other">%2$s ਫ਼ਾਈਲ ਵਿੱਚ %1$d ਗੜਬੜੀਆਂ ਮਿਲੀਆਂ</item>
 	</plurals>
 	<string name="radar">ਰਾਡਾਰ</string>
 	<string name="radar_download_failed">ਰਾਡਾਰ ਚਿੱਤਰ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ ’ਤੇ ਸਾਰਾ ਡਾਟਾ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
 	<string name="save_app_debug_logs">ਐਪ ਡੀਬੱਗ ਲੌਗਸ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
 	<string name="save_settings">ਸੈਟਿੰਗਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
+	<string name="see_more">ਹੋਰ ਦੇਖੋ</string>
 	<string name="settings2">ਸੈਟਿੰਗਾਂ ’ਤੇ ਵਾਪਸ ਜਾਓ</string>
 	<string name="show_forecast">ਪੂਰਵ ਅਨੁਮਾਨ ਦਿਖਾਓ</string>
 	<string name="show_radar">ਰਾਡਾਰ ਦਿਖਾਓ</string>

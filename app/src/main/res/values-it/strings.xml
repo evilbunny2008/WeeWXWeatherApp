@@ -9,6 +9,7 @@
 	<string name="avg">med</string>
 	<string name="battery_warning">Avvertenza: l’attivazione dell’opzione precedente potrebbe scaricare la batteria più velocemente del solito</string>
 	<string name="bgColour">Selettore colore di sfondo del widget</string>
+	<string name="close">Chiudi</string>
 	<string name="custom2">Personalizzato</string>
 	<string name="custom_setting">Colori personalizzati</string>
 	<string name="custom_url">Facoltativo: URL personalizzato</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema leggero</string>
 	<string name="local_network_permission_denied">L’accesso alla stazione meteo locale non è disponibile finché non concedi l’autorizzazione Dispositivi nelle vicinanze nelle impostazioni di Android. I dati meteo da Internet pubblico possono comunque aggiornarsi.</string>
 	<string name="local_network_permission_explanation">Consenti a %1$s di raggiungere i dati meteo sulla tua rete domestica. I dati meteo da Internet pubblico continueranno a funzionare anche senza questa autorizzazione.</string>
+	<string name="local_network_permission_open_settings">L’accesso alla rete locale è stato negato, quindi Android non lo chiederà più. Per raggiungere i dati meteo sulla rete domestica, attiva Dispositivi nelle vicinanze per %1$s nelle impostazioni di Android. Aprire le impostazioni ora?</string>
 	<string name="local_network_permission_title">Accesso alla rete locale</string>
 	<string name="manual_update">Aggiornamenti manuali</string>
 	<string name="manual_update_set_refresh_screen_to_load">Set di aggiornamento manuale, scorrere la schermata di aggiornamento per caricare</string>
@@ -83,6 +85,11 @@
 		<item quantity="many">Sono stati rilevati %1$d errori durante l’aggiornamento, visualizza i log %2$s per i dettagli. L’ultimo errore si è verificato %3$d minuti fa</item>
 		<item quantity="one">È stato rilevato %1$d errore durante l’aggiornamento, visualizza i log %2$s per i dettagli. L’ultimo errore si è verificato %3$d minuti fa</item>
 		<item quantity="other">Sono stati rilevati %1$d errori durante l’aggiornamento, visualizza i log %2$s per i dettagli. L’ultimo errore si è verificato %3$d minuti fa</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="many">Sono stati rilevati %1$d errori nel file %2$s</item>
+		<item quantity="one">È stato rilevato %1$d errore nel file %2$s</item>
+		<item quantity="other">Sono stati rilevati %1$d errori nel file %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Impossibile scaricare l’immagine radar</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">Sei sicuro di voler rimuovere tutti i dati?</string>
 	<string name="save_app_debug_logs">Salva i log di debug dell’app</string>
 	<string name="save_settings">Salva impostazioni</string>
+	<string name="see_more">Mostra altro</string>
 	<string name="settings2">Torna alle Impostazioni</string>
 	<string name="show_forecast">Mostra previsione</string>
 	<string name="show_radar">Mostra radar</string>

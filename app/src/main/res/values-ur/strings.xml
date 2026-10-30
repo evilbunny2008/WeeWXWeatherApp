@@ -9,6 +9,7 @@
 	<string name="avg">اوسط</string>
 	<string name="battery_warning">انتباہ: مذکورہ بالا آپشن کو چالو کرنے سے آپ کی بیٹری معمول سے زیادہ تیزی سے ختم ہوسکتی ہے</string>
 	<string name="bgColour">ویجیٹ پس منظر کا رنگ چننے والا</string>
+	<string name="close">بند کریں</string>
 	<string name="custom2">حسب ضرورت</string>
 	<string name="custom_setting">کسٹم رنگ</string>
 	<string name="custom_url">اختیاری: کسٹم یو آر ایل</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">لائٹ تھیم</string>
 	<string name="local_network_permission_denied">جب تک آپ Android ترتیبات میں قریبی آلات کی اجازت نہیں دیتے، مقامی موسمی اسٹیشن تک رسائی دستیاب نہیں ہے۔ عوامی انٹرنیٹ کا موسمی ڈیٹا اب بھی اپ ڈیٹ ہو سکتا ہے۔</string>
 	<string name="local_network_permission_explanation">%1$s کو اپنے گھریلو نیٹ ورک پر موسم کے ڈیٹا تک پہنچنے کی اجازت دیں۔ اس اجازت کے بغیر بھی عوامی انٹرنیٹ کا موسمی ڈیٹا کام کرتا رہے گا۔</string>
+	<string name="local_network_permission_open_settings">مقامی نیٹ ورک تک رسائی مسترد کر دی گئی، اس لیے Android دوبارہ نہیں پوچھے گا۔ اپنے ہوم نیٹ ورک کا موسمی ڈیٹا حاصل کرنے کے لیے Android کی ترتیبات میں %1$s کے لیے قریبی آلات آن کریں۔ کیا ابھی ترتیبات کھولیں؟</string>
 	<string name="local_network_permission_title">مقامی نیٹ ورک تک رسائی</string>
 	<string name="manual_update">دستی تازہ کاری</string>
 	<string name="manual_update_set_refresh_screen_to_load">دستی اپ ڈیٹ سیٹ ، لوڈ کرنے کے لئے ریفریش اسکرین کو سوائپ کریں</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">اپ ڈیٹ کرتے وقت %1$d خرابی کا پتہ چلا، تفصیلات کے لیے %2$s لاگز دیکھیں۔ آخری خرابی %3$d منٹ پہلے پیش آئی</item>
 		<item quantity="other">اپ ڈیٹ کرتے وقت %1$d خرابیوں کا پتہ چلا، تفصیلات کے لیے %2$s لاگز دیکھیں۔ آخری خرابی %3$d منٹ پہلے پیش آئی</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s فائل میں %1$d خرابی ملی</item>
+		<item quantity="other">%2$s فائل میں %1$d خرابیاں ملیں</item>
 	</plurals>
 	<string name="radar">ریڈار</string>
 	<string name="radar_download_failed">ریڈار امیج ڈاؤن لوڈ کرنے میں ناکام</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">کیا آپ واقعی تمام ڈیٹا کو ہٹانا چاہتے ہیں؟</string>
 	<string name="save_app_debug_logs">ایپ ڈیبگ لاگز کو محفوظ کریں</string>
 	<string name="save_settings">ترتیبات کو بچائیں</string>
+	<string name="see_more">مزید دیکھیں</string>
 	<string name="settings2">ترتیبات پر واپس جائیں</string>
 	<string name="show_forecast">پیشن گوئی دکھائیں</string>
 	<string name="show_radar">راڈار دکھائیں</string>

@@ -9,6 +9,7 @@
 	<string name="avg">평균</string>
 	<string name="battery_warning">경고: 위 옵션을 활성화하면 평소보다 배터리가 더 빨리 소모될 수 있습니다</string>
 	<string name="bgColour">위젯 배경색 선택기</string>
+	<string name="close">닫기</string>
 	<string name="custom2">사용자 지정</string>
 	<string name="custom_setting">사용자 정의 색상</string>
 	<string name="custom_url">선택사항: 맞춤 URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">라이트 테마</string>
 	<string name="local_network_permission_denied">Android 설정에서 근처 기기 권한을 허용할 때까지 로컬 기상 관측소에 접근할 수 없습니다. 공용 인터넷 날씨 데이터는 계속 업데이트될 수 있습니다.</string>
 	<string name="local_network_permission_explanation">%1$s이 홈 네트워크의 날씨 데이터에 접근할 수 있도록 허용하세요. 이 권한이 없어도 공용 인터넷 날씨 데이터는 계속 작동합니다.</string>
+	<string name="local_network_permission_open_settings">로컬 네트워크 액세스가 거부되어 Android에서 다시 묻지 않습니다. 홈 네트워크의 날씨 데이터에 액세스하려면 Android 설정에서 %1$s의 근처 기기 권한을 사용 설정하세요. 지금 설정을 여시겠습니까?</string>
 	<string name="local_network_permission_title">로컬 네트워크 액세스</string>
 	<string name="manual_update">수동 업데이트</string>
 	<string name="manual_update_set_refresh_screen_to_load">수동 업데이트 설정, 새로고침 화면을 스와이프하여 로드</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">업데이트하는 동안 %1$d개의 오류가 감지되었습니다. 자세한 내용은 %2$s 로그를 확인하세요. 마지막 오류는 %3$d분 전에 발생했습니다</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">%2$s 파일에서 오류 %1$d개가 감지되었습니다</item>
 	</plurals>
 	<string name="radar">레이더</string>
 	<string name="radar_download_failed">레이더 이미지를 다운로드하지 못했습니다</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">모든 데이터를 삭제하시겠습니까?</string>
 	<string name="save_app_debug_logs">앱 디버그 로그 저장</string>
 	<string name="save_settings">설정 저장</string>
+	<string name="see_more">더보기</string>
 	<string name="settings2">설정으로 돌아가기</string>
 	<string name="show_forecast">예측 표시</string>
 	<string name="show_radar">레이더 표시</string>

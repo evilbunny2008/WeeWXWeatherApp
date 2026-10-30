@@ -9,6 +9,7 @@
 	<string name="avg">дундаж</string>
 	<string name="battery_warning">Анхааруулга: Дээрх сонголтыг идэвхжүүлбэл батерей ердийнхөөс хурдан дуусаж магадгүй</string>
 	<string name="bgColour">Виджетийн дэвсгэр өнгө сонгогч</string>
+	<string name="close">Хаах</string>
 	<string name="custom2">Захиалгат</string>
 	<string name="custom_setting">Захиалгат өнгө</string>
 	<string name="custom_url">Заавал биш: Захиалгат URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Цайвар загвар</string>
 	<string name="local_network_permission_denied">Android-ын тохиргоонд Ойролцоох төхөөрөмжүүдийн зөвшөөрөл өгөх хүртэл орон нутгийн цаг агаарын станцад хандах боломжгүй. Интернэтийн нийтийн цаг агаарын өгөгдөл шинэчлэгдсээр байна.</string>
 	<string name="local_network_permission_explanation">%1$s-д таны гэрийн сүлжээн дэх цаг агаарын өгөгдөлд хандахыг зөвшөөрөх. Интернэтийн нийтийн цаг агаарын өгөгдөл энэ зөвшөөрөлгүйгээр ч ажилласаар байна.</string>
+	<string name="local_network_permission_open_settings">Дотоод сүлжээнд хандахаас татгалзсан тул Android дахин асуухгүй. Гэрийн сүлжээн дэх цаг агаарын өгөгдөлд хандахын тулд Android-ын тохиргооноос %1$s-д «Ойролцоох төхөөрөмжүүд»-ийг асаана уу. Тохиргоог одоо нээх үү?</string>
 	<string name="local_network_permission_title">Дотоод сүлжээнд хандах</string>
 	<string name="manual_update">Гар аргаар шинэчлэх</string>
 	<string name="manual_update_set_refresh_screen_to_load">Гар аргаар шинэчлэхээр тохируулсан, ачаалахын тулд дэлгэцийг шударч шинэчилнэ үү</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Шинэчлэх явцад %1$d алдаа илэрлээ. Дэлгэрэнгүйг %2$s логоос харна уу. Сүүлийн алдаа %3$d минутын өмнө гарсан</item>
 		<item quantity="other">Шинэчлэх явцад %1$d алдаа илэрлээ. Дэлгэрэнгүйг %2$s логоос харна уу. Сүүлийн алдаа %3$d минутын өмнө гарсан</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s файлаас %1$d алдаа илэрлээ</item>
+		<item quantity="other">%2$s файлаас %1$d алдаа илэрлээ</item>
 	</plurals>
 	<string name="radar">Радар</string>
 	<string name="radar_download_failed">Радарын зургийг татаж чадсангүй</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Та бүх өгөгдлийг устгахдаа итгэлтэй байна уу?</string>
 	<string name="save_app_debug_logs">Аппын дибаг логийг хадгалах</string>
 	<string name="save_settings">Тохиргоог хадгалах</string>
+	<string name="see_more">Дэлгэрэнгүй</string>
 	<string name="settings2">Тохиргоо руу буцах</string>
 	<string name="show_forecast">Урьдчилсан мэдээ харуулах</string>
 	<string name="show_radar">Радар харуулах</string>

@@ -9,6 +9,7 @@
 	<string name="avg">орт</string>
 	<string name="battery_warning">ЕСКЕРТУ: Жоғарыда көрсетілген опцияны қосу батареяны әдеттегіден тезірек ағызуы мүмкін</string>
 	<string name="bgColour">Виджет фон түсі</string>
+	<string name="close">Жабу</string>
 	<string name="custom2">Теңшелетін</string>
 	<string name="custom_setting">Жеке түстер</string>
 	<string name="custom_url">Қосымша: Жеке URL мекенжайы</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Жеңіл тақырып</string>
 	<string name="local_network_permission_denied">Android параметрлерінде «Маңайдағы құрылғылар» рұқсатын бермейінше, жергілікті ауа райы станциясына кіру мүмкін емес. Жалпыға ортақ интернеттегі ауа райы деректері бұрынғыша жаңартыла алады.</string>
 	<string name="local_network_permission_explanation">%1$s қолданбасына үй желіңіздегі ауа райы деректеріне қол жеткізуге рұқсат беріңіз. Жалпыға ортақ интернеттегі ауа райы деректері бұл рұқсатсыз да жұмыс істей береді.</string>
+	<string name="local_network_permission_open_settings">Жергілікті желіге кіруден бас тартылды, сондықтан Android қайта сұрамайды. Үй желісіндегі ауа райы деректерін алу үшін Android параметрлерінде %1$s үшін «Маңайдағы құрылғылар» рұқсатын қосыңыз. Параметрлерді қазір ашу керек пе?</string>
 	<string name="local_network_permission_title">Жергілікті желіге кіру</string>
 	<string name="manual_update">Қолмен жаңартулар</string>
 	<string name="manual_update_set_refresh_screen_to_load">Қолмен жаңартуды орнатыңыз, Жаңарту экранын жалғаңыз</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Жаңарту кезінде %1$d қате анықталды, мәліметтер үшін %2$s журналдарын қараңыз. Соңғы қате %3$d минут бұрын орын алды</item>
 		<item quantity="other">Жаңарту кезінде %1$d қате анықталды, мәліметтер үшін %2$s журналдарын қараңыз. Соңғы қате %3$d минут бұрын орын алды</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s файлынан %1$d қате табылды</item>
+		<item quantity="other">%2$s файлынан %1$d қате табылды</item>
 	</plurals>
 	<string name="radar">Радар</string>
 	<string name="radar_download_failed">Радар кескінін жүктеу сәтсіз аяқталды</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Барлық деректерді жойғыңыз келе ме?</string>
 	<string name="save_app_debug_logs">Қолданбаларды жою журналдарын сақтаңыз</string>
 	<string name="save_settings">Параметрлерді сақтаңыз</string>
+	<string name="see_more">Толығырақ</string>
 	<string name="settings2">Параметрлерге оралыңыз</string>
 	<string name="show_forecast">Болжау</string>
 	<string name="show_radar">Радарды көрсету</string>

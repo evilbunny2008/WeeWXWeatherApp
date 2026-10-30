@@ -9,6 +9,7 @@
 	<string name="avg">gen</string>
 	<string name="battery_warning">Varning: Aktivering av ovanstående alternativ kan ta ur batteriet snabbare än vanligt</string>
 	<string name="bgColour">Widget bakgrundsfärgväljare</string>
+	<string name="close">Stäng</string>
 	<string name="custom2">Anpassad</string>
 	<string name="custom_setting">Anpassade färger</string>
 	<string name="custom_url">Valfritt: Anpassad webbadress</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Lätt tema</string>
 	<string name="local_network_permission_denied">Åtkomst till den lokala väderstationen är inte tillgänglig förrän du ger behörigheten Enheter i närheten i Android-inställningarna. Väderdata från det offentliga internet kan fortfarande uppdateras.</string>
 	<string name="local_network_permission_explanation">Tillåt %1$s att nå väderdata i ditt hemnätverk. Väderdata från det offentliga internet fortsätter att fungera utan denna behörighet.</string>
+	<string name="local_network_permission_open_settings">Åtkomst till lokalt nätverk nekades, så Android frågar inte igen. För att nå väderdata på ditt hemnätverk aktiverar du Enheter i närheten för %1$s i Android-inställningarna. Vill du öppna inställningarna nu?</string>
 	<string name="local_network_permission_title">Åtkomst till lokalt nätverk</string>
 	<string name="manual_update">Manuella uppdateringar</string>
 	<string name="manual_update_set_refresh_screen_to_load">Manuell uppdatering set, svep uppdateringsskärmen för att ladda</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Det upptäcktes %1$d fel vid uppdatering, se %2$s loggar för detaljer. Senaste felet inträffade för %3$d minuter sedan</item>
 		<item quantity="other">Det upptäcktes %1$d fel vid uppdatering, se %2$s loggar för detaljer. Senaste felet inträffade för %3$d minuter sedan</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%1$d fel hittades i filen %2$s</item>
+		<item quantity="other">%1$d fel hittades i filen %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Det gick inte att ladda ner radarbilden</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Är du säker på att du vill ta bort all data?</string>
 	<string name="save_app_debug_logs">Spara appfelsökningsloggar</string>
 	<string name="save_settings">Spara inställningar</string>
+	<string name="see_more">Visa mer</string>
 	<string name="settings2">Gå tillbaka till Inställningar</string>
 	<string name="show_forecast">Visa prognos</string>
 	<string name="show_radar">Visa radar</string>

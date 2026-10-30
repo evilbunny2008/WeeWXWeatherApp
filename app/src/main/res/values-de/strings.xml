@@ -9,6 +9,7 @@
 	<string name="avg">Ø</string>
 	<string name="battery_warning">Warnung: Wenn Sie die obige Option aktivieren, wird Ihr Akku möglicherweise schneller als gewöhnlich entladen</string>
 	<string name="bgColour">Widget-Hintergrundfarbauswahl</string>
+	<string name="close">Schließen</string>
 	<string name="custom2">Benutzerdefiniert</string>
 	<string name="custom_setting">Benutzerdefinierte Farben</string>
 	<string name="custom_url">Optional: Benutzerdefinierte URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Lichtthema</string>
 	<string name="local_network_permission_denied">Der Zugriff auf die lokale Wetterstation ist nicht verfügbar, bis du in den Android-Einstellungen die Berechtigung „Geräte in der Nähe“ erteilst. Wetterdaten aus dem öffentlichen Internet können weiterhin aktualisiert werden.</string>
 	<string name="local_network_permission_explanation">Erlaube %1$s, Wetterdaten in deinem Heimnetzwerk abzurufen. Wetterdaten aus dem öffentlichen Internet funktionieren auch ohne diese Berechtigung weiter.</string>
+	<string name="local_network_permission_open_settings">Der Zugriff auf das lokale Netzwerk wurde abgelehnt, daher fragt Android nicht erneut. Um Wetterdaten aus deinem Heimnetzwerk abzurufen, aktiviere in den Android-Einstellungen „Geräte in der Nähe“ für %1$s. Einstellungen jetzt öffnen?</string>
 	<string name="local_network_permission_title">Zugriff auf lokales Netzwerk</string>
 	<string name="manual_update">Manuelle Updates</string>
 	<string name="manual_update_set_refresh_screen_to_load">Manuelles Update-Set, wischen Sie zum Laden über den Aktualisierungsbildschirm</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Beim Aktualisieren wurde ein %1$d-Fehler festgestellt. Einzelheiten finden Sie in den %2$s Protokollen. Der letzte Fehler ist vor %3$d Minuten aufgetreten</item>
 		<item quantity="other">Beim Aktualisieren wurden %1$d Fehler erkannt. Einzelheiten finden Sie in den Protokollen von %2$s. Der letzte Fehler ist vor %3$d Minuten aufgetreten</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">In der Datei %2$s wurde %1$d Fehler gefunden</item>
+		<item quantity="other">In der Datei %2$s wurden %1$d Fehler gefunden</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Das Radarbild konnte nicht heruntergeladen werden</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Sind Sie sicher, dass Sie alle Daten entfernen möchten?</string>
 	<string name="save_app_debug_logs">Speichern Sie App-Debug-Protokolle</string>
 	<string name="save_settings">Einstellungen speichern</string>
+	<string name="see_more">Mehr anzeigen</string>
 	<string name="settings2">Gehen Sie zurück zu den Einstellungen</string>
 	<string name="show_forecast">Prognose anzeigen</string>
 	<string name="show_radar">Radar anzeigen</string>

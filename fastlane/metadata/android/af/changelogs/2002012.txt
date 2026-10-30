@@ -1,0 +1,3 @@
+• Fone kan nou na landskapmodus gedraai word
+• Vra vir toegang tot die plaaslike netwerk wanneer jou weerbediener op jou tuisnetwerk is, soos Android 17 vereis
+• Die JSON-lêerfoutdialoog het nou Sien meer- en Maak toe-opsies

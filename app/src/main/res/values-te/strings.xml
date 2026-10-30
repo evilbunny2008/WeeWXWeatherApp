@@ -9,6 +9,7 @@
 	<string name="avg">సగటు</string>
 	<string name="battery_warning">హెచ్చరిక: పై ఎంపికను ప్రారంభించడం వలన మీ బ్యాటరీ సాధారణం కంటే వేగంగా డ్రెయిన్ కావచ్చు</string>
 	<string name="bgColour">విడ్జెట్ బ్యాక్‌గ్రౌండ్ కలర్ పిక్కర్</string>
+	<string name="close">మూసివేయండి</string>
 	<string name="custom2">కస్టమ్</string>
 	<string name="custom_setting">అనుకూల రంగులు</string>
 	<string name="custom_url">ఐచ్ఛికం: అనుకూల URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">లైట్ థీమ్</string>
 	<string name="local_network_permission_denied">Android సెట్టింగ్‌లలో సమీపంలోని పరికరాల అనుమతిని ఇచ్చే వరకు స్థానిక వాతావరణ కేంద్రం యాక్సెస్ అందుబాటులో ఉండదు. పబ్లిక్ ఇంటర్నెట్ వాతావరణ డేటా ఇప్పటికీ అప్‌డేట్ కావచ్చు.</string>
 	<string name="local_network_permission_explanation">మీ ఇంటి నెట్‌వర్క్‌లోని వాతావరణ డేటాను చేరుకోవడానికి %1$sని అనుమతించండి. ఈ అనుమతి లేకుండా కూడా పబ్లిక్ ఇంటర్నెట్ వాతావరణ డేటా పని చేస్తూనే ఉంటుంది.</string>
+	<string name="local_network_permission_open_settings">లోకల్ నెట్‌వర్క్ యాక్సెస్ తిరస్కరించబడింది, కాబట్టి Android మళ్లీ అడగదు. మీ హోమ్ నెట్‌వర్క్‌లోని వాతావరణ డేటాను పొందడానికి Android సెట్టింగ్‌లలో %1$s కోసం సమీపంలోని పరికరాలను ఆన్ చేయండి. ఇప్పుడే సెట్టింగ్‌లను తెరవాలా?</string>
 	<string name="local_network_permission_title">స్థానిక నెట్‌వర్క్ యాక్సెస్</string>
 	<string name="manual_update">మాన్యువల్ నవీకరణలు</string>
 	<string name="manual_update_set_refresh_screen_to_load">మాన్యువల్ అప్‌డేట్ సెట్ చేయబడింది, లోడ్ చేయడానికి రిఫ్రెష్ స్క్రీన్‌ను స్వైప్ చేయండి</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">అప్‌డేట్ చేస్తున్నప్పుడు %1$d లోపం కనుగొనబడింది, వివరాల కోసం %2$s లాగ్‌లను వీక్షించండి. %3$d నిమిషాల క్రితం చివరి లోపం సంభవించింది</item>
 		<item quantity="other">అప్‌డేట్ చేస్తున్నప్పుడు %1$d లోపాలు కనుగొనబడ్డాయి, వివరాల కోసం %2$s లాగ్‌లను వీక్షించండి. %3$d నిమిషాల క్రితం చివరి లోపం సంభవించింది</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ఫైల్‌లో %1$d ఎర్రర్ గుర్తించబడింది</item>
+		<item quantity="other">%2$s ఫైల్‌లో %1$d ఎర్రర్‌లు గుర్తించబడ్డాయి</item>
 	</plurals>
 	<string name="radar">రాడార్</string>
 	<string name="radar_download_failed">రాడార్ చిత్రాన్ని డౌన్‌లోడ్ చేయడంలో విఫలమైంది</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">మీరు ఖచ్చితంగా మొత్తం డేటాను తీసివేయాలనుకుంటున్నారా?</string>
 	<string name="save_app_debug_logs">యాప్ డీబగ్ లాగ్‌లను సేవ్ చేయండి</string>
 	<string name="save_settings">సెట్టింగ్‌లను సేవ్ చేయండి</string>
+	<string name="see_more">మరిన్ని చూడండి</string>
 	<string name="settings2">సెట్టింగ్‌లకు తిరిగి వెళ్లండి</string>
 	<string name="show_forecast">సూచనను చూపు</string>
 	<string name="show_radar">రాడార్ చూపించు</string>

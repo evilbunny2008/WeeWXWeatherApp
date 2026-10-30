@@ -1,0 +1,3 @@
+• Orain telefonoak horizontalean jar daitezke
+• Sare lokalerako sarbidea eskatzen du eguraldi-zerbitzaria etxeko sarean dagoenean, Android 17-k eskatzen duen bezala
+• JSON fitxategiaren erroreen elkarrizketa-koadroak Ikusi gehiago eta Itxi aukerak ditu orain

@@ -9,6 +9,7 @@
 	<string name="avg">mitjana</string>
 	<string name="battery_warning">Avís: activar l’opció anterior pot esgotar la bateria més ràpidament de l’habitual</string>
 	<string name="bgColour">Selector de color de fons del widget</string>
+	<string name="close">Tanca</string>
 	<string name="custom2">Personalitzat</string>
 	<string name="custom_setting">Colors personalitzats</string>
 	<string name="custom_url">Opcional: URL personalitzat</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema lleuger</string>
 	<string name="local_network_permission_denied">L’accés a l’estació meteorològica local no està disponible fins que concedeixis el permís de dispositius propers a la configuració d’Android. Les dades meteorològiques d’Internet públic encara es poden actualitzar.</string>
 	<string name="local_network_permission_explanation">Permet que %1$s accedeixi a les dades meteorològiques de la teva xarxa domèstica. Les dades meteorològiques d’Internet públic continuaran funcionant sense aquest permís.</string>
+	<string name="local_network_permission_open_settings">S’ha denegat l’accés a la xarxa local, així que Android no ho tornarà a demanar. Per accedir a les dades meteorològiques de la xarxa de casa, activa Dispositius propers per a %1$s a la configuració d’Android. Vols obrir la configuració ara?</string>
 	<string name="local_network_permission_title">Accés a la xarxa local</string>
 	<string name="manual_update">Actualitzacions manuals</string>
 	<string name="manual_update_set_refresh_screen_to_load">Conjunt d’actualització manual, llisca la pantalla d’actualització per carregar</string>
@@ -83,6 +85,11 @@
 		<item quantity="many">S’han detectat %1$d errors durant l’actualització, visualitzeu %2$s registres per obtenir-ne els detalls. L’últim error es va produir fa %3$d minuts</item>
 		<item quantity="one">S’ha detectat %1$d error durant l’actualització, visualitzeu els registres de %2$s per obtenir-ne els detalls. L’últim error es va produir fa %3$d minuts</item>
 		<item quantity="other">S’han detectat %1$d errors durant l’actualització, visualitzeu %2$s registres per obtenir-ne els detalls. L’últim error es va produir fa %3$d minuts</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="many">S’han detectat %1$d errors al fitxer %2$s</item>
+		<item quantity="one">S’ha detectat %1$d error al fitxer %2$s</item>
+		<item quantity="other">S’han detectat %1$d errors al fitxer %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">No s’ha pogut descarregar la imatge del radar</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">Esteu segur que voleu eliminar totes les dades?</string>
 	<string name="save_app_debug_logs">Desa els registres de depuració de l’aplicació</string>
 	<string name="save_settings">Desa la configuració</string>
+	<string name="see_more">Mostra’n més</string>
 	<string name="settings2">Torna a la configuració</string>
 	<string name="show_forecast">Mostra Previsió</string>
 	<string name="show_radar">Mostra el radar</string>

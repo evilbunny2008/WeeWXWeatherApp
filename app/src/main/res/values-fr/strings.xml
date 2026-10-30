@@ -9,6 +9,7 @@
 	<string name="avg">moy</string>
 	<string name="battery_warning">Attention : l’activation de l’option ci-dessus peut vider votre batterie plus rapidement que d’habitude</string>
 	<string name="bgColour">Sélecteur de couleur d’arrière-plan du widget</string>
+	<string name="close">Fermer</string>
 	<string name="custom2">Personnalisé</string>
 	<string name="custom_setting">Couleurs personnalisées</string>
 	<string name="custom_url">Facultatif : URL personnalisée</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Thème Lumière</string>
 	<string name="local_network_permission_denied">L’accès à la station météo locale est indisponible tant que vous n’accordez pas l’autorisation Appareils à proximité dans les paramètres Android. Les données météo de l’Internet public peuvent toujours être mises à jour.</string>
 	<string name="local_network_permission_explanation">Autorisez %1$s à accéder aux données météo de votre réseau domestique. Les données météo de l’Internet public continueront de fonctionner sans cette autorisation.</string>
+	<string name="local_network_permission_open_settings">L’accès au réseau local a été refusé, Android ne le redemandera donc pas. Pour accéder aux données météo de votre réseau domestique, activez Appareils à proximité pour %1$s dans les paramètres Android. Ouvrir les paramètres maintenant ?</string>
 	<string name="local_network_permission_title">Accès au réseau local</string>
 	<string name="manual_update">Mises à jour manuelles</string>
 	<string name="manual_update_set_refresh_screen_to_load">Ensemble de mise à jour manuelle, faites glisser l’écran d’actualisation pour charger</string>
@@ -83,6 +85,11 @@
 		<item quantity="many">%1$d erreurs ont été détectées lors de la mise à jour, consultez les journaux %2$s pour plus de détails. La dernière erreur s’est produite il y a %3$d minutes</item>
 		<item quantity="one">Une erreur %1$d a été détectée lors de la mise à jour, consultez les journaux %2$s pour plus de détails. La dernière erreur s’est produite il y a %3$d minutes</item>
 		<item quantity="other">%1$d erreurs ont été détectées lors de la mise à jour, consultez les journaux %2$s pour plus de détails. La dernière erreur s’est produite il y a %3$d minutes</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="many">%1$d erreurs ont été détectées dans le fichier %2$s</item>
+		<item quantity="one">%1$d erreur a été détectée dans le fichier %2$s</item>
+		<item quantity="other">%1$d erreurs ont été détectées dans le fichier %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Échec du téléchargement de l’image radar</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">Êtes-vous sûr de vouloir supprimer toutes les données ?</string>
 	<string name="save_app_debug_logs">Enregistrer les journaux de débogage de l’application</string>
 	<string name="save_settings">Enregistrer les paramètres</string>
+	<string name="see_more">Voir plus</string>
 	<string name="settings2">Revenir aux paramètres</string>
 	<string name="show_forecast">Afficher les prévisions</string>
 	<string name="show_radar">Afficher le radar</string>

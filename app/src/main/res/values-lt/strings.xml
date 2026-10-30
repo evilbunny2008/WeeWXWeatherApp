@@ -9,6 +9,7 @@
 	<string name="avg">vid</string>
 	<string name="battery_warning">Įspėjimas: įjungus pirmiau nurodytą parinktį, baterija gali išeikvoti greičiau nei įprastai</string>
 	<string name="bgColour">Valdiklio fono spalvos parinkiklis</string>
+	<string name="close">Uždaryti</string>
 	<string name="custom2">Pasirinktinis</string>
 	<string name="custom_setting">Individualios spalvos</string>
 	<string name="custom_url">Pasirenkama: tinkintas URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Šviesos tema</string>
 	<string name="local_network_permission_denied">Prieiga prie vietinės meteorologijos stoties nepasiekiama, kol „Android“ nustatymuose nesuteiksite leidimo „Įrenginiai netoliese“. Viešojo interneto orų duomenys vis tiek gali būti atnaujinami.</string>
 	<string name="local_network_permission_explanation">Leiskite %1$s pasiekti orų duomenis jūsų namų tinkle. Viešojo interneto orų duomenys ir toliau veiks be šio leidimo.</string>
+	<string name="local_network_permission_open_settings">Prieiga prie vietinio tinklo buvo atmesta, todėl Android daugiau neklaus. Norėdami pasiekti orų duomenis namų tinkle, Android nustatymuose įjunkite „Netoliese esantys įrenginiai“ programai %1$s. Atidaryti nustatymus dabar?</string>
 	<string name="local_network_permission_title">Prieiga prie vietinio tinklo</string>
 	<string name="manual_update">Rankiniai atnaujinimai</string>
 	<string name="manual_update_set_refresh_screen_to_load">Neautomatinis naujinimas nustatytas, perbraukite atnaujinimo ekraną, kad įkeltumėte</string>
@@ -86,6 +88,12 @@
 		<item quantity="one">Atnaujinant aptikta %1$d klaida. Daugiau informacijos rasite %2$s žurnaluose. Paskutinė klaida įvyko prieš %3$d minučių</item>
 		<item quantity="other">Atnaujinant aptikta %1$d klaidų. Daugiau informacijos rasite %2$s žurnaluose. Paskutinė klaida įvyko prieš %3$d minučių</item>
 	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">Faile %2$s aptiktos %1$d klaidos</item>
+		<item quantity="many">Faile %2$s aptikta %1$d klaidos</item>
+		<item quantity="one">Faile %2$s aptikta %1$d klaida</item>
+		<item quantity="other">Faile %2$s aptikta %1$d klaidų</item>
+	</plurals>
 	<string name="radar">Radaras</string>
 	<string name="radar_download_failed">Nepavyko atsisiųsti radaro vaizdo</string>
 	<string name="radar_still_downloading">Radaro vaizdas vis dar atsisiunčiamas</string>
@@ -115,6 +123,7 @@
 	<string name="remove_all_data">Ar tikrai norite pašalinti visus duomenis?</string>
 	<string name="save_app_debug_logs">Išsaugokite programos derinimo žurnalus</string>
 	<string name="save_settings">Išsaugoti nustatymus</string>
+	<string name="see_more">Rodyti daugiau</string>
 	<string name="settings2">Grįžkite į nustatymus</string>
 	<string name="show_forecast">Rodyti prognozę</string>
 	<string name="show_radar">Rodyti radarą</string>

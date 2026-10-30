@@ -9,6 +9,7 @@
 	<string name="avg">gem</string>
 	<string name="battery_warning">Waarschuwing: als u de bovenstaande optie inschakelt, kan uw batterij sneller leeglopen dan normaal</string>
 	<string name="bgColour">Achtergrondkleurkiezer voor widgets</string>
+	<string name="close">Sluiten</string>
 	<string name="custom2">Aangepast</string>
 	<string name="custom_setting">Aangepaste kleuren</string>
 	<string name="custom_url">Optioneel: aangepaste URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Licht thema</string>
 	<string name="local_network_permission_denied">Toegang tot het lokale weerstation is niet beschikbaar totdat je de toestemming Apparaten in de buurt verleent in de Android-instellingen. Weergegevens van het openbare internet kunnen nog steeds worden bijgewerkt.</string>
 	<string name="local_network_permission_explanation">Sta %1$s toe om weergegevens op je thuisnetwerk te bereiken. Weergegevens van het openbare internet blijven zonder deze toestemming werken.</string>
+	<string name="local_network_permission_open_settings">Toegang tot het lokale netwerk is geweigerd, dus Android vraagt het niet opnieuw. Om weergegevens op je thuisnetwerk te bereiken, zet je Apparaten in de buurt aan voor %1$s in de Android-instellingen. Instellingen nu openen?</string>
 	<string name="local_network_permission_title">Toegang tot lokaal netwerk</string>
 	<string name="manual_update">Handmatige updates</string>
 	<string name="manual_update_set_refresh_screen_to_load">Handmatige update ingesteld, veeg over het vernieuwingsscherm om te laden</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Er is een %1$d-fout gedetecteerd tijdens het updaten. Bekijk de %2$s logboeken voor meer informatie. Laatste fout is %3$d minuten geleden opgetreden</item>
 		<item quantity="other">Er zijn %1$d fouten gedetecteerd tijdens het updaten. Bekijk %2$s logboeken voor meer informatie. Laatste fout is %3$d minuten geleden opgetreden</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Er is %1$d fout gevonden in het bestand %2$s</item>
+		<item quantity="other">Er zijn %1$d fouten gevonden in het bestand %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Kan het radarbeeld niet downloaden</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Weet u zeker dat u alle gegevens wilt verwijderen?</string>
 	<string name="save_app_debug_logs">Bewaar app-foutopsporingslogboeken</string>
 	<string name="save_settings">Instellingen opslaan</string>
+	<string name="see_more">Meer bekijken</string>
 	<string name="settings2">Ga terug naar Instellingen</string>
 	<string name="show_forecast">Toon voorspelling</string>
 	<string name="show_radar">Radar tonen</string>

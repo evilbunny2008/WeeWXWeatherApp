@@ -9,6 +9,7 @@
 	<string name="avg">med</string>
 	<string name="battery_warning">Aviso: ativar a opção acima pode descarregar a bateria mais rápido do que o normal</string>
 	<string name="bgColour">Seletor de cores de fundo do widget</string>
+	<string name="close">Fechar</string>
 	<string name="custom2">Personalizado</string>
 	<string name="custom_setting">Cores personalizadas</string>
 	<string name="custom_url">Opcional: URL personalizado</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema claro</string>
 	<string name="local_network_permission_denied">O acesso à estação meteorológica local não estará disponível até que você conceda a permissão Dispositivos próximos nas configurações do Android. Os dados meteorológicos da internet pública ainda podem ser atualizados.</string>
 	<string name="local_network_permission_explanation">Permita que o %1$s acesse os dados meteorológicos na sua rede doméstica. Os dados meteorológicos da internet pública continuarão funcionando sem esta permissão.</string>
+	<string name="local_network_permission_open_settings">O acesso à rede local foi negado, então o Android não vai perguntar de novo. Para acessar os dados meteorológicos da sua rede doméstica, ative Dispositivos por perto para %1$s nas configurações do Android. Abrir as configurações agora?</string>
 	<string name="local_network_permission_title">Acesso à rede local</string>
 	<string name="manual_update">Atualizações manuais</string>
 	<string name="manual_update_set_refresh_screen_to_load">Conjunto de atualização manual, deslize a tela de atualização para carregar</string>
@@ -83,6 +85,11 @@
 		<item quantity="many">Foram detectados %1$d erros durante a atualização. Veja os registros de %2$s para obter detalhes. O último erro ocorreu há %3$d minutos</item>
 		<item quantity="one">Foi detectado um erro %1$d durante a atualização. Veja os registros %2$s para obter detalhes. O último erro ocorreu há %3$d minutos</item>
 		<item quantity="other">Foram detectados %1$d erros durante a atualização. Veja os registros de %2$s para obter detalhes. O último erro ocorreu há %3$d minutos</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="many">Foram detectados %1$d erros no arquivo %2$s</item>
+		<item quantity="one">Foi detectado %1$d erro no arquivo %2$s</item>
+		<item quantity="other">Foram detectados %1$d erros no arquivo %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Falha ao baixar a imagem do radar</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">Tem certeza de que deseja remover todos os dados?</string>
 	<string name="save_app_debug_logs">Salvar registros de depuração do aplicativo</string>
 	<string name="save_settings">Salvar configurações</string>
+	<string name="see_more">Ver mais</string>
 	<string name="settings2">Volte para as configurações</string>
 	<string name="show_forecast">Mostrar previsão</string>
 	<string name="show_radar">Mostrar radar</string>

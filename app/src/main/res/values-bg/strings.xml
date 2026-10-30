@@ -9,6 +9,7 @@
 	<string name="avg">ср</string>
 	<string name="battery_warning">Предупреждение: Активирането на горната опция може да изтощи батерията ви по-бързо от обикновено</string>
 	<string name="bgColour">Инструмент за избор на фонов цвят на джаджа</string>
+	<string name="close">Затвори</string>
 	<string name="custom2">Персонализирано</string>
 	<string name="custom_setting">Персонализирани цветове</string>
 	<string name="custom_url">По избор: Персонализиран URL адрес</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Светла тема</string>
 	<string name="local_network_permission_denied">Достъпът до локалната метеостанция не е наличен, докато не предоставите разрешението „Устройства в близост“ в настройките на Android. Метеорологичните данни от публичния интернет все още могат да се актуализират.</string>
 	<string name="local_network_permission_explanation">Разрешете на %1$s да достига до метеорологичните данни във вашата домашна мрежа. Метеорологичните данни от публичния интернет ще продължат да работят и без това разрешение.</string>
+	<string name="local_network_permission_open_settings">Достъпът до локалната мрежа беше отказан, така че Android няма да пита отново. За достъп до метеорологичните данни в домашната ви мрежа включете „Устройства в близост“ за %1$s в настройките на Android. Да се отворят ли настройките сега?</string>
 	<string name="local_network_permission_title">Достъп до локалната мрежа</string>
 	<string name="manual_update">Ръчни актуализации</string>
 	<string name="manual_update_set_refresh_screen_to_load">Зададена е ръчна актуализация, плъзнете екрана за опресняване за зареждане</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Имаше %1$d открита грешка при актуализиране, вижте %2$s регистрационни файлове за подробности. Последната грешка е възникнала преди %3$d минути</item>
 		<item quantity="other">Имаше %1$d открити грешки при актуализирането, вижте %2$s регистрационни файлове за подробности. Последната грешка е възникнала преди %3$d минути</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Открита е %1$d грешка във файла %2$s</item>
+		<item quantity="other">Открити са %1$d грешки във файла %2$s</item>
 	</plurals>
 	<string name="radar">Радар</string>
 	<string name="radar_download_failed">Неуспешно изтегляне на радарното изображение</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Сигурни ли сте, че искате да премахнете всички данни?</string>
 	<string name="save_app_debug_logs">Запазване на регистрационни файлове за отстраняване на грешки в приложението</string>
 	<string name="save_settings">Запазване на настройките</string>
+	<string name="see_more">Вижте още</string>
 	<string name="settings2">Върнете се към Настройки</string>
 	<string name="show_forecast">Показване на прогноза</string>
 	<string name="show_radar">Покажи радар</string>

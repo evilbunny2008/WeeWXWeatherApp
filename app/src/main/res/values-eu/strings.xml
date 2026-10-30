@@ -9,6 +9,7 @@
 	<string name="avg">batez beste</string>
 	<string name="battery_warning">Abisua: goiko aukera gaituz gero, baliteke bateria ohi baino azkarrago agortzea</string>
 	<string name="bgColour">Widgetaren atzeko planoko kolore-hautatzailea</string>
+	<string name="close">Itxi</string>
 	<string name="custom2">Pertsonalizatua</string>
 	<string name="custom_setting">Kolore pertsonalizatuak</string>
 	<string name="custom_url">Aukerakoa: URL pertsonalizatua</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Argia Gaia</string>
 	<string name="local_network_permission_denied">Tokiko estazio meteorologikorako sarbidea ez dago erabilgarri Androiden ezarpenetan Inguruko gailuak baimena ematen duzun arte. Interneteko eguraldi-datu publikoak oraindik egunera daitezke.</string>
 	<string name="local_network_permission_explanation">Baimendu %1$s-i zure etxeko sareko eguraldi-datuetara iristea. Interneteko eguraldi-datu publikoek baimen hau gabe ere funtzionatzen jarraituko dute.</string>
+	<string name="local_network_permission_open_settings">Sare lokalerako sarbidea ukatu da; beraz, Android-ek ez du berriro galdetuko. Etxeko sareko eguraldi-datuak eskuratzeko, aktibatu Inguruko gailuak %1$s aplikaziorako Android-en ezarpenetan. Ezarpenak orain ireki nahi dituzu?</string>
 	<string name="local_network_permission_title">Sare lokalerako sarbidea</string>
 	<string name="manual_update">Eskuzko eguneraketak</string>
 	<string name="manual_update_set_refresh_screen_to_load">Eskuzko eguneratze-multzoa, pasatu hatza freskatu pantaila kargatzeko</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">%1$d errore hauteman da eguneratzean. Ikusi %2$s erregistroak xehetasunetarako. Azken errorea duela %3$d minutu gertatu da</item>
 		<item quantity="other">%1$d errore detektatu dira eguneratzean. Ikusi %2$s erregistroak xehetasunetarako. Azken errorea duela %3$d minutu gertatu da</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Errore %1$d hauteman da %2$s fitxategian</item>
+		<item quantity="other">%1$d errore hauteman dira %2$s fitxategian</item>
 	</plurals>
 	<string name="radar">Radarra</string>
 	<string name="radar_download_failed">Ezin izan da deskargatu radar-irudia</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Ziur datu guztiak kendu nahi dituzula?</string>
 	<string name="save_app_debug_logs">Gorde aplikazioaren arazketa-erregistroak</string>
 	<string name="save_settings">Gorde ezarpenak</string>
+	<string name="see_more">Ikusi gehiago</string>
 	<string name="settings2">Itzuli Ezarpenetara</string>
 	<string name="show_forecast">Erakutsi iragarpena</string>
 	<string name="show_radar">Erakutsi Radar</string>

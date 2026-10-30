@@ -9,6 +9,7 @@
 	<string name="avg">med</string>
 	<string name="battery_warning">Avertisment: activarea opțiunii de mai sus vă poate descărca bateria mai repede decât de obicei</string>
 	<string name="bgColour">Selector de culori de fundal widget</string>
+	<string name="close">Închide</string>
 	<string name="custom2">Personalizat</string>
 	<string name="custom_setting">Culori personalizate</string>
 	<string name="custom_url">Opțional: URL personalizată</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Tema ușoară</string>
 	<string name="local_network_permission_denied">Accesul la stația meteo locală nu este disponibil până când nu acorzi permisiunea Dispozitive din apropiere în setările Android. Datele meteo de pe internetul public se pot actualiza în continuare.</string>
 	<string name="local_network_permission_explanation">Permite aplicației %1$s să acceseze datele meteo din rețeaua ta de acasă. Datele meteo de pe internetul public vor funcționa în continuare fără această permisiune.</string>
+	<string name="local_network_permission_open_settings">Accesul la rețeaua locală a fost refuzat, așa că Android nu va mai întreba. Pentru a accesa datele meteo din rețeaua de acasă, activează Dispozitive din apropiere pentru %1$s în setările Android. Deschizi setările acum?</string>
 	<string name="local_network_permission_title">Acces la rețeaua locală</string>
 	<string name="manual_update">Actualizări manuale</string>
 	<string name="manual_update_set_refresh_screen_to_load">Set de actualizare manuală, glisați ecranul de reîmprospătare pentru a încărca</string>
@@ -83,6 +85,11 @@
 		<item quantity="few">Au fost detectate %1$d erori în timpul actualizării, vizualizați jurnalele %2$s pentru detalii. Ultima eroare a apărut acum %3$d minute</item>
 		<item quantity="one">A fost detectată %1$d eroare în timpul actualizării, vizualizați jurnalele %2$s pentru detalii. Ultima eroare a apărut acum %3$d minute</item>
 		<item quantity="other">Au fost detectate %1$d erori în timpul actualizării, vizualizați jurnalele %2$s pentru detalii. Ultima eroare a apărut acum %3$d minute</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">Au fost detectate %1$d erori în fișierul %2$s</item>
+		<item quantity="one">A fost detectată %1$d eroare în fișierul %2$s</item>
+		<item quantity="other">Au fost detectate %1$d de erori în fișierul %2$s</item>
 	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Nu s-a putut descărca imaginea radar</string>
@@ -113,6 +120,7 @@
 	<string name="remove_all_data">Sigur doriți să eliminați toate datele?</string>
 	<string name="save_app_debug_logs">Salvați jurnalele de depanare a aplicației</string>
 	<string name="save_settings">Salvați setările</string>
+	<string name="see_more">Vezi mai multe</string>
 	<string name="settings2">Du-te înapoi la setări</string>
 	<string name="show_forecast">Arată Prognoza</string>
 	<string name="show_radar">Arată radar</string>

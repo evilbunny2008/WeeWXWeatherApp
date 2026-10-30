@@ -9,6 +9,7 @@
 	<string name="avg">સરેરાશ</string>
 	<string name="battery_warning">ચેતવણી: ઉપરોક્ત વિકલ્પ સક્ષમ કરવાથી તમારી બેટરી સામાન્ય કરતાં વધુ ઝડપથી નીકળી શકે છે</string>
 	<string name="bgColour">વિજેટ પૃષ્ઠભૂમિ રંગ પીકર</string>
+	<string name="close">બંધ કરો</string>
 	<string name="custom2">કસ્ટમ</string>
 	<string name="custom_setting">કસ્ટમ રંગો</string>
 	<string name="custom_url">વૈકલ્પિક: કસ્ટમ URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">લાઇટ થીમ</string>
 	<string name="local_network_permission_denied">Android સેટિંગમાં નજીકના ડિવાઇસની પરવાનગી ન આપો ત્યાં સુધી સ્થાનિક હવામાન સ્ટેશનનો ઍક્સેસ ઉપલબ્ધ નથી. જાહેર ઇન્ટરનેટનો હવામાન ડેટા હજુ પણ અપડેટ થઈ શકે છે.</string>
 	<string name="local_network_permission_explanation">%1$s ને તમારા હોમ નેટવર્ક પરના હવામાન ડેટા સુધી પહોંચવાની મંજૂરી આપો. આ પરવાનગી વિના પણ જાહેર ઇન્ટરનેટનો હવામાન ડેટા કામ કરતો રહેશે.</string>
+	<string name="local_network_permission_open_settings">સ્થાનિક નેટવર્ક ઍક્સેસ નકારવામાં આવી હતી, તેથી Android ફરી પૂછશે નહીં. તમારા હોમ નેટવર્ક પરનો હવામાન ડેટા મેળવવા માટે Android સેટિંગમાં %1$s માટે નજીકના ડિવાઇસ ચાલુ કરો. હમણાં સેટિંગ ખોલીએ?</string>
 	<string name="local_network_permission_title">સ્થાનિક નેટવર્ક ઍક્સેસ</string>
 	<string name="manual_update">મેન્યુઅલ અપડેટ્સ</string>
 	<string name="manual_update_set_refresh_screen_to_load">મેન્યુઅલ અપડેટ સેટ, લોડ કરવા માટે રિફ્રેશ સ્ક્રીનને સ્વાઇપ કરો</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">અપડેટ કરતી વખતે %1$d ભૂલ મળી, વિગતો માટે %2$s લોગ જુઓ. છેલ્લી ભૂલ %3$d મિનિટ પહેલાં આવી</item>
 		<item quantity="other">અપડેટ કરતી વખતે %1$d ભૂલો મળી, વિગતો માટે %2$s લોગ જુઓ. છેલ્લી ભૂલ %3$d મિનિટ પહેલાં આવી</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">%2$s ફાઇલમાં %1$d ભૂલ મળી</item>
+		<item quantity="other">%2$s ફાઇલમાં %1$d ભૂલો મળી</item>
 	</plurals>
 	<string name="radar">રડાર</string>
 	<string name="radar_download_failed">રડાર છબી ડાઉનલોડ કરવામાં નિષ્ફળ</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">શું તમે ખરેખર તમામ ડેટા દૂર કરવા માંગો છો?</string>
 	<string name="save_app_debug_logs">એપ્લિકેશન ડીબગ લોગ સાચવો</string>
 	<string name="save_settings">સેટિંગ્સ સાચવો</string>
+	<string name="see_more">વધુ જુઓ</string>
 	<string name="settings2">સેટિંગ્સ પર પાછા જાઓ</string>
 	<string name="show_forecast">આગાહી બતાવો</string>
 	<string name="show_radar">રડાર બતાવો</string>

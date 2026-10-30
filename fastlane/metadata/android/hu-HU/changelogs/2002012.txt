@@ -1,0 +1,3 @@
+• A telefonok mostantól fekvő tájolásba forgathatók
+• Helyi hálózati hozzáférést kér, ha az időjárás-szervere az otthoni hálózaton van, ahogy azt az Android 17 megköveteli
+• A JSON-fájl hibáit mutató párbeszédablakban mostantól Továbbiak és Bezárás lehetőség is van

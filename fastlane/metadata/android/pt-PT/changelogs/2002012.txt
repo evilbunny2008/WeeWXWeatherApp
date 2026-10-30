@@ -1,0 +1,3 @@
+• Os telemóveis podem agora ser rodados para a horizontal
+• Pede acesso à rede local quando o seu servidor meteorológico está na sua rede doméstica, tal como o Android 17 exige
+• A caixa de diálogo de erros do ficheiro JSON tem agora as opções Ver mais e Fechar

@@ -9,6 +9,7 @@
 	<string name="avg">wastani</string>
 	<string name="battery_warning">Onyo: kuwezesha chaguo hapo juu kunaweza kufuta betri yako haraka kuliko kawaida</string>
 	<string name="bgColour">Kijitabu cha rangi ya msingi wa widget</string>
+	<string name="close">Funga</string>
 	<string name="custom2">Maalum</string>
 	<string name="custom_setting">Rangi za kawaida</string>
 	<string name="custom_url">Hiari: URL ya kawaida</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Mandhari nyepesi</string>
 	<string name="local_network_permission_denied">Ufikiaji wa kituo cha hali ya hewa cha karibu haupatikani hadi utoe ruhusa ya Vifaa vilivyo karibu katika mipangilio ya Android. Data ya hali ya hewa kutoka intaneti ya umma bado inaweza kusasishwa.</string>
 	<string name="local_network_permission_explanation">Ruhusu %1$s kufikia data ya hali ya hewa kwenye mtandao wako wa nyumbani. Data ya hali ya hewa kutoka intaneti ya umma itaendelea kufanya kazi bila ruhusa hii.</string>
+	<string name="local_network_permission_open_settings">Ruhusa ya kufikia mtandao wa karibu ilikataliwa, kwa hivyo Android haitauliza tena. Ili kufikia data ya hali ya hewa kwenye mtandao wako wa nyumbani, washa Vifaa vilivyo karibu kwa %1$s katika mipangilio ya Android. Ungependa kufungua mipangilio sasa?</string>
 	<string name="local_network_permission_title">Ufikiaji wa mtandao wa karibu</string>
 	<string name="manual_update">Sasisho za mwongozo</string>
 	<string name="manual_update_set_refresh_screen_to_load">Sasisha Sasisho la Mwongozo, Swipe Refresh Screen kupakia</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Kulikuwa na hitilafu %1$d iliyogunduliwa wakati wa kusasisha, angalia kumbukumbu %2$s kwa maelezo. Hitilafu ya mwisho ilitokea dakika %3$d zilizopita</item>
 		<item quantity="other">Kulikuwa na hitilafu %1$d zilizogunduliwa wakati wa kusasisha, angalia kumbukumbu %2$s kwa maelezo. Hitilafu ya mwisho ilitokea dakika %3$d zilizopita</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Hitilafu %1$d imegunduliwa katika faili ya %2$s</item>
+		<item quantity="other">Hitilafu %1$d zimegunduliwa katika faili ya %2$s</item>
 	</plurals>
 	<string name="radar">Rada</string>
 	<string name="radar_download_failed">Imeshindwa kupakua picha ya rada</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Je! Una uhakika unataka kuondoa data zote?</string>
 	<string name="save_app_debug_logs">Hifadhi magogo ya utatuaji wa programu</string>
 	<string name="save_settings">Hifadhi Mipangilio</string>
+	<string name="see_more">Angalia Zaidi</string>
 	<string name="settings2">Rudi kwenye Mipangilio</string>
 	<string name="show_forecast">Onyesha utabiri</string>
 	<string name="show_radar">Onyesha rada</string>

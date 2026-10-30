@@ -1,0 +1,3 @@
+• Agora os celulares podem ser girados para o modo paisagem
+• Pede acesso à rede local quando o seu servidor meteorológico está na sua rede doméstica, como o Android 17 exige
+• A caixa de diálogo de erros do arquivo JSON agora tem as opções Ver mais e Fechar

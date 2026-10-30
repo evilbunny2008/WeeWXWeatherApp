@@ -9,6 +9,7 @@
 	<string name="avg">متوسط</string>
 	<string name="battery_warning">تحذير: قد يؤدي تمكين الخيار أعلاه إلى استنزاف البطارية بشكل أسرع من المعتاد</string>
 	<string name="bgColour">القطعة لون الخلفية المنتقى</string>
+	<string name="close">إغلاق</string>
 	<string name="custom2">مخصص</string>
 	<string name="custom_setting">ألوان مخصصة</string>
 	<string name="custom_url">اختياري: عنوان URL مخصص</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">موضوع الضوء</string>
 	<string name="local_network_permission_denied">الوصول إلى محطة الطقس المحلية غير متاح حتى تمنح إذن الأجهزة القريبة في إعدادات Android. لا يزال بإمكان بيانات الطقس من الإنترنت العام التحديث.</string>
 	<string name="local_network_permission_explanation">اسمح لتطبيق %1$s بالوصول إلى بيانات الطقس على شبكتك المنزلية. ستستمر بيانات الطقس من الإنترنت العام في العمل بدون هذا الإذن.</string>
+	<string name="local_network_permission_open_settings">تم رفض الوصول إلى الشبكة المحلية، لذا لن يطلبه Android مرة أخرى. للوصول إلى بيانات الطقس على شبكتك المنزلية، فعّل إذن الأجهزة القريبة لتطبيق %1$s في إعدادات Android. هل تريد فتح الإعدادات الآن؟</string>
 	<string name="local_network_permission_title">الوصول إلى الشبكة المحلية</string>
 	<string name="manual_update">التحديثات اليدوية</string>
 	<string name="manual_update_set_refresh_screen_to_load">مجموعة التحديث اليدوي، اسحب شاشة التحديث للتحميل</string>
@@ -90,6 +92,14 @@
 		<item quantity="two">تم اكتشاف %1$d أخطاء أثناء التحديث، راجع سجلات %2$s للحصول على التفاصيل. حدث الخطأ الأخير منذ %3$d دقيقة</item>
 		<item quantity="zero">تم اكتشاف %1$d أخطاء أثناء التحديث، راجع سجلات %2$s للحصول على التفاصيل. حدث الخطأ الأخير منذ %3$d دقيقة</item>
 	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">تم اكتشاف %1$d أخطاء في ملف %2$s</item>
+		<item quantity="many">تم اكتشاف %1$d خطأً في ملف %2$s</item>
+		<item quantity="one">تم اكتشاف خطأ واحد (%1$d) في ملف %2$s</item>
+		<item quantity="other">تم اكتشاف %1$d خطأ في ملف %2$s</item>
+		<item quantity="two">تم اكتشاف خطأين (%1$d) في ملف %2$s</item>
+		<item quantity="zero">لم يتم اكتشاف أي أخطاء (%1$d) في ملف %2$s</item>
+	</plurals>
 	<string name="radar">رادار</string>
 	<string name="radar_download_failed">فشل في تنزيل صورة الرادار</string>
 	<string name="radar_still_downloading">لا تزال صورة الرادار قيد التنزيل</string>
@@ -119,6 +129,7 @@
 	<string name="remove_all_data">هل أنت متأكد أنك تريد إزالة كافة البيانات؟</string>
 	<string name="save_app_debug_logs">حفظ سجلات تصحيح التطبيق</string>
 	<string name="save_settings">حفظ الإعدادات</string>
+	<string name="see_more">عرض المزيد</string>
 	<string name="settings2">العودة إلى الإعدادات</string>
 	<string name="show_forecast">عرض التوقعات</string>
 	<string name="show_radar">عرض الرادار</string>

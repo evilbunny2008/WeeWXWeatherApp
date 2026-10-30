@@ -9,6 +9,7 @@
 	<string name="avg">平均</string>
 	<string name="battery_warning">警告：啟用上述選項可能會比平時更快地耗盡電池電量</string>
 	<string name="bgColour">小部件背景顏色選擇器</string>
+	<string name="close">關閉</string>
 	<string name="custom2">自訂</string>
 	<string name="custom_setting">定制顏色</string>
 	<string name="custom_url">可選：自定義 URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">淺色主題</string>
 	<string name="local_network_permission_denied">在您於 Android 設定中授予「鄰近裝置」權限之前，將無法存取本機氣象站。來自公用網際網路的天氣資料仍可更新。</string>
 	<string name="local_network_permission_explanation">允許 %1$s 存取您家用網路中的天氣資料。即使沒有此權限，來自公用網際網路的天氣資料仍可繼續使用。</string>
+	<string name="local_network_permission_open_settings">本機網路存取權已遭拒，因此 Android 不會再次詢問。如要取得家用網路上的天氣資料，請在 Android 設定中為 %1$s 開啟「鄰近裝置」權限。要現在開啟設定嗎？</string>
 	<string name="local_network_permission_title">本機網路存取</string>
 	<string name="manual_update">手動更新</string>
 	<string name="manual_update_set_refresh_screen_to_load">手動更新設置，滑動刷新屏幕加載</string>
@@ -79,6 +81,9 @@
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="other">更新時偵測到 %1$d 個錯誤，請查看 %2$s 日誌以取得詳細資訊。上次錯誤發生在 %3$d 分鐘前</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="other">在 %2$s 檔案中偵測到 %1$d 個錯誤</item>
 	</plurals>
 	<string name="radar">雷達</string>
 	<string name="radar_download_failed">雷達圖像下載失敗</string>
@@ -109,6 +114,7 @@
 	<string name="remove_all_data">您確定要刪除所有數據嗎？</string>
 	<string name="save_app_debug_logs">保存應用程序調試日誌</string>
 	<string name="save_settings">保存設置</string>
+	<string name="see_more">查看更多</string>
 	<string name="settings2">返回設置</string>
 	<string name="show_forecast">展會預測</string>
 	<string name="show_radar">顯示雷達</string>

@@ -1,0 +1,3 @@
+• Telefonlar indi üfüqi rejimə çevrilə bilər
+• Android 17-nin tələb etdiyi kimi, hava serveriniz ev şəbəkənizdə olduqda yerli şəbəkəyə giriş icazəsi istənilir
+• JSON faylı xətaları dialoqunda indi Daha çox və Bağla seçimləri var

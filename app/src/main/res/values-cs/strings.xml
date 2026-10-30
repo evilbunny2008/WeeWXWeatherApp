@@ -9,6 +9,7 @@
 	<string name="avg">prům</string>
 	<string name="battery_warning">Upozornění: Povolení výše uvedené možnosti může vybíjet baterii rychleji než obvykle</string>
 	<string name="bgColour">Widget pro výběr barvy pozadí</string>
+	<string name="close">Zavřít</string>
 	<string name="custom2">Vlastní</string>
 	<string name="custom_setting">Vlastní barvy</string>
 	<string name="custom_url">Volitelné: Vlastní adresa URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Světlé téma</string>
 	<string name="local_network_permission_denied">Přístup k místní meteostanici není k dispozici, dokud v nastavení Androidu neudělíte oprávnění Zařízení v okolí. Meteorologická data z veřejného internetu se mohou nadále aktualizovat.</string>
 	<string name="local_network_permission_explanation">Povolte aplikaci %1$s přístup k meteorologickým datům ve vaší domácí síti. Meteorologická data z veřejného internetu budou fungovat i bez tohoto oprávnění.</string>
+	<string name="local_network_permission_open_settings">Přístup k místní síti byl zamítnut, takže se Android už znovu nezeptá. Chcete-li získávat data o počasí z domácí sítě, zapněte v nastavení Androidu pro %1$s oprávnění Zařízení v okolí. Otevřít nastavení nyní?</string>
 	<string name="local_network_permission_title">Přístup k místní síti</string>
 	<string name="manual_update">Ruční aktualizace</string>
 	<string name="manual_update_set_refresh_screen_to_load">Ruční aktualizace nastavena, přejetím prstem po obnovovací obrazovce se načte</string>
@@ -86,6 +88,12 @@
 		<item quantity="one">Při aktualizaci byla zjištěna %1$d chyba, podrobnosti naleznete v protokolech %2$s. K poslední chybě došlo před %3$d minutami</item>
 		<item quantity="other">Při aktualizaci bylo zjištěno %1$d chyb, podrobnosti naleznete v protokolech %2$s. K poslední chybě došlo před %3$d minutami</item>
 	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">V souboru %2$s byly zjištěny %1$d chyby</item>
+		<item quantity="many">V souboru %2$s bylo zjištěno %1$d chyby</item>
+		<item quantity="one">V souboru %2$s byla zjištěna %1$d chyba</item>
+		<item quantity="other">V souboru %2$s bylo zjištěno %1$d chyb</item>
+	</plurals>
 	<string name="radar">Radar</string>
 	<string name="radar_download_failed">Stažení radarového snímku se nezdařilo</string>
 	<string name="radar_still_downloading">Radarový snímek se stále stahuje</string>
@@ -115,6 +123,7 @@
 	<string name="remove_all_data">Opravdu chcete odstranit všechna data?</string>
 	<string name="save_app_debug_logs">Uložte protokoly ladění aplikace</string>
 	<string name="save_settings">Uložit nastavení</string>
+	<string name="see_more">Zobrazit více</string>
 	<string name="settings2">Přejděte zpět do Nastavení</string>
 	<string name="show_forecast">Zobrazit předpověď</string>
 	<string name="show_radar">Zobrazit radar</string>

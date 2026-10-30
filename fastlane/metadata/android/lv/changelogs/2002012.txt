@@ -1,0 +1,3 @@
+• Tālruņus tagad var pagriezt ainavas režīmā
+• Pieprasa piekļuvi lokālajam tīklam, ja jūsu laikapstākļu serveris atrodas mājas tīklā, kā to pieprasa Android 17
+• JSON faila kļūdu dialoglodziņā tagad ir opcijas “Skatīt vairāk” un “Aizvērt”

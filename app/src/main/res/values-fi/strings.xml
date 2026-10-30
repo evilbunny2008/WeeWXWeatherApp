@@ -9,6 +9,7 @@
 	<string name="avg">ka</string>
 	<string name="battery_warning">Varoitus: Yllä olevan vaihtoehdon ottaminen käyttöön voi tyhjentää akun normaalia nopeammin</string>
 	<string name="bgColour">Widgetin taustavärin valitsin</string>
+	<string name="close">Sulje</string>
 	<string name="custom2">Mukautettu</string>
 	<string name="custom_setting">Mukautetut värit</string>
 	<string name="custom_url">Valinnainen: Muokattu URL-osoite</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Kevyt teema</string>
 	<string name="local_network_permission_denied">Paikallisen sääaseman käyttö ei ole käytettävissä, ennen kuin myönnät Lähellä olevat laitteet -luvan Androidin asetuksissa. Julkisen internetin säätiedot voivat edelleen päivittyä.</string>
 	<string name="local_network_permission_explanation">Salli %1$s:n käyttää kotiverkossasi olevia säätietoja. Julkisen internetin säätiedot toimivat edelleen ilman tätä lupaa.</string>
+	<string name="local_network_permission_open_settings">Lähiverkon käyttö estettiin, joten Android ei kysy uudelleen. Jos haluat käyttää kotiverkon säätietoja, ota Lähellä olevat laitteet -lupa käyttöön sovellukselle %1$s Androidin asetuksissa. Avataanko asetukset nyt?</string>
 	<string name="local_network_permission_title">Lähiverkon käyttö</string>
 	<string name="manual_update">Manuaaliset päivitykset</string>
 	<string name="manual_update_set_refresh_screen_to_load">Manuaalinen päivitys asetettu, pyyhkäise päivitysnäyttö ladataksesi</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Päivitettäessä havaittiin %1$d virhe. Katso lisätietoja %2$s lokista. Viimeisin virhe tapahtui %3$d minuuttia sitten</item>
 		<item quantity="other">Päivityksen aikana havaittiin %1$d virhettä. Katso lisätietoja %2$s lokista. Viimeisin virhe tapahtui %3$d minuuttia sitten</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Tiedostosta %2$s löytyi %1$d virhe</item>
+		<item quantity="other">Tiedostosta %2$s löytyi %1$d virhettä</item>
 	</plurals>
 	<string name="radar">Tutka</string>
 	<string name="radar_download_failed">Tutkakuvan lataaminen epäonnistui</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Haluatko varmasti poistaa kaikki tiedot?</string>
 	<string name="save_app_debug_logs">Tallenna sovellusten virheenkorjauslokit</string>
 	<string name="save_settings">Tallenna asetukset</string>
+	<string name="see_more">Näytä lisää</string>
 	<string name="settings2">Palaa asetuksiin</string>
 	<string name="show_forecast">Näytä ennuste</string>
 	<string name="show_radar">Näytä tutka</string>

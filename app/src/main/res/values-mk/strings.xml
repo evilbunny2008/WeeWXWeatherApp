@@ -9,6 +9,7 @@
 	<string name="avg">просечно</string>
 	<string name="battery_warning">Предупредување: Овозможувањето на горната опција може да ја испразни батеријата побрзо од вообичаеното</string>
 	<string name="bgColour">Избирач на боја на заднина на виџети</string>
+	<string name="close">Затвори</string>
 	<string name="custom2">Прилагодено</string>
 	<string name="custom_setting">Прилагодени бои</string>
 	<string name="custom_url">Изборно: Прилагодено URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Светла тема</string>
 	<string name="local_network_permission_denied">Пристапот до локалната метеоролошка станица не е достапен додека не ја дадете дозволата „Уреди во близина“ во поставките на Android. Временските податоци од јавниот интернет сè уште може да се ажурираат.</string>
 	<string name="local_network_permission_explanation">Дозволете %1$s да пристапи до временските податоци на вашата домашна мрежа. Временските податоци од јавниот интернет ќе продолжат да работат и без оваа дозвола.</string>
+	<string name="local_network_permission_open_settings">Пристапот до локалната мрежа беше одбиен, па Android нема повторно да праша. За пристап до метеоролошките податоци на домашната мрежа, вклучете „Уреди во близина“ за %1$s во поставките на Android. Да се отворат поставките сега?</string>
 	<string name="local_network_permission_title">Пристап до локалната мрежа</string>
 	<string name="manual_update">Рачни ажурирања</string>
 	<string name="manual_update_set_refresh_screen_to_load">Поставете рачно ажурирање, повлечете го екранот за освежување за да се вчита</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Откриена е %1$d грешка при ажурирањето, погледнете ги дневниците на %2$s за детали. Последната грешка се појави пред %3$d минути</item>
 		<item quantity="other">Откриени се %1$d грешки при ажурирањето, погледнете ги дневниците на %2$s за детали. Последната грешка се појави пред %3$d минути</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Откриена е %1$d грешка во датотеката %2$s</item>
+		<item quantity="other">Откриени се %1$d грешки во датотеката %2$s</item>
 	</plurals>
 	<string name="radar">Радар</string>
 	<string name="radar_download_failed">Не успеа да се преземе сликата на радарот</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Дали сте сигурни дека сакате да ги отстраните сите податоци?</string>
 	<string name="save_app_debug_logs">Зачувајте дневници за отстранување грешки на апликациите</string>
 	<string name="save_settings">Зачувај ги поставките</string>
+	<string name="see_more">Види повеќе</string>
 	<string name="settings2">Вратете се на поставките</string>
 	<string name="show_forecast">Прикажи прогноза</string>
 	<string name="show_radar">Прикажи радар</string>

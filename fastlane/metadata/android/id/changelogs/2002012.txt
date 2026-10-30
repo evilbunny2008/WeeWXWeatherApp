@@ -1,0 +1,3 @@
+• Ponsel kini dapat diputar ke mode lanskap
+• Meminta akses jaringan lokal saat server cuaca Anda berada di jaringan rumah, sesuai persyaratan Android 17
+• Dialog kesalahan file JSON kini memiliki opsi Lihat Selengkapnya dan Tutup

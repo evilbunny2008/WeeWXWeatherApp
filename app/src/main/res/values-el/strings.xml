@@ -9,6 +9,7 @@
 	<string name="avg">μ.ο</string>
 	<string name="battery_warning">Προειδοποίηση: Η ενεργοποίηση της παραπάνω επιλογής μπορεί να εξαντλήσει την μπαταρία σας πιο γρήγορα από το συνηθισμένο</string>
 	<string name="bgColour">Επιλογέας χρώματος φόντου widget</string>
+	<string name="close">Κλείσιμο</string>
 	<string name="custom2">Προσαρμοσμένο</string>
 	<string name="custom_setting">Προσαρμοσμένα χρώματα</string>
 	<string name="custom_url">Προαιρετικά: Προσαρμοσμένη διεύθυνση URL</string>
@@ -56,6 +57,7 @@
 	<string name="light_theme">Ελαφρύ θέμα</string>
 	<string name="local_network_permission_denied">Η πρόσβαση στον τοπικό μετεωρολογικό σταθμό δεν είναι διαθέσιμη μέχρι να παραχωρήσετε την άδεια Συσκευές σε κοντινή απόσταση στις ρυθμίσεις Android. Τα δεδομένα καιρού από το δημόσιο διαδίκτυο μπορούν ακόμα να ενημερώνονται.</string>
 	<string name="local_network_permission_explanation">Επιτρέψτε στο %1$s να έχει πρόσβαση σε δεδομένα καιρού στο οικιακό σας δίκτυο. Τα δεδομένα καιρού από το δημόσιο διαδίκτυο θα συνεχίσουν να λειτουργούν χωρίς αυτή την άδεια.</string>
+	<string name="local_network_permission_open_settings">Η πρόσβαση στο τοπικό δίκτυο απορρίφθηκε, οπότε το Android δεν θα ρωτήσει ξανά. Για να έχετε πρόσβαση στα δεδομένα καιρού του οικιακού σας δικτύου, ενεργοποιήστε τις Συσκευές σε κοντινή απόσταση για την εφαρμογή %1$s στις ρυθμίσεις του Android. Άνοιγμα ρυθμίσεων τώρα;</string>
 	<string name="local_network_permission_title">Πρόσβαση στο τοπικό δίκτυο</string>
 	<string name="manual_update">Μη αυτόματες ενημερώσεις</string>
 	<string name="manual_update_set_refresh_screen_to_load">Σύνολο μη αυτόματης ενημέρωσης, σύρετε την οθόνη ανανέωσης για φόρτωση</string>
@@ -81,6 +83,10 @@
 	<plurals name="processing_errors2">
 		<item quantity="one">Εντοπίστηκε %1$d σφάλμα κατά την ενημέρωση, δείτε τα αρχεία καταγραφής %2$s για λεπτομέρειες. Το τελευταίο σφάλμα παρουσιάστηκε πριν από %3$d λεπτά</item>
 		<item quantity="other">Εντοπίστηκαν %1$d σφάλματα κατά την ενημέρωση, δείτε τα αρχεία καταγραφής %2$s για λεπτομέρειες. Το τελευταίο σφάλμα παρουσιάστηκε πριν από %3$d λεπτά</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="one">Εντοπίστηκε %1$d σφάλμα στο αρχείο %2$s</item>
+		<item quantity="other">Εντοπίστηκαν %1$d σφάλματα στο αρχείο %2$s</item>
 	</plurals>
 	<string name="radar">Ραντάρ</string>
 	<string name="radar_download_failed">Αποτυχία λήψης της εικόνας ραντάρ</string>
@@ -111,6 +117,7 @@
 	<string name="remove_all_data">Είστε βέβαιοι ότι θέλετε να καταργήσετε όλα τα δεδομένα;</string>
 	<string name="save_app_debug_logs">Αποθήκευση αρχείων καταγραφής εντοπισμού σφαλμάτων εφαρμογών</string>
 	<string name="save_settings">Αποθήκευση ρυθμίσεων</string>
+	<string name="see_more">Δείτε περισσότερα</string>
 	<string name="settings2">Επιστρέψτε στις Ρυθμίσεις</string>
 	<string name="show_forecast">Εμφάνιση Πρόβλεψης</string>
 	<string name="show_radar">Εμφάνιση ραντάρ</string>

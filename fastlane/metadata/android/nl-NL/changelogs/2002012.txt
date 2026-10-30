@@ -1,0 +1,3 @@
+• Telefoons kunnen nu naar liggend worden gedraaid
+• Vraagt om toegang tot het lokale netwerk wanneer je weerserver op je thuisnetwerk staat, zoals Android 17 vereist
+• Het foutvenster voor JSON-bestanden heeft nu de opties Meer bekijken en Sluiten
