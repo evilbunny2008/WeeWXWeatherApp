@@ -383,8 +383,9 @@ public class MainActivity extends FragmentActivity
 			tvSafeH = Math.round(48 * WeeWXApp.getDensity());
 			tvSafeV = Math.round(27 * WeeWXApp.getDensity());
 
-			// Alerts are notifications, which TVs don't show
+			// Alerts are notifications, which TVs don't show, and TVs don't have widgets
 			findViewById(R.id.alert_settings).setVisibility(View.GONE);
+			findViewById(R.id.widget_settings).setVisibility(View.GONE);
 
 			ImageButton tvRefresh = findViewById(R.id.tvRefresh);
 			tvRefresh.setVisibility(View.VISIBLE);
