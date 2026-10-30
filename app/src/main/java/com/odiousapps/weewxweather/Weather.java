@@ -1443,5 +1443,6 @@ public class Weather extends Fragment implements View.OnClickListener, Refreshab
 	{
 		LogMessage("Weather.java pageReady == true!");
 		pageReady = true;
+		MainActivity.weatherPageReady = true;
 	}
 }

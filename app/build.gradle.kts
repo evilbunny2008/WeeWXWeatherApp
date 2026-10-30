@@ -173,6 +173,7 @@ dependencies {
 
 	implementation("com.google.android.material:material:1.14.0")
 	implementation("androidx.core:core:1.19.1")
+	implementation("androidx.core:core-splashscreen:1.2.0")
 	implementation("androidx.fragment:fragment:1.9.1")
 	implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0")
 	implementation("androidx.webkit:webkit:1.18.0")

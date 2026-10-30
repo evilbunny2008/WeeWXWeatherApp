@@ -3,4 +3,12 @@
 	<style name="AppTheme.WeeWXApp.Light" parent="Theme.Material3.Light.NoActionBar"/>
 	<style name="AppTheme.WeeWXApp.Dark" parent="Theme.Material3.Dark.NoActionBar"/>
 	<style name="AppTheme.WeeWXApp" parent="Theme.Material3.DayNight.NoActionBar"/>
+
+	<!-- Shown from launch until the weather screen has drawn, see MainActivity.onCreate() -->
+	<style name="AppTheme.WeeWXApp.Starting" parent="Theme.SplashScreen.IconBackground">
+		<item name="windowSplashScreenBackground">@color/MyAppNavBarColour</item>
+		<item name="windowSplashScreenIconBackgroundColor">@color/White</item>
+		<item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher</item>
+		<item name="postSplashScreenTheme">@style/AppTheme.WeeWXApp.Common</item>
+	</style>
 </resources>

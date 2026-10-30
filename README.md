@@ -32,4 +32,6 @@ Big thanks to the [WeeWX project](https://WeeWX.com), as this app wouldn't be po
 
 Weather Icons from [FlatIcon](https://www.flaticon.com) and is licensed under [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/)
 
+Android TV splash screen is cropped from [BryceRainbow](https://commons.wikimedia.org/wiki/File:BryceRainbow.jpg) by Rbwaugh, licensed under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+
 This app is by [OdiousApps](https://odiousapps.com).

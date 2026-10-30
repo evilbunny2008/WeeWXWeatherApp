@@ -16,6 +16,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemClock;
 import android.provider.Settings;
 import android.text.Editable;
 import android.text.method.LinkMovementMethod;
@@ -73,6 +74,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.ColorUtils;
 import androidx.core.graphics.Insets;
+import androidx.core.splashscreen.SplashScreen;
 import androidx.core.text.HtmlCompat;
 import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
@@ -82,6 +84,7 @@ import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
@@ -200,6 +203,10 @@ public class MainActivity extends FragmentActivity
 	private ImageButton hamburger;
 	private boolean gestureNav = false;
 	private boolean isTV = false;
+	// Set by the weather page once it has drawn, the splash screen stays up until then
+	static volatile boolean weatherPageReady = false;
+	private long splashDeadline = 0;
+	private static final String SHOW_SPLASH = "show_splash";
 	// TV overscan safe area, 0 everywhere else
 	private int tvSafeH = 0, tvSafeV = 0;
 
@@ -243,10 +250,31 @@ public class MainActivity extends FragmentActivity
 
 	static boolean mqttEnabled = false;
 
+	// First called when the screen is ready to draw, onCreate() alone can take longer than the
+	// time limit on a TV, so that's when the 5s starts rather than at launch
+	private boolean keepSplashScreen()
+	{
+		if(weatherPageReady)
+			return false;
+
+		long now = SystemClock.uptimeMillis();
+		if(splashDeadline == 0)
+			splashDeadline = now + 5000;
+
+		return now < splashDeadline;
+	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		instance = this;
+
+		// Building the screen takes a few seconds and the web pages draw after that, so keep
+		// the splash screen up until the weather page is ready instead of showing a blank
+		// screen. Nothing to wait for before the app has been set up.
+		SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+		weatherPageReady = false;
+		boolean setUp = KeyValue.isPrefSet(json_keys[0] + "_url");
 
 		super.onCreate(savedInstanceState);
 
@@ -280,6 +308,34 @@ public class MainActivity extends FragmentActivity
 		else
 			LogMessage("MainActivity.onCreate() theme: " + theme);
 
+		// Android TV ignores the splash screen theme and shows a black window until this window
+		// first draws, and the system only shows it on launch, not after saving the settings. So
+		// in both cases draw the splash ourselves and hold it there while the screen is built.
+		// The condition only goes on afterwards, it would stop that first frame from drawing.
+		if(WeeWXApp.isTV() || getIntent().getBooleanExtra(SHOW_SPLASH, false))
+		{
+			getWindow().setBackgroundDrawableResource(R.drawable.splash);
+			getWindow().getDecorView().post(() ->
+			{
+				if(isDestroyed())
+					return;
+
+				finishCreate(savedInstanceState);
+				splashScreen.setKeepOnScreenCondition(() -> setUp && keepSplashScreen());
+
+				if(getLifecycle().getCurrentState().isAtLeast(Lifecycle.State.RESUMED))
+					resumeScreen();
+			});
+
+			return;
+		}
+
+		splashScreen.setKeepOnScreenCondition(() -> setUp && keepSplashScreen());
+		finishCreate(savedInstanceState);
+	}
+
+	private void finishCreate(Bundle savedInstanceState)
+	{
 		screen_elements.add(new Setting("about_the_app", R.id.about_the_app));
 		screen_elements.add(new Setting("aboutText", R.id.aboutText));
 		screen_elements.add(new Setting("bgTextInputLayout", R.id.bgTextInputLayout));
@@ -1291,6 +1347,12 @@ public class MainActivity extends FragmentActivity
 	{
 		super.onResume();
 
+		if(hasStarted)
+			resumeScreen();
+	}
+
+	private void resumeScreen()
+	{
 		Window window = getWindow();
 
 		WindowInsetsControllerCompat controller =
@@ -1694,6 +1756,9 @@ public class MainActivity extends FragmentActivity
 	{
 		super.onSaveInstanceState(outState);
 
+		if(!hasStarted)
+			return;
+
 		LogMessage("MainActivity.onSaveInstanceState() Stashing current settings into a bundle....");
 		outState.putInt("page", mViewPager.getCurrentItem());
 		outState.putInt(WeeWXApp.UPDATE_FREQUENCY, UpdateFrequency);
@@ -2042,6 +2107,15 @@ public class MainActivity extends FragmentActivity
 				.setNegativeButton(getAndroidString(R.string.no), (dialog_interface, i) -> dialog_interface.cancel())
 				.create()
 				.show();
+	}
+
+	// Goes on before the busy dialog closes, and stays until the new activity takes over
+	private void coverWithSplash()
+	{
+		View cover = new View(this);
+		cover.setBackgroundResource(R.drawable.splash);
+		addContentView(cover, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+														 ViewGroup.LayoutParams.MATCH_PARENT));
 	}
 
 	private void resetScreen()
@@ -2939,6 +3013,7 @@ public class MainActivity extends FragmentActivity
 
 			runOnUiThread(() ->
 			{
+				coverWithSplash();
 				resetScreen();
 
 				onResume();
@@ -2955,7 +3030,7 @@ public class MainActivity extends FragmentActivity
 
 				LogMessage("processSettings() Recreate the activity...");
 				finish();
-				startActivity(new Intent(MainActivity.this, MainActivity.class));
+				startActivity(new Intent(MainActivity.this, MainActivity.class).putExtra(SHOW_SPLASH, true));
 			});
 		});
 	}
