@@ -857,11 +857,6 @@ public class WeeWXApp extends Application
 		return instance.getResources().getConfiguration().screenWidthDp;
 	}
 
-	static boolean isTablet()
-	{
-		return instance.getResources().getConfiguration().smallestScreenWidthDp >= 600;
-	}
-
 	static InputStream openRawResource(int resId)
 	{
 		return instance.getResources().openRawResource(resId);

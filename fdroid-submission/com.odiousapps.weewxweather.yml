@@ -16,7 +16,7 @@ Binaries:
 Builds:
   - versionName: 2.2.11
     versionCode: 2002011
-    commit:
+    commit: 3dab7e6615cd55082cfb4c50015e9eec2ce692f4
     subdir: app
     gradle:
       - yes

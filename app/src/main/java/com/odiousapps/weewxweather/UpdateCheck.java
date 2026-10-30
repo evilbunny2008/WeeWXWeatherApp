@@ -260,6 +260,13 @@ public class UpdateCheck extends BroadcastReceiver
 		}
 	}
 
+	// Skip the 10s throttle, e.g. right after the local network permission was granted
+	static void runNow()
+	{
+		bgLastRun = 0L;
+		runInTheBackground();
+	}
+
 	static void runInTheBackground()
 	{
 		LogMessage("UpdateCheck.runInTheBackground() Running the background updates...");

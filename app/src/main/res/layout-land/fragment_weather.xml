@@ -58,7 +58,7 @@
 				android:layout_height="wrap_content"
 				android:text="My Place, My Country"
 				android:gravity="center"
-				android:textSize="28sp"
+				android:textSize="22sp"
 				tools:ignore="HardcodedText" />
 
 			<com.google.android.material.textview.MaterialTextView
@@ -67,7 +67,7 @@
 				android:layout_height="wrap_content"
 				android:text="Tue, 21 Oct 2025 21:25 EST"
 				android:gravity="center"
-				android:textSize="18sp"
+				android:textSize="14sp"
 				tools:ignore="HardcodedText" />
 
 			<FrameLayout

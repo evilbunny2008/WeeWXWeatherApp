@@ -19,6 +19,7 @@ import javax.net.ssl.X509TrustManager;
 import okhttp3.Cache;
 import okhttp3.ConnectionSpec;
 import okhttp3.Credentials;
+import okhttp3.Dns;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -62,6 +63,10 @@ class NetworkClient
 	private static TrustManager[] trustAllCerts;
 	private static SSLSocketFactory sslSocketFactory;
 	private static ConnectionSpec modernTLS;
+
+	// Fail LAN connections with a clear error when the local network permission was refused
+	private static final Dns localNetworkDns = hostname ->
+			LocalNetwork.filterAddresses(hostname, customDns.lookup(hostname));
 
 	static
 	{
@@ -117,14 +122,19 @@ class NetworkClient
 			defaultBuilder = new OkHttpClient.Builder()
 				.sslSocketFactory(sslSocketFactory, (X509TrustManager)trustAllCerts[0])
 				.hostnameVerifier((hostname, session) -> true)
-				.connectionSpecs(Arrays.asList(modernTLS, ConnectionSpec.CLEARTEXT));
+				.connectionSpecs(Arrays.asList(modernTLS, ConnectionSpec.CLEARTEXT))
+				.addInterceptor(chain ->
+				{
+					LocalNetwork.checkHost(chain.request().url().host());
+					return chain.proceed(chain.request());
+				});
 
 			clientNoTimeoutInstance = defaultBuilder.build().newBuilder()
 				.connectTimeout(30_000L, TimeUnit.MILLISECONDS)
 				.writeTimeout(30_000L, TimeUnit.MILLISECONDS)
 				.readTimeout(30_000L, TimeUnit.MILLISECONDS)
 				.callTimeout(60_000L, TimeUnit.MILLISECONDS)
-				.dns(customDns)
+				.dns(localNetworkDns)
 				.build();
 
 			clientInstance = defaultBuilder.build().newBuilder()
@@ -132,7 +142,7 @@ class NetworkClient
 				.writeTimeout(WeeWXAppCommon.default_timeout, TimeUnit.MILLISECONDS)
 				.readTimeout(WeeWXAppCommon.default_timeout, TimeUnit.MILLISECONDS)
 				.callTimeout(WeeWXAppCommon.default_timeout * 2, TimeUnit.MILLISECONDS)
-				.dns(customDns)
+				.dns(localNetworkDns)
 				.cache(cache)
 				.build();
 		} catch (Exception e) {

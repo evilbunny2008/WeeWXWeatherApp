@@ -477,3 +477,33 @@ html, body
 {
     margin: 8px auto;
 }
+/* Phones in landscape leave the forecast only ~250px of height, so shrink today's block */
+@media (max-height: 300px)
+{
+	.today
+	{
+		margin-bottom: 5px;
+	}
+	.iconBig img
+	{
+		height: 56px !important;
+		width: auto;
+		margin-bottom: 0;
+	}
+	.wordToday
+	{
+		font-size: var(--font-large);
+	}
+	.bigTemp
+	{
+		font-size: var(--font-average);
+	}
+	.minTemp
+	{
+		font-size: var(--font-small);
+	}
+	.day
+	{
+		margin: 2px 0 5px 0;
+	}
+}

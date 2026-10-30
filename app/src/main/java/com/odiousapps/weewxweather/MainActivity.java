@@ -148,6 +148,7 @@ import static com.odiousapps.weewxweather.WeeWXNotificationManager.removeNotific
 public class MainActivity extends FragmentActivity
 {
 	private final ExecutorService bmExecutor = Executors.newSingleThreadExecutor();
+	private final ExecutorService lanExecutor = Executors.newSingleThreadExecutor();
 	private final Handler mainHandler = new Handler(Looper.getMainLooper());
 
 	static final String FORCE_DARK_MODE = "force_dark_mode";
@@ -158,9 +159,9 @@ public class MainActivity extends FragmentActivity
 
 	private static final int NOTIFICATION_PERMISSION_CODE = 1001;
 	private static final int LOCAL_NETWORK_PERMISSION_CODE = 1002;
-	private static final String LOCAL_NETWORK_PERMISSION = "android.permission.ACCESS_LOCAL_NETWORK";
 	private boolean pendingLocalSettingsSave = false;
 	private boolean localNetworkPermissionRequested = false;
+	private String localNetworkHosts = "";
 
 	private DrawerLayout mDrawerLayout;
 	private TextInputLayout fgtil, bgtil;
@@ -348,9 +349,6 @@ public class MainActivity extends FragmentActivity
 
 		extraPx = (int)(75 * WeeWXApp.getInstance().getResources().getDisplayMetrics().density + 0.5f);
 
-		if(!WeeWXApp.isTablet())
-			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
 		setContentView(R.layout.main_activity);
 
 		mDrawerLayout = findViewById(R.id.drawer_layout);
@@ -432,9 +430,18 @@ public class MainActivity extends FragmentActivity
 			Insets sb = insets.getInsets(WindowInsetsCompat.Type.statusBars());
 			Insets nb = insets.getInsets(WindowInsetsCompat.Type.navigationBars());
 			Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
+			Insets side = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
 			int top = cdInitialTop + sb.top;
 			int bottom = cdInitialBottom + Math.max(nb.bottom, ime.bottom);
-			v.setPadding(cdInitialLeft, top, cdInitialRight, bottom);
+
+			// The drawer only touches the start edge, so only pad that side
+			int left = cdInitialLeft, right = cdInitialRight;
+			if(v.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL)
+				right += side.right;
+			else
+				left += side.left;
+
+			v.setPadding(left, top, right, bottom);
 			return insets;
 		});
 
@@ -455,9 +462,11 @@ public class MainActivity extends FragmentActivity
 		{
 			Insets nb = insets.getInsets(WindowInsetsCompat.Type.navigationBars());
 			Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
+			// In landscape the nav bar and camera cutout can sit on either side
+			Insets side = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
 			int bottom = rvInitialBottom + Math.max(nb.bottom, ime.bottom);
 			view.setBackgroundColor(WeeWXApp.getColour(R.color.MyAppNavBarColour));
-			view.setPadding(rvInitialLeft, rvInitialTop, rvInitialRight, bottom);
+			view.setPadding(rvInitialLeft + side.left, rvInitialTop, rvInitialRight + side.right, bottom);
 
 			Insets gestureInsets = insets.getInsets(WindowInsetsCompat.Type.systemGestures());
 
@@ -804,6 +813,8 @@ public class MainActivity extends FragmentActivity
 			webcamInterval = savedInstanceState.getInt("webcamInterval", webcamInterval);
 			DayNightMode = savedInstanceState.getInt("DayNightMode", DayNightMode);
 			widget_theme_mode = savedInstanceState.getInt(WIDGET_THEME_MODE, widget_theme_mode);
+			pendingLocalSettingsSave = savedInstanceState.getBoolean("pendingLocalSettingsSave", false);
+			localNetworkHosts = savedInstanceState.getString("localNetworkHosts", "");
 
 			LogMessage("MainActivity.onCreate() UpdateFrequency: " + UpdateFrequency);
 			LogMessage("MainActivity.onCreate() UpdateInterval: " + UpdateInterval);
@@ -919,13 +930,6 @@ public class MainActivity extends FragmentActivity
 		b1.setOnClickListener(arg0 ->
 		{
 			LogMessage("MainActivity.onCreate() Starting save settings!");
-			String candidate = settingsURL.getText() == null ? "" : settingsURL.getText().toString().strip();
-			if(isLocalNetworkUrl(candidate) && !hasLocalNetworkPermission())
-			{
-				pendingLocalSettingsSave = true;
-				requestLocalNetworkPermission(true);
-				return;
-			}
 			b1.setEnabled(false);
 			b2.setEnabled(false);
 			closeKeyboard();
@@ -934,12 +938,16 @@ public class MainActivity extends FragmentActivity
 			if(KeyValue.theme == R.style.AppTheme_WeeWXApp_Light_Common)
 				layout = R.layout.layout_loading_dialog_light;
 
+			// Rotating recreates the activity, which would orphan the save running in the background
+			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
+
 			LogMessage("MainActivity.onCreate() show dialog");
 			dialog = new AlertDialog.Builder(this)
 					.setCancelable(false)
 					.setView(layout)
 					.create();
 
+			dialog.setOnDismissListener(d -> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED));
 			dialog.show();
 
 			LogMessage("MainActivity.onCreate() Process settings!");
@@ -1060,8 +1068,15 @@ public class MainActivity extends FragmentActivity
 		LogMessage("MainActivity.onCreate() has finished...", KeyValue.d);
 		hasStarted = true;
 		// Ask only when a configured endpoint uses the LAN. Public HTTPS needs no permission.
-		if(hasLocalNetworkEndpoint())
-			requestLocalNetworkPermission(false);
+		if(!LocalNetwork.hasPermission())
+		{
+			lanExecutor.execute(() ->
+			{
+				List<String> hosts = LocalNetwork.localHosts(savedURLs(), true);
+				if(!hosts.isEmpty())
+					runOnUiThread(() -> requestLocalNetworkPermission(false, hosts));
+			});
+		}
 
 		if((boolean)KeyValue.readVar(ENABLE_MQTT, enable_mqtt_default))
 			mqttEnabled = true;
@@ -1560,6 +1575,8 @@ public class MainActivity extends FragmentActivity
 		outState.putInt("webcamInterval", webcamInterval);
 		outState.putInt("DayNightMode", DayNightMode);
 		outState.putInt(WIDGET_THEME_MODE, widget_theme_mode);
+		outState.putBoolean("pendingLocalSettingsSave", pendingLocalSettingsSave);
+		outState.putString("localNetworkHosts", localNetworkHosts);
 
 		LogMessage("MainActivity.onSaveInstanceState() UpdateFrequency: " + UpdateFrequency);
 		LogMessage("MainActivity.onSaveInstanceState() UpdateInterval: " + UpdateInterval);
@@ -1693,13 +1710,37 @@ public class MainActivity extends FragmentActivity
 		if(errorCount < 1)
 			return;
 
+		String errorMsgs = (String)KeyValue.readVar("ProcessingErrorMsgs", "");
+
 		KeyValue.putVar("ProcessingErrorCount", null);
 		KeyValue.putVar("ProcessingErrorID", null);
+		KeyValue.putVar("ProcessingErrorMsgs", null);
 
+		String summaryStr = getPlural(R.plurals.processing_errors_summary, errorCount, errorCount, json_labels[json_id]);
 		String errorStr = getPlural(R.plurals.processing_errors, errorCount, errorCount, json_labels[json_id], json_url, getEnglishAndroidString(R.string.app_name));
 		String logStr = getEnglishPlural(R.plurals.processing_errors, errorCount, errorCount, json_labels[json_id], json_url, getEnglishAndroidString(R.string.app_name));
 
-		showAlertDialog(errorStr, logStr);
+		LogMessage("showProcessingErrors(), logStr: " + logStr);
+
+		// Short summary first, the individual errors are only shown if asked for
+		String detailsStr = is_blank(errorMsgs) ? errorStr : errorMsgs + "\n\n" + errorStr;
+
+		new AlertDialog.Builder(this)
+				.setCancelable(false)
+				.setIcon(R.drawable.ic_launcher_fg)
+				.setTitle(getEnglishAndroidString(R.string.app_name))
+				.setMessage(summaryStr)
+				.setPositiveButton(getAndroidString(R.string.see_more), (dialog_interface, i) ->
+					new AlertDialog.Builder(this)
+							.setIcon(R.drawable.ic_launcher_fg)
+							.setTitle(getEnglishAndroidString(R.string.app_name))
+							.setMessage(detailsStr)
+							.setPositiveButton(getAndroidString(R.string.close), null)
+							.create()
+							.show())
+				.setNegativeButton(getAndroidString(R.string.close), null)
+				.create()
+				.show();
 	}
 
 	private void showUpdateErrors()
@@ -1924,6 +1965,9 @@ public class MainActivity extends FragmentActivity
 				errorDialog(R.string.url_was_default_or_empty);
 				return;
 			}
+
+			if(needsLocalNetworkPrompt(Collections.singletonList(uiSettingsURL)))
+				return;
 
 			try
 			{
@@ -2427,6 +2471,14 @@ public class MainActivity extends FragmentActivity
 					tmpCustomURL
 			);
 
+			// The settings file can point anywhere, so check every URL it gave us before downloading
+			List<String> lanCheckURLs = new ArrayList<>(urls);
+			if(uiEnableMqtt)
+				lanCheckURLs.add(mqttURL);
+
+			if(needsLocalNetworkPrompt(lanCheckURLs))
+				return;
+
 			String tmpRadType = radtype.equals("image") ? "IMAGE" : "HTML";
 			if(radtype.equals("image") &&
 			   (radarURL.toLowerCase(Locale.ENGLISH).strip().endsWith(".mjpeg") ||
@@ -2868,74 +2920,125 @@ public class MainActivity extends FragmentActivity
 		return instance;
 	}
 
-	private boolean hasLocalNetworkPermission()
+	// Every URL the app has saved, used to decide if we need the local network permission
+	private List<String> savedURLs()
 	{
-		return Build.VERSION.SDK_INT < 37 ||
-			ActivityCompat.checkSelfPermission(this, LOCAL_NETWORK_PERMISSION) == PackageManager.PERMISSION_GRANTED;
-	}
+		List<String> urls = new ArrayList<>();
 
-	private static boolean isLocalNetworkUrl(String url)
-	{
-		try
-		{
-			URI uri = URI.create(url.strip());
-			if(!"http".equalsIgnoreCase(uri.getScheme()) && !"https".equalsIgnoreCase(uri.getScheme()))
-				return false;
-			String host = uri.getHost();
-			if(host == null)
-				return false;
-			host = host.toLowerCase(Locale.ROOT);
-			if(host.equals("localhost") || host.endsWith(".local") || host.equals("::1") ||
-				host.startsWith("fc") || host.startsWith("fd") || host.startsWith("fe80:"))
-				return true;
-			String[] octets = host.split("\\.");
-			if(octets.length != 4)
-				return false;
-			int[] ip = new int[4];
-			for(int i = 0; i < 4; i++)
-			{
-				ip[i] = Integer.parseInt(octets[i]);
-				if(ip[i] < 0 || ip[i] > 255) return false;
-			}
-			return ip[0] == 10 || ip[0] == 127 ||
-				(ip[0] == 172 && ip[1] >= 16 && ip[1] <= 31) ||
-				(ip[0] == 192 && ip[1] == 168) ||
-				(ip[0] == 169 && ip[1] == 254);
-		}
-		catch(IllegalArgumentException e)
-		{
-			return false;
-		}
-	}
-
-	private boolean hasLocalNetworkEndpoint()
-	{
-		if(isLocalNetworkUrl((String)KeyValue.readVar("SETTINGS_URL", "")))
-			return true;
+		urls.add((String)KeyValue.readVar("SETTINGS_URL", ""));
 		for(String key : json_keys)
-			if(isLocalNetworkUrl((String)KeyValue.readVar(key + "_url", "")))
-				return true;
-		return isLocalNetworkUrl((String)KeyValue.readVar("WEBCAM_URL", "")) ||
-			isLocalNetworkUrl((String)KeyValue.readVar("FORECAST_URL", ""));
+			urls.add((String)KeyValue.readVar(key + "_url", ""));
+
+		urls.add((String)KeyValue.readVar("FORECAST_URL", ""));
+		urls.add((String)KeyValue.readVar("RADAR_URL", ""));
+		urls.add((String)KeyValue.readVar("WEBCAM_URL", ""));
+		urls.add((String)KeyValue.readVar(CUSTOM_URL, ""));
+		urls.add((String)KeyValue.readVar(custom_url, ""));
+
+		if((boolean)KeyValue.readVar(ENABLE_MQTT, enable_mqtt_default))
+			urls.add((String)KeyValue.readVar(MQTT_URL, ""));
+
+		return urls;
 	}
 
-	private void requestLocalNetworkPermission(boolean userInitiated)
+	// Runs on the settings executor, if any URL is on the LAN and we don't have the permission
+	// stop the save and ask for it, the save is retried once the permission is granted
+	private boolean needsLocalNetworkPrompt(List<String> urls)
 	{
-		if(hasLocalNetworkPermission() || localNetworkPermissionRequested)
+		if(LocalNetwork.hasPermission())
+			return false;
+
+		List<String> hosts = LocalNetwork.localHosts(urls, true);
+		if(hosts.isEmpty())
+			return false;
+
+		LogMessage("needsLocalNetworkPrompt() local network hosts: " + hosts, KeyValue.w);
+
+		bgStart = 0;
+		runOnUiThread(() ->
+		{
+			b1.setEnabled(true);
+			b2.setEnabled(true);
+			dialog.dismiss();
+			pendingLocalSettingsSave = true;
+			requestLocalNetworkPermission(true, hosts);
+		});
+
+		return true;
+	}
+
+	private boolean isLocalNetworkPermanentlyDenied()
+	{
+		return (boolean)KeyValue.readVar("localNetworkPermissionAsked", false) &&
+			   !ActivityCompat.shouldShowRequestPermissionRationale(this, LocalNetwork.PERMISSION);
+	}
+
+	private void requestLocalNetworkPermission(boolean userInitiated, List<String> hosts)
+	{
+		if(isFinishing() || LocalNetwork.hasPermission() || localNetworkPermissionRequested)
 			return;
+
 		// Avoid repeatedly prompting on every launch after a denial.
 		if(!userInitiated && (boolean)KeyValue.readVar("localNetworkPermissionAsked", false))
 			return;
+
+		String hostList = "\n\n" + String.join("\n", hosts);
+
+		// Android won't show its own prompt again, so the only way left is the settings screen
+		if(isLocalNetworkPermanentlyDenied())
+		{
+			showLocalNetworkDenied(hostList);
+			return;
+		}
+
 		new AlertDialog.Builder(this)
 			.setTitle(R.string.local_network_permission_title)
-			.setMessage(getString(R.string.local_network_permission_explanation, getString(R.string.app_name)))
+			.setMessage(getString(R.string.local_network_permission_explanation, getString(R.string.app_name)) + hostList)
 			.setPositiveButton(R.string.ok, (dialog, which) -> {
 				localNetworkPermissionRequested = true;
 				KeyValue.putVar("localNetworkPermissionAsked", true);
+				localNetworkHosts = hostList;
 				ActivityCompat.requestPermissions(this,
-					new String[]{LOCAL_NETWORK_PERMISSION}, LOCAL_NETWORK_PERMISSION_CODE);
+					new String[]{LocalNetwork.PERMISSION}, LOCAL_NETWORK_PERMISSION_CODE);
 			})
-			.setNegativeButton(R.string.no, (dialog, which) -> pendingLocalSettingsSave = false)
+			.setNegativeButton(R.string.no, (dialog, which) ->
+			{
+				LogMessage("requestLocalNetworkPermission() User declined local network access");
+				if(pendingLocalSettingsSave)
+				{
+					pendingLocalSettingsSave = false;
+					showLocalNetworkDenied(hostList);
+				}
+			})
+			.show();
+	}
+
+	private void showLocalNetworkDenied(String hostList)
+	{
+		pendingLocalSettingsSave = false;
+
+		if(!isLocalNetworkPermanentlyDenied())
+		{
+			new AlertDialog.Builder(this)
+				.setTitle(R.string.local_network_permission_title)
+				.setMessage(getString(R.string.local_network_permission_denied) + hostList)
+				.setPositiveButton(R.string.ok, null)
+				.show();
+
+			return;
+		}
+
+		new AlertDialog.Builder(this)
+			.setTitle(R.string.local_network_permission_title)
+			.setMessage(getString(R.string.local_network_permission_open_settings, getString(R.string.app_name)) + hostList)
+			.setPositiveButton(R.string.ok, (dialog, which) ->
+			{
+				LogMessage("showLocalNetworkDenied() User choose to open settings");
+				Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+					Uri.fromParts("package", getPackageName(), null));
+				startActivity(intent);
+			})
+			.setNegativeButton(R.string.no, null)
 			.show();
 	}
 
@@ -3050,15 +3153,11 @@ public class MainActivity extends FragmentActivity
 					b1.performClick();
 				}
 				else
-					processSettings();
+					UpdateCheck.runNow();
 			}
 			else
 			{
-				pendingLocalSettingsSave = false;
-				new AlertDialog.Builder(this)
-					.setMessage(R.string.local_network_permission_denied)
-					.setPositiveButton(R.string.ok, null)
-					.show();
+				showLocalNetworkDenied(localNetworkHosts);
 			}
 		}
 	}

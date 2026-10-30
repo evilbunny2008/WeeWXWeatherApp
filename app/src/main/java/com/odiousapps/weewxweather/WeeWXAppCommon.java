@@ -4035,6 +4035,7 @@ class WeeWXAppCommon
 			JSONArray jarr = jsonObject.optJSONArray("processingErrors");
 			if(jarr != null)
 			{
+				StringBuilder errorMsgs = new StringBuilder();
 				for(int i = 0; i < jarr.length(); i++)
 				{
 					JSONObject jobj = jarr.getJSONObject(i);
@@ -4044,12 +4045,14 @@ class WeeWXAppCommon
 					error_count++;
 					LogMessage("processWeather() Error in " + json_labels[id] + ": " + jarr.optString(i) +
 						", msg: " + jobj.getString("msg"), KeyValue.e);
+					errorMsgs.append("• ").append(jobj.getString("msg").strip()).append("\n");
 				}
 
 				if(error_count > 0)
 				{
 					KeyValue.putVar("ProcessingErrorCount", error_count);
 					KeyValue.putVar("ProcessingErrorID", id);
+					KeyValue.putVar("ProcessingErrorMsgs", errorMsgs.toString().strip());
 				}
 			}
 		}

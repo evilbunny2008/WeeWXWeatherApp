@@ -10,6 +10,7 @@
 	<string name="avg">avg</string>
 	<string name="battery_warning">Warning: Enabling the above option may drain your battery faster than usual</string>
 	<string name="bgColour">Widget Background Colour Picker</string>
+	<string name="close">Close</string>
 	<string name="custom2">Custom</string>
 	<string name="custom_setting">Custom Colours</string>
 	<string name="custom_url">Optional: Custom URL</string>
@@ -56,6 +57,7 @@
 	<string name="last_year_stats">Last Year’s Statistics</string>
 	<string name="light_theme">Light Theme</string>
 	<string name="local_network_permission_denied">Local weather station access is unavailable until you grant Nearby devices permission in Android settings. Public internet weather data can still update.</string>
+	<string name="local_network_permission_open_settings">Local network access was declined, so Android won’t ask again. To reach weather data on your home network, turn on Nearby devices for %1$s in Android settings. Open settings now?</string>
 	<string name="local_network_permission_explanation">Allow %1$s to reach weather data on your home network. Public internet weather data will continue working without this permission.</string>
 	<string name="local_network_permission_title">Local network access</string>
 	<string name="manual_update">Manual Updates</string>
@@ -82,6 +84,14 @@
 		<item quantity="other">There were %1$d errors detected in the %2$s file, view the %2$s file found at %3$s or view %4$s logs for the details</item>
 		<item quantity="two">There were %1$d errors detected in the %2$s file, view the %2$s file found at %3$s or view %4$s logs for the details</item>
 		<item quantity="zero">There were %1$d errors detected in the %2$s file, view the %2$s file found at %3$s or view %4$s logs for the details</item>
+	</plurals>
+	<plurals name="processing_errors_summary">
+		<item quantity="few">There were %1$d errors detected in the %2$s file</item>
+		<item quantity="many">There were %1$d errors detected in the %2$s file</item>
+		<item quantity="one">There was %1$d error detected in the %2$s file</item>
+		<item quantity="other">There were %1$d errors detected in the %2$s file</item>
+		<item quantity="two">There were %1$d errors detected in the %2$s file</item>
+		<item quantity="zero">There were %1$d errors detected in the %2$s file</item>
 	</plurals>
 	<plurals name="processing_errors2">
 		<item quantity="few">There were %1$d errors detected while updating, view %2$s logs for the details. Last error occurred %3$d minutes ago</item>
@@ -120,6 +130,7 @@
 	<string name="remove_all_data">Are you sure you want to remove all data?</string>
 	<string name="save_app_debug_logs">Save app debug logs</string>
 	<string name="save_settings">Save Settings</string>
+	<string name="see_more">See More</string>
 	<string name="settings2">Go Back To Settings</string>
 	<string name="show_forecast">Show Forecast</string>
 	<string name="show_radar">Show Radar</string>
