@@ -104,8 +104,9 @@ abstract class RenameBundleTask : DefaultTask() {
 		file.copyTo(destination, overwrite = true)
 		logger.lifecycle("renameBundle: copied to $destination")
 
-		if (!file.delete())
-			logger.warn("renameBundle: could not delete original $file after copying")
+		// Leave the original in place: the bundle tasks stay up-to-date between
+		// runs and won't recreate it, but produceBundleIdeListingFile and this
+		// task still need it as an input on the next build.
 	}
 }
 
