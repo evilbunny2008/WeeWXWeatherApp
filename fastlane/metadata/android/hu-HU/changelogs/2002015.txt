@@ -1,0 +1,3 @@
+• Javítva, hogy a radar weboldalának vezérlői néha nem jelentek meg
+• Tévéken az oldalak most kitöltik a teljes képernyőt, a beállítások panel pedig szélesebb
+• A legördülő listák most kiemelik az aktuális választást távirányító vagy billentyűzet használatakor

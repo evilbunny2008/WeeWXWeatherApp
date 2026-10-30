@@ -1,0 +1,3 @@
+• Se corrigió que los controles de la página web del radar a veces no se mostraban
+• En los televisores, las páginas ahora ocupan toda la pantalla y el panel de configuración es más ancho
+• Las listas desplegables ahora resaltan la opción actual al usar un control remoto o un teclado

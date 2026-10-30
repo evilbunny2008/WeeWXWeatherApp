@@ -1,0 +1,3 @@
+• Behoben, dass die Bedienelemente der Radar-Webseite manchmal nicht angezeigt wurden
+• Auf Fernsehern füllen die Seiten jetzt den ganzen Bildschirm und das Einstellungsfeld ist breiter
+• Auswahllisten heben jetzt die aktuelle Auswahl hervor, wenn eine Fernbedienung oder Tastatur verwendet wird

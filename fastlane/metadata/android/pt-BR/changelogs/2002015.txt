@@ -1,0 +1,3 @@
+• Corrigidos os controles da página do radar que às vezes não apareciam
+• Nas TVs, as páginas agora ocupam a tela inteira e o painel de configurações está mais largo
+• As listas suspensas agora destacam a opção atual ao usar um controle remoto ou teclado

@@ -1,0 +1,3 @@
+• Radar veb səhifəsinin idarəetmə düymələrinin bəzən görünməməsi düzəldildi
+• Televizorlarda səhifələr indi bütün ekranı tutur və ayarlar paneli daha genişdir
+• Açılan siyahılar indi pult və ya klaviatura istifadə edərkən cari seçimi vurğulayır

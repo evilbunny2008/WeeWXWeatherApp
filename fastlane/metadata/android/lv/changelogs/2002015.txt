@@ -1,0 +1,3 @@
+• Novērsta radara tīmekļa lapas vadīklu reizēm neparādīšanās
+• Televizoros lapas tagad aizpilda visu ekrānu, un iestatījumu panelis ir platāks
+• Nolaižamie saraksti tagad izceļ pašreizējo izvēli, izmantojot tālvadības pulti vai tastatūru

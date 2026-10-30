@@ -1,0 +1,3 @@
+• Risolto il problema dei controlli della pagina web del radar che a volte non comparivano
+• Sui televisori, le pagine ora riempiono lo schermo e il pannello delle impostazioni è più largo
+• Gli elenchi a discesa ora evidenziano la scelta attuale quando si usa un telecomando o una tastiera

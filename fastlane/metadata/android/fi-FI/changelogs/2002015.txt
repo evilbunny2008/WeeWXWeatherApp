@@ -1,0 +1,3 @@
+• Korjattu tutkan verkkosivun säätimien ajoittainen näkymättömyys
+• Televisioissa sivut täyttävät nyt koko näytön ja asetuspaneeli on leveämpi
+• Avattavat luettelot korostavat nyt nykyisen valinnan kaukosäädintä tai näppäimistöä käytettäessä

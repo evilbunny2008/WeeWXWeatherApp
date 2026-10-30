@@ -35,8 +35,8 @@ android {
 		applicationId = "com.odiousapps.weewxweather"
 		minSdk = 30
 		targetSdk = 37
-		versionName = "2.2.14"
-		versionCode = 2002014
+		versionName = "2.2.15"
+		versionCode = 2002015
 	}
 
 	// Generates android:localeConfig from the values-*/ folders, so

@@ -1,0 +1,3 @@
+• Lagað að stýringar á vefsíðu veðursjár birtust stundum ekki
+• Í sjónvörpum fylla síður nú allan skjáinn og stillingaspjaldið er breiðara
+• Fellilistar auðkenna nú núverandi val þegar fjarstýring eða lyklaborð er notað

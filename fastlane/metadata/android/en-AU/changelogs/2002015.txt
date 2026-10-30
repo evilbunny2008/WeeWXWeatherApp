@@ -1,0 +1,3 @@
+• Fixed the radar web page controls sometimes not showing
+• On TVs, pages now fill the screen and the settings panel is wider
+• Drop-down lists now highlight the current choice when using a remote or keyboard

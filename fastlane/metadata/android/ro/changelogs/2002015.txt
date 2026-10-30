@@ -1,0 +1,3 @@
+• S-au remediat comenzile paginii web a radarului care uneori nu apăreau
+• Pe televizoare, paginile umplu acum tot ecranul, iar panoul de setări este mai lat
+• Listele derulante evidențiază acum opțiunea curentă când folosiți telecomanda sau tastatura

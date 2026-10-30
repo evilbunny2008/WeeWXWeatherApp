@@ -1,0 +1,3 @@
+• Odpravljeno občasno neprikazovanje kontrolnikov spletne strani radarja
+• Na televizorjih strani zdaj zapolnijo ves zaslon, plošča z nastavitvami pa je širša
+• Spustni seznami zdaj poudarijo trenutno izbiro pri uporabi daljinskega upravljalnika ali tipkovnice

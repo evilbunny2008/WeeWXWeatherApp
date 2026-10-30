@@ -1,0 +1,3 @@
+• Rettet at kontrollene på radarnettsiden noen ganger ikke ble vist
+• På TV fyller sidene nå hele skjermen, og innstillingspanelet er bredere
+• Nedtrekkslister fremhever nå gjeldende valg når du bruker fjernkontroll eller tastatur

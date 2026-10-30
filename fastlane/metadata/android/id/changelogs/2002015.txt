@@ -1,0 +1,3 @@
+• Memperbaiki kontrol halaman web radar yang terkadang tidak muncul
+• Di TV, halaman kini memenuhi layar dan panel setelan lebih lebar
+• Daftar tarik-turun kini menyorot pilihan saat ini saat menggunakan remote atau keyboard

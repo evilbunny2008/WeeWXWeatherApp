@@ -1,0 +1,3 @@
+• Radar web sayfası kontrollerinin bazen görünmemesi düzeltildi
+• Televizyonlarda sayfalar artık tüm ekranı kaplıyor ve ayarlar paneli daha geniş
+• Açılır listeler artık kumanda veya klavye kullanılırken geçerli seçimi vurguluyor
