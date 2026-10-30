@@ -119,15 +119,16 @@ else
 fi
 
 # Edits to the Gradle files (like a version bump) are easy to forget to sync in
-# Android Studio. Its per-project cache is rewritten on every sync, so stop if a
-# Gradle file is newer than the last sync.
+# Android Studio. Every sync rewrites its per-project model cache (the imported
+# build model is only rewritten when the project's structure changes), so stop if
+# a Gradle file is newer than the last sync.
 check_gradle_synced()
 {
 	local name marker="" newest=0 f t
 	local changed=()
 
 	name="$(basename "$repo" | tr '[:upper:]' '[:lower:]')"
-	for f in "$HOME"/.cache/Google/AndroidStudio*/projects/"$name".*/external_build_system/project.dat
+	for f in "$HOME"/.cache/Google/AndroidStudio*/projects/"$name".*/{project-model-cache/cache.data,external_build_system/project.dat}
 	do
 		[[ -f "$f" ]] || continue
 		t="$(stat -c %Y "$f")"
