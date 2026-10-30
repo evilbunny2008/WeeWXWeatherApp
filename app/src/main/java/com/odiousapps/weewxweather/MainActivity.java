@@ -10,7 +10,6 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.net.Uri;
 import android.os.Build;
@@ -20,6 +19,7 @@ import android.os.Looper;
 import android.provider.Settings;
 import android.text.Editable;
 import android.text.method.LinkMovementMethod;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -202,7 +202,6 @@ public class MainActivity extends FragmentActivity
 	private boolean isTV = false;
 	// TV overscan safe area, 0 everywhere else
 	private int tvSafeH = 0, tvSafeV = 0;
-	private static final Object NO_FOREGROUND = new Object();
 
 	private int extraPx;
 
@@ -391,7 +390,7 @@ public class MainActivity extends FragmentActivity
 			tvRefresh.setVisibility(View.VISIBLE);
 			tvRefresh.setOnClickListener(arg0 -> refreshCurrentTab());
 
-			setupTvFocusRing();
+			TvFocusRing.attach(getWindow().getDecorView());
 		}
 
 		if(Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU)
@@ -989,7 +988,7 @@ public class MainActivity extends FragmentActivity
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
 
 			LogMessage("MainActivity.onCreate() show dialog");
-			dialog = new AlertDialog.Builder(this)
+			dialog = new DialogBuilder(this)
 					.setCancelable(false)
 					.setView(layout)
 					.create();
@@ -1598,31 +1597,6 @@ public class MainActivity extends FragmentActivity
 			tab.view.requestFocus();
 	}
 
-	// Draws a ring over whatever has focus, the default focus highlights are too faint to
-	// follow from across the room. Foregrounds the views already had are put back afterwards.
-	private void setupTvFocusRing()
-	{
-		getWindow().getDecorView().getViewTreeObserver().addOnGlobalFocusChangeListener((oldFocus, newFocus) ->
-		{
-			if(oldFocus != null)
-			{
-				Object saved = oldFocus.getTag(R.id.tv_focus_ring);
-				if(saved != null)
-				{
-					oldFocus.setForeground(saved == NO_FOREGROUND ? null : (Drawable)saved);
-					oldFocus.setTag(R.id.tv_focus_ring, null);
-				}
-			}
-
-			if(newFocus != null && newFocus.getTag(R.id.tv_focus_ring) == null)
-			{
-				Drawable foreground = newFocus.getForeground();
-				newFocus.setTag(R.id.tv_focus_ring, foreground == null ? NO_FOREGROUND : foreground);
-				newFocus.setForeground(ContextCompat.getDrawable(this, R.drawable.tv_focus_ring));
-			}
-		});
-	}
-
 	private void refreshCurrentTab()
 	{
 		// FragmentStateAdapter tags each page "f" + its item id, which is its position here.
@@ -1863,6 +1837,23 @@ public class MainActivity extends FragmentActivity
 		}
 	}
 
+	// The menu button on a TV remote (or keyboard) opens and closes the settings
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
+		if(keyCode == KeyEvent.KEYCODE_MENU && event.getRepeatCount() == 0)
+		{
+			if(mDrawerLayout.isDrawerOpen(GravityCompat.START))
+				closeDrawer();
+			else
+				mDrawerLayout.openDrawer(GravityCompat.START);
+
+			return true;
+		}
+
+		return super.onKeyDown(keyCode, event);
+	}
+
 	void closeDrawer()
 	{
 		if(mDrawerLayout.isDrawerOpen(GravityCompat.START))
@@ -1893,13 +1884,13 @@ public class MainActivity extends FragmentActivity
 		// Short summary first, the individual errors are only shown if asked for
 		String detailsStr = is_blank(errorMsgs) ? errorStr : errorMsgs + "\n\n" + errorStr;
 
-		new AlertDialog.Builder(this)
+		new DialogBuilder(this)
 				.setCancelable(false)
 				.setIcon(R.drawable.ic_launcher_fg)
 				.setTitle(getEnglishAndroidString(R.string.app_name))
 				.setMessage(summaryStr)
 				.setPositiveButton(getAndroidString(R.string.see_more), (dialog_interface, i) ->
-					new AlertDialog.Builder(this)
+					new DialogBuilder(this)
 							.setIcon(R.drawable.ic_launcher_fg)
 							.setTitle(getEnglishAndroidString(R.string.app_name))
 							.setMessage(detailsStr)
@@ -1995,7 +1986,7 @@ public class MainActivity extends FragmentActivity
 
 	private void showAlertDialog(String errorStr)
 	{
-		new AlertDialog.Builder(this)
+		new DialogBuilder(this)
 				.setCancelable(false)
 				.setIcon(R.drawable.ic_launcher_fg)
 				.setTitle(getEnglishAndroidString(R.string.app_name))
@@ -2009,7 +2000,7 @@ public class MainActivity extends FragmentActivity
 	{
 		LogMessage("Will now show update2 dialog now...");
 		String str = getAndroidString(R.string.json_formatted_data, "WeeWX App", "JSON formatted", WeeWXApp.WEEWX_DIR, "Inigo Plugin", "inigo-settings.txt", "GitHub.com");
-		new AlertDialog.Builder(this)
+		new DialogBuilder(this)
 				.setIcon(R.drawable.ic_launcher_fg)
 				.setTitle(getEnglishAndroidString(R.string.app_name))
 				.setMessage(str)
@@ -2028,7 +2019,7 @@ public class MainActivity extends FragmentActivity
 
 	private void checkReally()
 	{
-		new AlertDialog.Builder(this)
+		new DialogBuilder(this)
 				.setMessage(getAndroidString(R.string.remove_all_data)).setCancelable(false)
 				.setPositiveButton(getAndroidString(R.string.ok), (dialog_interface, i) ->
 				{
@@ -2223,13 +2214,15 @@ public class MainActivity extends FragmentActivity
 				return;
 			}
 
-			if(uiEnableMqtt && !is_valid_url(mqttURL))
+			// The MQTT switch can still be on from an earlier settings file, so a file without
+			// an MQTT URL just turns MQTT off when the settings are saved below
+			if(uiEnableMqtt && !is_blank(mqttURL) && !is_valid_url(mqttURL))
 			{
 				errorDialog(R.string.mqtt_url_is_not_valid, new Object[]{mqttURL, "Inigo Settings"});
 				return;
 			}
 
-			if(uiEnableMqtt && is_blank(mqttTopic))
+			if(uiEnableMqtt && is_valid_url(mqttURL) && is_blank(mqttTopic))
 			{
 				errorDialog(R.string.mqtt_topic_is_blank, new Object[]{"Inigo Settings"});
 				return;
@@ -2978,7 +2971,7 @@ public class MainActivity extends FragmentActivity
 				b1.setEnabled(true);
 				b2.setEnabled(true);
 				dialog.dismiss();
-				new AlertDialog.Builder(this)
+				new DialogBuilder(this)
 						.setTitle(getAndroidString(R.string.error))
 						.setMessage(saveLogReturn)
 						.setPositiveButton(getAndroidString(R.string.ill_fix_and_try_again), null)
@@ -3009,7 +3002,7 @@ public class MainActivity extends FragmentActivity
 			b1.setEnabled(true);
 			b2.setEnabled(true);
 			dialog.dismiss();
-			new AlertDialog.Builder(this)
+			new DialogBuilder(this)
 					.setTitle(getAndroidString(R.string.error))
 					.setMessage(errorStr)
 					.setPositiveButton(getAndroidString(R.string.ill_fix_and_try_again), null)
@@ -3159,7 +3152,7 @@ public class MainActivity extends FragmentActivity
 			return;
 		}
 
-		new AlertDialog.Builder(this)
+		new DialogBuilder(this)
 			.setTitle(R.string.local_network_permission_title)
 			.setMessage(getString(R.string.local_network_permission_explanation, getString(R.string.app_name)) + hostList)
 			.setPositiveButton(R.string.ok, (dialog, which) -> {
@@ -3187,7 +3180,7 @@ public class MainActivity extends FragmentActivity
 
 		if(!isLocalNetworkPermanentlyDenied())
 		{
-			new AlertDialog.Builder(this)
+			new DialogBuilder(this)
 				.setTitle(R.string.local_network_permission_title)
 				.setMessage(getString(R.string.local_network_permission_denied) + hostList)
 				.setPositiveButton(R.string.ok, null)
@@ -3196,7 +3189,7 @@ public class MainActivity extends FragmentActivity
 			return;
 		}
 
-		new AlertDialog.Builder(this)
+		new DialogBuilder(this)
 			.setTitle(R.string.local_network_permission_title)
 			.setMessage(getString(R.string.local_network_permission_open_settings, getString(R.string.app_name)) + hostList)
 			.setPositiveButton(R.string.ok, (dialog, which) ->
@@ -3234,7 +3227,7 @@ public class MainActivity extends FragmentActivity
 			KeyValue.putVar("hasAsked", true);
 
 			// show explanation dialog first
-			new AlertDialog.Builder(this)
+			new DialogBuilder(this)
 					.setCancelable(false)
 					.setTitle(getAndroidString(R.string.notification_permission))
 					.setMessage(getAndroidString(R.string.notifications_needed))
@@ -3269,7 +3262,7 @@ public class MainActivity extends FragmentActivity
 
 		LogMessage("requestNotificationPermission() Permission not granted, but already asked twice.");
 
-		new AlertDialog.Builder(this)
+		new DialogBuilder(this)
 				.setTitle(getAndroidString(R.string.notification_permission))
 				.setMessage(getAndroidString(R.string.notifications_needed2))
 				.setPositiveButton(getAndroidString(R.string.ok), (dialog, which) ->
