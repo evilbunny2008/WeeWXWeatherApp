@@ -159,7 +159,7 @@
 			app:boxStrokeWidth="1dp"
 			tools:ignore="VisualLintBounds">
 
-			<com.google.android.material.textfield.MaterialAutoCompleteTextView
+			<com.odiousapps.weewxweather.SettingDropDown
 				android:id="@+id/spinner1"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
 			app:boxStrokeWidth="1dp"
 			tools:ignore="VisualLintBounds">
 
-			<com.google.android.material.textfield.MaterialAutoCompleteTextView
+			<com.odiousapps.weewxweather.SettingDropDown
 				android:id="@+id/spinner5"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
 			app:boxStrokeWidth="1dp"
 			tools:ignore="VisualLintBounds">
 
-			<com.google.android.material.textfield.MaterialAutoCompleteTextView
+			<com.odiousapps.weewxweather.SettingDropDown
 				android:id="@+id/spinner4"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -240,7 +240,7 @@
 			app:boxStrokeWidth="1dp"
 			tools:ignore="VisualLintBounds">
 
-			<com.google.android.material.textfield.MaterialAutoCompleteTextView
+			<com.odiousapps.weewxweather.SettingDropDown
 				android:id="@+id/spinner2"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -252,72 +252,80 @@
 				tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
 		</com.google.android.material.textfield.TextInputLayout>
 
-		<com.google.android.material.textfield.TextInputLayout
-			android:id="@+id/til5"
-			style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+		<!-- TVs don't have home screen widgets, so MainActivity hides these there -->
+		<LinearLayout
+			android:id="@+id/widget_settings"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:hint="@string/widget_theme"
-			android:labelFor="@id/spinner2"
-			android:textSize="20sp"
-			app:boxBackgroundMode="outline"
-			app:boxStrokeColor="@color/Black"
-			app:boxStrokeWidth="1dp"
-			tools:ignore="VisualLintBounds">
+			android:orientation="vertical">
 
-			<com.google.android.material.textfield.MaterialAutoCompleteTextView
-				android:id="@+id/spinner3"
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/til5"
+				style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:clickable="true"
-				android:focusable="true"
-				android:inputType="none"
-				android:saveEnabled="false"
+				android:layout_marginTop="10dp"
+				android:hint="@string/widget_theme"
+				android:labelFor="@id/spinner2"
 				android:textSize="20sp"
-				tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
-		</com.google.android.material.textfield.TextInputLayout>
+				app:boxBackgroundMode="outline"
+				app:boxStrokeColor="@color/Black"
+				app:boxStrokeWidth="1dp"
+				tools:ignore="VisualLintBounds">
 
-		<com.google.android.material.textfield.TextInputLayout
-			android:id="@+id/bgTextInputLayout"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:hint="@string/bgColour"
-			android:visibility="gone"
-			tools:ignore="VisualLintBounds">
+				<com.odiousapps.weewxweather.SettingDropDown
+					android:id="@+id/spinner3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:clickable="true"
+					android:focusable="true"
+					android:inputType="none"
+					android:saveEnabled="false"
+					android:textSize="20sp"
+					tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+			</com.google.android.material.textfield.TextInputLayout>
 
-			<com.github.evilbunny2008.colourpicker.CPEditText
-				android:id="@+id/widgetBG"
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/bgTextInputLayout"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:clickable="true"
-				android:focusable="true"
-				android:gravity="center_vertical"
-				android:minHeight="48dp"
-				tools:ignore="VisualLintTextFieldSize,SpeakableTextPresentCheck" />
-		</com.google.android.material.textfield.TextInputLayout>
+				android:layout_marginTop="10dp"
+				android:hint="@string/bgColour"
+				android:visibility="gone"
+				tools:ignore="VisualLintBounds">
 
-		<com.google.android.material.textfield.TextInputLayout
-			android:id="@+id/fgTextInputLayout"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:hint="@string/fgColour"
-			android:visibility="gone"
-			tools:ignore="VisualLintBounds">
+				<com.github.evilbunny2008.colourpicker.CPEditText
+					android:id="@+id/widgetBG"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:clickable="true"
+					android:focusable="true"
+					android:gravity="center_vertical"
+					android:minHeight="48dp"
+					tools:ignore="VisualLintTextFieldSize,SpeakableTextPresentCheck" />
+			</com.google.android.material.textfield.TextInputLayout>
 
-			<com.github.evilbunny2008.colourpicker.CPEditText
-				android:id="@+id/widgetFG"
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/fgTextInputLayout"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:autofillHints="@string/fgColour"
-				android:clickable="true"
-				android:focusable="true"
-				android:gravity="center_vertical"
-				android:minHeight="48dp"
-				tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
-		</com.google.android.material.textfield.TextInputLayout>
+				android:layout_marginTop="10dp"
+				android:hint="@string/fgColour"
+				android:visibility="gone"
+				tools:ignore="VisualLintBounds">
+
+				<com.github.evilbunny2008.colourpicker.CPEditText
+					android:id="@+id/widgetFG"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:autofillHints="@string/fgColour"
+					android:clickable="true"
+					android:focusable="true"
+					android:gravity="center_vertical"
+					android:minHeight="48dp"
+					tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+			</com.google.android.material.textfield.TextInputLayout>
+		</LinearLayout>
 
 		<com.google.android.material.textview.MaterialTextView
 			android:id="@+id/mtv2"
@@ -380,270 +388,278 @@
 				tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
 		</com.google.android.material.textfield.TextInputLayout>
 
-		<com.google.android.material.materialswitch.MaterialSwitch
-			android:id="@+id/rainrate_alert_watch"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:checked="false"
-			android:minHeight="48dp"
-			android:text="@string/rainrate_alert_watch"
-			android:textSize="20sp"
-			tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-		<com.google.android.material.materialswitch.MaterialSwitch
-			android:id="@+id/rainrate_alert_warning"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:checked="false"
-			android:minHeight="48dp"
-			android:text="@string/rainrate_alert_warning"
-			android:textSize="20sp"
-			tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-		<com.google.android.material.materialswitch.MaterialSwitch
-			android:id="@+id/rainrate_alert_severe"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:checked="false"
-			android:minHeight="48dp"
-			android:text="@string/rainrate_alert_severe"
-			android:textSize="20sp"
-			tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-		<com.google.android.material.materialswitch.MaterialSwitch
-			android:id="@+id/rainfall_alert"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:checked="false"
-			android:minHeight="48dp"
-			android:text="@string/rainfall_alert"
-			android:textSize="20sp"
-			tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
+		<!-- Alerts need notifications, which TVs don't show, so MainActivity hides these there -->
 		<LinearLayout
-			android:id="@+id/rainfall_setting"
+			android:id="@+id/alert_settings"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:visibility="gone">
+			android:orientation="vertical">
 
-			<LinearLayout
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:id="@+id/rainrate_alert_watch"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="10dp"
-				android:orientation="horizontal">
+				android:checked="false"
+				android:minHeight="48dp"
+				android:text="@string/rainrate_alert_watch"
+				android:textSize="20sp"
+				tools:ignore="VisualLintButtonSize,VisualLintBounds" />
 
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/tvRainfallLimitLabel"
-					style="@style/TextAppearance.Material3.DisplaySmall"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="start"
-					android:text="@string/rainfall_limit"
-					android:textSize="20sp" />
-
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/tvRainfallLimitValue"
-					style="@style/TextAppearance.Material3.DisplaySmall"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:gravity="end"
-					android:textSize="20sp" />
-
-			</LinearLayout>
-
-			<com.google.android.material.slider.Slider
-				android:id="@+id/sliderRainfallLimit"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:stepSize="1"
-				app:haloRadius="0dp"
-				app:labelBehavior="floating" />
-
-			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:orientation="horizontal">
-
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/minRainfallLimit"
-					style="@style/TextAppearance.Material3.BodySmall"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="start"
-					android:textSize="20sp" />
-
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/maxRainfallLimit"
-					style="@style/TextAppearance.Material3.BodySmall"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="end"
-					android:textSize="20sp" />
-
-			</LinearLayout>
-		</LinearLayout>
-
-		<com.google.android.material.materialswitch.MaterialSwitch
-			android:id="@+id/morning_temp_alert"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:checked="false"
-			android:minHeight="48dp"
-			android:text="@string/morning_temp_alert"
-			android:textSize="20sp"
-			tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-		<LinearLayout
-			android:id="@+id/morning_temp_setting"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:visibility="gone">
-
-			<LinearLayout
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:id="@+id/rainrate_alert_warning"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="10dp"
-				android:orientation="horizontal">
+				android:checked="false"
+				android:minHeight="48dp"
+				android:text="@string/rainrate_alert_warning"
+				android:textSize="20sp"
+				tools:ignore="VisualLintButtonSize,VisualLintBounds" />
 
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/tvMorningTempLabel"
-					style="@style/TextAppearance.Material3.DisplaySmall"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="start"
-					android:text="@string/temperature"
-					android:textSize="20sp" />
-
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/tvMorningTempValue"
-					style="@style/TextAppearance.Material3.DisplaySmall"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:gravity="end"
-					android:textSize="20sp" />
-
-			</LinearLayout>
-
-			<com.google.android.material.slider.Slider
-				android:id="@+id/sliderMorningTemp"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:stepSize="1"
-				app:haloRadius="0dp"
-				app:labelBehavior="floating" />
-
-			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:orientation="horizontal">
-
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/minMorningTemp"
-					style="@style/TextAppearance.Material3.BodySmall"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="start"
-					android:textSize="20sp" />
-
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/maxMorningTemp"
-					style="@style/TextAppearance.Material3.BodySmall"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="end"
-					android:textSize="20sp" />
-
-			</LinearLayout>
-		</LinearLayout>
-
-		<com.google.android.material.materialswitch.MaterialSwitch
-			android:id="@+id/afternoon_temp_alert"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:checked="false"
-			android:minHeight="48dp"
-			android:text="@string/afternoon_temp_alert"
-			android:textSize="20sp"
-			tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-		<LinearLayout
-			android:id="@+id/afternoon_temp_setting"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:visibility="gone">
-
-			<LinearLayout
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:id="@+id/rainrate_alert_severe"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="10dp"
-				android:orientation="horizontal">
+				android:checked="false"
+				android:minHeight="48dp"
+				android:text="@string/rainrate_alert_severe"
+				android:textSize="20sp"
+				tools:ignore="VisualLintButtonSize,VisualLintBounds" />
 
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/tvAfternoonTempLabel"
-					style="@style/TextAppearance.Material3.DisplaySmall"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="start"
-					android:text="@string/temperature"
-					android:textSize="20sp" />
-
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/tvAfternoonTempValue"
-					style="@style/TextAppearance.Material3.DisplaySmall"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:gravity="end"
-					android:textSize="20sp" />
-
-			</LinearLayout>
-
-			<com.google.android.material.slider.Slider
-				android:id="@+id/sliderAfternoonTemp"
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:id="@+id/rainfall_alert"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:stepSize="1"
-				app:haloRadius="0dp"
-				app:labelBehavior="floating" />
+				android:layout_marginTop="10dp"
+				android:checked="false"
+				android:minHeight="48dp"
+				android:text="@string/rainfall_alert"
+				android:textSize="20sp"
+				tools:ignore="VisualLintButtonSize,VisualLintBounds" />
 
 			<LinearLayout
+				android:id="@+id/rainfall_setting"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:orientation="horizontal">
+				android:orientation="vertical"
+				android:visibility="gone">
 
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/minAfternoonTemp"
-					style="@style/TextAppearance.Material3.BodySmall"
-					android:layout_width="0dp"
+				<LinearLayout
+					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="start"
-					android:textSize="20sp" />
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal">
 
-				<com.google.android.material.textview.MaterialTextView
-					android:id="@+id/maxAfternoonTemp"
-					style="@style/TextAppearance.Material3.BodySmall"
-					android:layout_width="0dp"
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/tvRainfallLimitLabel"
+						style="@style/TextAppearance.Material3.DisplaySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="start"
+						android:text="@string/rainfall_limit"
+						android:textSize="20sp" />
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/tvRainfallLimitValue"
+						style="@style/TextAppearance.Material3.DisplaySmall"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="end"
+						android:textSize="20sp" />
+
+				</LinearLayout>
+
+				<com.google.android.material.slider.Slider
+					android:id="@+id/sliderRainfallLimit"
+					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:layout_weight="1"
-					android:gravity="end"
-					android:textSize="20sp" />
+					android:stepSize="1"
+					app:haloRadius="0dp"
+					app:labelBehavior="floating" />
 
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/minRainfallLimit"
+						style="@style/TextAppearance.Material3.BodySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="start"
+						android:textSize="20sp" />
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/maxRainfallLimit"
+						style="@style/TextAppearance.Material3.BodySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="end"
+						android:textSize="20sp" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:id="@+id/morning_temp_alert"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:checked="false"
+				android:minHeight="48dp"
+				android:text="@string/morning_temp_alert"
+				android:textSize="20sp"
+				tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+			<LinearLayout
+				android:id="@+id/morning_temp_setting"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal">
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/tvMorningTempLabel"
+						style="@style/TextAppearance.Material3.DisplaySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="start"
+						android:text="@string/temperature"
+						android:textSize="20sp" />
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/tvMorningTempValue"
+						style="@style/TextAppearance.Material3.DisplaySmall"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="end"
+						android:textSize="20sp" />
+
+				</LinearLayout>
+
+				<com.google.android.material.slider.Slider
+					android:id="@+id/sliderMorningTemp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:stepSize="1"
+					app:haloRadius="0dp"
+					app:labelBehavior="floating" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/minMorningTemp"
+						style="@style/TextAppearance.Material3.BodySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="start"
+						android:textSize="20sp" />
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/maxMorningTemp"
+						style="@style/TextAppearance.Material3.BodySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="end"
+						android:textSize="20sp" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:id="@+id/afternoon_temp_alert"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:checked="false"
+				android:minHeight="48dp"
+				android:text="@string/afternoon_temp_alert"
+				android:textSize="20sp"
+				tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+			<LinearLayout
+				android:id="@+id/afternoon_temp_setting"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal">
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/tvAfternoonTempLabel"
+						style="@style/TextAppearance.Material3.DisplaySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="start"
+						android:text="@string/temperature"
+						android:textSize="20sp" />
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/tvAfternoonTempValue"
+						style="@style/TextAppearance.Material3.DisplaySmall"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="end"
+						android:textSize="20sp" />
+
+				</LinearLayout>
+
+				<com.google.android.material.slider.Slider
+					android:id="@+id/sliderAfternoonTemp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:stepSize="1"
+					app:haloRadius="0dp"
+					app:labelBehavior="floating" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/minAfternoonTemp"
+						style="@style/TextAppearance.Material3.BodySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="start"
+						android:textSize="20sp" />
+
+					<com.google.android.material.textview.MaterialTextView
+						android:id="@+id/maxAfternoonTemp"
+						style="@style/TextAppearance.Material3.BodySmall"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="end"
+						android:textSize="20sp" />
+
+				</LinearLayout>
 			</LinearLayout>
 		</LinearLayout>
 	</LinearLayout>

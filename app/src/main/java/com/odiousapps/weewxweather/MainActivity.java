@@ -383,6 +383,9 @@ public class MainActivity extends FragmentActivity
 			tvSafeH = Math.round(48 * WeeWXApp.getDensity());
 			tvSafeV = Math.round(27 * WeeWXApp.getDensity());
 
+			// Alerts are notifications, which TVs don't show
+			findViewById(R.id.alert_settings).setVisibility(View.GONE);
+
 			ImageButton tvRefresh = findViewById(R.id.tvRefresh);
 			tvRefresh.setVisibility(View.VISIBLE);
 			tvRefresh.setOnClickListener(arg0 -> refreshCurrentTab());
@@ -1573,6 +1576,15 @@ public class MainActivity extends FragmentActivity
 		findViewById(R.id.custom_drawer).requestFocus(View.FOCUS_DOWN);
 	}
 
+	private static boolean isDescendant(View ancestor, View view)
+	{
+		for(View v = view; v != null; v = v.getParent() instanceof View p ? p : null)
+			if(v == ancestor)
+				return true;
+
+		return false;
+	}
+
 	// A D-pad needs something focused to start from, nothing is focused at launch
 	private void setInitialTvFocus()
 	{
@@ -1652,10 +1664,28 @@ public class MainActivity extends FragmentActivity
 			return;
 		}
 
+		// On a TV, Back from inside a page goes up to its tab first, a web page can
+		// hold on to the focus while it still has somewhere to scroll
+		TabLayout tabLayout = findViewById(R.id.tabs);
+		if(isTV && focus != null && isDescendant(mViewPager, focus))
+		{
+			TabLayout.Tab tab = tabLayout.getTabAt(mViewPager.getCurrentItem());
+			if(tab != null)
+			{
+				tab.view.requestFocus();
+				return;
+			}
+		}
+
 		if(mViewPager.getCurrentItem() > 0)
 		{
 			LogMessage("MainActivity.handleBack() Cycle through tabs until we hit tab 0");
-			mViewPager.post(() -> mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1));
+			// On a TV, move the focus too, selecting a tab follows the focus there
+			TabLayout.Tab prev = tabLayout.getTabAt(mViewPager.getCurrentItem() - 1);
+			if(isTV && prev != null)
+				prev.view.requestFocus();
+			else
+				mViewPager.post(() -> mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1));
 			return;
 		}
 
@@ -1779,8 +1809,9 @@ public class MainActivity extends FragmentActivity
 			@Override
 			public View getView(int position, View convertView, @NonNull ViewGroup parent)
 			{
+				// The drop-down's popup list uses getView(), getDropDownView() is only for Spinners
 				MaterialTextView view = (MaterialTextView)super.getView(position, convertView, parent);
-				view.setBackgroundColor(WeeWXApp.getColours().bgColour);
+				view.setBackground(dropDownItemBackground());
 				view.setTextColor(WeeWXApp.getColours().fgColour);
 				return view;
 			}

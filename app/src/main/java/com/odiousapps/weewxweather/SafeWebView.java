@@ -3,6 +3,7 @@ package com.odiousapps.weewxweather;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.CookieManager;
@@ -277,6 +278,29 @@ public class SafeWebView extends WebView
 			LogMessage("SafeWebView.destroy() calling super.destroy()");
 
 		super.destroy();
+	}
+
+	// A TV remote's up/down only scrolls a page about 40px at a time, and the page keeps
+	// the focus until it's scrolled right back to the top. Scroll 40% of the screen per
+	// press instead, and once there's no further to go let the key move the focus as
+	// normal. Pages that don't scroll as a whole, like windy.com's map, get the keys.
+	@Override
+	public boolean dispatchKeyEvent(KeyEvent event)
+	{
+		int keyCode = event.getKeyCode();
+		if(hasBeenDestroyed || !WeeWXApp.isTV() ||
+		   (keyCode != KeyEvent.KEYCODE_DPAD_UP && keyCode != KeyEvent.KEYCODE_DPAD_DOWN))
+			return super.dispatchKeyEvent(event);
+
+		int direction = keyCode == KeyEvent.KEYCODE_DPAD_DOWN ? 1 : -1;
+		if(!canScrollVertically(direction))
+			return super.dispatchKeyEvent(event);
+
+		if(event.getAction() == KeyEvent.ACTION_DOWN)
+			evaluateJavascript("window.scrollBy({top: " + direction +
+							   " * Math.round(window.innerHeight * 0.4), behavior: 'smooth'});", null);
+
+		return true;
 	}
 
 	@Override
