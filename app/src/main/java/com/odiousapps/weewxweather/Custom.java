@@ -92,6 +92,9 @@ public class Custom extends Fragment implements Refreshable
 			updateSwipe();
 		});
 		DraggableLock.attach(floatingCheckBox, "custom");
+		// There's no swiping between screens on a TV, so there's nothing to lock
+		if(WeeWXApp.isTV())
+			floatingCheckBox.setVisibility(View.GONE);
 
 		wv.getSettings().setDisplayZoomControls(false);
 		updateSwipe();

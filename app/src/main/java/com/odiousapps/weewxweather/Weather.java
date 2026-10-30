@@ -1368,7 +1368,8 @@ public class Weather extends Fragment implements View.OnClickListener, Refreshab
 		boolean radarForecast = (boolean)KeyValue.readVar("radarforecast", radarforecast_default);
 		String radtype = (String)KeyValue.readVar("radtype", WeeWXApp.radtype_default);
 
-		if(radarForecast == RadarOnHomeScreen && radtype.equals("webpage"))
+		// There's no swiping between screens on a TV, so there's nothing to lock
+		if(radarForecast == RadarOnHomeScreen && radtype.equals("webpage") && !WeeWXApp.isTV())
 			updateFLL(View.VISIBLE);
 		else
 			updateFLL(View.GONE);

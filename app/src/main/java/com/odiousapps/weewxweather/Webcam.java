@@ -94,6 +94,9 @@ public class Webcam extends Fragment implements Refreshable
 			updateSwipe();
 		});
 		DraggableLock.attach(floatingCheckBox, "webcam");
+		// There's no swiping between screens on a TV, so there's nothing to lock
+		if(WeeWXApp.isTV())
+			floatingCheckBox.setVisibility(View.GONE);
 
 		configureZoom();
 

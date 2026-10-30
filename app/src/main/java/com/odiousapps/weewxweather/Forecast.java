@@ -599,9 +599,11 @@ public class Forecast extends Fragment implements View.OnClickListener, Refresha
 						rl.post(() -> rl.setAngle(-90));
 				}
 			} else if(radtype.equals("webpage")) {
-				LogMessage("Showing the floating checkbox...");
-				if(floatingCheckBox.getVisibility() != View.VISIBLE)
-					floatingCheckBox.post(() -> floatingCheckBox.setVisibility(View.VISIBLE));
+				// There's no swiping between screens on a TV, so there's nothing to lock
+				int visibility = WeeWXApp.isTV() ? View.GONE : View.VISIBLE;
+				LogMessage((visibility == View.VISIBLE ? "Showing" : "Hiding") + " the floating checkbox...");
+				if(floatingCheckBox.getVisibility() != visibility)
+					floatingCheckBox.post(() -> floatingCheckBox.setVisibility(visibility));
 			} else {
 				if(rl.getAngle() != 0)
 					rl.post(() -> rl.setAngle(0));

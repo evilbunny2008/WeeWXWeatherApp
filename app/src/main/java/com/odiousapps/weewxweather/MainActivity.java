@@ -548,8 +548,19 @@ public class MainActivity extends FragmentActivity
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 		reduceViewPagerSwipeSensitivity(mViewPager);
 
-		new TabLayoutMediator(tabLayout, mViewPager,
-				((tab, position) -> tab.setText(tabTitles.get(position)))).attach();
+		new TabLayoutMediator(tabLayout, mViewPager, (tab, position) ->
+		{
+			tab.setText(tabTitles.get(position));
+
+			// A TV remote only moves the focus along the tabs, which would leave the
+			// screen behind on the old tab until OK is pressed, so switch as it moves
+			if(isTV)
+				tab.view.setOnFocusChangeListener((v, hasFocus) ->
+				{
+					if(hasFocus && !tab.isSelected())
+						tab.select();
+				});
+		}).attach();
 
 		if(savedInstanceState != null)
 		{

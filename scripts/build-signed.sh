@@ -118,6 +118,51 @@ else
 	gradle=(gradle)
 fi
 
+# Edits to the Gradle files (like a version bump) are easy to forget to sync in
+# Android Studio. Its per-project cache is rewritten on every sync, so stop if a
+# Gradle file is newer than the last sync.
+check_gradle_synced()
+{
+	local name marker="" newest=0 f t
+	local changed=()
+
+	name="$(basename "$repo" | tr '[:upper:]' '[:lower:]')"
+	for f in "$HOME"/.cache/Google/AndroidStudio*/projects/"$name".*/external_build_system/project.dat
+	do
+		[[ -f "$f" ]] || continue
+		t="$(stat -c %Y "$f")"
+		if (( t > newest ))
+		then
+			newest="$t"
+			marker="$f"
+		fi
+	done
+
+	if [[ -z "$marker" ]]
+	then
+		echo "Note: no Android Studio sync found for this project, skipping the Gradle sync check" >&2
+		return
+	fi
+
+	for f in settings.gradle* build.gradle* app/build.gradle* gradle.properties gradle/*.toml gradle/wrapper/gradle-wrapper.properties
+	do
+		if [[ -f "$f" && "$f" -nt "$marker" ]]
+		then
+			changed+=("$f")
+		fi
+	done
+
+	if (( ${#changed[@]} ))
+	then
+		echo "ERROR: Gradle files have changed since Android Studio last synced the project:" >&2
+		printf '  %s\n' "${changed[@]}" >&2
+		echo "Sync it (File > Sync Project with Gradle Files), then run this again." >&2
+		exit 1
+	fi
+}
+
+check_gradle_synced
+
 # Run one Gradle task signed with the given output's key
 build()
 {
