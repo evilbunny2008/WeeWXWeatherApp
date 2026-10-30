@@ -1,0 +1,3 @@
+• As páxinas desprázanse máis doadamente co mando do televisor, e Atrás volve ás lapelas
+• As listas despregables agora ábrense no axuste actual
+• O bloqueo de deslizamento e os axustes de alertas e widgets ocúltanse nos televisores, xa que alí non se aplican

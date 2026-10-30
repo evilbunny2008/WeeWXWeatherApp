@@ -1,0 +1,3 @@
+• Strony łatwiej przewijać pilotem telewizora, a Wstecz wraca do kart
+• Listy rozwijane otwierają się teraz na bieżącym ustawieniu
+• Blokada przesuwania oraz ustawienia alertów i widżetów są ukryte na telewizorach, bo tam nie mają zastosowania

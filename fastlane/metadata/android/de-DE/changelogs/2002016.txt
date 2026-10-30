@@ -1,0 +1,3 @@
+• Seiten lassen sich mit der TV-Fernbedienung leichter scrollen, und Zurück führt zu den Tabs
+• Auswahllisten öffnen sich jetzt bei der aktuellen Einstellung
+• Wischsperre sowie Warnungs- und Widget-Einstellungen sind auf Fernsehern ausgeblendet, da sie dort nicht gelten

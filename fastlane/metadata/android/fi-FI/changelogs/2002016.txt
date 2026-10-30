@@ -1,0 +1,3 @@
+• Sivuja on helpompi vierittää television kaukosäätimellä, ja Takaisin palaa välilehtiin
+• Avattavat luettelot avautuvat nyt nykyisen asetuksen kohdalta
+• Pyyhkäisylukko sekä hälytys- ja widget-asetukset on piilotettu televisioissa, koska ne eivät koske niitä

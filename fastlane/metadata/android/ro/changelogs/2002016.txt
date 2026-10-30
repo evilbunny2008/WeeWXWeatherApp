@@ -1,0 +1,3 @@
+• Paginile se derulează mai ușor cu telecomanda televizorului, iar Înapoi revine la file
+• Listele derulante se deschid acum la setarea curentă
+• Blocarea glisării și setările pentru alerte și widgeturi sunt ascunse pe televizoare, deoarece nu se aplică acolo

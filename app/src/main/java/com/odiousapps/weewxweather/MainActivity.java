@@ -552,19 +552,16 @@ public class MainActivity extends FragmentActivity
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 		reduceViewPagerSwipeSensitivity(mViewPager);
 
-		new TabLayoutMediator(tabLayout, mViewPager, (tab, position) ->
+		// ViewPager2's RecyclerView takes focus before its pages do, so pressing down from
+		// the tabs focused the whole pager and the page's web view never got the keys
+		if(isTV && mViewPager.getChildAt(0) instanceof RecyclerView pager)
 		{
-			tab.setText(tabTitles.get(position));
+			pager.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+			pager.setFocusable(false);
+		}
 
-			// A TV remote only moves the focus along the tabs, which would leave the
-			// screen behind on the old tab until OK is pressed, so switch as it moves
-			if(isTV)
-				tab.view.setOnFocusChangeListener((v, hasFocus) ->
-				{
-					if(hasFocus && !tab.isSelected())
-						tab.select();
-				});
-		}).attach();
+		new TabLayoutMediator(tabLayout, mViewPager,
+				((tab, position) -> tab.setText(tabTitles.get(position)))).attach();
 
 		if(savedInstanceState != null)
 		{
@@ -1681,12 +1678,12 @@ public class MainActivity extends FragmentActivity
 		if(mViewPager.getCurrentItem() > 0)
 		{
 			LogMessage("MainActivity.handleBack() Cycle through tabs until we hit tab 0");
-			// On a TV, move the focus too, selecting a tab follows the focus there
+			// On a TV, move the focus with it so it stays on the tab that's showing
 			TabLayout.Tab prev = tabLayout.getTabAt(mViewPager.getCurrentItem() - 1);
 			if(isTV && prev != null)
 				prev.view.requestFocus();
-			else
-				mViewPager.post(() -> mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1));
+
+			mViewPager.post(() -> mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1));
 			return;
 		}
 

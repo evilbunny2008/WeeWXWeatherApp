@@ -1,0 +1,3 @@
+• Stranice se lakše pomiču daljinskim upravljačem televizora, a Natrag vraća na kartice
+• Padajući popisi sada se otvaraju na trenutačnoj postavci
+• Zaključavanje prelaska te postavke upozorenja i widgeta skrivene su na televizorima jer se tamo ne primjenjuju

@@ -1,0 +1,3 @@
+• Les pages défilent plus facilement avec la télécommande, et Retour ramène aux onglets
+• Les listes déroulantes s’ouvrent désormais sur le réglage actuel
+• Le verrouillage du balayage et les réglages des alertes et des widgets sont masqués sur les téléviseurs, car ils ne s’y appliquent pas

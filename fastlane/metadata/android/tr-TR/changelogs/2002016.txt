@@ -1,0 +1,3 @@
+• Sayfalar TV kumandasıyla daha kolay kaydırılıyor ve Geri sekmelere dönüyor
+• Açılır listeler artık geçerli ayarda açılıyor
+• Kaydırma kilidi ile uyarı ve widget ayarları televizyonlarda geçerli olmadığından gizlendi

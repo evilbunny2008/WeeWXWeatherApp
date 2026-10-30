@@ -1,0 +1,3 @@
+• Sidor är lättare att rulla med tv-fjärrkontrollen, och Tillbaka går tillbaka till flikarna
+• Rullgardinslistor öppnas nu vid den aktuella inställningen
+• Svepspärr och inställningar för varningar och widgetar är dolda på tv, eftersom de inte gäller där

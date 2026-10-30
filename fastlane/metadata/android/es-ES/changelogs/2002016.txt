@@ -1,0 +1,3 @@
+• Las páginas se desplazan más fácilmente con el mando del televisor, y Atrás vuelve a las pestañas
+• Las listas desplegables ahora se abren en el ajuste actual
+• El bloqueo de deslizamiento y los ajustes de alertas y widgets se ocultan en los televisores, ya que allí no se aplican

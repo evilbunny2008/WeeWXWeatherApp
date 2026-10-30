@@ -1,0 +1,3 @@
+• Pages are easier to scroll with a TV remote, and Back returns to the tabs
+• Drop-down lists now open on the current setting
+• Swipe lock, alert and widget settings are hidden on TVs, as they don’t apply there

@@ -2,6 +2,7 @@ package com.odiousapps.weewxweather;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.View;
@@ -278,6 +279,18 @@ public class SafeWebView extends WebView
 			LogMessage("SafeWebView.destroy() calling super.destroy()");
 
 		super.destroy();
+	}
+
+	// The foreground (the TV focus ring) is drawn in content coordinates, which move as
+	// the page scrolls, so undo the scroll to keep it around the edges of the view.
+	// Scrollbars are also drawn here, but they're turned off in initSettings().
+	@Override
+	public void onDrawForeground(@NonNull Canvas canvas)
+	{
+		canvas.save();
+		canvas.translate(getScrollX(), getScrollY());
+		super.onDrawForeground(canvas);
+		canvas.restore();
 	}
 
 	// A TV remote's up/down only scrolls a page about 40px at a time, and the page keeps

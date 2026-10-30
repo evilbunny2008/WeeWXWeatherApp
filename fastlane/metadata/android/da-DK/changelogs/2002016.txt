@@ -1,0 +1,3 @@
+• Sider er nemmere at rulle med en tv-fjernbetjening, og Tilbage går tilbage til fanerne
+• Rullelister åbner nu ved den aktuelle indstilling
+• Swipelås samt indstillinger for advarsler og widgets er skjult på tv, da de ikke gælder der

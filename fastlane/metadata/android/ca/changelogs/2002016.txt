@@ -1,0 +1,3 @@
+• Les pàgines es desplacen més fàcilment amb el comandament del televisor, i Enrere torna a les pestanyes
+• Les llistes desplegables ara s’obren a l’opció actual
+• El bloqueig de lliscament i la configuració d’alertes i ginys s’amaguen als televisors, ja que no s’hi apliquen

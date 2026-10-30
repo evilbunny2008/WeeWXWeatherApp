@@ -1,0 +1,3 @@
+• Puslapius lengviau slinkti televizoriaus pultu, o mygtukas Atgal grąžina į skirtukus
+• Išskleidžiamieji sąrašai dabar atsidaro ties dabartiniu nustatymu
+• Braukimo užraktas ir įspėjimų bei valdiklių nustatymai televizoriuose paslėpti, nes ten jie netaikomi

@@ -1,0 +1,3 @@
+• Az oldalak könnyebben görgethetők a tévé távirányítójával, és a Vissza a lapokhoz visz
+• A legördülő listák most az aktuális beállításnál nyílnak meg
+• A húzászár, valamint a riasztási és widgetbeállítások tévéken rejtve vannak, mert ott nem érvényesek

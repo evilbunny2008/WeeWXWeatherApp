@@ -1,0 +1,3 @@
+• As páginas rolam com mais facilidade no controle remoto da TV, e Voltar retorna às guias
+• As listas suspensas agora abrem na configuração atual
+• O bloqueio de deslize e as configurações de alertas e widgets ficam ocultos nas TVs, pois não se aplicam lá

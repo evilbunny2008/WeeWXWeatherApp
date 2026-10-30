@@ -1,0 +1,3 @@
+• Las paginas sa laschan scrollar pli facilmain cun il telecumond da la televisiun, e Enavos maina enavos tar ils tabs
+• Glistas da selecziun s’avran ussa sin il parameter actual
+• La bloccada da stritgar ed ils parameters d’alarms e widgets èn zuppads sin televisiuns, perquai ch’els na valan betg là

@@ -1,0 +1,3 @@
+• Pagina’s scrollen makkelijker met een tv-afstandsbediening, en Terug gaat naar de tabbladen
+• Vervolgkeuzelijsten openen nu bij de huidige instelling
+• Veegvergrendeling en instellingen voor meldingen en widgets zijn op tv’s verborgen, omdat ze daar niet van toepassing zijn

@@ -1,0 +1,3 @@
+• Stránky se dálkovým ovladačem televize posouvají snáz a tlačítko Zpět vrací na karty
+• Rozbalovací seznamy se nyní otevírají na aktuálním nastavení
+• Zámek přejíždění a nastavení upozornění a widgetů jsou na televizorech skryté, protože se tam nepoužijí

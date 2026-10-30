@@ -1,0 +1,3 @@
+• As páginas deslocam-se mais facilmente com o comando da TV, e Voltar regressa aos separadores
+• As listas pendentes abrem agora na definição atual
+• O bloqueio de deslize e as definições de alertas e widgets estão ocultos nas TVs, pois não se aplicam lá
