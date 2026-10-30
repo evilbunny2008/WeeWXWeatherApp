@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Varnar om regnhastigheten överskrider bevakningsgränsen baserat på nederbördens varaktighet</string>
 	<string name="rainrate_alert_watch_notification">Regnhastigheten på %1$s under de senaste %2$d %3$s har nått ’Bevakning’ nivån</string>
 	<string name="rainrate_alert_watch_str">Regnintensitetsvarning (Bevakning)</string>
+	<string name="refresh">Uppdatera</string>
 	<string name="refresh_time">Välj Uppdatera tid</string>
 	<string name="remove_all_data">Är du säker på att du vill ta bort all data?</string>
 	<string name="save_app_debug_logs">Spara appfelsökningsloggar</string>

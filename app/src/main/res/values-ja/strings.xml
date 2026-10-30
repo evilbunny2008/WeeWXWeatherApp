@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">降雨時間に基づいて降雨量が監視制限を超えた場合にアラートを送信します</string>
 	<string name="rainrate_alert_watch_notification">過去 %2$d %3$s の降雨率 %1$s が「注意報」レベルに達しました</string>
 	<string name="rainrate_alert_watch_str">降雨強度アラート（注意報）</string>
+	<string name="refresh">更新</string>
 	<string name="refresh_time">更新時間を選択してください</string>
 	<string name="remove_all_data">すべてのデータを削除してもよろしいですか?</string>
 	<string name="save_app_debug_logs">アプリのデバッグログを保存する</string>

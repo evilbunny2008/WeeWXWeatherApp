@@ -1,0 +1,2 @@
+• Agora pode ser utilizada na Android TV e navegada com o comando
+• Corrigido o carregamento por vezes incorreto da página do radar ao iniciar

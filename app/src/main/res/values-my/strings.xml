@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">မိုးရွာသွန်းမှုကြာချိန်ပေါ်မူတည်၍ မိုးရေချိန်သည် နာရီကန့်သတ်ချက်ထက်ကျော်လွန်ပါက သတိပေးသည်။</string>
 	<string name="rainrate_alert_watch_notification">နောက်ဆုံး %2$d %3$s တွင် %1$s ၏ မိုးရေချိန်သည် ’စောင့်ကြည့်’ အဆင့်သို့ ရောက်သည်</string>
 	<string name="rainrate_alert_watch_str">မိုးရေချိန်သတိပေးချက်ကို ကြည့်ပါ။</string>
+	<string name="refresh">ပြန်လည်စတင်ရန်</string>
 	<string name="refresh_time">Refresh အချိန်ကိုရွေးချယ်ပါ</string>
 	<string name="remove_all_data">ဒေတာအားလုံးကိုဖယ်ရှားချင်တာသေချာလား။</string>
 	<string name="save_app_debug_logs">အက်ပ် ပြစ်ချက်ရှာ မှတ်တမ်းများကို သိမ်းရန်</string>

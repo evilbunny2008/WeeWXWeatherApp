@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Waarschuwt als de regensnelheid de observatielimiet overschrijdt op basis van de regenduur</string>
 	<string name="rainrate_alert_watch_notification">Het regenpercentage van %1$s in de afgelopen %2$d %3$s heeft het ’Waakzaam’ niveau bereikt</string>
 	<string name="rainrate_alert_watch_str">Regenintensiteitswaarschuwing (Waakzaam)</string>
+	<string name="refresh">Vernieuwen</string>
 	<string name="refresh_time">Kies Vernieuwingstijd</string>
 	<string name="remove_all_data">Weet u zeker dat u alle gegevens wilt verwijderen?</string>
 	<string name="save_app_debug_logs">Bewaar app-foutopsporingslogboeken</string>

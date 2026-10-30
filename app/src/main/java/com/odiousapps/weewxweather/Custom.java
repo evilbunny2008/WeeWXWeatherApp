@@ -38,7 +38,7 @@ import static com.odiousapps.weewxweather.WeeWXNotificationManager.observeNotifi
 import static com.odiousapps.weewxweather.WeeWXNotificationManager.removeNotificationObserver;
 
 @SuppressWarnings({"deprecation", "RequiresFeature"})
-public class Custom extends Fragment
+public class Custom extends Fragment implements Refreshable
 {
 	private SafeWebView wv;
 	private SwipeRefreshLayout swipeLayout;
@@ -46,6 +46,14 @@ public class Custom extends Fragment
 	private MainActivity activity;
 	private final ViewTreeObserver.OnScrollChangedListener scl = () ->
 			swipeLayout.setEnabled(!floatingCheckBox.isChecked() && wv.getScrollY() == 0);
+
+	@Override
+	public void refresh()
+	{
+		swipeLayout.setRefreshing(true);
+		LogMessage("onRefresh();");
+		loadCustom(true);
+	}
 
 	@Override
 	public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -65,12 +73,7 @@ public class Custom extends Fragment
 
 			swipeLayout.setRefreshing(true);
 		});
-		swipeLayout.setOnRefreshListener(() ->
-		{
-			swipeLayout.setRefreshing(true);
-			LogMessage("onRefresh();");
-			loadCustom(true);
-		});
+		swipeLayout.setOnRefreshListener(this::refresh);
 
 		if(wv == null)
 			wv = new SafeWebView(getInstance());

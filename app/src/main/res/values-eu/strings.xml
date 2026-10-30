@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Alertak ematen ditu euri-mailak erlojuaren muga gainditzen badu, prezipitazioen iraupenaren arabera</string>
 	<string name="rainrate_alert_watch_notification">Azken %2$d %3$s ko %1$s ko euri-tasa ’Zaintza’ mailara iritsi da</string>
 	<string name="rainrate_alert_watch_str">Euri-intentsitatearen alerta (Zaintza)</string>
+	<string name="refresh">Freskatu</string>
 	<string name="refresh_time">Aukeratu Freskatzeko denbora</string>
 	<string name="remove_all_data">Ziur datu guztiak kendu nahi dituzula?</string>
 	<string name="save_app_debug_logs">Gorde aplikazioaren arazketa-erregistroak</string>

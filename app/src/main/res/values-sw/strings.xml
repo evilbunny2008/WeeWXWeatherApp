@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Arifa ikiwa kiwango cha mvua kinazidi kikomo cha saa kulingana na muda wa mvua</string>
 	<string name="rainrate_alert_watch_notification">Mvua ya %1$s katika %2$d %3$s iliyopita ilifikia kiwango cha ’Uangalizi’</string>
 	<string name="rainrate_alert_watch_str">Arifa ya kiwango cha mvua (Uangalizi)</string>
+	<string name="refresh">Onyesha upya</string>
 	<string name="refresh_time">Chagua wakati wa kuburudisha</string>
 	<string name="remove_all_data">Je! Una uhakika unataka kuondoa data zote?</string>
 	<string name="save_app_debug_logs">Hifadhi magogo ya utatuaji wa programu</string>

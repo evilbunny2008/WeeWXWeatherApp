@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">सतर्कताहरू यदि वर्षाको अवधि वर्षाको अवधिमा आधारित वाच सीमा नाघ्यो भने</string>
 	<string name="rainrate_alert_watch_notification">पछिल्लो %2$d %3$s मा %1$s को वर्षाले ’वाच’ स्तरमा पुगेको छ</string>
 	<string name="rainrate_alert_watch_str">रेनरेट अलर्ट हेर्नुहोस्</string>
+	<string name="refresh">रिफ्रेस गर्नुहोस्</string>
 	<string name="refresh_time">रिफ्रेस समय छान्नुहोस्</string>
 	<string name="remove_all_data">के तपाइँ निश्चित हुनुहुन्छ कि तपाइँ सबै डेटा हटाउन चाहनुहुन्छ?</string>
 	<string name="save_app_debug_logs">एप डिबग लगहरू बचत गर्नुहोस्</string>

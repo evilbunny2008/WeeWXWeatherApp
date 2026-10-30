@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Борооны үргэлжлэх хугацаанаас хамааран эрчим нь ажиглалтын хязгаараас давбал мэдэгдэнэ</string>
 	<string name="rainrate_alert_watch_notification">Сүүлийн %2$d %3$s дахь %1$s борооны эрчим ’Ажиглалт’ түвшинд хүрлээ</string>
 	<string name="rainrate_alert_watch_str">Борооны эрчмийн ажиглалтын сэрэмжлүүлэг</string>
+	<string name="refresh">Шинэчлэх</string>
 	<string name="refresh_time">Шинэчлэх хугацааг сонгох</string>
 	<string name="remove_all_data">Та бүх өгөгдлийг устгахдаа итгэлтэй байна уу?</string>
 	<string name="save_app_debug_logs">Аппын дибаг логийг хадгалах</string>

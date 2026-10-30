@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Ειδοποιεί εάν ο ρυθμός βροχής υπερβαίνει το όριο παρακολούθησης με βάση τη διάρκεια βροχόπτωσης</string>
 	<string name="rainrate_alert_watch_notification">Ο ρυθμός βροχής %1$s στο τελευταίο %2$d Το %3$s έφτασε στο επίπεδο ’Επιτήρηση’</string>
 	<string name="rainrate_alert_watch_str">Ειδοποίηση έντασης βροχής (Επιτήρηση)</string>
+	<string name="refresh">Ανανέωση</string>
 	<string name="refresh_time">Επιλέξτε Χρόνος ανανέωσης</string>
 	<string name="remove_all_data">Είστε βέβαιοι ότι θέλετε να καταργήσετε όλα τα δεδομένα;</string>
 	<string name="save_app_debug_logs">Αποθήκευση αρχείων καταγραφής εντοπισμού σφαλμάτων εφαρμογών</string>

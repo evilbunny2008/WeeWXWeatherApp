@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Izexwayiso uma izinga lemvula lingaphezu komkhawulo wokubuka ngokusekelwe esikhathini sokuna kwemvula</string>
 	<string name="rainrate_alert_watch_notification">Imvula engu %1$s kokugcina okungu %2$d %3$s ifinyelele ileveli ’Yokubuka’</string>
 	<string name="rainrate_alert_watch_str">Buka i-Rainrate Alert</string>
+	<string name="refresh">Vuselela</string>
 	<string name="refresh_time">Khetha isikhathi sokuqabuleka</string>
 	<string name="remove_all_data">Uqinisekile ukuthi ufuna ukususa yonke imininingwane?</string>
 	<string name="save_app_debug_logs">Gcina izingodo zokulungisa ama-debug</string>

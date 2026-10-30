@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">மழைப்பொழிவு காலத்தின் அடிப்படையில் மழைவீதம் கண்காணிப்பு வரம்பை மீறினால் எச்சரிக்கைகள்</string>
 	<string name="rainrate_alert_watch_notification">கடந்த %2$d %3$s இல் %1$s மழைவீதம் ’வாட்ச்’ நிலையை எட்டியுள்ளது</string>
 	<string name="rainrate_alert_watch_str">மழைவீச்சு எச்சரிக்கையைப் பாருங்கள்</string>
+	<string name="refresh">புதுப்பி</string>
 	<string name="refresh_time">புதுப்பிப்பு நேரத்தைத் தேர்ந்தெடுக்கவும்</string>
 	<string name="remove_all_data">எல்லா தரவையும் அகற்ற விரும்புகிறீர்களா?</string>
 	<string name="save_app_debug_logs">பயன்பாட்டு பிழைத்திருத்தப் பதிவுகளைச் சேமிக்கவும்</string>

@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Avisa sche l’intensitad da la plievgia surpassa il limit d’observaziun tenor la durada da la precipitaziun</string>
 	<string name="rainrate_alert_watch_notification">L’intensitad da plievgia da %1$s en las ultimas %2$d %3$s ha cuntanschì il nivel ’Observaziun’</string>
 	<string name="rainrate_alert_watch_str">Avis d’intensitad da plievgia (nivel d’observaziun)</string>
+	<string name="refresh">Actualisar</string>
 	<string name="refresh_time">Tscherner il temp da rinfrestgar</string>
 	<string name="remove_all_data">Essas Vus segir che Vus vulais allontanar tut las datas?</string>
 	<string name="save_app_debug_logs">Memorisar ils protocols da debug da l’app</string>

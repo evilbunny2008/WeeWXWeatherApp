@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">מתריע אם עוצמת הגשם עוברת את גבול המעקב, בהתאם למשך הגשם</string>
 	<string name="rainrate_alert_watch_notification">עוצמת גשם של %1$s ב-%2$d %3$s האחרונות הגיעה לרמה ’מעקב’</string>
 	<string name="rainrate_alert_watch_str">התראת מעקב לעוצמת גשם</string>
+	<string name="refresh">רענון</string>
 	<string name="refresh_time">בחירת זמן רענון</string>
 	<string name="remove_all_data">בטוח שברצונך להסיר את כל הנתונים?</string>
 	<string name="save_app_debug_logs">שמירת יומני ניפוי באגים של האפליקציה</string>

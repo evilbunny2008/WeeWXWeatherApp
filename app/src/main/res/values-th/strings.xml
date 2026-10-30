@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">แจ้งเตือนหากอัตราฝนตกเกินขีดจำกัดการดูตามระยะเวลาฝนตก</string>
 	<string name="rainrate_alert_watch_notification">อัตราฝนตก %1$s ในช่วง %2$d %3$s ที่ผ่านมาถึงระดับ ’เฝ้าระวัง’</string>
 	<string name="rainrate_alert_watch_str">การแจ้งเตือนความแรงของฝน (เฝ้าระวัง)</string>
+	<string name="refresh">รีเฟรช</string>
 	<string name="refresh_time">เลือกเวลารีเฟรช</string>
 	<string name="remove_all_data">คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลทั้งหมด</string>
 	<string name="save_app_debug_logs">บันทึกบันทึกการแก้ไขข้อบกพร่องของแอป</string>

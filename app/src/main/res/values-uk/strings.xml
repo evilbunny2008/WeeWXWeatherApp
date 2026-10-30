@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Сповіщає, якщо кількість опадів перевищує встановлений ліміт на основі тривалості опадів</string>
 	<string name="rainrate_alert_watch_notification">Кількість опадів %1$s за останні %2$d %3$s досягла рівня ’Спостереження’</string>
 	<string name="rainrate_alert_watch_str">Сповіщення про інтенсивність дощу (Спостереження)</string>
+	<string name="refresh">Оновити</string>
 	<string name="refresh_time">Виберіть Час оновлення</string>
 	<string name="remove_all_data">Ви впевнені, що хочете видалити всі дані?</string>
 	<string name="save_app_debug_logs">Зберігайте журнали налагодження програми</string>

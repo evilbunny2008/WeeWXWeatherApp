@@ -131,6 +131,31 @@ public class SafeWebView extends WebView
 		initSettings();
 	}
 
+	// Pages like windy.com size themselves to the viewport when they load, so wait
+	// until the view has been laid out with a real size before running
+	static void runWhenSized(View view, Runnable runnable)
+	{
+		if(view.isLaidOut() && view.getWidth() > 0 && view.getHeight() > 0)
+		{
+			view.post(runnable);
+			return;
+		}
+
+		view.addOnLayoutChangeListener(new View.OnLayoutChangeListener()
+		{
+			@Override
+			public void onLayoutChange(View v, int left, int top, int right, int bottom,
+									   int oldLeft, int oldTop, int oldRight, int oldBottom)
+			{
+				if(v.getWidth() <= 0 || v.getHeight() <= 0)
+					return;
+
+				v.removeOnLayoutChangeListener(this);
+				v.post(runnable);
+			}
+		});
+	}
+
 	// Initialize SafeWebView safely with common settings.
 	@SuppressLint("SetJavaScriptEnabled")
 	void initSettings()

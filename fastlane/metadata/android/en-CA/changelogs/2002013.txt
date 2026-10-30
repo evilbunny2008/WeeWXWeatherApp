@@ -1,0 +1,2 @@
+• Can now be used on Android TV and navigated with the remote
+• Fixed the radar web page sometimes not loading properly at start up

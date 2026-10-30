@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">Peringatan jika curah hujan melebihi batas pengawasan berdasarkan durasi curah hujan</string>
 	<string name="rainrate_alert_watch_notification">Tingkat hujan %1$s dalam %2$d %3$s terakhir telah mencapai level ’Waspada’</string>
 	<string name="rainrate_alert_watch_str">Peringatan Intensitas Hujan (Waspada)</string>
+	<string name="refresh">Muat ulang</string>
 	<string name="refresh_time">Pilih Waktu Segarkan</string>
 	<string name="remove_all_data">Apakah Anda yakin ingin menghapus semua data?</string>
 	<string name="save_app_debug_logs">Simpan log debug aplikasi</string>

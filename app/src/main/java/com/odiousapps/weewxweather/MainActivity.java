@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -195,6 +196,10 @@ public class MainActivity extends FragmentActivity
 
 	private ImageButton hamburger;
 	private boolean gestureNav = false;
+	private boolean isTV = false;
+	// TV overscan safe area, 0 everywhere else
+	private int tvSafeH = 0, tvSafeV = 0;
+	private static final Object NO_FOREGROUND = new Object();
 
 	private int extraPx;
 
@@ -366,6 +371,21 @@ public class MainActivity extends FragmentActivity
 				mDrawerLayout.openDrawer(GravityCompat.START);
 		});
 
+		isTV = WeeWXApp.isTV();
+		LogMessage("MainActivity.onCreate() isTV: " + isTV);
+		if(isTV)
+		{
+			// Google's recommended TV margins, some TVs crop the edges of the picture
+			tvSafeH = Math.round(48 * WeeWXApp.getDensity());
+			tvSafeV = Math.round(27 * WeeWXApp.getDensity());
+
+			ImageButton tvRefresh = findViewById(R.id.tvRefresh);
+			tvRefresh.setVisibility(View.VISIBLE);
+			tvRefresh.setOnClickListener(arg0 -> refreshCurrentTab());
+
+			setupTvFocusRing();
+		}
+
 		if(Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU)
 		{
 			// Legacy back handling for Android < 13
@@ -420,7 +440,7 @@ public class MainActivity extends FragmentActivity
 		ViewCompat.setOnApplyWindowInsetsListener(abl, (v, insets) ->
 		{
 			Insets sb = insets.getInsets(WindowInsetsCompat.Type.statusBars());
-			int top = appInitialTop + sb.top;
+			int top = appInitialTop + sb.top + tvSafeV;
 			v.setPadding(appInitialLeft, top, appInitialRight, appInitialBottom);
 			return insets;
 		});
@@ -431,15 +451,15 @@ public class MainActivity extends FragmentActivity
 			Insets nb = insets.getInsets(WindowInsetsCompat.Type.navigationBars());
 			Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
 			Insets side = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
-			int top = cdInitialTop + sb.top;
-			int bottom = cdInitialBottom + Math.max(nb.bottom, ime.bottom);
+			int top = cdInitialTop + sb.top + tvSafeV;
+			int bottom = cdInitialBottom + Math.max(nb.bottom, ime.bottom) + tvSafeV;
 
 			// The drawer only touches the start edge, so only pad that side
 			int left = cdInitialLeft, right = cdInitialRight;
 			if(v.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL)
-				right += side.right;
+				right += side.right + tvSafeH;
 			else
-				left += side.left;
+				left += side.left + tvSafeH;
 
 			v.setPadding(left, top, right, bottom);
 			return insets;
@@ -464,9 +484,10 @@ public class MainActivity extends FragmentActivity
 			Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
 			// In landscape the nav bar and camera cutout can sit on either side
 			Insets side = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
-			int bottom = rvInitialBottom + Math.max(nb.bottom, ime.bottom);
+			int bottom = rvInitialBottom + Math.max(nb.bottom, ime.bottom) + tvSafeV;
 			view.setBackgroundColor(WeeWXApp.getColour(R.color.MyAppNavBarColour));
-			view.setPadding(rvInitialLeft + side.left, rvInitialTop, rvInitialRight + side.right, bottom);
+			view.setPadding(rvInitialLeft + side.left + tvSafeH, rvInitialTop,
+							rvInitialRight + side.right + tvSafeH, bottom);
 
 			Insets gestureInsets = insets.getInsets(WindowInsetsCompat.Type.systemGestures());
 
@@ -1067,6 +1088,9 @@ public class MainActivity extends FragmentActivity
 
 		LogMessage("MainActivity.onCreate() has finished...", KeyValue.d);
 		hasStarted = true;
+
+		if(isTV)
+			mViewPager.post(this::setInitialTvFocus);
 		// Ask only when a configured endpoint uses the LAN. Public HTTPS needs no permission.
 		if(!LocalNetwork.hasPermission())
 		{
@@ -1473,9 +1497,10 @@ public class MainActivity extends FragmentActivity
 
 	private void updateHamburger()
 	{
-		if(gestureNav)
+		// A TV remote can't edge swipe the drawer open either
+		if(gestureNav || isTV)
 		{
-			LogMessage("MainActivity.updateHamburger() gestureNav == true, show the hamburger menu...");
+			LogMessage("MainActivity.updateHamburger() gestureNav or TV, show the hamburger menu...");
 			if(hamburger.getVisibility() != View.VISIBLE)
 				hamburger.setVisibility(View.VISIBLE);
 		} else {
@@ -1496,8 +1521,82 @@ public class MainActivity extends FragmentActivity
 			View focus = getCurrentFocus();
 			if(imm != null && focus != null && imm.isAcceptingText())
 				closeKeyboard(drawerView, imm);
+
+			if(isTV)
+				focusDrawer();
+		}
+
+		@Override
+		public void onDrawerClosed(@NonNull View drawerView)
+		{
+			if(!isTV)
+				return;
+
+			// Give the D-pad the tabs back, and leave focus where the drawer was opened from
+			FrameLayout rv = findViewById(R.id.root_view);
+			rv.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+			hamburger.requestFocus();
 		}
 	};
+
+	// While the drawer is open, keep the D-pad inside it, otherwise focus can wander
+	// onto the tabs hidden behind it
+	private void focusDrawer()
+	{
+		FrameLayout rv = findViewById(R.id.root_view);
+		rv.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
+		findViewById(R.id.custom_drawer).requestFocus(View.FOCUS_DOWN);
+	}
+
+	// A D-pad needs something focused to start from, nothing is focused at launch
+	private void setInitialTvFocus()
+	{
+		if(mDrawerLayout.isDrawerOpen(GravityCompat.START))
+		{
+			focusDrawer();
+			return;
+		}
+
+		TabLayout tabLayout = findViewById(R.id.tabs);
+		TabLayout.Tab tab = tabLayout.getTabAt(mViewPager.getCurrentItem());
+		if(tab != null)
+			tab.view.requestFocus();
+	}
+
+	// Draws a ring over whatever has focus, the default focus highlights are too faint to
+	// follow from across the room. Foregrounds the views already had are put back afterwards.
+	private void setupTvFocusRing()
+	{
+		getWindow().getDecorView().getViewTreeObserver().addOnGlobalFocusChangeListener((oldFocus, newFocus) ->
+		{
+			if(oldFocus != null)
+			{
+				Object saved = oldFocus.getTag(R.id.tv_focus_ring);
+				if(saved != null)
+				{
+					oldFocus.setForeground(saved == NO_FOREGROUND ? null : (Drawable)saved);
+					oldFocus.setTag(R.id.tv_focus_ring, null);
+				}
+			}
+
+			if(newFocus != null && newFocus.getTag(R.id.tv_focus_ring) == null)
+			{
+				Drawable foreground = newFocus.getForeground();
+				newFocus.setTag(R.id.tv_focus_ring, foreground == null ? NO_FOREGROUND : foreground);
+				newFocus.setForeground(ContextCompat.getDrawable(this, R.drawable.tv_focus_ring));
+			}
+		});
+	}
+
+	private void refreshCurrentTab()
+	{
+		// FragmentStateAdapter tags each page "f" + its item id, which is its position here.
+		// The adapter's own list can't be used, after a rotation the restored fragments aren't in it.
+		Fragment fragment = getSupportFragmentManager().findFragmentByTag("f" + mViewPager.getCurrentItem());
+		LogMessage("MainActivity.refreshCurrentTab() fragment: " + fragment);
+		if(fragment instanceof Refreshable refreshable && fragment.isAdded())
+			refreshable.refresh();
+	}
 
 	final OnBackPressedCallback obpc = new OnBackPressedCallback(true)
 	{

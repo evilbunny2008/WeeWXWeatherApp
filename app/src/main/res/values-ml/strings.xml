@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">മഴയുടെ ദൈർഘ്യത്തെ അടിസ്ഥാനമാക്കി മഴയുടെ അളവ് വാച്ച് പരിധി കവിയുന്നുവെങ്കിൽ അലേർട്ടുകൾ</string>
 	<string name="rainrate_alert_watch_notification">കഴിഞ്ഞ %2$d %3$s ലെ %1$s എന്ന മഴയുടെ നിരക്ക് ’വാച്ച്’ ലെവലിൽ എത്തി</string>
 	<string name="rainrate_alert_watch_str">റെയിൻറേറ്റ് അലേർട്ട് കാണുക</string>
+	<string name="refresh">റിഫ്രഷ് ചെയ്യുക</string>
 	<string name="refresh_time">പുതുക്കിയ സമയം തിരഞ്ഞെടുക്കുക</string>
 	<string name="remove_all_data">എല്ലാ ഡാറ്റയും നീക്കം ചെയ്യണമെന്ന് തീർച്ചയാണോ?</string>
 	<string name="save_app_debug_logs">ആപ്പ് ഡീബഗ് ലോഗുകൾ സംരക്ഷിക്കുക</string>

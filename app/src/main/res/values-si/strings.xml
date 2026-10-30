@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">වැසි කාලසීමාව මත පදනම්ව වැසි අනුපාතය නිරීක්ෂණ සීමාව ඉක්මවුවහොත් දැනුවත් කරයි</string>
 	<string name="rainrate_alert_watch_notification">පසුගිය %2$d %3$s තුළ %1$s වැසි අනුපාතය ’නිරීක්ෂණ’ මට්ටමට ළඟා වී ඇත</string>
 	<string name="rainrate_alert_watch_str">නිරීක්ෂණ මට්ටමේ වැසි අනුපාත ඇඟවීම</string>
+	<string name="refresh">නැවුම් කරන්න</string>
 	<string name="refresh_time">නැවුම් කිරීමේ වේලාව තෝරන්න</string>
 	<string name="remove_all_data">ඔබට සියලු දත්ත ඉවත් කිරීමට අවශ්‍ය බව විශ්වාසද?</string>
 	<string name="save_app_debug_logs">යෙදුම් නිදොස් ලොග සුරකින්න</string>

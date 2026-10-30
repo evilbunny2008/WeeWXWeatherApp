@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Nag-aalerto kapag lumampas ang lakas ng ulan sa limitasyon ng pagbabantay batay sa tagal ng pag-ulan</string>
 	<string name="rainrate_alert_watch_notification">Umabot sa antas na ’Pagbabantay’ ang lakas ng ulan na %1$s sa nakaraang %2$d %3$s</string>
 	<string name="rainrate_alert_watch_str">Alerto sa Lakas ng Ulan (Pagbabantay)</string>
+	<string name="refresh">I-refresh</string>
 	<string name="refresh_time">Pumili ng Oras ng Pag-refresh</string>
 	<string name="remove_all_data">Sigurado ka bang gusto mong burahin ang lahat ng data?</string>
 	<string name="save_app_debug_logs">I-save ang mga debug log ng app</string>

@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Ostrzega, jeśli wielkość opadów przekracza limit zegarka na podstawie czasu trwania opadów</string>
 	<string name="rainrate_alert_watch_notification">Poziom opadów %1$s w ciągu ostatnich %2$d %3$s osiągnął poziom ’Obserwacja’</string>
 	<string name="rainrate_alert_watch_str">Alert intensywności opadów (Obserwacja)</string>
+	<string name="refresh">Odśwież</string>
 	<string name="refresh_time">Wybierz Czas odświeżania</string>
 	<string name="remove_all_data">Czy na pewno chcesz usunąć wszystkie dane?</string>
 	<string name="save_app_debug_logs">Zapisz dzienniki debugowania aplikacji</string>

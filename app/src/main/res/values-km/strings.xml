@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">ជូនដំណឹង ប្រសិនបើអត្រាភ្លៀងលើសកម្រិតតាមដាន ផ្អែកលើរយៈពេលភ្លៀង</string>
 	<string name="rainrate_alert_watch_notification">អត្រាភ្លៀង %1$s ក្នុងរយៈពេល %2$d %3$s ចុងក្រោយបានឈានដល់កម្រិត ’តាមដាន’</string>
 	<string name="rainrate_alert_watch_str">ការជូនដំណឹងអត្រាភ្លៀងកម្រិតតាមដាន</string>
+	<string name="refresh">ផ្ទុកឡើងវិញ</string>
 	<string name="refresh_time">ជ្រើសរើសពេលផ្ទុកឡើងវិញ</string>
 	<string name="remove_all_data">តើអ្នកប្រាកដថាចង់លុបទិន្នន័យទាំងអស់មែនទេ?</string>
 	<string name="save_app_debug_logs">រក្សាទុកកំណត់ហេតុបំបាត់កំហុសរបស់កម្មវិធី</string>

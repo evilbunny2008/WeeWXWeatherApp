@@ -1,0 +1,2 @@
+• Ora può essere usata su Android TV e navigata con il telecomando
+• Risolto il caricamento a volte errato della pagina web del radar all’avvio

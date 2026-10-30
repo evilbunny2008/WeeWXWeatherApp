@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">Avvisa se il tasso di pioggia supera il limite di orologio in base alla durata della pioggia</string>
 	<string name="rainrate_alert_watch_notification">Il tasso di pioggia di %1$s negli ultimi %2$d %3$s ha raggiunto il livello ’Vigilanza’</string>
 	<string name="rainrate_alert_watch_str">Avviso di intensità di pioggia (Vigilanza)</string>
+	<string name="refresh">Aggiorna</string>
 	<string name="refresh_time">Scegli Aggiorna ora</string>
 	<string name="remove_all_data">Sei sicuro di voler rimuovere tutti i dati?</string>
 	<string name="save_app_debug_logs">Salva i log di debug dell’app</string>

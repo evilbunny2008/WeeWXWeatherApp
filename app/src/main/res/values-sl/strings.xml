@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Opozori, če količina dežja preseže mejo opazovanja glede na trajanje padavin</string>
 	<string name="rainrate_alert_watch_notification">Stopnja dežja %1$s v zadnjih %2$d %3$s je dosegla raven ’Spremljanje’</string>
 	<string name="rainrate_alert_watch_str">Opozorilo o intenzivnosti dežja (Spremljanje)</string>
+	<string name="refresh">Osveži</string>
 	<string name="refresh_time">Izberite Čas osvežitve</string>
 	<string name="remove_all_data">Ali ste prepričani, da želite odstraniti vse podatke?</string>
 	<string name="save_app_debug_logs">Shranite dnevnike odpravljanja napak aplikacije</string>

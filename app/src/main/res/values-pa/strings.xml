@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">ਚੇਤਾਵਨੀਆਂ ਜੇਕਰ ਮੀਂਹ ਦੀ ਮਿਆਦ ਬਾਰਸ਼ ਦੀ ਮਿਆਦ ਦੇ ਆਧਾਰ ’ਤੇ ਨਿਗਰਾਨੀ ਸੀਮਾ ਤੋਂ ਵੱਧ ਜਾਂਦੀ ਹੈ</string>
 	<string name="rainrate_alert_watch_notification">ਪਿਛਲੇ %2$d %3$s ਵਿੱਚ %1$s ਦੀ ਬਾਰਿਸ਼ ’ਵਾਚ’ ਪੱਧਰ ’ਤੇ ਪਹੁੰਚ ਗਈ ਹੈ</string>
 	<string name="rainrate_alert_watch_str">ਰੇਨਰੇਟ ਅਲਰਟ ਦੇਖੋ</string>
+	<string name="refresh">ਰਿਫ੍ਰੈਸ਼ ਕਰੋ</string>
 	<string name="refresh_time">ਤਾਜ਼ਾ ਸਮਾਂ ਚੁਣੋ</string>
 	<string name="remove_all_data">ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ ’ਤੇ ਸਾਰਾ ਡਾਟਾ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
 	<string name="save_app_debug_logs">ਐਪ ਡੀਬੱਗ ਲੌਗਸ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>

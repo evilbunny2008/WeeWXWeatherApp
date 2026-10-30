@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">यदि वर्षा की दर वर्षा की अवधि के आधार पर निगरानी सीमा से अधिक हो जाती है तो अलर्ट</string>
 	<string name="rainrate_alert_watch_notification">पिछले %2$d %3$s में %1$s की वर्षा दर ’निगरानी’ स्तर पर पहुंच गई है</string>
 	<string name="rainrate_alert_watch_str">वर्षा दर अलर्ट (निगरानी)</string>
+	<string name="refresh">रीफ़्रेश करें</string>
 	<string name="refresh_time">ताज़ा समय चुनें</string>
 	<string name="remove_all_data">क्या आप वाकई सारा डेटा हटाना चाहते हैं?</string>
 	<string name="save_app_debug_logs">ऐप डिबग लॉग सहेजें</string>

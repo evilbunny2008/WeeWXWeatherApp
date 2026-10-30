@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<!-- Only one of these is ever visible. A FrameLayout gives each the full width
+	 straight away, a horizontal LinearLayout left the radar 0px wide until the
+	 next layout pass after the forecast was hidden, so web pages like windy.com
+	 sized themselves wrong and lost their controls. -->
+<FrameLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/forecast_linear_layout"
 	android:layout_width="match_parent"
@@ -10,4 +14,4 @@
 
 	<include layout="@layout/radar_layout"
 		android:id="@+id/radar_layout" />
-</LinearLayout>
+</FrameLayout>

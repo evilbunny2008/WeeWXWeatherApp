@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Предупреждава, ако количеството дъжд надвишава ограничението за наблюдение въз основа на продължителността на валежите</string>
 	<string name="rainrate_alert_watch_notification">Интензитет на дъжд от %1$s през последните %2$d %3$s достигна ниво ’Наблюдение’</string>
 	<string name="rainrate_alert_watch_str">Сигнал за интензивност на дъжда (Наблюдение)</string>
+	<string name="refresh">Опресняване</string>
 	<string name="refresh_time">Изберете Време за опресняване</string>
 	<string name="remove_all_data">Сигурни ли сте, че искате да премахнете всички данни?</string>
 	<string name="save_app_debug_logs">Запазване на регистрационни файлове за отстраняване на грешки в приложението</string>

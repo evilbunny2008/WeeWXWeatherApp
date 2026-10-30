@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">Memaklumkan jika kadar hujan melebihi had waspada berdasarkan tempoh hujan</string>
 	<string name="rainrate_alert_watch_notification">Kadar hujan %1$s dalam %2$d %3$s yang lalu telah mencapai tahap ’Waspada’</string>
 	<string name="rainrate_alert_watch_str">Amaran Kadar Hujan Tahap Waspada</string>
+	<string name="refresh">Muat semula</string>
 	<string name="refresh_time">Pilih Masa Muat Semula</string>
 	<string name="remove_all_data">Adakah anda pasti mahu mengalih keluar semua data?</string>
 	<string name="save_app_debug_logs">Simpan log nyahpepijat apl</string>

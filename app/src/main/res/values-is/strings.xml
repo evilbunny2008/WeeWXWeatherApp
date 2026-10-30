@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Lætur vita ef úrkomuákefð fer yfir vöktunarmörk miðað við lengd úrkomunnar</string>
 	<string name="rainrate_alert_watch_notification">Úrkomuákefð upp á %1$s síðustu %2$d %3$s hefur náð stiginu ’Vöktun’</string>
 	<string name="rainrate_alert_watch_str">Vöktunarviðvörun um úrkomuákefð</string>
+	<string name="refresh">Endurhlaða</string>
 	<string name="refresh_time">Veldu endurnýjunartíma</string>
 	<string name="remove_all_data">Ertu viss um að þú viljir fjarlægja öll gögn?</string>
 	<string name="save_app_debug_logs">Vista villuleitarannála forritsins</string>

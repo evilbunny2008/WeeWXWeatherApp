@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Annab märku, kui sademete hulk ületab sademete kestuse alusel lubatud piirmäära</string>
 	<string name="rainrate_alert_watch_notification">Viimase %2$d %3$s vihmamäär %1$s on jõudnud jälgimistasemele</string>
 	<string name="rainrate_alert_watch_str">Vihma intensiivsuse hoiatus (Jälgimine)</string>
+	<string name="refresh">Värskenda</string>
 	<string name="refresh_time">Valige Värskendusaeg</string>
 	<string name="remove_all_data">Kas olete kindel, et soovite kõik andmed eemaldada?</string>
 	<string name="save_app_debug_logs">Salvestage rakenduse silumislogid</string>

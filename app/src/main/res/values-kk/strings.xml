@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Жаңбыр жылдамдығы жауын-шашын ұзақтығына негізделген бақылау шегінен асып кетсе, ескертеді</string>
 	<string name="rainrate_alert_watch_notification">Соңғы %2$d %3$s ішіндегі %1$s жаңбыр жылдамдығы ’Бақылау’ деңгейіне жетті</string>
 	<string name="rainrate_alert_watch_str">Жаңбыр қарқыны ескертуі (Бақылау)</string>
+	<string name="refresh">Жаңарту</string>
 	<string name="refresh_time">Жаңарту уақытын таңдаңыз</string>
 	<string name="remove_all_data">Барлық деректерді жойғыңыз келе ме?</string>
 	<string name="save_app_debug_logs">Қолданбаларды жою журналдарын сақтаңыз</string>

@@ -1,0 +1,2 @@
+• Acum poate fi folosită pe Android TV și controlată cu telecomanda
+• S-a remediat încărcarea uneori incorectă a paginii web a radarului la pornire

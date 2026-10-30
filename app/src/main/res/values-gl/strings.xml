@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Alertas se a taxa de choiva supera o límite de vixilancia en función da duración da choiva</string>
 	<string name="rainrate_alert_watch_notification">A taxa de choiva de %1$s no último %2$d %3$s alcanzou o nivel de ’Vixilancia’</string>
 	<string name="rainrate_alert_watch_str">Alerta de intensidade de choiva (Vixilancia)</string>
+	<string name="refresh">Actualizar</string>
 	<string name="refresh_time">Escolla Tempo de actualización</string>
 	<string name="remove_all_data">Estás seguro de que queres eliminar todos os datos?</string>
 	<string name="save_app_debug_logs">Garda os rexistros de depuración da aplicación</string>

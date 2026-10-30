@@ -125,6 +125,7 @@
 	<string name="rainrate_alert_watch_desc">تنبيهات إذا تجاوز معدل المطر حد المراقبة بناءً على مدة هطول الأمطار</string>
 	<string name="rainrate_alert_watch_notification">معدل المطر %1$s في آخر %2$d %3$s وصل إلى مستوى ’المراقبة’</string>
 	<string name="rainrate_alert_watch_str">تنبيه معدل المطر (مراقبة)</string>
+	<string name="refresh">تحديث</string>
 	<string name="refresh_time">اختر وقت التحديث</string>
 	<string name="remove_all_data">هل أنت متأكد أنك تريد إزالة كافة البيانات؟</string>
 	<string name="save_app_debug_logs">حفظ سجلات تصحيح التطبيق</string>

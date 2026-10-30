@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Waarsku as die reëntempo die dophoulimiet oorskry, gebaseer op die duur van die reënval</string>
 	<string name="rainrate_alert_watch_notification">Reëntempo van %1$s in die laaste %2$d %3$s het die ’Dophou’-vlak bereik</string>
 	<string name="rainrate_alert_watch_str">Dophou-reëntempo-waarskuwing</string>
+	<string name="refresh">Herlaai</string>
 	<string name="refresh_time">Kies verfristyd</string>
 	<string name="remove_all_data">Is jy seker jy wil alle data verwyder?</string>
 	<string name="save_app_debug_logs">Stoor toep se ontfoutlogboeke</string>

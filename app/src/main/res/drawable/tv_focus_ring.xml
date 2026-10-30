@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Drawn over whichever view has focus on a TV, so a D-pad user can see where they are -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<stroke
+		android:width="3dp"
+		android:color="@color/tabIndicatorColor" />
+	<corners android:radius="6dp" />
+</shape>

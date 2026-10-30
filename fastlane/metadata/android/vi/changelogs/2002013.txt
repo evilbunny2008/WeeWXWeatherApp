@@ -1,0 +1,2 @@
+• Giờ đây có thể dùng trên Android TV và điều khiển bằng điều khiển từ xa
+• Đã sửa lỗi trang web radar đôi khi tải không đúng khi khởi động

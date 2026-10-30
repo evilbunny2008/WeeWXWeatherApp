@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Апавяшчае, калі інтэнсіўнасць дажджу перавышае ліміт назірання з улікам працягласці ападкаў</string>
 	<string name="rainrate_alert_watch_notification">Інтэнсіўнасць дажджу %1$s за апошнія %2$d %3$s дасягнула ўзроўню ’Назіранне’</string>
 	<string name="rainrate_alert_watch_str">Назіранне за інтэнсіўнасцю дажджу</string>
+	<string name="refresh">Абнавіць</string>
 	<string name="refresh_time">Выберыце час абнаўлення</string>
 	<string name="remove_all_data">Вы ўпэўнены, што хочаце выдаліць усе даныя?</string>
 	<string name="save_app_debug_logs">Захаваць журналы адладкі праграмы</string>

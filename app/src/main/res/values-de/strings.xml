@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Warnt, wenn die Regenmenge das Überwachungslimit basierend auf der Niederschlagsdauer überschreitet</string>
 	<string name="rainrate_alert_watch_notification">Die Regenrate von %1$s in den letzten %2$d %3$s hat das ’Vorwarnung’ Niveau erreicht</string>
 	<string name="rainrate_alert_watch_str">Regenintensitätsalarm (Vorwarnung)</string>
+	<string name="refresh">Aktualisieren</string>
 	<string name="refresh_time">Wählen Sie Aktualisierungszeit</string>
 	<string name="remove_all_data">Sind Sie sicher, dass Sie alle Daten entfernen möchten?</string>
 	<string name="save_app_debug_logs">Speichern Sie App-Debug-Protokolle</string>

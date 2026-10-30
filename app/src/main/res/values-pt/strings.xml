@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">Alerta se a taxa de chuva exceder o limite de observação com base na duração da chuva</string>
 	<string name="rainrate_alert_watch_notification">A taxa de chuva de %1$s nos últimos %2$d %3$s atingiu o nível ’Vigilância’</string>
 	<string name="rainrate_alert_watch_str">Alerta de intensidade de chuva (Vigilância)</string>
+	<string name="refresh">Atualizar</string>
 	<string name="refresh_time">Escolha o horário de atualização</string>
 	<string name="remove_all_data">Tem certeza de que deseja remover todos os dados?</string>
 	<string name="save_app_debug_logs">Salvar registros de depuração do aplicativo</string>

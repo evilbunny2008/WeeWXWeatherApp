@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Yağmur oranının, yağış süresine bağlı olarak izleme sınırını aşması durumunda uyarı verir</string>
 	<string name="rainrate_alert_watch_notification">Son %2$d %3$s’deki %1$s yağmur oranı ’Gözlem’ seviyesine ulaştı</string>
 	<string name="rainrate_alert_watch_str">Yağmur Şiddeti Uyarısı (Gözlem)</string>
+	<string name="refresh">Yenile</string>
 	<string name="refresh_time">Yenileme Zamanını Seçin</string>
 	<string name="remove_all_data">Tüm verileri kaldırmak istediğinizden emin misiniz?</string>
 	<string name="save_app_debug_logs">Uygulama hata ayıklama günlüklerini kaydedin</string>

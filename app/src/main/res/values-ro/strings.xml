@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">Alertă dacă rata ploii depășește limita de supraveghere în funcție de durata ploii</string>
 	<string name="rainrate_alert_watch_notification">Rata ploii de %1$s în ultimele %2$d %3$s a atins nivelul ’Atenționare’</string>
 	<string name="rainrate_alert_watch_str">Alertă de intensitate a ploii (Atenționare)</string>
+	<string name="refresh">Reîmprospătează</string>
 	<string name="refresh_time">Alegeți Timp de reîmprospătare</string>
 	<string name="remove_all_data">Sigur doriți să eliminați toate datele?</string>
 	<string name="save_app_debug_logs">Salvați jurnalele de depanare a aplicației</string>

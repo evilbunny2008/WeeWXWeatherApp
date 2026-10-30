@@ -1,0 +1,2 @@
+• Dabar galima naudoti Android TV ir valdyti nuotolinio valdymo pultu
+• Ištaisyta, kad paleidžiant radaro tinklalapis kartais netinkamai įsikeldavo

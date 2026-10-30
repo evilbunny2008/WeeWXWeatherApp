@@ -1,0 +1,2 @@
+• Ara es pot fer servir a Android TV i navegar-hi amb el comandament
+• S’ha corregit que la pàgina web del radar de vegades no es carregués bé en iniciar

@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Жаан-чачындын узактыгына жараша, жаан-чачындын саны көрүү чектен ашып кетсе, эскертет</string>
 	<string name="rainrate_alert_watch_notification">Акыркы %2$d %3$s ичиндеги %1$s жамгырдын ылдамдыгы ’Байкоо’ деңгээлине жетти</string>
 	<string name="rainrate_alert_watch_str">Жамгырдын ылдамдыгы жөнүндө эскертүү (Байкоо)</string>
+	<string name="refresh">Жаңылоо</string>
 	<string name="refresh_time">Жаңылоо убактысын тандаңыз</string>
 	<string name="remove_all_data">Бардык маалыматтарды жок кылгыңыз келеби?</string>
 	<string name="save_app_debug_logs">Колдонмо оңдоо журналдарын сактаңыз</string>

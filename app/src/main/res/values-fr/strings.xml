@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">Alertes si le taux de pluie dépasse la limite de surveillance en fonction de la durée des précipitations</string>
 	<string name="rainrate_alert_watch_notification">Le taux de pluie de %1$s au cours des %2$d %3$s a atteint le niveau ’ Vigilance ’</string>
 	<string name="rainrate_alert_watch_str">Alerte d’intensité de pluie (Vigilance)</string>
+	<string name="refresh">Actualiser</string>
 	<string name="refresh_time">Choisissez l’heure d’actualisation</string>
 	<string name="remove_all_data">Êtes-vous sûr de vouloir supprimer toutes les données ?</string>
 	<string name="save_app_debug_logs">Enregistrer les journaux de débogage de l’application</string>

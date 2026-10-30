@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">Brīdina, ja lietus daudzums pārsniedz pulksteņa ierobežojumu, pamatojoties uz lietus ilgumu</string>
 	<string name="rainrate_alert_watch_notification">Lietus līmenis %1$s pēdējos %2$d %3$s ir sasniedzis novērošanas līmeni</string>
 	<string name="rainrate_alert_watch_str">Brīdinājums par lietus intensitāti (Novērošana)</string>
+	<string name="refresh">Atsvaidzināt</string>
 	<string name="refresh_time">Izvēlieties Atsvaidzināšanas laiks</string>
 	<string name="remove_all_data">Vai tiešām vēlaties noņemt visus datus?</string>
 	<string name="save_app_debug_logs">Saglabājiet lietotņu atkļūdošanas žurnālus</string>

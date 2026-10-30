@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">Alertes si la taxa de pluja supera el límit de rellotge en funció de la durada de la pluja</string>
 	<string name="rainrate_alert_watch_notification">La taxa de pluja de %1$s durant els darrers %2$d %3$s ha arribat al nivell ’Vigilància’</string>
 	<string name="rainrate_alert_watch_str">Alerta d’intensitat de pluja (Vigilància)</string>
+	<string name="refresh">Actualitza</string>
 	<string name="refresh_time">Trieu Temps d’actualització</string>
 	<string name="remove_all_data">Esteu segur que voleu eliminar totes les dades?</string>
 	<string name="save_app_debug_logs">Desa els registres de depuració de l’aplicació</string>

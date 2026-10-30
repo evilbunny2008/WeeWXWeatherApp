@@ -1,0 +1,2 @@
+• Kan nu op Android TV worden gebruikt en met de afstandsbediening worden bediend
+• Opgelost dat de radarwebpagina bij het opstarten soms niet goed laadde

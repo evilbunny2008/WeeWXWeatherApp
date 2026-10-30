@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">در صورتی که میزان بارندگی از حد مجاز بر اساس مدت بارندگی بیشتر شود، هشدار می دهد</string>
 	<string name="rainrate_alert_watch_notification">میزان بارندگی %1$s در آخرین %2$d %3$s به سطح ’مراقبت’ رسیده است</string>
 	<string name="rainrate_alert_watch_str">هشدار شدت باران (مراقبت)</string>
+	<string name="refresh">بازخوانی</string>
 	<string name="refresh_time">Refresh Time را انتخاب کنید</string>
 	<string name="remove_all_data">آیا مطمئن هستید که می خواهید همه داده ها را حذف کنید؟</string>
 	<string name="save_app_debug_logs">گزارش‌های اشکال‌زدایی برنامه را ذخیره کنید</string>

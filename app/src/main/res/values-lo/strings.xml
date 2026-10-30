@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">ແຈ້ງເຕືອນຖ້າອັດຕາຝົນເກີນຂີດຈຳກັດເຝົ້າລະວັງ ໂດຍອີງໃສ່ໄລຍະເວລາຝົນຕົກ</string>
 	<string name="rainrate_alert_watch_notification">ອັດຕາຝົນ %1$s ໃນ %2$d %3$s ທີ່ຜ່ານມາໄດ້ຮອດລະດັບ ’ເຝົ້າລະວັງ’</string>
 	<string name="rainrate_alert_watch_str">ແຈ້ງເຕືອນອັດຕາຝົນລະດັບເຝົ້າລະວັງ</string>
+	<string name="refresh">ໂຫຼດຄືນໃໝ່</string>
 	<string name="refresh_time">ເລືອກເວລາໂຫຼດຄືນ</string>
 	<string name="remove_all_data">ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບຂໍ້ມູນທັງໝົດ?</string>
 	<string name="save_app_debug_logs">ບັນທຶກບັນທຶກດີບັກຂອງແອັບ</string>

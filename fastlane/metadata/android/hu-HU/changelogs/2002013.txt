@@ -1,0 +1,2 @@
+• Mostantól Android TV-n is használható, és távirányítóval kezelhető
+• Javítva, hogy a radar weboldala indításkor néha nem töltődött be megfelelően

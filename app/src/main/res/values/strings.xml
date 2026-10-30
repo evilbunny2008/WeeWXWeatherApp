@@ -126,6 +126,7 @@
 	<string name="rainrate_alert_watch_desc">Alerts if the rainrate exceeds the watch limit based on rainfall duration</string>
 	<string name="rainrate_alert_watch_notification">Rainrate of %1$s in the last %2$d %3$s has hit ’Watch’ level</string>
 	<string name="rainrate_alert_watch_str">Watch Rainrate Alert</string>
+	<string name="refresh">Refresh</string>
 	<string name="refresh_time">Choose Refresh Time</string>
 	<string name="remove_all_data">Are you sure you want to remove all data?</string>
 	<string name="save_app_debug_logs">Save app debug logs</string>

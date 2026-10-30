@@ -1,0 +1,2 @@
+• Zdaj ga je mogoče uporabljati na Android TV in upravljati z daljinskim upravljalnikom
+• Odpravljeno občasno nepravilno nalaganje spletne strani radarja ob zagonu

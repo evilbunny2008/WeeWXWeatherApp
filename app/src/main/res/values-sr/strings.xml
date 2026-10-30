@@ -116,6 +116,7 @@
 	<string name="rainrate_alert_watch_desc">Упозорава ако количина кише премашује ограничење гледања на основу трајања падавина</string>
 	<string name="rainrate_alert_watch_notification">Стопа кише од %1$s у последњих %2$d %3$s је достигла ниво ’Праћење’</string>
 	<string name="rainrate_alert_watch_str">Упозорење о интензитету кише (Праћење)</string>
+	<string name="refresh">Освежи</string>
 	<string name="refresh_time">Изаберите Време освежавања</string>
 	<string name="remove_all_data">Да ли сте сигурни да желите да уклоните све податке?</string>
 	<string name="save_app_debug_logs">Сачувајте евиденцију отклањања грешака у апликацији</string>

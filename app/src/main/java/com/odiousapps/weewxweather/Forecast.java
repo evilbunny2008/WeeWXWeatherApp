@@ -49,7 +49,7 @@ import static com.odiousapps.weewxweather.WeeWXNotificationManager.observeNotifi
 import static com.odiousapps.weewxweather.WeeWXNotificationManager.removeNotificationObserver;
 
 @SuppressWarnings("deprecation")
-public class Forecast extends Fragment implements View.OnClickListener
+public class Forecast extends Fragment implements View.OnClickListener, Refreshable
 {
 	private View rootView;
 	private SafeWebView forecastWebView, radarWebView;
@@ -72,6 +72,35 @@ public class Forecast extends Fragment implements View.OnClickListener
 						swipeLayout2.setEnabled(floatingCheckBox.getVisibility() == View.VISIBLE &&
 						!floatingCheckBox.isChecked() && radarWebView.getScrollY() == 0);
 
+	private void refreshForecast()
+	{
+		swipeLayout1.setRefreshing(true);
+		LogMessage("swipeLayout1.onRefresh();");
+		processUpdateInBG(false, false, true, false, false);
+	}
+
+	private void refreshRadar()
+	{
+		swipeLayout2.setRefreshing(true);
+		LogMessage("swipeLayout2.onRefresh();");
+
+		String radtype = (String)KeyValue.readVar("radtype", WeeWXApp.radtype_default);
+		if(radtype != null && radtype.equals("image"))
+			processUpdateInBG(false, false, false, true, false);
+		else
+			loadRadar(true);
+	}
+
+	// Refresh whichever of the forecast or radar is showing in this tab
+	@Override
+	public void refresh()
+	{
+		if(swipeLayout1.isShown())
+			refreshForecast();
+		else
+			refreshRadar();
+	}
+
 	public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
 		super.onCreateView(inflater, container, savedInstanceState);
@@ -84,26 +113,10 @@ public class Forecast extends Fragment implements View.OnClickListener
 		rl = rootView.findViewById(R.id.rotateLayout);
 
 		swipeLayout1 = rootView.findViewById(R.id.swipeToRefresh1);
-		swipeLayout1.setOnRefreshListener(() ->
-		{
-			swipeLayout1.setRefreshing(true);
-			LogMessage("swipeLayout1.onRefresh();");
-			processUpdateInBG(false, false, true, false, false);
-		});
+		swipeLayout1.setOnRefreshListener(this::refreshForecast);
 
 		swipeLayout2 = rootView.findViewById(R.id.swipeToRefresh2);
-		swipeLayout2.setOnRefreshListener(() ->
-		{
-			swipeLayout2.setRefreshing(true);
-			LogMessage("swipeLayout2.onRefresh();");
-
-
-			String radtype = (String)KeyValue.readVar("radtype", WeeWXApp.radtype_default);
-			if(radtype != null && radtype.equals("image"))
-				processUpdateInBG(false, false, false, true, false);
-			else
-				loadRadar(true);
-		});
+		swipeLayout2.setOnRefreshListener(this::refreshRadar);
 
 		im = rootView.findViewById(R.id.logo);
 
@@ -344,7 +357,7 @@ public class Forecast extends Fragment implements View.OnClickListener
 
 		// Pages like windy.com size themselves to the viewport when they load, so wait
 		// until the WebView has been laid out, otherwise they render at the wrong size
-		runWhenSized(radarWebView, () ->
+		SafeWebView.runWhenSized(radarWebView, () ->
 		{
 			if(radarWebView == null)
 				return;
@@ -353,29 +366,6 @@ public class Forecast extends Fragment implements View.OnClickListener
 		});
 
 		stopRefreshing();
-	}
-
-	private static void runWhenSized(View view, Runnable runnable)
-	{
-		if(view.isLaidOut() && view.getWidth() > 0 && view.getHeight() > 0)
-		{
-			view.post(runnable);
-			return;
-		}
-
-		view.addOnLayoutChangeListener(new View.OnLayoutChangeListener()
-		{
-			@Override
-			public void onLayoutChange(View v, int left, int top, int right, int bottom,
-									   int oldLeft, int oldTop, int oldRight, int oldBottom)
-			{
-				if(v.getWidth() <= 0 || v.getHeight() <= 0)
-					return;
-
-				v.removeOnLayoutChangeListener(this);
-				v.post(runnable);
-			}
-		});
 	}
 
 	private void failedRadarWebViewDownload(int resId)

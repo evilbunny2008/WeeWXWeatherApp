@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Įspėja, jei kritulių kiekis viršija ribą pagal kritulių trukmę</string>
 	<string name="rainrate_alert_watch_notification">%1$s lietaus norma per paskutinius %2$d %3$s pasiekė stebėjimo lygį</string>
 	<string name="rainrate_alert_watch_str">Įspėjimas apie lietaus intensyvumą (Stebėjimas)</string>
+	<string name="refresh">Atnaujinti</string>
 	<string name="refresh_time">Pasirinkite Atnaujinimo laikas</string>
 	<string name="remove_all_data">Ar tikrai norite pašalinti visus duomenis?</string>
 	<string name="save_app_debug_logs">Išsaugokite programos derinimo žurnalus</string>

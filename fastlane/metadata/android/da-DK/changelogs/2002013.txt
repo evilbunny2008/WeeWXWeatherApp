@@ -1,0 +1,2 @@
+• Kan nu bruges på Android TV og betjenes med fjernbetjeningen
+• Rettet, at radarens webside nogle gange ikke indlæstes korrekt ved opstart

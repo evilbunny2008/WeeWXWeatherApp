@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">如果降雨率超過基於降雨持續時間的監視限制，則會發出警報</string>
 	<string name="rainrate_alert_watch_notification">過去 %2$d %3$s %1$s 的降雨量已達到「注意」級別</string>
 	<string name="rainrate_alert_watch_str">降雨強度警報 (注意)</string>
+	<string name="refresh">重新整理</string>
 	<string name="refresh_time">選擇刷新時間</string>
 	<string name="remove_all_data">您確定要刪除所有數據嗎？</string>
 	<string name="save_app_debug_logs">保存應用程序調試日誌</string>

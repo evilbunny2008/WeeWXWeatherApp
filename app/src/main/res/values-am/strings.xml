@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">የዝናብ ፍጥነት በዝናቡ ቆይታ ላይ ተመስርቶ ከክትትል ገደቡ ካለፈ ያሳውቃል</string>
 	<string name="rainrate_alert_watch_notification">ባለፉት %2$d %3$s ውስጥ የ%1$s የዝናብ ፍጥነት ’ክትትል’ ደረጃ ላይ ደርሷል</string>
 	<string name="rainrate_alert_watch_str">የክትትል ደረጃ የዝናብ ፍጥነት ማንቂያ</string>
+	<string name="refresh">አድስ</string>
 	<string name="refresh_time">የማደሻ ጊዜ ይምረጡ</string>
 	<string name="remove_all_data">እርግጠኛ ነዎት ሁሉንም ውሂብ ማስወገድ ይፈልጋሉ?</string>
 	<string name="save_app_debug_logs">የመተግበሪያ ማረሚያ ምዝግብ ማስታወሻዎችን አስቀምጥ</string>

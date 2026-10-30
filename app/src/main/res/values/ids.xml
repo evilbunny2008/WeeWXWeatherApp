@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- View tag key holding a view's own foreground while the TV focus ring replaces it -->
+	<item name="tv_focus_ring" type="id" />
+</resources>

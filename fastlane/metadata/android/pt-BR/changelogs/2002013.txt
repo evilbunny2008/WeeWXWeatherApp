@@ -1,0 +1,2 @@
+• Agora pode ser usado na Android TV e navegado com o controle remoto
+• Corrigido o carregamento às vezes incorreto da página do radar ao iniciar

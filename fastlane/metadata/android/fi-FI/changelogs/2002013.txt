@@ -1,0 +1,2 @@
+• Voidaan nyt käyttää Android TV:ssä ja ohjata kaukosäätimellä
+• Korjattu tutkan verkkosivun ajoittain virheellinen latautuminen käynnistyksessä

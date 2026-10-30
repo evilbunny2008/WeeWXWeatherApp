@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">ಮಳೆಯ ಅವಧಿಯನ್ನು ಆಧರಿಸಿ ಮಳೆಯ ಪ್ರಮಾಣವು ವೀಕ್ಷಣೆ ಮಿತಿಯನ್ನು ಮೀರಿದರೆ ಎಚ್ಚರಿಕೆ ನೀಡುತ್ತದೆ</string>
 	<string name="rainrate_alert_watch_notification">ಕಳೆದ %2$d %3$s ನಲ್ಲಿ %1$s ರ ಮಳೆಯ ಪ್ರಮಾಣವು ’ವಾಚ್’ ಮಟ್ಟವನ್ನು ತಲುಪಿದೆ</string>
 	<string name="rainrate_alert_watch_str">ರೈನ್‌ರೇಟ್ ಎಚ್ಚರಿಕೆಯನ್ನು ವೀಕ್ಷಿಸಿ</string>
+	<string name="refresh">ರಿಫ್ರೆಶ್ ಮಾಡಿ</string>
 	<string name="refresh_time">ರಿಫ್ರೆಶ್ ಸಮಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
 	<string name="remove_all_data">ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ತೆಗೆದುಹಾಕಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?</string>
 	<string name="save_app_debug_logs">ಅಪ್ಲಿಕೇಶನ್ ಡೀಬಗ್ ಲಾಗ್‌ಗಳನ್ನು ಉಳಿಸಿ</string>

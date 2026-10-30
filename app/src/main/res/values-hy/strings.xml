@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Զգուշացնում է, եթե անձրևի արագությունը գերազանցում է ժամացույցի սահմանաչափը՝ ելնելով տեղումների տևողությունից</string>
 	<string name="rainrate_alert_watch_notification">%1$s անձրևի արագությունը վերջին %2$d %3$s ում հասել է ’Հսկողություն’ մակարդակին</string>
 	<string name="rainrate_alert_watch_str">Անձրևի ինտենսիվության ծանուցում (Հսկողություն)</string>
+	<string name="refresh">Թարմացնել</string>
 	<string name="refresh_time">Ընտրեք թարմացման ժամանակը</string>
 	<string name="remove_all_data">Իսկապե՞ս ուզում եք հեռացնել բոլոր տվյալները:</string>
 	<string name="save_app_debug_logs">Պահպանեք հավելվածների վրիպազերծման մատյանները</string>

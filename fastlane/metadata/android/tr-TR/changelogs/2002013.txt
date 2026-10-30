@@ -1,0 +1,2 @@
+• Artık Android TV’de kullanılabilir ve kumandayla gezinilebilir
+• Radar web sayfasının başlangıçta bazen düzgün yüklenmemesi düzeltildi

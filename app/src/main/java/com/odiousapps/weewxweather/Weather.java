@@ -66,7 +66,7 @@ import static com.odiousapps.weewxweather.WeeWXNotificationManager.observeNotifi
 import static com.odiousapps.weewxweather.WeeWXNotificationManager.removeNotificationObserver;
 
 @SuppressWarnings({"deprecation", "DataFlowIssue", "unused"})
-public class Weather extends Fragment implements View.OnClickListener
+public class Weather extends Fragment implements View.OnClickListener, Refreshable
 {
 	private boolean isVisible;
 	private String lastURL;
@@ -112,12 +112,7 @@ public class Weather extends Fragment implements View.OnClickListener
 		swipeLayout.setBackgroundColor(bgColour);
 		fll.setBackgroundColor(bgColour);
 
-		swipeLayout.setOnRefreshListener(() ->
-		{
-			swipeLayout.setRefreshing(true);
-			LogMessage("onRefresh()");
-			forceRefresh();
-		});
+		swipeLayout.setOnRefreshListener(this::refresh);
 
 		floatingCheckBox = rootView.findViewById(R.id.floatingCheckBoxMain);
 		floatingCheckBox.setOnClickListener(this);
@@ -837,7 +832,7 @@ public class Weather extends Fragment implements View.OnClickListener
 		} else if(url != null) {
 			LogMessage("loadAndShowWebView() load url: " + url);
 
-			wv.post(() ->
+			SafeWebView.runWhenSized(wv, () ->
 			{
 				wv.loadUrl(url);
 
@@ -1003,6 +998,14 @@ public class Weather extends Fragment implements View.OnClickListener
 		loadAndShowWebView(current, str, null, true);
 		newAttempt(1, current);
 		//LogMessage("forceCurrentRefresh() calling loadAndShowWebView()");
+	}
+
+	@Override
+	public void refresh()
+	{
+		swipeLayout.setRefreshing(true);
+		LogMessage("onRefresh()");
+		forceRefresh();
 	}
 
 	private void forceRefresh()

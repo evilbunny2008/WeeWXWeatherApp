@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Hälyttää, jos sademäärä ylittää sateen kestoon perustuvan kellon rajan</string>
 	<string name="rainrate_alert_watch_notification">%1$s sademäärä viimeisen %2$d %3$s aikana on saavuttanut valvontatason</string>
 	<string name="rainrate_alert_watch_str">Sademäärähälytys (Valvonta)</string>
+	<string name="refresh">Päivitä</string>
 	<string name="refresh_time">Valitse Päivitysaika</string>
 	<string name="remove_all_data">Haluatko varmasti poistaa kaikki tiedot?</string>
 	<string name="save_app_debug_logs">Tallenna sovellusten virheenkorjauslokit</string>

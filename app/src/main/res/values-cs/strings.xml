@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Upozorní, pokud rychlost deště překročí limit sledování na základě délky deště</string>
 	<string name="rainrate_alert_watch_notification">Míra deště %1$s za posledních %2$d %3$s dosáhla úrovně ’Sledování’</string>
 	<string name="rainrate_alert_watch_str">Upozornění na intenzitu deště (Sledování)</string>
+	<string name="refresh">Obnovit</string>
 	<string name="refresh_time">Vyberte Čas obnovení</string>
 	<string name="remove_all_data">Opravdu chcete odstranit všechna data?</string>
 	<string name="save_app_debug_logs">Uložte protokoly ladění aplikace</string>

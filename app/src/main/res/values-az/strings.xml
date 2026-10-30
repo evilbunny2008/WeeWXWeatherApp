@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Yağış sürəti yağış müddətinə əsasən izləmə limitini keçərsə xəbərdar edir</string>
 	<string name="rainrate_alert_watch_notification">Son %2$d %3$s ərzində %1$s yağış sürəti ’Müşahidə’ səviyyəsinə çatıb</string>
 	<string name="rainrate_alert_watch_str">Yağış intensivliyi xəbərdarlığı (Müşahidə)</string>
+	<string name="refresh">Yenilə</string>
 	<string name="refresh_time">Yeniləmə vaxtı seçin</string>
 	<string name="remove_all_data">Bütün məlumatları silmək istədiyinizə əminsiniz?</string>
 	<string name="save_app_debug_logs">Tətbiq Debug qeydlərini qeyd edin</string>

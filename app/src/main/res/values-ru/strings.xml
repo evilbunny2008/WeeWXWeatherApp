@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Предупреждает, если интенсивность дождя превышает предел наблюдения в зависимости от продолжительности дождя</string>
 	<string name="rainrate_alert_watch_notification">Уровень дождя %1$s за последние %2$d %3$s достиг уровня ’Наблюдение’</string>
 	<string name="rainrate_alert_watch_str">Оповещение об интенсивности дождя (Наблюдение)</string>
+	<string name="refresh">Обновить</string>
 	<string name="refresh_time">Выберите время обновления</string>
 	<string name="remove_all_data">Вы уверены, что хотите удалить все данные?</string>
 	<string name="save_app_debug_logs">Сохранять журналы отладки приложений</string>

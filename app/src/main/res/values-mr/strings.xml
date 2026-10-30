@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">पावसाच्या कालावधीच्या आधारावर पावसाचा वेग पाहण्याच्या मर्यादेपेक्षा जास्त असल्यास सूचना</string>
 	<string name="rainrate_alert_watch_notification">शेवटच्या %2$d %3$s मध्ये %1$s च्या पावसाने ’निगराणी’ पातळी गाठली आहे</string>
 	<string name="rainrate_alert_watch_str">पावसाच्या दराची सूचना (निगराणी)</string>
+	<string name="refresh">रिफ्रेश करा</string>
 	<string name="refresh_time">रिफ्रेश वेळ निवडा</string>
 	<string name="remove_all_data">तुमची खात्री आहे की तुम्ही सर्व डेटा काढू इच्छिता?</string>
 	<string name="save_app_debug_logs">ॲप डीबग लॉग जतन करा</string>

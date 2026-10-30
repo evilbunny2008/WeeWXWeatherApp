@@ -1,0 +1,2 @@
+• Kann jetzt auf Android TV verwendet und mit der Fernbedienung bedient werden
+• Behoben, dass die Radar-Webseite beim Start manchmal nicht richtig geladen wurde

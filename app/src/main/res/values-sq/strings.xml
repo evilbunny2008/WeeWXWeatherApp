@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Paralajmëron nëse shkalla e shiut tejkalon kufirin e shikimit bazuar në kohëzgjatjen e reshjeve</string>
 	<string name="rainrate_alert_watch_notification">Shkalla e shiut prej %1$s në %2$d të fundit %3$s ka arritur në nivelin ’Vëzhgim’</string>
 	<string name="rainrate_alert_watch_str">Sinjalizim për intensitetin e shiut (Vëzhgim)</string>
+	<string name="refresh">Rifresko</string>
 	<string name="refresh_time">Zgjidhni Kohën e Rifreskimit</string>
 	<string name="remove_all_data">Jeni i sigurt që dëshironi të hiqni të gjitha të dhënat?</string>
 	<string name="save_app_debug_logs">Ruani regjistrat e korrigjimit të aplikacioneve</string>

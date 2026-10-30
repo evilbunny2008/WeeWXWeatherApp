@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">বৃষ্টিপাতের সময়কালের উপর ভিত্তি করে বৃষ্টিপাত ঘড়ির সীমা অতিক্রম করলে সতর্কতা</string>
 	<string name="rainrate_alert_watch_notification">গত %2$d %3$s এ %1$s এর বৃষ্টিপাত ’নজরদারি’ স্তরে পৌঁছেছে</string>
 	<string name="rainrate_alert_watch_str">বৃষ্টিপাতের হারের সতর্কতা (নজরদারি)</string>
+	<string name="refresh">রিফ্রেশ করুন</string>
 	<string name="refresh_time">রিফ্রেশ সময় নির্বাচন করুন</string>
 	<string name="remove_all_data">আপনি কি নিশ্চিত যে আপনি সমস্ত ডেটা সরাতে চান?</string>
 	<string name="save_app_debug_logs">অ্যাপ ডিবাগ লগ সংরক্ষণ করুন</string>

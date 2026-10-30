@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">వర్షపాతం వ్యవధి ఆధారంగా వర్షపాతం వాచ్ పరిమితిని మించి ఉంటే హెచ్చరికలు</string>
 	<string name="rainrate_alert_watch_notification">గత %2$d %3$sలో %1$s వర్షపాతం ’వాచ్’ స్థాయికి చేరుకుంది</string>
 	<string name="rainrate_alert_watch_str">వర్షపాతం హెచ్చరికను చూడండి</string>
+	<string name="refresh">రిఫ్రెష్ చేయండి</string>
 	<string name="refresh_time">రిఫ్రెష్ సమయాన్ని ఎంచుకోండి</string>
 	<string name="remove_all_data">మీరు ఖచ్చితంగా మొత్తం డేటాను తీసివేయాలనుకుంటున్నారా?</string>
 	<string name="save_app_debug_logs">యాప్ డీబగ్ లాగ్‌లను సేవ్ చేయండి</string>

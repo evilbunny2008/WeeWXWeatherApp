@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Предупредува ако стапката на дожд ја надминува границата на часовникот врз основа на времетраењето на врнежите</string>
 	<string name="rainrate_alert_watch_notification">Стапката на дожд од %1$s во последното %2$d %3$s го достигна нивото ’Набљудување’</string>
 	<string name="rainrate_alert_watch_str">Предупредување за интензитет на дожд (Набљудување)</string>
+	<string name="refresh">Освежи</string>
 	<string name="refresh_time">Изберете Време на освежување</string>
 	<string name="remove_all_data">Дали сте сигурни дека сакате да ги отстраните сите податоци?</string>
 	<string name="save_app_debug_logs">Зачувајте дневници за отстранување грешки на апликациите</string>

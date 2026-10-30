@@ -1,0 +1,2 @@
+• Nyní lze používat na Android TV a ovládat dálkovým ovladačem
+• Opraveno občasné nesprávné načtení webové stránky radaru při spuštění

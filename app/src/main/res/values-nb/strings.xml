@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Varsler hvis nedbørsmengden overskrider vaktgrensen basert på nedbørens varighet</string>
 	<string name="rainrate_alert_watch_notification">Regnmengde på %1$s de siste %2$d %3$s har nådd ’Overvåking’ nivå</string>
 	<string name="rainrate_alert_watch_str">Regnintensitetsvarsel (Overvåking)</string>
+	<string name="refresh">Oppdater</string>
 	<string name="refresh_time">Velg Oppdater tid</string>
 	<string name="remove_all_data">Er du sikker på at du vil fjerne alle data?</string>
 	<string name="save_app_debug_logs">Lagre app-feilsøkingslogger</string>

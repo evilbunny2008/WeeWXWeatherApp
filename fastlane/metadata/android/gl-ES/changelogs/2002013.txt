@@ -1,0 +1,2 @@
+• Agora pódese usar en Android TV e navegar co mando a distancia
+• Corrixiuse que a páxina web do radar ás veces non se cargase ben ao iniciar

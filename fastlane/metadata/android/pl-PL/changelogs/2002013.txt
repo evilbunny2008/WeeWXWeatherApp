@@ -1,0 +1,2 @@
+• Można teraz używać na Android TV i sterować pilotem
+• Naprawiono czasami nieprawidłowe ładowanie strony radaru przy uruchomieniu

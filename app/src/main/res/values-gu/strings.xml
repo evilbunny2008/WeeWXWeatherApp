@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">જો વરસાદની અવધિના આધારે વરસાદનો દર ઘડિયાળની મર્યાદા કરતાં વધી જાય તો ચેતવણીઓ</string>
 	<string name="rainrate_alert_watch_notification">છેલ્લા %2$d %3$s માં %1$s નો વરસાદ ’વોચ’ લેવલ પર પહોંચ્યો છે</string>
 	<string name="rainrate_alert_watch_str">રેઈનરેટ એલર્ટ જુઓ</string>
+	<string name="refresh">રિફ્રેશ કરો</string>
 	<string name="refresh_time">તાજું કરવાનો સમય પસંદ કરો</string>
 	<string name="remove_all_data">શું તમે ખરેખર તમામ ડેટા દૂર કરવા માંગો છો?</string>
 	<string name="save_app_debug_logs">એપ્લિકેશન ડીબગ લોગ સાચવો</string>

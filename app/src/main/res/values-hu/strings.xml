@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">Figyelmeztetés, ha a csapadékmennyiség meghaladja a csapadék időtartama alapján meghatározott órahatárt</string>
 	<string name="rainrate_alert_watch_notification">%1$s esőaránya az elmúlt %2$d %3$s során elérte a ’Figyelés’ szintet</string>
 	<string name="rainrate_alert_watch_str">Esőintenzitás-riasztás (Figyelés)</string>
+	<string name="refresh">Frissítés</string>
 	<string name="refresh_time">Válassza a Frissítési idő lehetőséget</string>
 	<string name="remove_all_data">Biztosan eltávolítja az összes adatot?</string>
 	<string name="save_app_debug_logs">Mentse el az alkalmazás hibakeresési naplóit</string>

@@ -69,6 +69,16 @@
 					android:layout_height="wrap_content"
 					android:text="@string/custom2" />
 			</com.google.android.material.tabs.TabLayout>
+
+			<!-- TV only, a remote can't pull to refresh -->
+			<ImageButton
+				android:id="@+id/tvRefresh"
+				android:backgroundTint="@android:color/transparent"
+				android:contentDescription="@string/refresh"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/refresh"
+				android:visibility="gone"/>
 		</LinearLayout>
 	</com.google.android.material.appbar.AppBarLayout>
 

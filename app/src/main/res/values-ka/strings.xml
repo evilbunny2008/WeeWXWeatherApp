@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">აფრთხილებს, თუ წვიმის მაჩვენებელი აჭარბებს საათის ლიმიტს წვიმის ხანგრძლივობის მიხედვით</string>
 	<string name="rainrate_alert_watch_notification">წვიმის %1$s ბოლო %2$d %3$s მიაღწია ’მონიტორინგის’ დონეს</string>
 	<string name="rainrate_alert_watch_str">წვიმის ინტენსივობის გაფრთხილება (მონიტორინგი)</string>
+	<string name="refresh">განახლება</string>
 	<string name="refresh_time">აირჩიეთ განახლების დრო</string>
 	<string name="remove_all_data">დარწმუნებული ხართ, რომ გსურთ წაშალოთ ყველა მონაცემი?</string>
 	<string name="save_app_debug_logs">შეინახეთ აპის გამართვის ჟურნალები</string>

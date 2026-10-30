@@ -119,6 +119,7 @@
 	<string name="rainrate_alert_watch_desc">Upozorní, ak rýchlosť dažďa prekročí limit sledovania na základe trvania zrážok</string>
 	<string name="rainrate_alert_watch_notification">Miera dažďa %1$s za posledných %2$d %3$s dosiahla úroveň ’Sledovanie’</string>
 	<string name="rainrate_alert_watch_str">Upozornenie na intenzitu dažďa (Sledovanie)</string>
+	<string name="refresh">Obnoviť</string>
 	<string name="refresh_time">Vyberte Čas obnovenia</string>
 	<string name="remove_all_data">Naozaj chcete odstrániť všetky údaje?</string>
 	<string name="save_app_debug_logs">Uložte denníky ladenia aplikácie</string>

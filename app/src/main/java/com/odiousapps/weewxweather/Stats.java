@@ -44,7 +44,7 @@ import static com.odiousapps.weewxweather.WeeWXNotificationManager.observeNotifi
 import static com.odiousapps.weewxweather.WeeWXNotificationManager.removeNotificationObserver;
 
 @SuppressLint("unused")
-public class Stats extends Fragment
+public class Stats extends Fragment implements Refreshable
 {
 	private Slider mySlider;
 	private int currZoom = 0;
@@ -54,6 +54,14 @@ public class Stats extends Fragment
 	private final ViewTreeObserver.OnScrollChangedListener scl = () -> swipeLayout.setEnabled(wv.getScrollY() == 0);
 
 	boolean pageReady = false;
+
+	@Override
+	public void refresh()
+	{
+		swipeLayout.setRefreshing(true);
+		LogMessage("WeeWXAppCommon.getWeather(true, false)...");
+		processUpdateInBG(true, true, false, false, false);
+	}
 
 	public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
@@ -68,12 +76,7 @@ public class Stats extends Fragment
 		ll.setBackgroundColor(bgColour);
 
 		swipeLayout = rootView.findViewById(R.id.swipeToRefresh);
-		swipeLayout.setOnRefreshListener(() ->
-		{
-			swipeLayout.setRefreshing(true);
-			LogMessage("WeeWXAppCommon.getWeather(true, false)...");
-			processUpdateInBG(true, true, false, false, false);
-		});
+		swipeLayout.setOnRefreshListener(this::refresh);
 
 		mySlider = rootView.findViewById(R.id.pageZoom);
 		mySlider.setBackgroundColor(bgColour);

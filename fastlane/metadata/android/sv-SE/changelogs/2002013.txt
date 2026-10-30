@@ -1,0 +1,2 @@
+• Kan nu användas på Android TV och styras med fjärrkontrollen
+• Åtgärdat att radarwebbsidan ibland inte laddades korrekt vid start

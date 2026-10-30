@@ -113,6 +113,7 @@
 	<string name="rainrate_alert_watch_desc">انتباہات اگر بارش کے دورانیے کی بنیاد پر بارش کی رفتار گھڑی کی حد سے زیادہ ہو جاتی ہے۔</string>
 	<string name="rainrate_alert_watch_notification">گزشتہ %2$d میں %1$s کی بارش کی شرح %3$s ’نگرانی’ کی سطح پر پہنچ گئی ہے</string>
 	<string name="rainrate_alert_watch_str">بارش کی شرح کا انتباہ (نگرانی)</string>
+	<string name="refresh">ریفریش کریں</string>
 	<string name="refresh_time">ریفریش ٹائم کا انتخاب کریں</string>
 	<string name="remove_all_data">کیا آپ واقعی تمام ڈیٹا کو ہٹانا چاہتے ہیں؟</string>
 	<string name="save_app_debug_logs">ایپ ڈیبگ لاگز کو محفوظ کریں</string>

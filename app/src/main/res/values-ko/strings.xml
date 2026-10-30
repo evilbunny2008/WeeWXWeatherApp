@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">강수량이 강우 기간을 기준으로 감시 한계를 초과하면 경고합니다</string>
 	<string name="rainrate_alert_watch_notification">지난 %2$d %3$s 동안 %1$s의 강우량이 ’주의’ 수준에 도달했습니다</string>
 	<string name="rainrate_alert_watch_str">강우 강도 알림(주의)</string>
+	<string name="refresh">새로고침</string>
 	<string name="refresh_time">새로 고침 시간 선택</string>
 	<string name="remove_all_data">모든 데이터를 삭제하시겠습니까?</string>
 	<string name="save_app_debug_logs">앱 디버그 로그 저장</string>

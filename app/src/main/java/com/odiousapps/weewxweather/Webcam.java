@@ -38,7 +38,7 @@ import static com.odiousapps.weewxweather.WeeWXAppCommon.processUpdateInBG;
 import static com.odiousapps.weewxweather.WeeWXNotificationManager.observeNotifications;
 import static com.odiousapps.weewxweather.WeeWXNotificationManager.removeNotificationObserver;
 
-public class Webcam extends Fragment
+public class Webcam extends Fragment implements Refreshable
 {
 	private RotateLayout rl;
 	private ImageView iv;
@@ -66,6 +66,13 @@ public class Webcam extends Fragment
 		}
 	};
 
+	@Override
+	public void refresh()
+	{
+		swipeLayout.setRefreshing(true);
+		processUpdateInBG(false, false, false, false, true);
+	}
+
 	public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
 		super.onCreateView(inflater, container, savedInstanceState);
@@ -91,11 +98,7 @@ public class Webcam extends Fragment
 		configureZoom();
 
 		swipeLayout.setRefreshing(true);
-		swipeLayout.setOnRefreshListener(() ->
-		{
-			swipeLayout.setRefreshing(true);
-			processUpdateInBG(false, false, false, false, true);
-		});
+		swipeLayout.setOnRefreshListener(this::refresh);
 
 //		processUpdateInBG(true, false, false, true,
 //				false, false, false, true);

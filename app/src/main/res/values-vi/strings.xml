@@ -110,6 +110,7 @@
 	<string name="rainrate_alert_watch_desc">Cảnh báo nếu lượng mưa vượt quá giới hạn theo dõi dựa trên thời gian mưa</string>
 	<string name="rainrate_alert_watch_notification">Tỷ lệ mưa %1$s trong %2$d %3$s vừa qua đã đạt đến mức ’Theo dõi’</string>
 	<string name="rainrate_alert_watch_str">Cảnh báo cường độ mưa (Theo dõi)</string>
+	<string name="refresh">Làm mới</string>
 	<string name="refresh_time">Chọn thời gian làm mới</string>
 	<string name="remove_all_data">Bạn có chắc chắn muốn xóa tất cả dữ liệu không?</string>
 	<string name="save_app_debug_logs">Lưu nhật ký gỡ lỗi ứng dụng</string>

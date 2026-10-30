@@ -1,0 +1,2 @@
+• Peut désormais être utilisée sur Android TV et pilotée avec la télécommande
+• Correction du chargement parfois incorrect de la page web du radar au démarrage

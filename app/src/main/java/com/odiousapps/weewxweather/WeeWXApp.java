@@ -897,6 +897,12 @@ public class WeeWXApp extends Application
 		return instance.getResources().getConfiguration().smallestScreenWidthDp;
 	}
 
+	// True on Android TV, where there's only a D-pad remote and no touchscreen
+	static boolean isTV()
+	{
+		return (getUImode() & Configuration.UI_MODE_TYPE_MASK) == Configuration.UI_MODE_TYPE_TELEVISION;
+	}
+
 	static int getUImode()
 	{
 		return instance.getResources().getConfiguration().uiMode;
