@@ -3,8 +3,14 @@ package com.odiousapps.weewxweather;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.os.SystemClock;
 import android.util.AttributeSet;
+import android.view.InputDevice;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.CookieManager;
@@ -54,6 +60,15 @@ public class SafeWebView extends WebView
 	private boolean hasBeenDestroyed = false;
 	private boolean timeout;
 	private boolean outputDebugLogs = false;
+	private boolean tvPointer = false;
+	private boolean dragging = false;
+	private float pointerX = -1;
+	private float pointerY = -1;
+	private final Paint pointerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+	private final Path pointerShape = new Path();
+
+	private static final int DRAG_STEPS = 8;
+	private static final long DRAG_STEP_MS = 16;
 
 	private final String[] responseHeaderNames =
 	{
@@ -290,7 +305,171 @@ public class SafeWebView extends WebView
 		canvas.save();
 		canvas.translate(getScrollX(), getScrollY());
 		super.onDrawForeground(canvas);
+		if(showTvPointer())
+			drawTvPointer(canvas);
 		canvas.restore();
+	}
+
+	// Pages like windy.com's map draw their own controls, so a remote has nothing it can
+	// land on. Steer a pointer around those pages instead: centre clicks what's under it,
+	// and pushing it against an edge drags the page. Back returns to the tabs as usual.
+	void enableTvPointer()
+	{
+		tvPointer = WeeWXApp.isTV();
+	}
+
+	private boolean showTvPointer()
+	{
+		return tvPointer && !hasBeenDestroyed && isFocused() && pageFitsView();
+	}
+
+	private boolean pageFitsView()
+	{
+		return !canScrollVertically(1) && !canScrollVertically(-1);
+	}
+
+	private void drawTvPointer(Canvas canvas)
+	{
+		if(pointerX < 0 || pointerY < 0)
+		{
+			pointerX = getWidth() / 2f;
+			pointerY = getHeight() / 2f;
+		}
+
+		float size = 24 * WeeWXApp.getDensity();
+		pointerShape.reset();
+		pointerShape.moveTo(pointerX, pointerY);
+		pointerShape.lineTo(pointerX, pointerY + size);
+		pointerShape.lineTo(pointerX + size * 0.28f, pointerY + size * 0.75f);
+		pointerShape.lineTo(pointerX + size * 0.72f, pointerY + size * 0.72f);
+		pointerShape.close();
+
+		pointerPaint.setStyle(Paint.Style.FILL);
+		pointerPaint.setColor(Color.WHITE);
+		canvas.drawPath(pointerShape, pointerPaint);
+
+		pointerPaint.setStyle(Paint.Style.STROKE);
+		pointerPaint.setStrokeWidth(2 * WeeWXApp.getDensity());
+		pointerPaint.setColor(Color.BLACK);
+		canvas.drawPath(pointerShape, pointerPaint);
+	}
+
+	private boolean handleTvPointerKey(KeyEvent event)
+	{
+		int dx = 0, dy = 0;
+		switch(event.getKeyCode())
+		{
+			case KeyEvent.KEYCODE_DPAD_LEFT -> dx = -1;
+			case KeyEvent.KEYCODE_DPAD_RIGHT -> dx = 1;
+			case KeyEvent.KEYCODE_DPAD_UP -> dy = -1;
+			case KeyEvent.KEYCODE_DPAD_DOWN -> dy = 1;
+			case KeyEvent.KEYCODE_DPAD_CENTER, KeyEvent.KEYCODE_ENTER, KeyEvent.KEYCODE_NUMPAD_ENTER ->
+			{
+				if(event.getAction() == KeyEvent.ACTION_DOWN && event.getRepeatCount() == 0)
+					clickAtPointer();
+
+				return true;
+			}
+			default ->
+			{
+				return false;
+			}
+		}
+
+		if(event.getAction() == KeyEvent.ACTION_DOWN)
+			moveTvPointer(dx, dy, event.getRepeatCount());
+
+		return true;
+	}
+
+	// Holding a key down speeds the pointer up
+	private void moveTvPointer(int dx, int dy, int repeatCount)
+	{
+		float step = Math.min(getWidth(), getHeight()) / 40f * (1 + Math.min(repeatCount, 8) / 2f);
+		float maxX = getWidth() - 1;
+		float maxY = getHeight() - 1;
+
+		if((dx < 0 && pointerX <= 0) || (dx > 0 && pointerX >= maxX) ||
+		   (dy < 0 && pointerY <= 0) || (dy > 0 && pointerY >= maxY))
+		{
+			dragPage(dx, dy);
+			return;
+		}
+
+		pointerX = Math.max(0, Math.min(maxX, pointerX + dx * step));
+		pointerY = Math.max(0, Math.min(maxY, pointerY + dy * step));
+		sendMouseEvent(MotionEvent.ACTION_HOVER_MOVE, 0, pointerX, pointerY, SystemClock.uptimeMillis());
+		invalidate();
+	}
+
+	private void clickAtPointer()
+	{
+		long downTime = SystemClock.uptimeMillis();
+		sendMouseEvent(MotionEvent.ACTION_DOWN, MotionEvent.BUTTON_PRIMARY, pointerX, pointerY, downTime);
+		postDelayed(() ->
+		{
+			if(!hasBeenDestroyed)
+				sendMouseEvent(MotionEvent.ACTION_UP, 0, pointerX, pointerY, downTime);
+		}, 50);
+	}
+
+	// Drag from the middle of the view, the edges are where the page's own controls are
+	private void dragPage(int dx, int dy)
+	{
+		if(dragging)
+			return;
+
+		dragging = true;
+		float startX = getWidth() / 2f;
+		float startY = getHeight() / 2f;
+		float distance = Math.min(getWidth(), getHeight()) / 3f;
+		long downTime = SystemClock.uptimeMillis();
+		sendMouseEvent(MotionEvent.ACTION_DOWN, MotionEvent.BUTTON_PRIMARY, startX, startY, downTime);
+
+		for(int step = 1; step <= DRAG_STEPS; step++)
+		{
+			int thisStep = step;
+			float x = startX - dx * distance * step / DRAG_STEPS;
+			float y = startY - dy * distance * step / DRAG_STEPS;
+			postDelayed(() ->
+			{
+				if(hasBeenDestroyed)
+					return;
+
+				sendMouseEvent(MotionEvent.ACTION_MOVE, MotionEvent.BUTTON_PRIMARY, x, y, downTime);
+				if(thisStep == DRAG_STEPS)
+				{
+					sendMouseEvent(MotionEvent.ACTION_UP, 0, x, y, downTime);
+					dragging = false;
+				}
+			}, step * DRAG_STEP_MS);
+		}
+	}
+
+	// A mouse rather than a touch, a page only sees touches if the device has a touchscreen
+	private void sendMouseEvent(int action, int buttonState, float x, float y, long downTime)
+	{
+		MotionEvent.PointerProperties properties = new MotionEvent.PointerProperties();
+		properties.id = 0;
+		properties.toolType = MotionEvent.TOOL_TYPE_MOUSE;
+
+		MotionEvent.PointerCoords coords = new MotionEvent.PointerCoords();
+		coords.x = x;
+		coords.y = y;
+		coords.pressure = 1;
+		coords.size = 1;
+
+		MotionEvent event = MotionEvent.obtain(downTime, SystemClock.uptimeMillis(), action, 1,
+				new MotionEvent.PointerProperties[]{properties},
+				new MotionEvent.PointerCoords[]{coords}, 0, buttonState, 1, 1, 0, 0,
+				InputDevice.SOURCE_MOUSE, 0);
+
+		if(action == MotionEvent.ACTION_HOVER_MOVE)
+			dispatchGenericMotionEvent(event);
+		else
+			dispatchTouchEvent(event);
+
+		event.recycle();
 	}
 
 	// A TV remote's up/down only scrolls a page about 40px at a time, and the page keeps
@@ -300,6 +479,9 @@ public class SafeWebView extends WebView
 	@Override
 	public boolean dispatchKeyEvent(KeyEvent event)
 	{
+		if(showTvPointer() && handleTvPointerKey(event))
+			return true;
+
 		int keyCode = event.getKeyCode();
 		if(hasBeenDestroyed || !WeeWXApp.isTV() ||
 		   (keyCode != KeyEvent.KEYCODE_DPAD_UP && keyCode != KeyEvent.KEYCODE_DPAD_DOWN))

@@ -138,6 +138,7 @@ public class Forecast extends Fragment implements View.OnClickListener, Refresha
 		if(radarWebView == null)
 		{
 			radarWebView = new SafeWebView(getInstance());
+			radarWebView.enableTvPointer();
 			radarWebView.getViewTreeObserver().addOnScrollChangedListener(radarScrollListener);
 		}
 
