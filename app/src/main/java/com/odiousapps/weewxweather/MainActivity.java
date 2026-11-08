@@ -1188,7 +1188,7 @@ public class MainActivity extends FragmentActivity
 		{
 			lanExecutor.execute(() ->
 			{
-				List<String> hosts = LocalNetwork.localHosts(savedURLs(), true);
+				List<String> hosts = LocalNetwork.localHosts(savedURLs());
 				if(!hosts.isEmpty())
 					runOnUiThread(() -> requestLocalNetworkPermission(false, hosts));
 			});
@@ -3220,7 +3220,7 @@ public class MainActivity extends FragmentActivity
 		if(LocalNetwork.hasPermission())
 			return false;
 
-		List<String> hosts = LocalNetwork.localHosts(urls, true);
+		List<String> hosts = LocalNetwork.localHosts(urls);
 		if(hosts.isEmpty())
 			return false;
 

@@ -396,7 +396,10 @@ public class SafeWebView extends WebView
 			return;
 		}
 
+		// Not Math.clamp(), it throws when the view isn't laid out yet (max is -1) and needs API 35
+		//noinspection MathClampMigration
 		pointerX = Math.max(0, Math.min(maxX, pointerX + dx * step));
+		//noinspection MathClampMigration
 		pointerY = Math.max(0, Math.min(maxY, pointerY + dy * step));
 		sendMouseEvent(MotionEvent.ACTION_HOVER_MOVE, 0, pointerX, pointerY, SystemClock.uptimeMillis());
 		invalidate();

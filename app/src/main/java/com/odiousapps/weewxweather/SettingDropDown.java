@@ -7,6 +7,8 @@ import android.widget.ListAdapter;
 
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 
+import androidx.annotation.NonNull;
+
 // A settings drop-down that opens with its current setting highlighted, so a TV remote
 // or keyboard starts from there instead of from nothing
 class SettingDropDown extends MaterialAutoCompleteTextView
@@ -55,7 +57,7 @@ class SettingDropDown extends MaterialAutoCompleteTextView
 	// Moving past either end of the list clears the selection and hands the keys back to
 	// the text box for typing, these boxes can't be typed in so stay on the end item
 	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event)
+	public boolean onKeyDown(int keyCode, @NonNull KeyEvent event)
 	{
 		ListAdapter adapter = getAdapter();
 		if(isPopupShowing() && adapter != null)

@@ -4,7 +4,6 @@
 	xmlns:tools="http://schemas.android.com/tools">
 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_LOCAL_NETWORK" />
 <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
@@ -17,6 +16,8 @@
 	 Leanback feature set, so Android TV devices aren't filtered out of the listing -->
 <uses-feature android:name="android.software.leanback" android:required="false" />
 <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+<!-- Some TVs only have Ethernet, don't let a library's implied Wi-Fi requirement filter them out -->
+<uses-feature android:name="android.hardware.wifi" android:required="false" />
 
 <application
 	android:name=".WeeWXApp"

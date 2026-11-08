@@ -149,14 +149,14 @@ final class LocalNetwork
 	}
 
 	// Returns the distinct hosts from urls that are on the local network
-	static List<String> localHosts(Collection<String> urls, boolean resolve)
+	static List<String> localHosts(Collection<String> urls)
 	{
 		List<String> hosts = new ArrayList<>();
 
 		for(String url : urls)
 		{
 			String host = getHost(url);
-			if(host != null && !hosts.contains(host) && isLocalUrl(url, resolve))
+			if(host != null && !hosts.contains(host) && isLocalUrl(url, true))
 				hosts.add(host);
 		}
 
