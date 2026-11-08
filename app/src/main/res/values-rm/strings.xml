@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Temp da rinfrestgar la webcam</string>
 	<string name="webcam_snapshot_saved_at">Fotografia memorisada: %1$s</string>
 	<string name="webcam_still_downloading">Il maletg da la webcam vegn anc telechargià</string>
+	<string name="webcam_url">Facultativ: URL da la webcam</string>
 	<string name="webcam_url_not_set">L’URL da la webcam n’è betg definì u è vid</string>
 	<string name="weewx_extensions_need_updating">Questa app è vegnida actualisada, ma il server cun il qual Vus As colliais utilisescha ina u pliras extensiuns %1$s antiquadas. Tscherts champs na vegnan forsa betg mussads correctamain fin che quellas extensiuns èn actualisadas e %1$s è vegnì reavià.</string>
 	<string name="widget_theme">Tema dal widget</string>

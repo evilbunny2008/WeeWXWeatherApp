@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Oras ng Pag-refresh ng Webcam</string>
 	<string name="webcam_snapshot_saved_at">Na-save ang snapshot: %1$s</string>
 	<string name="webcam_still_downloading">Dina-download pa ang larawan ng webcam</string>
+	<string name="webcam_url">Opsyonal: URL ng Webcam</string>
 	<string name="webcam_url_not_set">Hindi nakatakda o blangko ang URL ng webcam</string>
 	<string name="weewx_extensions_need_updating">Na-update na ang app na ito, pero gumagamit ang server na kinokonektahan mo ng isa o higit pang lumang extension ng %1$s. Maaaring hindi maayos na lumabas ang ilang field hangga’t hindi na-update ang mga extension na iyon at na-restart ang %1$s.</string>
 	<string name="widget_theme">Tema ng Widget</string>

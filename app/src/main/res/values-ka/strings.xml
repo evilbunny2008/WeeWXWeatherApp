@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">ვებკამერის განახლების დრო</string>
 	<string name="webcam_snapshot_saved_at">სურათი შენახულია: %1$s</string>
 	<string name="webcam_still_downloading">ვებკამერის სურათი ჯერ კიდევ იტვირთება</string>
+	<string name="webcam_url">სურვილისამებრ: ვებკამერის URL</string>
 	<string name="webcam_url_not_set">ვებკამერის URL არ არის დაყენებული ან ცარიელია</string>
 	<string name="weewx_extensions_need_updating">ეს აპი განახლდა, მაგრამ სერვერი, რომელსაც უკავშირდებით, იყენებს %1$s-ის ერთ ან რამდენიმე მოძველებულ გაფართოებას. ზოგიერთი ველი შეიძლება სწორად არ გამოჩნდეს, სანამ ეს გაფართოებები არ განახლდება და %1$s არ გადაიტვირთება.</string>
 	<string name="widget_theme">ვიჯეტის თემა</string>

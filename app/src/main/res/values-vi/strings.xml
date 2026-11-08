@@ -152,6 +152,7 @@
 	<string name="webcam_refresh_time">Thời gian làm mới webcam</string>
 	<string name="webcam_snapshot_saved_at">Đã lưu ảnh chụp: %1$s</string>
 	<string name="webcam_still_downloading">Hình ảnh webcam vẫn đang được tải xuống</string>
+	<string name="webcam_url">Tùy chọn: URL webcam</string>
 	<string name="webcam_url_not_set">URL webcam chưa được đặt hoặc trống</string>
 	<string name="weewx_extensions_need_updating">Ứng dụng này đã được cập nhật, nhưng máy chủ bạn đang kết nối đang sử dụng một hoặc nhiều tiện ích mở rộng %1$s đã lỗi thời. Một số trường có thể không hiển thị chính xác cho đến khi các tiện ích mở rộng đó được cập nhật và %1$s được khởi động lại.</string>
 	<string name="widget_theme">Chủ đề tiện ích</string>

@@ -1,0 +1,1 @@
+• Engadiuse unha opción opcional de URL da cámara web, que substitúe o URL da cámara web do ficheiro de configuración

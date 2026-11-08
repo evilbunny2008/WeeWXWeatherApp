@@ -158,6 +158,7 @@
 	<string name="webcam_refresh_time">Vrijeme osvježavanja web kamere</string>
 	<string name="webcam_snapshot_saved_at">Snimka spremljena: %1$s</string>
 	<string name="webcam_still_downloading">Slika s web kamere još uvijek se preuzima</string>
+	<string name="webcam_url">Izborno: URL web kamere</string>
 	<string name="webcam_url_not_set">URL web kamere nije postavljen ili je prazan</string>
 	<string name="weewx_extensions_need_updating">Ova aplikacija je ažurirana, ali poslužitelj na koji se povezujete koristi jedno ili više zastarjelih proširenja za %1$s. Neka se polja možda neće ispravno prikazivati dok se ta proširenja ne ažuriraju i %1$s ponovno ne pokrene.</string>
 	<string name="widget_theme">Tema widgeta</string>

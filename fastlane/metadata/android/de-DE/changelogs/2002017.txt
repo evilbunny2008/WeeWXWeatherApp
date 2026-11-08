@@ -1,0 +1,1 @@
+• Optionale Webcam-URL-Einstellung hinzugefügt, die die Webcam-URL aus deiner Einstellungsdatei überschreibt

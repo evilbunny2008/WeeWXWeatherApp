@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Veebikaamera värskendusaeg</string>
 	<string name="webcam_snapshot_saved_at">Hetktõmmis salvestatud: %1$s</string>
 	<string name="webcam_still_downloading">Veebikaamera pilti laaditakse endiselt alla</string>
+	<string name="webcam_url">Valikuline: veebikaamera URL</string>
 	<string name="webcam_url_not_set">Veebikaamera URL ei ole määratud või on tühi</string>
 	<string name="weewx_extensions_need_updating">Seda rakendust on värskendatud, kuid server, millega ühendute, kasutab üht või mitut aegunud %1$s-i laiendust. Mõned väljad ei pruugi korralikult kuvada, kuni need laiendused on värskendatud ja %1$s taaskäivitatud.</string>
 	<string name="widget_theme">Vidinateema</string>

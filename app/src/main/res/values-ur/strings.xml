@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">ویب کیم ریفریش ٹائم</string>
 	<string name="webcam_snapshot_saved_at">اسنیپ شاٹ محفوظ ہو گیا: %1$s</string>
 	<string name="webcam_still_downloading">ویب کیم امیج ابھی بھی ڈاؤن لوڈ ہورہا ہے۔</string>
+	<string name="webcam_url">اختیاری: ویب کیم یو آر ایل</string>
 	<string name="webcam_url_not_set">ویب کیم یو آر ایل سیٹ نہیں ہے یا خالی ہے</string>
 	<string name="weewx_extensions_need_updating">اس ایپ کو اپ ڈیٹ کر دیا گیا ہے، لیکن جس سرور سے آپ رابطہ کر رہے ہیں وہ %1$s کی ایک یا زیادہ پرانی ایکسٹینشنز استعمال کر رہا ہے۔ جب تک ان ایکسٹینشنز کو اپ ڈیٹ کر کے %1$s کو دوبارہ شروع نہیں کیا جاتا، کچھ فیلڈز صحیح طریقے سے ظاہر نہیں ہو سکتیں۔</string>
 	<string name="widget_theme">ویجیٹ تھیم</string>

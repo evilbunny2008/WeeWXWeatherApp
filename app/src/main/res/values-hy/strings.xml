@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Տեսախցիկի թարմացման ժամանակը</string>
 	<string name="webcam_snapshot_saved_at">Լուսանկարը պահվեց՝ %1$s</string>
 	<string name="webcam_still_downloading">Տեսախցիկի պատկերը դեռ ներբեռնվում է:</string>
+	<string name="webcam_url">Լրացուցիչ՝ վեբ տեսախցիկի URL</string>
 	<string name="webcam_url_not_set">Վեբ-տեսախցիկի URL-ը սահմանված չէ կամ դատարկ է</string>
 	<string name="weewx_extensions_need_updating">Այս հավելվածը թարմացվել է, սակայն սերվերը, որին միանում եք, օգտագործում է %1$s-ի մեկ կամ մի քանի հնացած ընդլայնում։ Որոշ դաշտեր կարող են ճիշտ չցուցադրվել, մինչև այդ ընդլայնումները թարմացվեն և %1$s-ը վերագործարկվի։</string>
 	<string name="widget_theme">Վիջեթի թեմա</string>

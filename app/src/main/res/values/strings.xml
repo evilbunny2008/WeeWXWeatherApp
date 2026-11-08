@@ -168,6 +168,7 @@
 	<string name="webcam_refresh_time">Webcam Refresh Time</string>
 	<string name="webcam_snapshot_saved_at">Snapshot saved: %1$s</string>
 	<string name="webcam_still_downloading">Webcam image is still downloading</string>
+	<string name="webcam_url">Optional: Webcam URL</string>
 	<string name="webcam_url_not_set">Webcam URL is not set or is blank</string>
 	<string name="weewx_extensions_need_updating">This app has been updated, but the server you are connecting to is using one or more outdated %1$s extensions. Some fields may not show up properly until those extensions are updated and %1$s is restarted.</string>
 	<string name="widget_theme">Widget Theme</string>

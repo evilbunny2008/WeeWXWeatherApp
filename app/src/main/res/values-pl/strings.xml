@@ -161,6 +161,7 @@
 	<string name="webcam_refresh_time">Czas odświeżania kamery internetowej</string>
 	<string name="webcam_snapshot_saved_at">Zrzut zapisany: %1$s</string>
 	<string name="webcam_still_downloading">Obraz z kamery internetowej jest nadal pobierany</string>
+	<string name="webcam_url">Opcjonalnie: adres URL kamery internetowej</string>
 	<string name="webcam_url_not_set">Adres URL kamery internetowej nie jest ustawiony lub jest pusty</string>
 	<string name="weewx_extensions_need_updating">Ta aplikacja została zaktualizowana, ale serwer, z którym się łączysz, używa co najmniej jednego przestarzałego rozszerzenia %1$s. Niektóre pola mogą nie wyświetlać się poprawnie, dopóki te rozszerzenia nie zostaną zaktualizowane, a %1$s uruchomiony ponownie.</string>
 	<string name="widget_theme">Motyw widgetu</string>

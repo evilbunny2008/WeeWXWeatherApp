@@ -152,6 +152,7 @@
 	<string name="webcam_refresh_time">ពេលផ្ទុកឡើងវិញរបស់វេបខេម</string>
 	<string name="webcam_snapshot_saved_at">បានរក្សាទុករូបថត៖ %1$s</string>
 	<string name="webcam_still_downloading">រូបភាពវេបខេមនៅតែកំពុងទាញយក</string>
+	<string name="webcam_url">ស្រេចចិត្ត៖ URL វេបខេម</string>
 	<string name="webcam_url_not_set">URL វេបខេមមិនទាន់កំណត់ ឬទទេ</string>
 	<string name="weewx_extensions_need_updating">កម្មវិធីនេះត្រូវបានធ្វើបច្ចុប្បន្នភាព ប៉ុន្តែម៉ាស៊ីនមេដែលអ្នកកំពុងភ្ជាប់កំពុងប្រើកម្មវិធីបន្ថែម %1$s ហួសសម័យមួយ ឬច្រើន។ វាលមួយចំនួនប្រហែលជាមិនបង្ហាញត្រឹមត្រូវទេ រហូតដល់កម្មវិធីបន្ថែមទាំងនោះត្រូវបានធ្វើបច្ចុប្បន្នភាព ហើយ %1$s ត្រូវបានចាប់ផ្ដើមឡើងវិញ។</string>
 	<string name="widget_theme">រចនាប័ទ្មវិដជិត</string>

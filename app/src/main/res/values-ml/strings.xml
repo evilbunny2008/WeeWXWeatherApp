@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">വെബ്‌ക്യാം പുതുക്കിയ സമയം</string>
 	<string name="webcam_snapshot_saved_at">സ്നാപ്പ്ഷോട്ട് സംരക്ഷിച്ചു: %1$s</string>
 	<string name="webcam_still_downloading">വെബ്‌ക്യാം ചിത്രം ഇപ്പോഴും ഡൗൺലോഡ് ചെയ്യുന്നു</string>
+	<string name="webcam_url">ഓപ്ഷണൽ: വെബ്‌ക്യാം URL</string>
 	<string name="webcam_url_not_set">വെബ്‌ക്യാം URL സജ്ജമാക്കിയിട്ടില്ല അല്ലെങ്കിൽ ശൂന്യമാണ്</string>
 	<string name="weewx_extensions_need_updating">ഈ ആപ്പ് അപ്‌ഡേറ്റ് ചെയ്‌തു, എന്നാൽ നിങ്ങൾ കണക്റ്റ് ചെയ്യുന്ന സെർവർ %1$s-ന്റെ ഒന്നോ അതിലധികമോ പഴയ എക്സ്റ്റൻഷനുകൾ ഉപയോഗിക്കുന്നു. ആ എക്സ്റ്റൻഷനുകൾ അപ്‌ഡേറ്റ് ചെയ്‌ത് %1$s പുനരാരംഭിക്കുന്നതുവരെ ചില ഫീൽഡുകൾ ശരിയായി ദൃശ്യമാകണമെന്നില്ല.</string>
 	<string name="widget_theme">വിജറ്റ് തീം</string>

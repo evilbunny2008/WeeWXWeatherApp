@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Isikhathi Sokuvuselela Ikhamera Yewebhu</string>
 	<string name="webcam_snapshot_saved_at">Isithombe silondoloziwe: %1$s</string>
 	<string name="webcam_still_downloading">Izithombe ze-webcam zisalanda</string>
+	<string name="webcam_url">Ongakukhetha: Url ye-webcam</string>
 	<string name="webcam_url_not_set">I-URL yeWebcam ayisethiwe noma ayinalutho</string>
 	<string name="weewx_extensions_need_updating">Lolu hlelo lokusebenza luvuselelwe, kodwa iseva oxhuma kuyo isebenzisa isandiso esisodwa noma ngaphezulu se-%1$s esiphelelwe yisikhathi. Ezinye izinkambu zingase zingaboniswa kahle kuze kube lezo zandiso zivuselelwe futhi i-%1$s iqalwe kabusha.</string>
 	<string name="widget_theme">Indikimba ye-Widget</string>

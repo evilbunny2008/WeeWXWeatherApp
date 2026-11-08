@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Webkamera se verfristyd</string>
 	<string name="webcam_snapshot_saved_at">Momentopname gestoor: %1$s</string>
 	<string name="webcam_still_downloading">Webkamerabeeld word nog afgelaai</string>
+	<string name="webcam_url">Opsioneel: Webkamera-URL</string>
 	<string name="webcam_url_not_set">Webkamera-URL is nie gestel nie of is leeg</string>
 	<string name="weewx_extensions_need_updating">Hierdie toep is bygewerk, maar die bediener waaraan jy koppel, gebruik een of meer verouderde %1$s-uitbreidings. Sommige velde sal dalk nie reg vertoon nie totdat daardie uitbreidings bygewerk is en %1$s herbegin is.</string>
 	<string name="widget_theme">Legstuktema</string>

@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">زمان به روز رسانی وب کم</string>
 	<string name="webcam_snapshot_saved_at">عکس فوری ذخیره شد: %1$s</string>
 	<string name="webcam_still_downloading">تصویر وب کم هنوز در حال دانلود است</string>
+	<string name="webcam_url">اختیاری: URL وب کم</string>
 	<string name="webcam_url_not_set">URL وب کم تنظیم نشده یا خالی است</string>
 	<string name="weewx_extensions_need_updating">این برنامه به‌روزرسانی شده است، اما سروری که به آن متصل می‌شوید از یک یا چند افزونهٔ قدیمی %1$s استفاده می‌کند. ممکن است تا زمانی که این افزونه‌ها به‌روزرسانی نشوند و %1$s دوباره راه‌اندازی نشود، برخی فیلدها به درستی نمایش داده نشوند.</string>
 	<string name="widget_theme">تم ویجت</string>

@@ -1,0 +1,1 @@
+• Ayarlar dosyanızdaki web kamerası URL’sini geçersiz kılan isteğe bağlı bir web kamerası URL’si ayarı eklendi

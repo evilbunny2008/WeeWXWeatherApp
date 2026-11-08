@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">ವೆಬ್‌ಕ್ಯಾಮ್ ರಿಫ್ರೆಶ್ ಸಮಯ</string>
 	<string name="webcam_snapshot_saved_at">ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ ಉಳಿಸಲಾಗಿದೆ: %1$s</string>
 	<string name="webcam_still_downloading">ವೆಬ್‌ಕ್ಯಾಮ್ ಚಿತ್ರ ಇನ್ನೂ ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ</string>
+	<string name="webcam_url">ಐಚ್ಛಿಕ: ವೆಬ್‌ಕ್ಯಾಮ್ URL</string>
 	<string name="webcam_url_not_set">ವೆಬ್‌ಕ್ಯಾಮ್ URL ಅನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ ಅಥವಾ ಖಾಲಿಯಾಗಿದೆ</string>
 	<string name="weewx_extensions_need_updating">ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ನವೀಕರಿಸಲಾಗಿದೆ, ಆದರೆ ನೀವು ಸಂಪರ್ಕಿಸುತ್ತಿರುವ ಸರ್ವರ್ %1$s ನ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಹಳೆಯ ವಿಸ್ತರಣೆಗಳನ್ನು ಬಳಸುತ್ತಿದೆ. ಆ ವಿಸ್ತರಣೆಗಳನ್ನು ನವೀಕರಿಸಿ %1$s ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸುವವರೆಗೆ ಕೆಲವು ಕ್ಷೇತ್ರಗಳು ಸರಿಯಾಗಿ ಕಾಣಿಸದೇ ಇರಬಹುದು.</string>
 	<string name="widget_theme">ವಿಜೆಟ್ ಥೀಮ್</string>

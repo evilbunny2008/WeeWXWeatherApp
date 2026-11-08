@@ -95,9 +95,11 @@ import static com.odiousapps.weewxweather.WeeWXApp.FAILED_TO_CREATE_LOG_FILE_IN_
 import static com.odiousapps.weewxweather.WeeWXApp.RSS_CHECK;
 import static com.odiousapps.weewxweather.WeeWXApp.SAVE_APP_DEBUG_LOGS;
 import static com.odiousapps.weewxweather.WeeWXApp.TIME_EXT;
+import static com.odiousapps.weewxweather.WeeWXApp.WEBCAM_URL;
 import static com.odiousapps.weewxweather.WeeWXApp.enable_mqtt_default;
 import static com.odiousapps.weewxweather.WeeWXApp.getAndroidString;
 import static com.odiousapps.weewxweather.WeeWXApp.getEnglishAndroidString;
+import static com.odiousapps.weewxweather.WeeWXApp.webcam_url;
 import static com.odiousapps.weewxweather.WeeWXNotificationManager.updateNotificationMessage;
 
 @SuppressWarnings({"CallToPrintStackTrace", "SequencedCollectionMethodCanBeUsed", "unused"})
@@ -3450,6 +3452,16 @@ class WeeWXAppCommon
 			url.startsWith("ws://") || url.startsWith("wss://"));
 	}
 
+	// The webcam URL set in the app overrides the one from the settings file
+	static String getWebcamURL()
+	{
+		String appWebcamURL = (String)KeyValue.readVar(webcam_url, "");
+		if(is_valid_url(appWebcamURL))
+			return appWebcamURL;
+
+		return (String)KeyValue.readVar(WEBCAM_URL, "");
+	}
+
 	static boolean is_blank(String str)
 	{
 		return str == null || str.isBlank() || str.equals("null");
@@ -3764,11 +3776,11 @@ class WeeWXAppCommon
 
 			if(webcam)
 			{
-				String webcam_url = (String)KeyValue.readVar("WEBCAM_URL", "");
-				if(!is_blank(webcam_url))
+				String webcamURL = getWebcamURL();
+				if(!is_blank(webcamURL))
 				{
 					idtype.add(5);
-					urls.add(webcam_url);
+					urls.add(webcamURL);
 					contentTypes.add("IMAGE");
 					PossibleErrors.add(R.string.wasnt_able_to_connect_webcam_url);
 				}

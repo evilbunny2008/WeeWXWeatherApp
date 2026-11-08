@@ -152,6 +152,7 @@
 	<string name="webcam_refresh_time">เวลารีเฟรชเว็บแคม</string>
 	<string name="webcam_snapshot_saved_at">บันทึกภาพแล้ว: %1$s</string>
 	<string name="webcam_still_downloading">รูปภาพเว็บแคมยังคงดาวน์โหลดอยู่</string>
+	<string name="webcam_url">ทางเลือก: URL เว็บแคม</string>
 	<string name="webcam_url_not_set">ไม่ได้ตั้งค่า URL ของเว็บแคมหรือว่างเปล่า</string>
 	<string name="weewx_extensions_need_updating">แอปนี้ได้รับการอัปเดตแล้ว แต่เซิร์ฟเวอร์ที่คุณกำลังเชื่อมต่อใช้ส่วนขยาย %1$s ที่ล้าสมัยอย่างน้อยหนึ่งรายการ บางฟิลด์อาจแสดงไม่ถูกต้องจนกว่าจะอัปเดตส่วนขยายเหล่านั้นและรีสตาร์ท %1$s</string>
 	<string name="widget_theme">ธีมวิดเจ็ต</string>

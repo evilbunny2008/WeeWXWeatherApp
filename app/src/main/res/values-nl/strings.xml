@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Vernieuwingstijd webcam</string>
 	<string name="webcam_snapshot_saved_at">Momentopname opgeslagen: %1$s</string>
 	<string name="webcam_still_downloading">Het webcambeeld wordt nog steeds gedownload</string>
+	<string name="webcam_url">Optioneel: webcam-URL</string>
 	<string name="webcam_url_not_set">Webcam-URL is niet ingesteld of is leeg</string>
 	<string name="weewx_extensions_need_updating">Deze app is bijgewerkt, maar de server waarmee u verbinding maakt, gebruikt een of meer verouderde extensies voor %1$s. Sommige velden worden mogelijk pas correct weergegeven nadat deze extensies zijn bijgewerkt en %1$s opnieuw is gestart.</string>
 	<string name="widget_theme">Widget-thema</string>

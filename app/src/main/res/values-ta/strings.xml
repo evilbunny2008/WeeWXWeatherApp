@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">வெப்கேம் புதுப்பிப்பு நேரம்</string>
 	<string name="webcam_snapshot_saved_at">ஸ்னாப்ஷாட் சேமிக்கப்பட்டது: %1$s</string>
 	<string name="webcam_still_downloading">வெப்கேம் படம் இன்னும் பதிவிறக்கம் செய்யப்படுகிறது</string>
+	<string name="webcam_url">விருப்பத்தேர்வு: வெப்கேம் URL</string>
 	<string name="webcam_url_not_set">வெப்கேம் URL அமைக்கப்படவில்லை அல்லது காலியாக உள்ளது</string>
 	<string name="weewx_extensions_need_updating">இந்தப் பயன்பாடு புதுப்பிக்கப்பட்டது, ஆனால் நீங்கள் இணைக்கும் சேவையகம் %1$s இன் ஒன்று அல்லது அதற்கு மேற்பட்ட பழைய நீட்டிப்புகளைப் பயன்படுத்துகிறது. அந்த நீட்டிப்புகள் புதுப்பிக்கப்பட்டு %1$s மறுதொடக்கம் செய்யப்படும் வரை சில புலங்கள் சரியாகக் காட்டப்படாமல் போகலாம்.</string>
 	<string name="widget_theme">விட்ஜெட் தீம்</string>

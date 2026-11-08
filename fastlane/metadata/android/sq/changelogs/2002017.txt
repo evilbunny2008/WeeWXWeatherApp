@@ -1,0 +1,1 @@
+• U shtua një cilësim opsional për URL-në e webkamerës, i cili zëvendëson URL-në e webkamerës nga skedari i cilësimeve

@@ -1,0 +1,1 @@
+• Přidáno volitelné nastavení adresy URL webové kamery, které přepíše adresu webové kamery ze souboru nastavení

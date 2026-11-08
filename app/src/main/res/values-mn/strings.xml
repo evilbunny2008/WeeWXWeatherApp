@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Вэбкамер шинэчлэх хугацаа</string>
 	<string name="webcam_snapshot_saved_at">Агшин зураг хадгалагдсан: %1$s</string>
 	<string name="webcam_still_downloading">Вэбкамерын зураг татагдсаар байна</string>
+	<string name="webcam_url">Заавал биш: Вэбкамерын URL</string>
 	<string name="webcam_url_not_set">Вэбкамерын URL тохируулаагүй эсвэл хоосон байна</string>
 	<string name="weewx_extensions_need_updating">Энэ апп шинэчлэгдсэн боловч таны холбогдож буй сервер нэг буюу хэд хэдэн хуучирсан %1$s өргөтгөл ашиглаж байна. Эдгээр өргөтгөлийг шинэчилж, %1$s-ийг дахин эхлүүлэх хүртэл зарим талбар зөв харагдахгүй байж магадгүй.</string>
 	<string name="widget_theme">Виджетийн загвар</string>

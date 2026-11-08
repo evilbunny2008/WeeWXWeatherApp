@@ -371,6 +371,24 @@
 		</RadioGroup>
 
 		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/til8"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:hint="@string/webcam_url"
+			tools:ignore="VisualLintBounds">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/webcamURL"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:inputType="textUri"
+				android:minHeight="48dp"
+				tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize,TextContrastCheck" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
 			android:id="@+id/til6"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"

@@ -112,12 +112,14 @@ import static com.odiousapps.weewxweather.WeeWXApp.RAINRATE_ALERT_WARNING;
 import static com.odiousapps.weewxweather.WeeWXApp.RAINRATE_ALERT_WATCH;
 import static com.odiousapps.weewxweather.WeeWXApp.SAVE_APP_DEBUG_LOGS;
 import static com.odiousapps.weewxweather.WeeWXApp.SETUP_FINISHED;
+import static com.odiousapps.weewxweather.WeeWXApp.WEBCAM_URL;
 import static com.odiousapps.weewxweather.WeeWXApp.custom_url;
 import static com.odiousapps.weewxweather.WeeWXApp.enable_mqtt_default;
 import static com.odiousapps.weewxweather.WeeWXApp.getAndroidString;
 import static com.odiousapps.weewxweather.WeeWXApp.getEnglishAndroidString;
 import static com.odiousapps.weewxweather.WeeWXApp.getEnglishPlural;
 import static com.odiousapps.weewxweather.WeeWXApp.getPlural;
+import static com.odiousapps.weewxweather.WeeWXApp.webcam_url;
 import static com.odiousapps.weewxweather.WeeWXAppCommon.C2F;
 import static com.odiousapps.weewxweather.WeeWXAppCommon.F2C;
 import static com.odiousapps.weewxweather.WeeWXAppCommon.FAILED_TO_MERGE;
@@ -172,7 +174,7 @@ public class MainActivity extends FragmentActivity
 
 	private DrawerLayout mDrawerLayout;
 	private TextInputLayout fgtil, bgtil;
-	private TextInputEditText settingsURL, customURL;
+	private TextInputEditText settingsURL, customURL, webcamURL;
 	private CPEditText widgetBG, widgetFG;
 	private MaterialButton b1;
 	private MaterialButton b2;
@@ -340,6 +342,7 @@ public class MainActivity extends FragmentActivity
 		screen_elements.add(new Setting("aboutText", R.id.aboutText));
 		screen_elements.add(new Setting("bgTextInputLayout", R.id.bgTextInputLayout));
 		screen_elements.add(new Setting("customURL", R.id.customURL));
+		screen_elements.add(new Setting("webcamURL", R.id.webcamURL));
 		screen_elements.add(new Setting("fgTextInputLayout", R.id.fgTextInputLayout));
 		screen_elements.add(new Setting(FORCE_DARK_MODE, R.id.force_dark_mode));
 		screen_elements.add(new Setting("metric_forecasts", R.id.metric_forecasts));
@@ -364,6 +367,7 @@ public class MainActivity extends FragmentActivity
 		screen_elements.add(new Setting("til5", R.id.til5));
 		screen_elements.add(new Setting("til6", R.id.til6));
 		screen_elements.add(new Setting("til7", R.id.til7));
+		screen_elements.add(new Setting("til8", R.id.til8));
 		screen_elements.add(new Setting("use_exact_alarm", R.id.use_exact_alarm));
 		screen_elements.add(new Setting("widgetBG", R.id.widgetBG));
 		screen_elements.add(new Setting("widgetFG", R.id.widgetFG));
@@ -589,7 +593,7 @@ public class MainActivity extends FragmentActivity
 			tabTitles.add(getAndroidString(R.string.radar));
 
 		// The webcam and custom tabs are optional, only show them when there's a URL to load
-		if(is_valid_url((String)KeyValue.readVar("WEBCAM_URL", "")))
+		if(is_valid_url(WeeWXAppCommon.getWebcamURL()))
 		{
 			mSectionsPagerAdapter.addFragment(new Webcam());
 			tabTitles.add(getAndroidString(R.string.webcam2));
@@ -635,6 +639,7 @@ public class MainActivity extends FragmentActivity
 
 		settingsURL = findViewById(R.id.settings);
 		customURL = findViewById(R.id.customURL);
+		webcamURL = findViewById(R.id.webcamURL);
 
 		metric_forecasts = findViewById(R.id.metric_forecasts);
 		metric_forecasts.setOnCheckedChangeListener((buttonView, isChecked) ->
@@ -1080,19 +1085,19 @@ public class MainActivity extends FragmentActivity
 				closeKeyboard(v);
 		});
 
-		customURL.setText((String)KeyValue.readVar("custom_url", ""));
-		customURL.setOnFocusChangeListener((v, hasFocus) ->
+		// Scroll the optional URL fields up out from behind the keyboard when they gain focus
+		final View.OnFocusChangeListener optionalURLFocusListener = (v, hasFocus) ->
 		{
-			LogMessage("MainActivity.onCreate() CustomURL has a focus change event...");
+			LogMessage("MainActivity.onCreate() Optional URL has a focus change event...");
 
 			if(!hasFocus)
 			{
-				LogMessage("MainActivity.onCreate() CustomURL lost focus change event...");
+				LogMessage("MainActivity.onCreate() Optional URL lost focus change event...");
 				closeKeyboard(v);
 				return;
 			}
 
-			LogMessage("MainActivity.onCreate() CustomURL gained focus change event...");
+			LogMessage("MainActivity.onCreate() Optional URL gained focus change event...");
 
 			final View root = getWindow().getDecorView().getRootView();
 			final ViewTreeObserver.OnGlobalLayoutListener listener = new ViewTreeObserver.OnGlobalLayoutListener()
@@ -1115,7 +1120,13 @@ public class MainActivity extends FragmentActivity
 			};
 
 			root.getViewTreeObserver().addOnGlobalLayoutListener(listener);
-		});
+		};
+
+		webcamURL.setText((String)KeyValue.readVar(webcam_url, ""));
+		webcamURL.setOnFocusChangeListener(optionalURLFocusListener);
+
+		customURL.setText((String)KeyValue.readVar("custom_url", ""));
+		customURL.setOnFocusChangeListener(optionalURLFocusListener);
 
 		ArrayAdapter<String> adapter1 = newArrayAdapter(R.layout.spinner_layout, WeeWXApp.updateOptions);
 		ArrayAdapter<String> adapter2 = newArrayAdapter(R.layout.spinner_layout, WeeWXApp.themeOptions);
@@ -1749,6 +1760,13 @@ public class MainActivity extends FragmentActivity
 			if(customURL.isFocused())
 				customURL.clearFocus();
 		}
+
+		if(webcamURL != null && webcamURL.isFocused())
+		{
+			closeKeyboard();
+			if(webcamURL.isFocused())
+				webcamURL.clearFocus();
+		}
 	}
 
 	@Override
@@ -2158,6 +2176,7 @@ public class MainActivity extends FragmentActivity
 		// Snapshot UI state on the main thread, views must not be touched from the executor
 		final String uiSettingsURL = settingsURL.getText() != null ? settingsURL.getText().toString().strip() : "";
 		final String uiCustomURL = customURL.getText() != null ? customURL.getText().toString().strip() : "";
+		final String uiWebcamURL = webcamURL.getText() != null ? webcamURL.getText().toString().strip() : "";
 		final String uiWidgetBG = widgetBG.getText() != null ? widgetBG.getText().toString() : null;
 		final String uiWidgetFG = widgetFG.getText() != null ? widgetFG.getText().toString() : null;
 		final boolean uiEnableMqtt = enable_mqtt.isChecked();
@@ -2187,8 +2206,8 @@ public class MainActivity extends FragmentActivity
 
 			String forecastLocationName = KeyValue.countyName = null;
 
-			String oldData = null, jsonData = null, radtype = "", radarURL = "", forecastURL = "", webcamURL = "",
-					CustomURL = "", appCustomURL, fctype = "", mqttURL = "", mqttTopic = "";
+			String oldData = null, jsonData = null, radtype = "", radarURL = "", forecastURL = "", WebcamURL = "",
+					appWebcamURL, CustomURL = "", appCustomURL, fctype = "", mqttURL = "", mqttTopic = "";
 			String[] json_urls = new String[json_keys.length];
 
 			LogMessage("processSettings() settings_url: " + uiSettingsURL);
@@ -2240,7 +2259,7 @@ public class MainActivity extends FragmentActivity
 							case "radtype" -> radtype = mb[1].toLowerCase(Locale.ENGLISH).strip();
 							case "forecast" -> forecastURL = mb[1].strip();
 							case WeeWXApp.FCTYPE -> fctype = mb[1].toLowerCase(Locale.ENGLISH).strip();
-							case "webcam" -> webcamURL = mb[1].strip();
+							case "webcam" -> WebcamURL = mb[1].strip();
 							case "custom" -> CustomURL = mb[1].strip();
 							case "mqtt-url" -> mqttURL = mb[1].strip();
 							case "mqtt-topic" -> mqttTopic = mb[1].strip();
@@ -2321,7 +2340,7 @@ public class MainActivity extends FragmentActivity
 			LogMessage("processSettings() radtype: " + radtype);
 			LogMessage("processSettings() forecastURL: " + forecastURL);
 			LogMessage("processSettings() fctype: " + fctype);
-			LogMessage("processSettings() webcamURL: " + webcamURL);
+			LogMessage("processSettings() WebcamURL: " + WebcamURL);
 			LogMessage("processSettings() CustomURL: " + CustomURL);
 			LogMessage("processSettings() forecastURL: " + forecastURL);
 
@@ -2670,6 +2689,13 @@ public class MainActivity extends FragmentActivity
 				return;
 			}
 
+			appWebcamURL = uiWebcamURL;
+			if(!is_valid_url(appWebcamURL))
+				appWebcamURL = null;
+
+			if(!is_valid_url(WebcamURL))
+				WebcamURL = null;
+
 			appCustomURL = uiCustomURL;
 			if(!is_valid_url(appCustomURL))
 				appCustomURL = null;
@@ -2691,6 +2717,10 @@ public class MainActivity extends FragmentActivity
 			if(fctype.equals("wetherzone2"))
 				tmpForecastURL = null;
 
+			String tmpWebcamURL = appWebcamURL;
+			if(appWebcamURL == null)
+				tmpWebcamURL = WebcamURL;
+
 			String tmpCustomURL = appCustomURL;
 			if(appCustomURL == null)
 				tmpCustomURL = CustomURL;
@@ -2702,7 +2732,7 @@ public class MainActivity extends FragmentActivity
 					json_urls[0], json_urls[1], json_urls[2],
 					tmpForecastURL,
 					radarURL,
-					webcamURL,
+					tmpWebcamURL,
 					tmpCustomURL
 			);
 
@@ -2916,10 +2946,15 @@ public class MainActivity extends FragmentActivity
 			KeyValue.putVar("radtype", radtype);
 			KeyValue.putVar("RADAR_URL", radarURL);
 
-			if(!is_valid_url(webcamURL))
-				webcamURL = null;
+			if(!is_valid_url(WebcamURL))
+				WebcamURL = null;
 
-			KeyValue.putVar("WEBCAM_URL", webcamURL);
+			KeyValue.putVar(WEBCAM_URL, WebcamURL);
+
+			if(!is_valid_url(appWebcamURL))
+				appWebcamURL = null;
+
+			KeyValue.putVar(webcam_url, appWebcamURL);
 
 			if(!is_valid_url(CustomURL))
 				CustomURL = null;
@@ -3167,7 +3202,8 @@ public class MainActivity extends FragmentActivity
 
 		urls.add((String)KeyValue.readVar("FORECAST_URL", ""));
 		urls.add((String)KeyValue.readVar("RADAR_URL", ""));
-		urls.add((String)KeyValue.readVar("WEBCAM_URL", ""));
+		urls.add((String)KeyValue.readVar(WEBCAM_URL, ""));
+		urls.add((String)KeyValue.readVar(webcam_url, ""));
 		urls.add((String)KeyValue.readVar(CUSTOM_URL, ""));
 		urls.add((String)KeyValue.readVar(custom_url, ""));
 

@@ -1,0 +1,1 @@
+• Dodano opcjonalne ustawienie adresu URL kamery internetowej, które zastępuje adres kamery z pliku ustawień

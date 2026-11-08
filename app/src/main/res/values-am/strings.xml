@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">የዌብካም ማደሻ ጊዜ</string>
 	<string name="webcam_snapshot_saved_at">ቅጽበታዊ ምስል ተቀምጧል፦ %1$s</string>
 	<string name="webcam_still_downloading">የዌብካም ምስል አሁንም እየወረደ ነው</string>
+	<string name="webcam_url">አማራጭ፦ የዌብካም URL</string>
 	<string name="webcam_url_not_set">የዌብካም URL አልተቀናበረም ወይም ባዶ ነው</string>
 	<string name="weewx_extensions_need_updating">ይህ መተግበሪያ ተዘምኗል፣ ነገር ግን የሚገናኙት አገልጋይ አንድ ወይም ከዚያ በላይ ጊዜ ያለፈባቸው የ%1$s ቅጥያዎችን እየተጠቀመ ነው። እነዚያ ቅጥያዎች እስኪዘምኑና %1$s እንደገና እስኪጀመር ድረስ አንዳንድ መስኮች በትክክል ላይታዩ ይችላሉ።</string>
 	<string name="widget_theme">የምግብር ገጽታ</string>

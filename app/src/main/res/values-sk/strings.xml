@@ -161,6 +161,7 @@
 	<string name="webcam_refresh_time">Čas obnovenia webovej kamery</string>
 	<string name="webcam_snapshot_saved_at">Snímka uložená: %1$s</string>
 	<string name="webcam_still_downloading">Obrázok webovej kamery sa stále sťahuje</string>
+	<string name="webcam_url">Voliteľné: Adresa URL webovej kamery</string>
 	<string name="webcam_url_not_set">Webová adresa webovej kamery nie je nastavená alebo je prázdna</string>
 	<string name="weewx_extensions_need_updating">Táto aplikácia bola aktualizovaná, ale server, ku ktorému sa pripájate, používa jedno alebo viac zastaraných rozšírení pre %1$s. Niektoré polia sa nemusia zobrazovať správne, kým sa tieto rozšírenia neaktualizujú a %1$s sa nereštartuje.</string>
 	<string name="widget_theme">Téma widgetu</string>

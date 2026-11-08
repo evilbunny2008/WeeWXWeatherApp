@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Verkkokameran päivitysaika</string>
 	<string name="webcam_snapshot_saved_at">Tilannekuva tallennettu: %1$s</string>
 	<string name="webcam_still_downloading">Verkkokameran kuvaa ladataan edelleen</string>
+	<string name="webcam_url">Valinnainen: Verkkokameran URL-osoite</string>
 	<string name="webcam_url_not_set">Verkkokameran URL-osoitetta ei ole asetettu tai se on tyhjä</string>
 	<string name="weewx_extensions_need_updating">Tämä sovellus on päivitetty, mutta palvelin, johon muodostat yhteyden, käyttää yhtä tai useampaa vanhentunutta %1$s-laajennusta. Jotkin kentät eivät välttämättä näy oikein, ennen kuin laajennukset on päivitetty ja %1$s käynnistetty uudelleen.</string>
 	<string name="widget_theme">Widget-teema</string>

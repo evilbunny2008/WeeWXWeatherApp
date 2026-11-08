@@ -167,6 +167,7 @@
 	<string name="webcam_refresh_time">وقت تحديث كاميرا الويب</string>
 	<string name="webcam_snapshot_saved_at">تم حفظ اللقطة: %1$s</string>
 	<string name="webcam_still_downloading">لا تزال صورة كاميرا الويب قيد التنزيل</string>
+	<string name="webcam_url">اختياري: عنوان URL لكاميرا الويب</string>
 	<string name="webcam_url_not_set">لم يتم تعيين عنوان URL لكاميرا الويب أو أنه فارغ</string>
 	<string name="weewx_extensions_need_updating">تم تحديث هذا التطبيق، لكن الخادم الذي تتصل به يستخدم إضافة واحدة أو أكثر قديمة لـ %1$s. قد لا تظهر بعض الحقول بشكل صحيح حتى يتم تحديث هذه الإضافات وإعادة تشغيل %1$s.</string>
 	<string name="widget_theme">موضوع القطعة</string>

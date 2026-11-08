@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Endurnýjunartími vefmyndavélar</string>
 	<string name="webcam_snapshot_saved_at">Skyndimynd vistuð: %1$s</string>
 	<string name="webcam_still_downloading">Enn er verið að sækja vefmyndavélarmyndina</string>
+	<string name="webcam_url">Valfrjálst: Vefslóð vefmyndavélar</string>
 	<string name="webcam_url_not_set">Vefslóð vefmyndavélar er ekki stillt eða er auð</string>
 	<string name="weewx_extensions_need_updating">Þetta forrit hefur verið uppfært, en þjónninn sem þú tengist notar eina eða fleiri úreltar %1$s-viðbætur. Sum svæði birtast hugsanlega ekki rétt fyrr en þessar viðbætur hafa verið uppfærðar og %1$s endurræst.</string>
 	<string name="widget_theme">Þema græju</string>

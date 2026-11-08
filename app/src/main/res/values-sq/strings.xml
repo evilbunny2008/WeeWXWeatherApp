@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Koha e rifreskimit të kamerës</string>
 	<string name="webcam_snapshot_saved_at">Fotografia u ruajt: %1$s</string>
 	<string name="webcam_still_downloading">Imazhi i kamerës së uebit është ende duke u shkarkuar</string>
+	<string name="webcam_url">Opsionale: URL e webkamerës</string>
 	<string name="webcam_url_not_set">URL-ja e kamerës së uebit nuk është vendosur ose është bosh</string>
 	<string name="weewx_extensions_need_updating">Ky aplikacion është përditësuar, por serveri me të cilin po lidheni përdor një ose më shumë shtesa të vjetruara për %1$s. Disa fusha mund të mos shfaqen siç duhet derisa këto shtesa të përditësohen dhe %1$s të riniset.</string>
 	<string name="widget_theme">Tema e miniaplikacionit</string>

@@ -1,0 +1,1 @@
+• Tilføjet en valgfri indstilling for webcam-webadresse, som tilsidesætter webcam-adressen fra din indstillingsfil

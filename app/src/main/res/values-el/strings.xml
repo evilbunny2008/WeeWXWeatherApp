@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Χρόνος ανανέωσης κάμερας web</string>
 	<string name="webcam_snapshot_saved_at">Το στιγμιότυπο αποθηκεύτηκε: %1$s</string>
 	<string name="webcam_still_downloading">Η λήψη της εικόνας της κάμερας web εξακολουθεί να γίνεται</string>
+	<string name="webcam_url">Προαιρετικά: Διεύθυνση URL κάμερας web</string>
 	<string name="webcam_url_not_set">Η διεύθυνση URL της κάμερας web δεν έχει οριστεί ή είναι κενή</string>
 	<string name="weewx_extensions_need_updating">Αυτή η εφαρμογή έχει ενημερωθεί, αλλά ο διακομιστής στον οποίο συνδέεστε χρησιμοποιεί μία ή περισσότερες παρωχημένες επεκτάσεις του %1$s. Ορισμένα πεδία ενδέχεται να μην εμφανίζονται σωστά μέχρι να ενημερωθούν αυτές οι επεκτάσεις και να γίνει επανεκκίνηση του %1$s.</string>
 	<string name="widget_theme">Θέμα widget</string>

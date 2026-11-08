@@ -1,0 +1,1 @@
+• Adicionada uma configuração opcional de URL da webcam, que substitui a URL da webcam do seu arquivo de configurações

@@ -1,0 +1,1 @@
+• Ajout d’un réglage facultatif d’URL de webcam, qui remplace l’URL de la webcam de votre fichier de réglages

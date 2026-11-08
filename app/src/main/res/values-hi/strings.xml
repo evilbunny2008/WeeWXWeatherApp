@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">वेबकैम ताज़ा करने का समय</string>
 	<string name="webcam_snapshot_saved_at">स्नैपशॉट सहेजा गया: %1$s</string>
 	<string name="webcam_still_downloading">वेबकैम छवि अभी भी डाउनलोड हो रही है</string>
+	<string name="webcam_url">वैकल्पिक: वेबकैम यूआरएल</string>
 	<string name="webcam_url_not_set">वेबकैम यूआरएल सेट नहीं है या खाली है</string>
 	<string name="weewx_extensions_need_updating">इस ऐप को अपडेट कर दिया गया है, लेकिन जिस सर्वर से आप कनेक्ट कर रहे हैं वह %1$s के एक या अधिक पुराने एक्सटेंशन का उपयोग कर रहा है। जब तक इन एक्सटेंशन को अपडेट करके %1$s को पुनः आरंभ नहीं किया जाता, तब तक कुछ फ़ील्ड ठीक से दिखाई नहीं दे सकते।</string>
 	<string name="widget_theme">विजेट थीम</string>

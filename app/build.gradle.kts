@@ -35,8 +35,8 @@ android {
 		applicationId = "com.odiousapps.weewxweather"
 		minSdk = 30
 		targetSdk = 37
-		versionName = "2.2.16"
-		versionCode = 2002016
+		versionName = "2.2.17"
+		versionCode = 2002017
 	}
 
 	// Generates android:localeConfig from the values-*/ folders, so
@@ -184,9 +184,9 @@ dependencies {
 
 	implementation("com.squareup.okhttp3:okhttp:5.5.1")
 
-	implementation("org.jsoup:jsoup:1.23.2")
+	implementation("org.jsoup:jsoup:1.24.1")
 
-	implementation("com.hivemq:hivemq-mqtt-client:1.4.1")
+	implementation("com.hivemq:hivemq-mqtt-client:1.4.2")
 
 	implementation("io.netty:netty-common:4.1.137.Final")
 	implementation("io.netty:netty-handler:4.1.137.Final")
@@ -201,7 +201,7 @@ dependencies {
 	// The following line suppresses version warnings when using commit IDs for the version...
 	//noinspection GradleDependency
 	//implementation(files("library-release.aar"))
-	implementation("com.github.evilbunny2008:ColourPicker:2.0.24")
+	implementation("com.github.evilbunny2008:ColourPicker:2.0.26")
 
-	implementation("com.github.evilbunny2008:XmlToJson:2.0.2")
+	implementation("com.github.evilbunny2008:XmlToJson:2.0.7")
 }

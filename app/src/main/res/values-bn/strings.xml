@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">ওয়েবক্যাম রিফ্রেশ সময়</string>
 	<string name="webcam_snapshot_saved_at">স্ন্যাপশট সেভ করা হয়েছে: %1$s</string>
 	<string name="webcam_still_downloading">ওয়েবক্যামের ছবি এখনও ডাউনলোড হচ্ছে।</string>
+	<string name="webcam_url">ঐচ্ছিক: ওয়েবক্যাম URL</string>
 	<string name="webcam_url_not_set">ওয়েবক্যাম URL সেট করা নেই বা ফাঁকা</string>
 	<string name="weewx_extensions_need_updating">এই অ্যাপটি আপডেট করা হয়েছে, কিন্তু আপনি যে সার্ভারের সাথে সংযোগ করছেন সেটি %1$s-এর এক বা একাধিক পুরনো এক্সটেনশন ব্যবহার করছে। এই এক্সটেনশনগুলি আপডেট করে %1$s পুনরায় চালু না করা পর্যন্ত কিছু ক্ষেত্র সঠিকভাবে প্রদর্শিত নাও হতে পারে।</string>
 	<string name="widget_theme">উইজেট থিম</string>

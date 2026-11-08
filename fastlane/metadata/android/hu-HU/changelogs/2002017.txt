@@ -1,0 +1,1 @@
+• Új, nem kötelező webkamera URL beállítás, amely felülírja a beállításfájlban megadott webkamera URL-t

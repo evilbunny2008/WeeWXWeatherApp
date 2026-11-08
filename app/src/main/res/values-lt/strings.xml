@@ -161,6 +161,7 @@
 	<string name="webcam_refresh_time">Interneto kameros atnaujinimo laikas</string>
 	<string name="webcam_snapshot_saved_at">Momentinė nuotrauka išsaugota: %1$s</string>
 	<string name="webcam_still_downloading">Internetinės kameros vaizdas vis dar atsisiunčiamas</string>
+	<string name="webcam_url">Pasirenkama: interneto kameros URL</string>
 	<string name="webcam_url_not_set">Interneto kameros URL nenustatytas arba yra tuščias</string>
 	<string name="weewx_extensions_need_updating">Ši programa buvo atnaujinta, bet serveris, prie kurio jungiatės, naudoja vieną ar daugiau pasenusių %1$s plėtinių. Kai kurie laukai gali būti rodomi netinkamai, kol šie plėtiniai nebus atnaujinti ir %1$s paleistas iš naujo.</string>
 	<string name="widget_theme">Valdiklio tema</string>

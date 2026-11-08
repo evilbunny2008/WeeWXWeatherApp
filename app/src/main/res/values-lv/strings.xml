@@ -158,6 +158,7 @@
 	<string name="webcam_refresh_time">Tīmekļa kameras atsvaidzināšanas laiks</string>
 	<string name="webcam_snapshot_saved_at">Momentuzņēmums saglabāts: %1$s</string>
 	<string name="webcam_still_downloading">Tīmekļa kameras attēls joprojām tiek lejupielādēts</string>
+	<string name="webcam_url">Neobligāti: tīmekļa kameras URL</string>
 	<string name="webcam_url_not_set">Tīmekļa kameras URL nav iestatīts vai ir tukšs</string>
 	<string name="weewx_extensions_need_updating">Šī lietotne ir atjaunināta, bet serveris, ar kuru veidojat savienojumu, izmanto vienu vai vairākus novecojušus %1$s paplašinājumus. Daži lauki var netikt parādīti pareizi, kamēr šie paplašinājumi netiks atjaunināti un %1$s netiks restartēts.</string>
 	<string name="widget_theme">Logrīku tēma</string>

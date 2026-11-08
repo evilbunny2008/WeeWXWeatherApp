@@ -161,6 +161,7 @@
 	<string name="webcam_refresh_time">Час абнаўлення вэб-камеры</string>
 	<string name="webcam_snapshot_saved_at">Здымак захаваны: %1$s</string>
 	<string name="webcam_still_downloading">Выява вэб-камеры яшчэ спампоўваецца</string>
+	<string name="webcam_url">Неабавязкова: URL вэб-камеры</string>
 	<string name="webcam_url_not_set">URL вэб-камеры не зададзены або пусты</string>
 	<string name="weewx_extensions_need_updating">Праграма абноўлена, але сервер, да якога вы падключаецеся, выкарыстоўвае адно або некалькі састарэлых пашырэнняў %1$s. Некаторыя палі могуць адлюстроўвацца няправільна, пакуль гэтыя пашырэнні не будуць абноўлены і %1$s не будзе перазапушчаны.</string>
 	<string name="widget_theme">Тэма віджэта</string>

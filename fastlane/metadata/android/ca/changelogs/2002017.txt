@@ -1,0 +1,1 @@
+• S’ha afegit un paràmetre opcional d’URL de la càmera web, que substitueix l’URL de la càmera web del fitxer de configuració

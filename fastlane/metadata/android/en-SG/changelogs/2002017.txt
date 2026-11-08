@@ -1,0 +1,1 @@
+• Added an optional webcam URL setting, which overrides the webcam URL from your settings file

@@ -158,6 +158,7 @@
 	<string name="webcam_refresh_time">Timp de reîmprospătare a camerei web</string>
 	<string name="webcam_snapshot_saved_at">Instantaneu salvat: %1$s</string>
 	<string name="webcam_still_downloading">Imaginea camerei web încă se descarcă</string>
+	<string name="webcam_url">Opțional: URL cameră web</string>
 	<string name="webcam_url_not_set">Adresa URL a camerei web nu este setată sau este goală</string>
 	<string name="weewx_extensions_need_updating">Această aplicație a fost actualizată, dar serverul la care vă conectați folosește una sau mai multe extensii învechite pentru %1$s. Este posibil ca unele câmpuri să nu apară corect până când aceste extensii nu sunt actualizate și %1$s nu este repornit.</string>
 	<string name="widget_theme">Tema widgetului</string>

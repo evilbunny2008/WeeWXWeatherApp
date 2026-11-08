@@ -1,0 +1,1 @@
+• Ayarlar faylınızdakı vebkamera URL-ini əvəz edən isteğe bağlı vebkamera URL ayarı əlavə edildi

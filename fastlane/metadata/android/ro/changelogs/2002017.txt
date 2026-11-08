@@ -1,0 +1,1 @@
+• A fost adăugată o setare opțională pentru URL-ul camerei web, care înlocuiește URL-ul camerei web din fișierul de setări

@@ -152,6 +152,7 @@
 	<string name="webcam_refresh_time">Masa Muat Semula Kamera Web</string>
 	<string name="webcam_snapshot_saved_at">Petikan disimpan: %1$s</string>
 	<string name="webcam_still_downloading">Imej kamera web masih dimuat turun</string>
+	<string name="webcam_url">Pilihan: URL Kamera Web</string>
 	<string name="webcam_url_not_set">URL kamera web belum ditetapkan atau kosong</string>
 	<string name="weewx_extensions_need_updating">Apl ini telah dikemas kini, tetapi pelayan yang anda sambungkan menggunakan satu atau lebih sambungan %1$s yang lapuk. Sesetengah medan mungkin tidak dipaparkan dengan betul sehingga sambungan tersebut dikemas kini dan %1$s dimulakan semula.</string>
 	<string name="widget_theme">Tema Widget</string>

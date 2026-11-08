@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Webcams opdateringstid</string>
 	<string name="webcam_snapshot_saved_at">Øjebliksbillede gemt: %1$s</string>
 	<string name="webcam_still_downloading">Webcam-billedet downloades stadig</string>
+	<string name="webcam_url">Valgfrit: Webadresse til webcam</string>
 	<string name="webcam_url_not_set">Webcam-URL er ikke angivet eller er tom</string>
 	<string name="weewx_extensions_need_updating">Denne app er blevet opdateret, men den server, du opretter forbindelse til, bruger en eller flere forældede udvidelser til %1$s. Nogle felter vises muligvis ikke korrekt, før disse udvidelser er opdateret, og %1$s er genstartet.</string>
 	<string name="widget_theme">Widget-tema</string>

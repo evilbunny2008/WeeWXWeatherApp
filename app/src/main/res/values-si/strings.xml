@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">වෙබ්කැම් නැවුම් කිරීමේ වේලාව</string>
 	<string name="webcam_snapshot_saved_at">ක්ෂණික රූපය සුරකින ලදී: %1$s</string>
 	<string name="webcam_still_downloading">වෙබ්කැම් රූපය තවමත් බාගැනෙමින් පවතී</string>
+	<string name="webcam_url">විකල්ප: වෙබ්කැම් URL</string>
 	<string name="webcam_url_not_set">වෙබ්කැම් URL සකසා නැත හෝ හිස්ය</string>
 	<string name="weewx_extensions_need_updating">මෙම යෙදුම යාවත්කාලීන කර ඇත, නමුත් ඔබ සම්බන්ධ වන සේවාදායකය යල් පැන ගිය %1$s දිගු එකක් හෝ කිහිපයක් භාවිතා කරයි. එම දිගු යාවත්කාලීන කර %1$s නැවත ආරම්භ කරන තෙක් සමහර ක්ෂේත්‍ර නිවැරදිව නොපෙන්විය හැක.</string>
 	<string name="widget_theme">විජට් තේමාව</string>

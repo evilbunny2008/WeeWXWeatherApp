@@ -229,6 +229,8 @@ public class WeeWXApp extends Application
 	static final String WARNING_BODY = "WARNING_BODY";
 	static final String CUSTOM_URL = "CUSTOM_URL";
 	static final String custom_url = "custom_url";
+	static final String WEBCAM_URL = "WEBCAM_URL";
+	static final String webcam_url = "webcam_url";
 	static final String UPDATE_FREQUENCY = "UpdateFrequency";
 	static final String SKIPPING = ", skipping...";
 	static final String SKIPPING_S = "s), skipping...";

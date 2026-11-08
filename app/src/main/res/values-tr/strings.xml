@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Web Kamerası Yenileme Zamanı</string>
 	<string name="webcam_snapshot_saved_at">Anlık görüntü kaydedildi: %1$s</string>
 	<string name="webcam_still_downloading">Web kamerası görüntüsü hâlâ indiriliyor</string>
+	<string name="webcam_url">İsteğe bağlı: Web kamerası URL’si</string>
 	<string name="webcam_url_not_set">Web kamerası URL’si ayarlanmamış veya boş</string>
 	<string name="weewx_extensions_need_updating">Bu uygulama güncellendi, ancak bağlandığınız sunucu bir veya daha fazla eski %1$s uzantısı kullanıyor. Bu uzantılar güncellenip %1$s yeniden başlatılana kadar bazı alanlar düzgün görünmeyebilir.</string>
 	<string name="widget_theme">Widget Teması</string>

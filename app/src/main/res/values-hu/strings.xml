@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Webkamera frissítési idő</string>
 	<string name="webcam_snapshot_saved_at">Pillanatkép mentve: %1$s</string>
 	<string name="webcam_still_downloading">A webkamera képének letöltése még folyamatban van</string>
+	<string name="webcam_url">Nem kötelező: Webkamera URL</string>
 	<string name="webcam_url_not_set">A webkamera URL-je nincs beállítva, vagy üres</string>
 	<string name="weewx_extensions_need_updating">Ez az alkalmazás frissült, de a szerver, amelyhez csatlakozik, egy vagy több elavult %1$s-bővítményt használ. Előfordulhat, hogy egyes mezők nem jelennek meg megfelelően, amíg ezeket a bővítményeket nem frissítik, és a(z) %1$s programot újra nem indítják.</string>
 	<string name="widget_theme">Widget téma</string>

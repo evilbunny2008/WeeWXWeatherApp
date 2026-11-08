@@ -1,0 +1,1 @@
+• Lagt til en valgfri innstilling for webkamera-nettadresse, som overstyrer webkamera-adressen fra innstillingsfilen

@@ -1,0 +1,1 @@
+• Pridėtas pasirenkamas interneto kameros URL nustatymas, kuris pakeičia interneto kameros URL iš nustatymų failo

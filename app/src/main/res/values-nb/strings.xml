@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Oppdateringstid for webkamera</string>
 	<string name="webcam_snapshot_saved_at">Øyeblikksbilde lagret: %1$s</string>
 	<string name="webcam_still_downloading">Webkamerabildet lastes fortsatt ned</string>
+	<string name="webcam_url">Valgfritt: Nettadresse til webkamera</string>
 	<string name="webcam_url_not_set">Webkamera-URL er ikke angitt eller er tom</string>
 	<string name="weewx_extensions_need_updating">Denne appen er oppdatert, men serveren du kobler til bruker én eller flere utdaterte utvidelser for %1$s. Noen felt vises kanskje ikke riktig før disse utvidelsene er oppdatert og %1$s er startet på nytt.</string>
 	<string name="widget_theme">Widget-tema</string>

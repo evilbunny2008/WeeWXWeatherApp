@@ -152,6 +152,7 @@
 	<string name="webcam_refresh_time">ເວລາໂຫຼດຄືນເວັບແຄມ</string>
 	<string name="webcam_snapshot_saved_at">ບັນທຶກພາບແລ້ວ: %1$s</string>
 	<string name="webcam_still_downloading">ຮູບເວັບແຄມຍັງກຳລັງດາວໂຫຼດຢູ່</string>
+	<string name="webcam_url">ທາງເລືອກ: URL ເວັບແຄມ</string>
 	<string name="webcam_url_not_set">ຍັງບໍ່ໄດ້ຕັ້ງ URL ເວັບແຄມ ຫຼື ຫວ່າງເປົ່າ</string>
 	<string name="weewx_extensions_need_updating">ແອັບນີ້ໄດ້ຮັບການອັບເດດແລ້ວ, ແຕ່ເຊີບເວີທີ່ທ່ານກຳລັງເຊື່ອມຕໍ່ກຳລັງໃຊ້ສ່ວນຂະຫຍາຍ %1$s ທີ່ລ້າສະໄໝໜຶ່ງ ຫຼື ຫຼາຍລາຍການ. ບາງຊ່ອງອາດສະແດງບໍ່ຖືກຕ້ອງຈົນກວ່າສ່ວນຂະຫຍາຍເຫຼົ່ານັ້ນຈະຖືກອັບເດດ ແລະ %1$s ຖືກເລີ່ມຄືນໃໝ່.</string>
 	<string name="widget_theme">ຊຸດຮູບແບບວິດເຈັດ</string>

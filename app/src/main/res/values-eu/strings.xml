@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Webkamera freskatzeko ordua</string>
 	<string name="webcam_snapshot_saved_at">Argazkia gorde da: %1$s</string>
 	<string name="webcam_still_downloading">Webkameraren irudia deskargatzen ari da oraindik</string>
+	<string name="webcam_url">Aukerakoa: Webkameraren URLa</string>
 	<string name="webcam_url_not_set">Webkameraren URLa ez dago ezarrita edo hutsik dago</string>
 	<string name="weewx_extensions_need_updating">Aplikazio hau eguneratu da, baina konektatzen ari zaren zerbitzariak %1$s-(r)en luzapen zaharkitu bat edo gehiago erabiltzen ditu. Baliteke eremu batzuk behar bezala ez agertzea luzapen horiek eguneratu eta %1$s berrabiarazi arte.</string>
 	<string name="widget_theme">Widget Gaia</string>

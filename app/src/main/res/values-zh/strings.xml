@@ -152,6 +152,7 @@
 	<string name="webcam_refresh_time">網路攝影機刷新時間</string>
 	<string name="webcam_snapshot_saved_at">已儲存快照：%1$s</string>
 	<string name="webcam_still_downloading">網絡攝像頭圖像仍在下載。</string>
+	<string name="webcam_url">可選：網路攝影機 URL</string>
 	<string name="webcam_url_not_set">網絡攝像頭 URL 未設置或為空</string>
 	<string name="weewx_extensions_need_updating">此應用程式已更新，但您正在連接的伺服器使用了一個或多個過時的 %1$s 擴充功能。在這些擴充功能更新並重新啟動 %1$s 之前，部分欄位可能無法正確顯示。</string>
 	<string name="widget_theme">小部件主題</string>

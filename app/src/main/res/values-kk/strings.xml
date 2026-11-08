@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Веб-камера жаңарту уақыты</string>
 	<string name="webcam_snapshot_saved_at">Сурет сақталды: %1$s</string>
 	<string name="webcam_still_downloading">Веб-камера кескіні әлі де жүктеледі</string>
+	<string name="webcam_url">Қосымша: Веб-камера URL мекенжайы</string>
 	<string name="webcam_url_not_set">Веб-камера URL мекенжайы орнатылмаған немесе бос емес</string>
 	<string name="weewx_extensions_need_updating">Бұл қолданба жаңартылды, бірақ сіз қосылып жатқан сервер %1$s бағдарламасының бір немесе бірнеше ескірген кеңейтімін пайдаланады. Бұл кеңейтімдер жаңартылып, %1$s қайта іске қосылмайынша, кейбір өрістер дұрыс көрсетілмеуі мүмкін.</string>
 	<string name="widget_theme">Виджет тақырыбы</string>

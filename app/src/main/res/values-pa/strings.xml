@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">ਵੈਬਕੈਮ ਰਿਫਰੈਸ਼ ਸਮਾਂ</string>
 	<string name="webcam_snapshot_saved_at">ਸਨੈਪਸ਼ਾਟ ਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ: %1$s</string>
 	<string name="webcam_still_downloading">ਵੈਬਕੈਮ ਚਿੱਤਰ ਅਜੇ ਵੀ ਡਾਊਨਲੋਡ ਹੋ ਰਿਹਾ ਹੈ।</string>
+	<string name="webcam_url">ਵਿਕਲਪਿਕ: ਵੈਬਕੈਮ URL</string>
 	<string name="webcam_url_not_set">ਵੈਬਕੈਮ URL ਸੈੱਟ ਨਹੀਂ ਹੈ ਜਾਂ ਖਾਲੀ ਹੈ</string>
 	<string name="weewx_extensions_need_updating">ਇਸ ਐਪ ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ ਹੈ, ਪਰ ਜਿਸ ਸਰਵਰ ਨਾਲ ਤੁਸੀਂ ਕਨੈਕਟ ਕਰ ਰਹੇ ਹੋ ਉਹ %1$s ਦੇ ਇੱਕ ਜਾਂ ਵੱਧ ਪੁਰਾਣੇ ਐਕਸਟੈਂਸ਼ਨ ਵਰਤ ਰਿਹਾ ਹੈ। ਜਦੋਂ ਤੱਕ ਇਹ ਐਕਸਟੈਂਸ਼ਨ ਅੱਪਡੇਟ ਨਹੀਂ ਹੁੰਦੇ ਅਤੇ %1$s ਮੁੜ ਚਾਲੂ ਨਹੀਂ ਹੁੰਦਾ, ਕੁਝ ਫੀਲਡ ਸਹੀ ਢੰਗ ਨਾਲ ਨਹੀਂ ਦਿਖਾਈ ਦੇ ਸਕਦੇ।</string>
 	<string name="widget_theme">ਵਿਜੇਟ ਥੀਮ</string>

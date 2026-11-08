@@ -152,6 +152,7 @@
 	<string name="webcam_refresh_time">ウェブカメラの更新時間</string>
 	<string name="webcam_snapshot_saved_at">スナップショットを保存しました: %1$s</string>
 	<string name="webcam_still_downloading">ウェブカメラの画像はまだダウンロード中です。</string>
+	<string name="webcam_url">オプション: ウェブカメラ URL</string>
 	<string name="webcam_url_not_set">WebカメラのURLが設定されていないか空白です</string>
 	<string name="weewx_extensions_need_updating">このアプリは更新されましたが、接続先のサーバーでは古い %1$s 拡張機能が1つ以上使用されています。これらの拡張機能が更新され %1$s が再起動されるまで、一部のフィールドが正しく表示されない可能性があります。</string>
 	<string name="widget_theme">ウィジェットのテーマ</string>

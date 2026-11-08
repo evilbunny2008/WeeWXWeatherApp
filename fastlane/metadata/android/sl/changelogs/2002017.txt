@@ -1,0 +1,1 @@
+• Dodana je izbirna nastavitev URL-ja spletne kamere, ki preglasi URL spletne kamere iz datoteke z nastavitvami

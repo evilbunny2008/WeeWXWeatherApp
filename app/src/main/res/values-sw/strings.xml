@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Wakati wa Kuonyesha Kamera ya Wavuti</string>
 	<string name="webcam_snapshot_saved_at">Picha imehifadhiwa: %1$s</string>
 	<string name="webcam_still_downloading">Picha ya Webcam bado inapakua</string>
+	<string name="webcam_url">Hiari: URL ya webcam</string>
 	<string name="webcam_url_not_set">URL ya Webcam haijawekwa au iko wazi</string>
 	<string name="weewx_extensions_need_updating">Programu hii imesasishwa, lakini seva unayounganisha nayo inatumia kiendelezi kimoja au zaidi vilivyopitwa na wakati vya %1$s. Baadhi ya sehemu huenda zisionekane vizuri hadi viendelezi hivyo visasishwe na %1$s iwashwe upya.</string>
 	<string name="widget_theme">Mandhari ya widget</string>

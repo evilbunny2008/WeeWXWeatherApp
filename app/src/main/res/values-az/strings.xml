@@ -155,6 +155,7 @@
 	<string name="webcam_refresh_time">Veb kameranın yenilənməsi vaxtı</string>
 	<string name="webcam_snapshot_saved_at">Snapşot yadda saxlanıldı: %1$s</string>
 	<string name="webcam_still_downloading">Veb kamera görüntüsü hələ də yüklənir</string>
+	<string name="webcam_url">İsteğe bağlı: Vebkamera URL-i</string>
 	<string name="webcam_url_not_set">WebCam URL qurulmur və ya boş deyil</string>
 	<string name="weewx_extensions_need_updating">Bu tətbiq yeniləndi, lakin qoşulduğunuz server bir və ya daha çox köhnəlmiş %1$s genişləndirməsindən istifadə edir. Bu genişləndirmələr yenilənib %1$s yenidən başladılana qədər bəzi sahələr düzgün görünməyə bilər.</string>
 	<string name="widget_theme">Vidjet mövzusu</string>

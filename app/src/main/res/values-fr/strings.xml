@@ -158,6 +158,7 @@
 	<string name="webcam_refresh_time">Temps de rafraîchissement de la webcam</string>
 	<string name="webcam_snapshot_saved_at">Instantané enregistré : %1$s</string>
 	<string name="webcam_still_downloading">L’image de la webcam est toujours en cours de téléchargement</string>
+	<string name="webcam_url">Facultatif : URL de la webcam</string>
 	<string name="webcam_url_not_set">L’URL de la webcam n’est pas définie ou est vide</string>
 	<string name="weewx_extensions_need_updating">Cette application a été mise à jour, mais le serveur auquel vous vous connectez utilise une ou plusieurs extensions obsolètes pour %1$s. Certains champs peuvent ne pas s’afficher correctement tant que ces extensions n’auront pas été mises à jour et %1$s redémarré.</string>
 	<string name="widget_theme">Thème des widgets</string>

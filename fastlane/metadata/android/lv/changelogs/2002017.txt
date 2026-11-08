@@ -1,0 +1,1 @@
+• Pievienots neobligāts tīmekļa kameras URL iestatījums, kas aizstāj tīmekļa kameras URL no iestatījumu faila

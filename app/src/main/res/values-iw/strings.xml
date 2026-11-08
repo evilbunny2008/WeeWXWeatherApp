@@ -158,6 +158,7 @@
 	<string name="webcam_refresh_time">זמן רענון מצלמת הרשת</string>
 	<string name="webcam_snapshot_saved_at">צילום נשמר: %1$s</string>
 	<string name="webcam_still_downloading">תמונת מצלמת הרשת עדיין בהורדה</string>
+	<string name="webcam_url">אופציונלי: כתובת URL של מצלמת רשת</string>
 	<string name="webcam_url_not_set">כתובת ה-URL של מצלמת הרשת לא הוגדרה או ריקה</string>
 	<string name="weewx_extensions_need_updating">האפליקציה עודכנה, אבל השרת שאליו מתבצע החיבור משתמש בתוסף %1$s מיושן אחד או יותר. ייתכן שחלק מהשדות לא יוצגו כראוי עד שהתוספים יעודכנו ו-%1$s יופעל מחדש.</string>
 	<string name="widget_theme">ערכת נושא לווידג׳ט</string>
