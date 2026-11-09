@@ -1,0 +1,1 @@
+• Aplikacioni tani kërkon qasje në rrjetin lokal kur ndërmjetësi juaj MQTT është në rrjetin lokal

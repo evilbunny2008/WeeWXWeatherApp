@@ -1,0 +1,1 @@
+• Apl kini meminta akses rangkaian setempat apabila broker MQTT anda berada pada LAN

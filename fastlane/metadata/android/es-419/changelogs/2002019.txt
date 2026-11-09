@@ -1,0 +1,1 @@
+• La app ahora solicita acceso a la red local cuando tu broker MQTT está en tu red local

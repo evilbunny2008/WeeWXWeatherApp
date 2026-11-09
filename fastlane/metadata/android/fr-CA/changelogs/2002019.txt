@@ -1,0 +1,1 @@
+• L’application demande maintenant l’accès au réseau local lorsque votre courtier MQTT se trouve sur votre réseau local

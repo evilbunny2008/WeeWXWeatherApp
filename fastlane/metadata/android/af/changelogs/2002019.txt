@@ -1,0 +1,1 @@
+• Die app vra nou vir toegang tot die plaaslike netwerk wanneer jou MQTT-makelaar op jou LAN is

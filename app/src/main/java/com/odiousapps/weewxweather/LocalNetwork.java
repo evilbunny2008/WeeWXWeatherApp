@@ -14,7 +14,6 @@ import android.os.Looper;
 
 import java.net.Inet6Address;
 import java.net.InetAddress;
-import java.net.URI;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -24,6 +23,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import androidx.core.content.ContextCompat;
+
+import okhttp3.HttpUrl;
 
 import static com.odiousapps.weewxweather.WeeWXApp.getAndroidString;
 import static com.odiousapps.weewxweather.WeeWXAppCommon.LogMessage;
@@ -35,6 +36,10 @@ final class LocalNetwork
 
 	// Names that only ever resolve on a LAN
 	private static final String[] localSuffixes = {".local", ".lan", ".home", ".home.arpa", ".internal", ".localdomain"};
+
+	private static final String[][] mqttSchemes = {
+		{"mqtt://", "http://"}, {"mqtts://", "https://"}, {"ws://", "http://"}, {"wss://", "https://"}
+	};
 
 	// host -> resolves to a LAN address, so we only do the DNS lookup once per host
 	private static final Map<String, Boolean> resolvedHosts = new ConcurrentHashMap<>();
@@ -61,20 +66,24 @@ final class LocalNetwork
 		if(is_blank(url))
 			return null;
 
-		try
+		// HttpUrl copes with MQTT passwords and hostnames that URI rejects, e.g. p@ss^word or weewx_mqtt,
+		// and it's what the MQTT client uses to find its host, so map the MQTT schemes onto http(s)
+		url = url.strip();
+		String lower = url.toLowerCase(Locale.ROOT);
+		for(String[] scheme : mqttSchemes)
 		{
-			String host = URI.create(url.strip()).getHost();
-			if(is_blank(host))
-				return null;
-
-			host = host.toLowerCase(Locale.ROOT);
-			if(host.startsWith("[") && host.endsWith("]"))
-				host = host.substring(1, host.length() - 1);
-
-			return host;
-		} catch(IllegalArgumentException e) {
-			return null;
+			if(lower.startsWith(scheme[0]))
+			{
+				url = scheme[1] + url.substring(scheme[0].length());
+				break;
+			}
 		}
+
+		HttpUrl httpUrl = HttpUrl.parse(url);
+		if(httpUrl == null || is_blank(httpUrl.host()))
+			return null;
+
+		return httpUrl.host().toLowerCase(Locale.ROOT);
 	}
 
 	static boolean isLocalAddress(InetAddress address)

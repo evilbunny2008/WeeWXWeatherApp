@@ -1,0 +1,1 @@
+• Aplicația cere acum acces la rețeaua locală atunci când brokerul MQTT se află în rețeaua locală

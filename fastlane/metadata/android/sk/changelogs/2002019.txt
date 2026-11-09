@@ -1,0 +1,1 @@
+• Aplikácia teraz žiada o prístup k miestnej sieti, keď je váš MQTT broker v miestnej sieti

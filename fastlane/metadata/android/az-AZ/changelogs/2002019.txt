@@ -1,0 +1,1 @@
+• MQTT brokeriniz yerli şəbəkədə olduqda tətbiq indi yerli şəbəkəyə giriş icazəsi istəyir

@@ -1,0 +1,1 @@
+• Die App fragt jetzt nach Zugriff auf das lokale Netzwerk, wenn sich dein MQTT-Broker im LAN befindet

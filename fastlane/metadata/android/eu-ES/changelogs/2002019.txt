@@ -1,0 +1,1 @@
+• Aplikazioak sare lokalerako sarbidea eskatzen du orain zure MQTT artekaria sare lokalean dagoenean

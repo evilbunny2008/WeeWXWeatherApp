@@ -1,0 +1,1 @@
+• Aplikacja prosi teraz o dostęp do sieci lokalnej, gdy Twój broker MQTT znajduje się w sieci LAN

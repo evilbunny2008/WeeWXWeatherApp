@@ -1,0 +1,1 @@
+• L’app ora chiede l’accesso alla rete locale quando il tuo broker MQTT si trova sulla rete locale

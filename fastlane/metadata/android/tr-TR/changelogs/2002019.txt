@@ -1,0 +1,1 @@
+• MQTT aracınız yerel ağdaysa uygulama artık yerel ağ erişimi izni istiyor

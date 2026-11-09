@@ -1,0 +1,1 @@
+• L’aplicació ara demana accés a la xarxa local quan el vostre agent MQTT és a la xarxa local

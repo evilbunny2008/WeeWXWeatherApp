@@ -1,0 +1,1 @@
+• Aplikacija zdaj zahteva dostop do lokalnega omrežja, ko je vaš posrednik MQTT v lokalnem omrežju

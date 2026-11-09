@@ -1,0 +1,1 @@
+• A aplicación agora solicita acceso á rede local cando o teu intermediario MQTT está na túa rede local

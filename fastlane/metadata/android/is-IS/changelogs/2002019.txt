@@ -1,0 +1,1 @@
+• Forritið biður nú um aðgang að staðarneti þegar MQTT-miðlarinn þinn er á staðarnetinu

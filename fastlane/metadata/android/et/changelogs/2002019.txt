@@ -1,0 +1,1 @@
+• Rakendus küsib nüüd kohtvõrgu juurdepääsu, kui sinu MQTT vahendaja asub kohtvõrgus

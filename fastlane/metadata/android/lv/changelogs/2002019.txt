@@ -1,0 +1,1 @@
+• Lietotne tagad pieprasa piekļuvi lokālajam tīklam, ja jūsu MQTT brokeris atrodas lokālajā tīklā

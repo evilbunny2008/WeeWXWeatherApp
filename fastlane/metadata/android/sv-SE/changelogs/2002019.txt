@@ -1,0 +1,1 @@
+• Appen ber nu om åtkomst till det lokala nätverket när din MQTT-mäklare finns på ditt LAN

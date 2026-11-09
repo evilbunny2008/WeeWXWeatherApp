@@ -1,0 +1,1 @@
+• Programa dabar prašo prieigos prie vietinio tinklo, kai jūsų MQTT tarpininkas yra vietiniame tinkle

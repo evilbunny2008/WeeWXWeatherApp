@@ -1,0 +1,1 @@
+• Ứng dụng giờ sẽ xin quyền truy cập mạng cục bộ khi MQTT broker của bạn nằm trong mạng LAN

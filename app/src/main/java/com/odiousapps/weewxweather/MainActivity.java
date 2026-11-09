@@ -1542,7 +1542,9 @@ public class MainActivity extends FragmentActivity
 	{
 		KeyValue.isVisible = false;
 
-		if(mqttClient != null && mqttConnected)
+		// Disconnect even if we never connected, e.g. the LAN was blocked, otherwise the automatic
+		// reconnect keeps retrying and onResume() stacks another client on top of it
+		if(mqttClient != null)
 		{
 			try
 			{

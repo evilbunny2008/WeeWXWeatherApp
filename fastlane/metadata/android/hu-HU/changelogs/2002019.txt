@@ -1,0 +1,1 @@
+• Az alkalmazás mostantól helyi hálózati hozzáférést kér, ha az MQTT bróker a helyi hálózaton van
