@@ -113,6 +113,10 @@
 	<string name="refresh">ໂຫຼດຄືນໃໝ່</string>
 	<string name="refresh_time">ເລືອກເວລາໂຫຼດຄືນ</string>
 	<string name="remove_all_data">ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບຂໍ້ມູນທັງໝົດ?</string>
+	<string name="rotation_landscape">ລວງນອນ</string>
+	<string name="rotation_lock">ລັອກການໝຸນ</string>
+	<string name="rotation_off">ປິດ</string>
+	<string name="rotation_portrait">ລວງຕັ້ງ</string>
 	<string name="save_app_debug_logs">ບັນທຶກບັນທຶກດີບັກຂອງແອັບ</string>
 	<string name="save_settings">ບັນທຶກການຕັ້ງຄ່າ</string>
 	<string name="see_more">ເບິ່ງເພີ່ມເຕີມ</string>

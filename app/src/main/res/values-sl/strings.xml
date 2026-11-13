@@ -122,6 +122,10 @@
 	<string name="refresh">Osveži</string>
 	<string name="refresh_time">Izberite Čas osvežitve</string>
 	<string name="remove_all_data">Ali ste prepričani, da želite odstraniti vse podatke?</string>
+	<string name="rotation_landscape">Ležeče</string>
+	<string name="rotation_lock">Zaklep sukanja</string>
+	<string name="rotation_off">Izklopljeno</string>
+	<string name="rotation_portrait">Pokončno</string>
 	<string name="save_app_debug_logs">Shranite dnevnike odpravljanja napak aplikacije</string>
 	<string name="save_settings">Shrani nastavitve</string>
 	<string name="see_more">Prikaži več</string>

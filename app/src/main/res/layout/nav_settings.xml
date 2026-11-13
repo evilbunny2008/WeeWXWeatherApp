@@ -252,6 +252,33 @@
 				tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
 		</com.google.android.material.textfield.TextInputLayout>
 
+		<!-- TVs don't rotate, so MainActivity hides this there -->
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/til9"
+			style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:hint="@string/rotation_lock"
+			android:labelFor="@id/spinner6"
+			android:textSize="20sp"
+			app:boxBackgroundMode="outline"
+			app:boxStrokeColor="@color/Black"
+			app:boxStrokeWidth="1dp"
+			tools:ignore="VisualLintBounds">
+
+			<com.odiousapps.weewxweather.SettingDropDown
+				android:id="@+id/spinner6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:clickable="true"
+				android:focusable="true"
+				android:inputType="none"
+				android:saveEnabled="false"
+				android:textSize="20sp"
+				tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+		</com.google.android.material.textfield.TextInputLayout>
+
 		<!-- TVs don't have home screen widgets, so MainActivity hides these there -->
 		<LinearLayout
 			android:id="@+id/widget_settings"

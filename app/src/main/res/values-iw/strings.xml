@@ -119,6 +119,10 @@
 	<string name="refresh">רענון</string>
 	<string name="refresh_time">בחירת זמן רענון</string>
 	<string name="remove_all_data">בטוח שברצונך להסיר את כל הנתונים?</string>
+	<string name="rotation_landscape">לרוחב</string>
+	<string name="rotation_lock">נעילת סיבוב</string>
+	<string name="rotation_off">כבוי</string>
+	<string name="rotation_portrait">לאורך</string>
 	<string name="save_app_debug_logs">שמירת יומני ניפוי באגים של האפליקציה</string>
 	<string name="save_settings">שמירת ההגדרות</string>
 	<string name="see_more">הצגת פרטים נוספים</string>

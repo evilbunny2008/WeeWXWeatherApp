@@ -116,6 +116,10 @@
 	<string name="refresh">রিফ্রেশ করুন</string>
 	<string name="refresh_time">রিফ্রেশ সময় নির্বাচন করুন</string>
 	<string name="remove_all_data">আপনি কি নিশ্চিত যে আপনি সমস্ত ডেটা সরাতে চান?</string>
+	<string name="rotation_landscape">ল্যান্ডস্কেপ</string>
+	<string name="rotation_lock">ঘূর্ণন লক</string>
+	<string name="rotation_off">বন্ধ</string>
+	<string name="rotation_portrait">পোর্ট্রেট</string>
 	<string name="save_app_debug_logs">অ্যাপ ডিবাগ লগ সংরক্ষণ করুন</string>
 	<string name="save_settings">সেটিংস সংরক্ষণ করুন</string>
 	<string name="see_more">আরও দেখুন</string>

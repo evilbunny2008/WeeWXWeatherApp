@@ -116,6 +116,10 @@
 	<string name="refresh">Жаңарту</string>
 	<string name="refresh_time">Жаңарту уақытын таңдаңыз</string>
 	<string name="remove_all_data">Барлық деректерді жойғыңыз келе ме?</string>
+	<string name="rotation_landscape">Көлденең</string>
+	<string name="rotation_lock">Бұруды құлыптау</string>
+	<string name="rotation_off">Өшірулі</string>
+	<string name="rotation_portrait">Тік</string>
 	<string name="save_app_debug_logs">Қолданбаларды жою журналдарын сақтаңыз</string>
 	<string name="save_settings">Параметрлерді сақтаңыз</string>
 	<string name="see_more">Толығырақ</string>

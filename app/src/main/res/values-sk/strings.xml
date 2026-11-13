@@ -122,6 +122,10 @@
 	<string name="refresh">Obnoviť</string>
 	<string name="refresh_time">Vyberte Čas obnovenia</string>
 	<string name="remove_all_data">Naozaj chcete odstrániť všetky údaje?</string>
+	<string name="rotation_landscape">Na šírku</string>
+	<string name="rotation_lock">Zámok otáčania</string>
+	<string name="rotation_off">Vypnuté</string>
+	<string name="rotation_portrait">Na výšku</string>
 	<string name="save_app_debug_logs">Uložte denníky ladenia aplikácie</string>
 	<string name="save_settings">Uložiť nastavenia</string>
 	<string name="see_more">Zobraziť viac</string>

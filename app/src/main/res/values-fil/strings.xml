@@ -116,6 +116,10 @@
 	<string name="refresh">I-refresh</string>
 	<string name="refresh_time">Pumili ng Oras ng Pag-refresh</string>
 	<string name="remove_all_data">Sigurado ka bang gusto mong burahin ang lahat ng data?</string>
+	<string name="rotation_landscape">Landscape</string>
+	<string name="rotation_lock">Rotation Lock</string>
+	<string name="rotation_off">Naka-off</string>
+	<string name="rotation_portrait">Portrait</string>
 	<string name="save_app_debug_logs">I-save ang mga debug log ng app</string>
 	<string name="save_settings">I-save ang mga Setting</string>
 	<string name="see_more">Tingnan Pa</string>

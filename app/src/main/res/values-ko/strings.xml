@@ -113,6 +113,10 @@
 	<string name="refresh">새로고침</string>
 	<string name="refresh_time">새로 고침 시간 선택</string>
 	<string name="remove_all_data">모든 데이터를 삭제하시겠습니까?</string>
+	<string name="rotation_landscape">가로</string>
+	<string name="rotation_lock">회전 잠금</string>
+	<string name="rotation_off">끄기</string>
+	<string name="rotation_portrait">세로</string>
 	<string name="save_app_debug_logs">앱 디버그 로그 저장</string>
 	<string name="save_settings">설정 저장</string>
 	<string name="see_more">더보기</string>

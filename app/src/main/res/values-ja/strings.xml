@@ -113,6 +113,10 @@
 	<string name="refresh">更新</string>
 	<string name="refresh_time">更新時間を選択してください</string>
 	<string name="remove_all_data">すべてのデータを削除してもよろしいですか?</string>
+	<string name="rotation_landscape">横向き</string>
+	<string name="rotation_lock">回転ロック</string>
+	<string name="rotation_off">オフ</string>
+	<string name="rotation_portrait">縦向き</string>
 	<string name="save_app_debug_logs">アプリのデバッグログを保存する</string>
 	<string name="save_settings">設定の保存</string>
 	<string name="see_more">詳細を表示</string>

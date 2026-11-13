@@ -116,6 +116,10 @@
 	<string name="refresh">Թարմացնել</string>
 	<string name="refresh_time">Ընտրեք թարմացման ժամանակը</string>
 	<string name="remove_all_data">Իսկապե՞ս ուզում եք հեռացնել բոլոր տվյալները:</string>
+	<string name="rotation_landscape">Հորիզոնական</string>
+	<string name="rotation_lock">Պտտման կողպում</string>
+	<string name="rotation_off">Անջատված</string>
+	<string name="rotation_portrait">Ուղղահայաց</string>
 	<string name="save_app_debug_logs">Պահպանեք հավելվածների վրիպազերծման մատյանները</string>
 	<string name="save_settings">Պահպանել կարգավորումները</string>
 	<string name="see_more">Տեսնել ավելին</string>

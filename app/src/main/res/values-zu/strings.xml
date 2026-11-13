@@ -116,6 +116,10 @@
 	<string name="refresh">Vuselela</string>
 	<string name="refresh_time">Khetha isikhathi sokuqabuleka</string>
 	<string name="remove_all_data">Uqinisekile ukuthi ufuna ukususa yonke imininingwane?</string>
+	<string name="rotation_landscape">Ububanzi</string>
+	<string name="rotation_lock">Ukhiye Wokuzungeza</string>
+	<string name="rotation_off">Kuvaliwe</string>
+	<string name="rotation_portrait">Ubude</string>
 	<string name="save_app_debug_logs">Gcina izingodo zokulungisa ama-debug</string>
 	<string name="save_settings">Gcina Izilungiselelo</string>
 	<string name="see_more">Bona Okwengeziwe</string>

@@ -116,6 +116,10 @@
 	<string name="refresh">Freskatu</string>
 	<string name="refresh_time">Aukeratu Freskatzeko denbora</string>
 	<string name="remove_all_data">Ziur datu guztiak kendu nahi dituzula?</string>
+	<string name="rotation_landscape">Horizontala</string>
+	<string name="rotation_lock">Biraketa-blokeoa</string>
+	<string name="rotation_off">Desaktibatuta</string>
+	<string name="rotation_portrait">Bertikala</string>
 	<string name="save_app_debug_logs">Gorde aplikazioaren arazketa-erregistroak</string>
 	<string name="save_settings">Gorde ezarpenak</string>
 	<string name="see_more">Ikusi gehiago</string>

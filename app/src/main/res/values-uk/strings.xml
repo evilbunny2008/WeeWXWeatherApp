@@ -122,6 +122,10 @@
 	<string name="refresh">Оновити</string>
 	<string name="refresh_time">Виберіть Час оновлення</string>
 	<string name="remove_all_data">Ви впевнені, що хочете видалити всі дані?</string>
+	<string name="rotation_landscape">Альбомна</string>
+	<string name="rotation_lock">Блокування повороту</string>
+	<string name="rotation_off">Вимк.</string>
+	<string name="rotation_portrait">Книжкова</string>
 	<string name="save_app_debug_logs">Зберігайте журнали налагодження програми</string>
 	<string name="save_settings">Зберегти налаштування</string>
 	<string name="see_more">Докладніше</string>

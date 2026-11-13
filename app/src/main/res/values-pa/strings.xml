@@ -116,6 +116,10 @@
 	<string name="refresh">ਰਿਫ੍ਰੈਸ਼ ਕਰੋ</string>
 	<string name="refresh_time">ਤਾਜ਼ਾ ਸਮਾਂ ਚੁਣੋ</string>
 	<string name="remove_all_data">ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ ’ਤੇ ਸਾਰਾ ਡਾਟਾ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+	<string name="rotation_landscape">ਲੈਂਡਸਕੇਪ</string>
+	<string name="rotation_lock">ਘੁੰਮਾਉ ਲੌਕ</string>
+	<string name="rotation_off">ਬੰਦ</string>
+	<string name="rotation_portrait">ਪੋਰਟਰੇਟ</string>
 	<string name="save_app_debug_logs">ਐਪ ਡੀਬੱਗ ਲੌਗਸ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
 	<string name="save_settings">ਸੈਟਿੰਗਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
 	<string name="see_more">ਹੋਰ ਦੇਖੋ</string>

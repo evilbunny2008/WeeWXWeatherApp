@@ -116,6 +116,10 @@
 	<string name="refresh">Опресняване</string>
 	<string name="refresh_time">Изберете Време за опресняване</string>
 	<string name="remove_all_data">Сигурни ли сте, че искате да премахнете всички данни?</string>
+	<string name="rotation_landscape">Пейзажна</string>
+	<string name="rotation_lock">Заключване на завъртането</string>
+	<string name="rotation_off">Изключено</string>
+	<string name="rotation_portrait">Портретна</string>
 	<string name="save_app_debug_logs">Запазване на регистрационни файлове за отстраняване на грешки в приложението</string>
 	<string name="save_settings">Запазване на настройките</string>
 	<string name="see_more">Вижте още</string>

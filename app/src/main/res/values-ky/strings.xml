@@ -116,6 +116,10 @@
 	<string name="refresh">Жаңылоо</string>
 	<string name="refresh_time">Жаңылоо убактысын тандаңыз</string>
 	<string name="remove_all_data">Бардык маалыматтарды жок кылгыңыз келеби?</string>
+	<string name="rotation_landscape">Туурасынан</string>
+	<string name="rotation_lock">Бурулуу кулпусу</string>
+	<string name="rotation_off">Өчүк</string>
+	<string name="rotation_portrait">Тигинен</string>
 	<string name="save_app_debug_logs">Колдонмо оңдоо журналдарын сактаңыз</string>
 	<string name="save_settings">Жөндөөлөрдү сактоо</string>
 	<string name="see_more">Дагы көрүү</string>

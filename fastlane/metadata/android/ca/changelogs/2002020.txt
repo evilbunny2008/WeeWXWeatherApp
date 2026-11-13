@@ -1,0 +1,1 @@
+• Nova opció de bloqueig de rotació per mantenir l'app en vertical o horitzontal

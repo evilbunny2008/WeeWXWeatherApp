@@ -116,6 +116,10 @@
 	<string name="refresh">Yenilə</string>
 	<string name="refresh_time">Yeniləmə vaxtı seçin</string>
 	<string name="remove_all_data">Bütün məlumatları silmək istədiyinizə əminsiniz?</string>
+	<string name="rotation_landscape">Landşaft</string>
+	<string name="rotation_lock">Fırlanma kilidi</string>
+	<string name="rotation_off">Söndürülüb</string>
+	<string name="rotation_portrait">Portret</string>
 	<string name="save_app_debug_logs">Tətbiq Debug qeydlərini qeyd edin</string>
 	<string name="save_settings">Parametrləri saxla</string>
 	<string name="see_more">Daha çox</string>

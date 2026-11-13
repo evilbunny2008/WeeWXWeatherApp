@@ -122,6 +122,10 @@
 	<string name="refresh">Абнавіць</string>
 	<string name="refresh_time">Выберыце час абнаўлення</string>
 	<string name="remove_all_data">Вы ўпэўнены, што хочаце выдаліць усе даныя?</string>
+	<string name="rotation_landscape">Альбомная</string>
+	<string name="rotation_lock">Блакаванне павароту</string>
+	<string name="rotation_off">Выкл.</string>
+	<string name="rotation_portrait">Партрэтная</string>
 	<string name="save_app_debug_logs">Захаваць журналы адладкі праграмы</string>
 	<string name="save_settings">Захаваць налады</string>
 	<string name="see_more">Падрабязней</string>

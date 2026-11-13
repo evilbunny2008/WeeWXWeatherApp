@@ -116,6 +116,10 @@
 	<string name="refresh">Освежи</string>
 	<string name="refresh_time">Изберете Време на освежување</string>
 	<string name="remove_all_data">Дали сте сигурни дека сакате да ги отстраните сите податоци?</string>
+	<string name="rotation_landscape">Пејзаж</string>
+	<string name="rotation_lock">Заклучување на ротација</string>
+	<string name="rotation_off">Исклучено</string>
+	<string name="rotation_portrait">Портрет</string>
 	<string name="save_app_debug_logs">Зачувајте дневници за отстранување грешки на апликациите</string>
 	<string name="save_settings">Зачувај ги поставките</string>
 	<string name="see_more">Види повеќе</string>

@@ -119,6 +119,10 @@
 	<string name="refresh">Actualitza</string>
 	<string name="refresh_time">Trieu Temps d’actualització</string>
 	<string name="remove_all_data">Esteu segur que voleu eliminar totes les dades?</string>
+	<string name="rotation_landscape">Horitzontal</string>
+	<string name="rotation_lock">Bloqueig de rotació</string>
+	<string name="rotation_off">Desactivat</string>
+	<string name="rotation_portrait">Vertical</string>
 	<string name="save_app_debug_logs">Desa els registres de depuració de l’aplicació</string>
 	<string name="save_settings">Desa la configuració</string>
 	<string name="see_more">Mostra’n més</string>

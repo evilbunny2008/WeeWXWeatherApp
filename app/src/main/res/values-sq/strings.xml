@@ -116,6 +116,10 @@
 	<string name="refresh">Rifresko</string>
 	<string name="refresh_time">Zgjidhni Kohën e Rifreskimit</string>
 	<string name="remove_all_data">Jeni i sigurt që dëshironi të hiqni të gjitha të dhënat?</string>
+	<string name="rotation_landscape">Horizontal</string>
+	<string name="rotation_lock">Kyçja e rrotullimit</string>
+	<string name="rotation_off">Joaktiv</string>
+	<string name="rotation_portrait">Vertikal</string>
 	<string name="save_app_debug_logs">Ruani regjistrat e korrigjimit të aplikacioneve</string>
 	<string name="save_settings">Ruaj Cilësimet</string>
 	<string name="see_more">Shiko më shumë</string>

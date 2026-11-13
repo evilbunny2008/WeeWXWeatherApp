@@ -122,6 +122,10 @@
 	<string name="refresh">Odśwież</string>
 	<string name="refresh_time">Wybierz Czas odświeżania</string>
 	<string name="remove_all_data">Czy na pewno chcesz usunąć wszystkie dane?</string>
+	<string name="rotation_landscape">Poziomo</string>
+	<string name="rotation_lock">Blokada obrotu</string>
+	<string name="rotation_off">Wył.</string>
+	<string name="rotation_portrait">Pionowo</string>
 	<string name="save_app_debug_logs">Zapisz dzienniki debugowania aplikacji</string>
 	<string name="save_settings">Zapisz ustawienia</string>
 	<string name="see_more">Pokaż więcej</string>

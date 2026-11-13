@@ -113,6 +113,10 @@
 	<string name="refresh">重新整理</string>
 	<string name="refresh_time">選擇刷新時間</string>
 	<string name="remove_all_data">您確定要刪除所有數據嗎？</string>
+	<string name="rotation_landscape">橫向</string>
+	<string name="rotation_lock">旋轉鎖定</string>
+	<string name="rotation_off">關閉</string>
+	<string name="rotation_portrait">直向</string>
 	<string name="save_app_debug_logs">保存應用程序調試日誌</string>
 	<string name="save_settings">保存設置</string>
 	<string name="see_more">查看更多</string>

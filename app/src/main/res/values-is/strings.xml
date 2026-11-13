@@ -116,6 +116,10 @@
 	<string name="refresh">Endurhlaða</string>
 	<string name="refresh_time">Veldu endurnýjunartíma</string>
 	<string name="remove_all_data">Ertu viss um að þú viljir fjarlægja öll gögn?</string>
+	<string name="rotation_landscape">Lárétt</string>
+	<string name="rotation_lock">Snúningslás</string>
+	<string name="rotation_off">Slökkt</string>
+	<string name="rotation_portrait">Lóðrétt</string>
 	<string name="save_app_debug_logs">Vista villuleitarannála forritsins</string>
 	<string name="save_settings">Vista stillingar</string>
 	<string name="see_more">Sjá meira</string>

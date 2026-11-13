@@ -119,6 +119,10 @@
 	<string name="refresh">Actualiser</string>
 	<string name="refresh_time">Choisissez l’heure d’actualisation</string>
 	<string name="remove_all_data">Êtes-vous sûr de vouloir supprimer toutes les données ?</string>
+	<string name="rotation_landscape">Paysage</string>
+	<string name="rotation_lock">Verrouillage de la rotation</string>
+	<string name="rotation_off">Désactivé</string>
+	<string name="rotation_portrait">Portrait</string>
 	<string name="save_app_debug_logs">Enregistrer les journaux de débogage de l’application</string>
 	<string name="save_settings">Enregistrer les paramètres</string>
 	<string name="see_more">Voir plus</string>

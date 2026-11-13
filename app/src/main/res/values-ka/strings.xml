@@ -116,6 +116,10 @@
 	<string name="refresh">განახლება</string>
 	<string name="refresh_time">აირჩიეთ განახლების დრო</string>
 	<string name="remove_all_data">დარწმუნებული ხართ, რომ გსურთ წაშალოთ ყველა მონაცემი?</string>
+	<string name="rotation_landscape">ლანდშაფტი</string>
+	<string name="rotation_lock">როტაციის ჩაკეტვა</string>
+	<string name="rotation_off">გამორთული</string>
+	<string name="rotation_portrait">პორტრეტი</string>
 	<string name="save_app_debug_logs">შეინახეთ აპის გამართვის ჟურნალები</string>
 	<string name="save_settings">პარამეტრების შენახვა</string>
 	<string name="see_more">მეტის ნახვა</string>

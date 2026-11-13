@@ -116,6 +116,10 @@
 	<string name="refresh">አድስ</string>
 	<string name="refresh_time">የማደሻ ጊዜ ይምረጡ</string>
 	<string name="remove_all_data">እርግጠኛ ነዎት ሁሉንም ውሂብ ማስወገድ ይፈልጋሉ?</string>
+	<string name="rotation_landscape">አግድም</string>
+	<string name="rotation_lock">የማሽከርከር ቁልፍ</string>
+	<string name="rotation_off">ጠፍቷል</string>
+	<string name="rotation_portrait">ቁመታዊ</string>
 	<string name="save_app_debug_logs">የመተግበሪያ ማረሚያ ምዝግብ ማስታወሻዎችን አስቀምጥ</string>
 	<string name="save_settings">ቅንብሮችን አስቀምጥ</string>
 	<string name="see_more">ተጨማሪ ይመልከቱ</string>

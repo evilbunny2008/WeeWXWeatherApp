@@ -1,0 +1,1 @@
+• Nuevo ajuste de bloqueo de rotación para mantener la app en vertical u horizontal

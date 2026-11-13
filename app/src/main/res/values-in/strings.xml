@@ -113,6 +113,10 @@
 	<string name="refresh">Muat ulang</string>
 	<string name="refresh_time">Pilih Waktu Segarkan</string>
 	<string name="remove_all_data">Apakah Anda yakin ingin menghapus semua data?</string>
+	<string name="rotation_landscape">Lanskap</string>
+	<string name="rotation_lock">Kunci Rotasi</string>
+	<string name="rotation_off">Mati</string>
+	<string name="rotation_portrait">Potret</string>
 	<string name="save_app_debug_logs">Simpan log debug aplikasi</string>
 	<string name="save_settings">Simpan Pengaturan</string>
 	<string name="see_more">Lihat Selengkapnya</string>

@@ -116,6 +116,10 @@
 	<string name="refresh">Yenile</string>
 	<string name="refresh_time">Yenileme Zamanını Seçin</string>
 	<string name="remove_all_data">Tüm verileri kaldırmak istediğinizden emin misiniz?</string>
+	<string name="rotation_landscape">Yatay</string>
+	<string name="rotation_lock">Döndürme kilidi</string>
+	<string name="rotation_off">Kapalı</string>
+	<string name="rotation_portrait">Dikey</string>
 	<string name="save_app_debug_logs">Uygulama hata ayıklama günlüklerini kaydedin</string>
 	<string name="save_settings">Ayarları Kaydet</string>
 	<string name="see_more">Daha Fazla Gör</string>

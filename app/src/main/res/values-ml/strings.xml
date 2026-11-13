@@ -116,6 +116,10 @@
 	<string name="refresh">റിഫ്രഷ് ചെയ്യുക</string>
 	<string name="refresh_time">പുതുക്കിയ സമയം തിരഞ്ഞെടുക്കുക</string>
 	<string name="remove_all_data">എല്ലാ ഡാറ്റയും നീക്കം ചെയ്യണമെന്ന് തീർച്ചയാണോ?</string>
+	<string name="rotation_landscape">ലാൻഡ്‌സ്‌കേപ്പ്</string>
+	<string name="rotation_lock">റൊട്ടേഷൻ ലോക്ക്</string>
+	<string name="rotation_off">ഓഫ്</string>
+	<string name="rotation_portrait">പോർട്രെയ്റ്റ്</string>
 	<string name="save_app_debug_logs">ആപ്പ് ഡീബഗ് ലോഗുകൾ സംരക്ഷിക്കുക</string>
 	<string name="save_settings">ക്രമീകരണങ്ങൾ സംരക്ഷിക്കുക</string>
 	<string name="see_more">കൂടുതൽ കാണുക</string>

@@ -293,6 +293,7 @@ public class WeeWXApp extends Application
 	final static int mySlider_default = 100;
 	final static int DayNightMode_default = 2;
 	final static int widget_theme_mode_default = 4;
+	final static int rotation_lock_default = 0;
 	final static int theme_default = R.style.AppTheme_WeeWXApp_Light_Common;
 	final static int mode_default = AppCompatDelegate.MODE_NIGHT_NO;
 
@@ -320,7 +321,7 @@ public class WeeWXApp extends Application
 	final static boolean RadarOnForecastScreen = !RadarOnHomeScreen;
 	final static boolean ForecastOnForecastScreen = RadarOnHomeScreen;
 
-	static String[] updateOptions, themeOptions, widgetThemeOptions, updateInterval, webcamRefreshOptions;
+	static String[] updateOptions, themeOptions, rotationLockOptions, widgetThemeOptions, updateInterval, webcamRefreshOptions;
 
 	static boolean hasBootedFully = false;
 
@@ -511,6 +512,13 @@ public class WeeWXApp extends Application
 						getAndroidString(R.string.light_theme),
 						getAndroidString(R.string.dark_theme),
 						getAndroidString(R.string.system_default)
+				};
+
+		rotationLockOptions = new String[]
+				{
+						getAndroidString(R.string.rotation_off),
+						getAndroidString(R.string.rotation_portrait),
+						getAndroidString(R.string.rotation_landscape)
 				};
 
 		widgetThemeOptions = new String[]

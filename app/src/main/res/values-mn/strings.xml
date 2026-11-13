@@ -116,6 +116,10 @@
 	<string name="refresh">Шинэчлэх</string>
 	<string name="refresh_time">Шинэчлэх хугацааг сонгох</string>
 	<string name="remove_all_data">Та бүх өгөгдлийг устгахдаа итгэлтэй байна уу?</string>
+	<string name="rotation_landscape">Хэвтээ</string>
+	<string name="rotation_lock">Эргэлтийн түгжээ</string>
+	<string name="rotation_off">Унтраалттай</string>
+	<string name="rotation_portrait">Босоо</string>
 	<string name="save_app_debug_logs">Аппын дибаг логийг хадгалах</string>
 	<string name="save_settings">Тохиргоог хадгалах</string>
 	<string name="see_more">Дэлгэрэнгүй</string>

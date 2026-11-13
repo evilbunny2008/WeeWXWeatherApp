@@ -116,6 +116,10 @@
 	<string name="refresh">Actualisar</string>
 	<string name="refresh_time">Tscherner il temp da rinfrestgar</string>
 	<string name="remove_all_data">Essas Vus segir che Vus vulais allontanar tut las datas?</string>
+	<string name="rotation_landscape">Orizontal</string>
+	<string name="rotation_lock">Bloccada da la rotaziun</string>
+	<string name="rotation_off">Deactivà</string>
+	<string name="rotation_portrait">Vertical</string>
 	<string name="save_app_debug_logs">Memorisar ils protocols da debug da l’app</string>
 	<string name="save_settings">Memorisar ils parameters</string>
 	<string name="see_more">Mussar dapli</string>

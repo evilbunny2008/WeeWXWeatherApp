@@ -116,6 +116,10 @@
 	<string name="refresh">Vernieuwen</string>
 	<string name="refresh_time">Kies Vernieuwingstijd</string>
 	<string name="remove_all_data">Weet u zeker dat u alle gegevens wilt verwijderen?</string>
+	<string name="rotation_landscape">Liggend</string>
+	<string name="rotation_lock">Rotatievergrendeling</string>
+	<string name="rotation_off">Uit</string>
+	<string name="rotation_portrait">Staand</string>
 	<string name="save_app_debug_logs">Bewaar app-foutopsporingslogboeken</string>
 	<string name="save_settings">Instellingen opslaan</string>
 	<string name="see_more">Meer bekijken</string>

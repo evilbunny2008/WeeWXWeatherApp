@@ -116,6 +116,10 @@
 	<string name="refresh">ರಿಫ್ರೆಶ್ ಮಾಡಿ</string>
 	<string name="refresh_time">ರಿಫ್ರೆಶ್ ಸಮಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
 	<string name="remove_all_data">ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ತೆಗೆದುಹಾಕಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?</string>
+	<string name="rotation_landscape">ಲ್ಯಾಂಡ್‌ಸ್ಕೇಪ್</string>
+	<string name="rotation_lock">ತಿರುಗುವಿಕೆ ಲಾಕ್</string>
+	<string name="rotation_off">ಆಫ್</string>
+	<string name="rotation_portrait">ಪೋರ್ಟ್ರೇಟ್</string>
 	<string name="save_app_debug_logs">ಅಪ್ಲಿಕೇಶನ್ ಡೀಬಗ್ ಲಾಗ್‌ಗಳನ್ನು ಉಳಿಸಿ</string>
 	<string name="save_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಉಳಿಸಿ</string>
 	<string name="see_more">ಇನ್ನಷ್ಟು ನೋಡಿ</string>

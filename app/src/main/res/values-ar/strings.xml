@@ -128,6 +128,10 @@
 	<string name="refresh">تحديث</string>
 	<string name="refresh_time">اختر وقت التحديث</string>
 	<string name="remove_all_data">هل أنت متأكد أنك تريد إزالة كافة البيانات؟</string>
+	<string name="rotation_landscape">أفقي</string>
+	<string name="rotation_lock">قفل التدوير</string>
+	<string name="rotation_off">إيقاف</string>
+	<string name="rotation_portrait">عمودي</string>
 	<string name="save_app_debug_logs">حفظ سجلات تصحيح التطبيق</string>
 	<string name="save_settings">حفظ الإعدادات</string>
 	<string name="see_more">عرض المزيد</string>

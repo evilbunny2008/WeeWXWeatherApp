@@ -116,6 +116,10 @@
 	<string name="refresh">නැවුම් කරන්න</string>
 	<string name="refresh_time">නැවුම් කිරීමේ වේලාව තෝරන්න</string>
 	<string name="remove_all_data">ඔබට සියලු දත්ත ඉවත් කිරීමට අවශ්‍ය බව විශ්වාසද?</string>
+	<string name="rotation_landscape">තිරස්</string>
+	<string name="rotation_lock">භ්‍රමණ අගුල</string>
+	<string name="rotation_off">අක්‍රියයි</string>
+	<string name="rotation_portrait">සිරස්</string>
 	<string name="save_app_debug_logs">යෙදුම් නිදොස් ලොග සුරකින්න</string>
 	<string name="save_settings">සැකසීම් සුරකින්න</string>
 	<string name="see_more">තව බලන්න</string>

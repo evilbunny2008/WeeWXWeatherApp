@@ -116,6 +116,10 @@
 	<string name="refresh">Frissítés</string>
 	<string name="refresh_time">Válassza a Frissítési idő lehetőséget</string>
 	<string name="remove_all_data">Biztosan eltávolítja az összes adatot?</string>
+	<string name="rotation_landscape">Fekvő</string>
+	<string name="rotation_lock">Elforgatás zárolása</string>
+	<string name="rotation_off">Ki</string>
+	<string name="rotation_portrait">Álló</string>
 	<string name="save_app_debug_logs">Mentse el az alkalmazás hibakeresési naplóit</string>
 	<string name="save_settings">Beállítások mentése</string>
 	<string name="see_more">Továbbiak</string>

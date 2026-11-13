@@ -113,6 +113,10 @@
 	<string name="refresh">ផ្ទុកឡើងវិញ</string>
 	<string name="refresh_time">ជ្រើសរើសពេលផ្ទុកឡើងវិញ</string>
 	<string name="remove_all_data">តើអ្នកប្រាកដថាចង់លុបទិន្នន័យទាំងអស់មែនទេ?</string>
+	<string name="rotation_landscape">ផ្ដេក</string>
+	<string name="rotation_lock">ចាក់សោការបង្វិល</string>
+	<string name="rotation_off">បិទ</string>
+	<string name="rotation_portrait">បញ្ឈរ</string>
 	<string name="save_app_debug_logs">រក្សាទុកកំណត់ហេតុបំបាត់កំហុសរបស់កម្មវិធី</string>
 	<string name="save_settings">រក្សាទុកការកំណត់</string>
 	<string name="see_more">មើលបន្ថែម</string>

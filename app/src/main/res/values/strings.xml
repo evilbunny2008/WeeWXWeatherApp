@@ -129,6 +129,10 @@
 	<string name="refresh">Refresh</string>
 	<string name="refresh_time">Choose Refresh Time</string>
 	<string name="remove_all_data">Are you sure you want to remove all data?</string>
+	<string name="rotation_landscape">Landscape</string>
+	<string name="rotation_lock">Rotation Lock</string>
+	<string name="rotation_off">Off</string>
+	<string name="rotation_portrait">Portrait</string>
 	<string name="save_app_debug_logs">Save app debug logs</string>
 	<string name="save_settings">Save Settings</string>
 	<string name="see_more">See More</string>

@@ -113,6 +113,10 @@
 	<string name="refresh">รีเฟรช</string>
 	<string name="refresh_time">เลือกเวลารีเฟรช</string>
 	<string name="remove_all_data">คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลทั้งหมด</string>
+	<string name="rotation_landscape">แนวนอน</string>
+	<string name="rotation_lock">ล็อกการหมุน</string>
+	<string name="rotation_off">ปิด</string>
+	<string name="rotation_portrait">แนวตั้ง</string>
 	<string name="save_app_debug_logs">บันทึกบันทึกการแก้ไขข้อบกพร่องของแอป</string>
 	<string name="save_settings">บันทึกการตั้งค่า</string>
 	<string name="see_more">ดูเพิ่มเติม</string>

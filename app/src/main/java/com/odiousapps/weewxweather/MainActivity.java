@@ -161,6 +161,7 @@ public class MainActivity extends FragmentActivity
 	private final Handler mainHandler = new Handler(Looper.getMainLooper());
 
 	static final String FORCE_DARK_MODE = "force_dark_mode";
+	static final String ROTATION_LOCK = "rotation_lock_mode";
 	static final String CUSTOM_PAGE_ZOOM = "custom_page_zoom";
 	static final String WEBCAM_IMAGE_ZOOM = "webcam_image_zoom";
 	private static MainActivity instance;
@@ -195,7 +196,7 @@ public class MainActivity extends FragmentActivity
 
 	private final String utf8 = "UTF-8";
 
-	private int UpdateFrequency, DayNightMode, widget_theme_mode, UpdateInterval, webcamInterval;
+	private int UpdateFrequency, DayNightMode, rotationLock, widget_theme_mode, UpdateInterval, webcamInterval;
 
 	private int appInitialLeft, appInitialRight, appInitialTop, appInitialBottom;
 	private int cdInitialLeft, cdInitialRight, cdInitialTop, cdInitialBottom;
@@ -360,6 +361,7 @@ public class MainActivity extends FragmentActivity
 		screen_elements.add(new Setting("spinner3", R.id.spinner3));
 		screen_elements.add(new Setting("spinner4", R.id.spinner4));
 		screen_elements.add(new Setting("spinner5", R.id.spinner5));
+		screen_elements.add(new Setting("spinner6", R.id.spinner6));
 		screen_elements.add(new Setting("til1", R.id.til1));
 		screen_elements.add(new Setting("til2", R.id.til2));
 		screen_elements.add(new Setting("til3", R.id.til3));
@@ -368,6 +370,7 @@ public class MainActivity extends FragmentActivity
 		screen_elements.add(new Setting("til6", R.id.til6));
 		screen_elements.add(new Setting("til7", R.id.til7));
 		screen_elements.add(new Setting("til8", R.id.til8));
+		screen_elements.add(new Setting("til9", R.id.til9));
 		screen_elements.add(new Setting("use_exact_alarm", R.id.use_exact_alarm));
 		screen_elements.add(new Setting("widgetBG", R.id.widgetBG));
 		screen_elements.add(new Setting("widgetFG", R.id.widgetFG));
@@ -408,6 +411,8 @@ public class MainActivity extends FragmentActivity
 
 		LogMessage("MainActivity.onCreate() started...");
 
+		applyRotationLock();
+
 		WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
 
 		LogMessage("MainActivity.onCreate() smallestScreenWidthDp: " + WeeWXApp.smallestScreenWidth());
@@ -445,6 +450,9 @@ public class MainActivity extends FragmentActivity
 			// Alerts are notifications, which TVs don't show, and TVs don't have widgets
 			findViewById(R.id.alert_settings).setVisibility(View.GONE);
 			findViewById(R.id.widget_settings).setVisibility(View.GONE);
+
+			// TVs don't rotate
+			findViewById(R.id.til9).setVisibility(View.GONE);
 
 			ImageButton tvRefresh = findViewById(R.id.tvRefresh);
 			tvRefresh.setVisibility(View.VISIBLE);
@@ -699,6 +707,13 @@ public class MainActivity extends FragmentActivity
 			LogMessage("MainActivity.onCreate() New DayNightMode: " + DayNightMode);
 		});
 
+		MaterialAutoCompleteTextView s6 = findViewById(R.id.spinner6);
+		s6.setOnItemClickListener((parent, view, position, id) ->
+		{
+			rotationLock = position;
+			LogMessage("MainActivity.onCreate() New rotationLock: " + rotationLock);
+		});
+
 		MaterialAutoCompleteTextView s3 = findViewById(R.id.spinner3);
 		s3.setOnItemClickListener((parent, view, position, id) ->
 		{
@@ -879,6 +894,7 @@ public class MainActivity extends FragmentActivity
 		UpdateInterval = (int)KeyValue.readVar("UpdateInterval", WeeWXApp.UpdateInterval_default);
 		webcamInterval = (int)KeyValue.readVar("webcamInterval", WeeWXApp.webcamInterval_default);
 		DayNightMode = (int)KeyValue.readVar("DayNightMode", WeeWXApp.DayNightMode_default);
+		rotationLock = (int)KeyValue.readVar(ROTATION_LOCK, WeeWXApp.rotation_lock_default);
 		widget_theme_mode =	(int)KeyValue.readVar(WIDGET_THEME_MODE, WeeWXApp.widget_theme_mode_default);
 
 		LogMessage("MainActivity.onCreate() DayNightMode: " + DayNightMode);
@@ -919,6 +935,7 @@ public class MainActivity extends FragmentActivity
 			UpdateInterval = savedInstanceState.getInt("UpdateInterval", UpdateInterval);
 			webcamInterval = savedInstanceState.getInt("webcamInterval", webcamInterval);
 			DayNightMode = savedInstanceState.getInt("DayNightMode", DayNightMode);
+			rotationLock = savedInstanceState.getInt(ROTATION_LOCK, rotationLock);
 			widget_theme_mode = savedInstanceState.getInt(WIDGET_THEME_MODE, widget_theme_mode);
 			pendingLocalSettingsSave = savedInstanceState.getBoolean("pendingLocalSettingsSave", false);
 			localNetworkHosts = savedInstanceState.getString("localNetworkHosts", "");
@@ -968,6 +985,9 @@ public class MainActivity extends FragmentActivity
 
 		if(webcamInterval < 0 || webcamInterval >= WeeWXApp.webcamRefreshOptions.length)
 			webcamInterval = WeeWXApp.webcamInterval_default;
+
+		if(rotationLock < 0 || rotationLock >= WeeWXApp.rotationLockOptions.length)
+			rotationLock = WeeWXApp.rotation_lock_default;
 
 		// https://github.com/Pes8/android-material-color-picker-dialog
 		String hex = CPEditText.getFixedChar() + String.format("%08X", bg).toUpperCase();
@@ -1054,7 +1074,7 @@ public class MainActivity extends FragmentActivity
 					.setView(layout)
 					.create();
 
-			dialog.setOnDismissListener(d -> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED));
+			dialog.setOnDismissListener(d -> applyRotationLock());
 			dialog.show();
 
 			LogMessage("MainActivity.onCreate() Process settings!");
@@ -1139,6 +1159,9 @@ public class MainActivity extends FragmentActivity
 
 		s2.setAdapter(adapter2);
 		s2.setText(WeeWXApp.themeOptions[DayNightMode], false);
+
+		s6.setAdapter(newArrayAdapter(R.layout.spinner_layout, WeeWXApp.rotationLockOptions));
+		s6.setText(WeeWXApp.rotationLockOptions[rotationLock], false);
 
 		if(widget_theme_mode == 4)
 		{
@@ -1564,6 +1587,23 @@ public class MainActivity extends FragmentActivity
 		super.onPause();
 	}
 
+	// The USER_ variants still flip 180° unless the system rotation lock is on
+	private void applyRotationLock()
+	{
+		int orientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;
+		if(!WeeWXApp.isTV())
+		{
+			switch((int)KeyValue.readVar(ROTATION_LOCK, WeeWXApp.rotation_lock_default))
+			{
+				case 1 -> orientation = ActivityInfo.SCREEN_ORIENTATION_USER_PORTRAIT;
+				case 2 -> orientation = ActivityInfo.SCREEN_ORIENTATION_USER_LANDSCAPE;
+			}
+		}
+
+		LogMessage("MainActivity.applyRotationLock() orientation: " + orientation);
+		setRequestedOrientation(orientation);
+	}
+
 	private void updateColours()
 	{
 		int fgColour = WeeWXApp.getColours().fgColour;
@@ -1785,6 +1825,7 @@ public class MainActivity extends FragmentActivity
 		outState.putInt("UpdateInterval", UpdateInterval);
 		outState.putInt("webcamInterval", webcamInterval);
 		outState.putInt("DayNightMode", DayNightMode);
+		outState.putInt(ROTATION_LOCK, rotationLock);
 		outState.putInt(WIDGET_THEME_MODE, widget_theme_mode);
 		outState.putBoolean("pendingLocalSettingsSave", pendingLocalSettingsSave);
 		outState.putString("localNetworkHosts", localNetworkHosts);
@@ -3008,6 +3049,7 @@ public class MainActivity extends FragmentActivity
 			KeyValue.putVar(SAVE_APP_DEBUG_LOGS, uiSaveAppDebugLogs);
 			KeyValue.putVar("next_moon", uiNextMoon);
 			KeyValue.putVar(FORCE_DARK_MODE, uiForceDarkMode);
+			KeyValue.putVar(ROTATION_LOCK, rotationLock);
 
 			KeyValue.putVar(WIDGET_THEME_MODE, widget_theme_mode);
 

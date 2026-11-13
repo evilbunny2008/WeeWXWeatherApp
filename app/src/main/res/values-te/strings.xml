@@ -116,6 +116,10 @@
 	<string name="refresh">రిఫ్రెష్ చేయండి</string>
 	<string name="refresh_time">రిఫ్రెష్ సమయాన్ని ఎంచుకోండి</string>
 	<string name="remove_all_data">మీరు ఖచ్చితంగా మొత్తం డేటాను తీసివేయాలనుకుంటున్నారా?</string>
+	<string name="rotation_landscape">ల్యాండ్‌స్కేప్</string>
+	<string name="rotation_lock">రొటేషన్ లాక్</string>
+	<string name="rotation_off">ఆఫ్</string>
+	<string name="rotation_portrait">పోర్ట్రెయిట్</string>
 	<string name="save_app_debug_logs">యాప్ డీబగ్ లాగ్‌లను సేవ్ చేయండి</string>
 	<string name="save_settings">సెట్టింగ్‌లను సేవ్ చేయండి</string>
 	<string name="see_more">మరిన్ని చూడండి</string>

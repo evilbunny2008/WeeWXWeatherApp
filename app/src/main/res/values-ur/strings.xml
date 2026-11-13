@@ -116,6 +116,10 @@
 	<string name="refresh">ریفریش کریں</string>
 	<string name="refresh_time">ریفریش ٹائم کا انتخاب کریں</string>
 	<string name="remove_all_data">کیا آپ واقعی تمام ڈیٹا کو ہٹانا چاہتے ہیں؟</string>
+	<string name="rotation_landscape">افقی</string>
+	<string name="rotation_lock">گھمانے کا لاک</string>
+	<string name="rotation_off">بند</string>
+	<string name="rotation_portrait">عمودی</string>
 	<string name="save_app_debug_logs">ایپ ڈیبگ لاگز کو محفوظ کریں</string>
 	<string name="save_settings">ترتیبات کو بچائیں</string>
 	<string name="see_more">مزید دیکھیں</string>

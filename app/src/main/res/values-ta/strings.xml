@@ -116,6 +116,10 @@
 	<string name="refresh">புதுப்பி</string>
 	<string name="refresh_time">புதுப்பிப்பு நேரத்தைத் தேர்ந்தெடுக்கவும்</string>
 	<string name="remove_all_data">எல்லா தரவையும் அகற்ற விரும்புகிறீர்களா?</string>
+	<string name="rotation_landscape">அகலவாக்கு</string>
+	<string name="rotation_lock">சுழற்சிப் பூட்டு</string>
+	<string name="rotation_off">முடக்கு</string>
+	<string name="rotation_portrait">நீளவாக்கு</string>
 	<string name="save_app_debug_logs">பயன்பாட்டு பிழைத்திருத்தப் பதிவுகளைச் சேமிக்கவும்</string>
 	<string name="save_settings">அமைப்புகளைச் சேமிக்கவும்</string>
 	<string name="see_more">மேலும் பார்</string>

@@ -116,6 +116,10 @@
 	<string name="refresh">Herlaai</string>
 	<string name="refresh_time">Kies verfristyd</string>
 	<string name="remove_all_data">Is jy seker jy wil alle data verwyder?</string>
+	<string name="rotation_landscape">Landskap</string>
+	<string name="rotation_lock">Rotasieslot</string>
+	<string name="rotation_off">Af</string>
+	<string name="rotation_portrait">Portret</string>
 	<string name="save_app_debug_logs">Stoor toep se ontfoutlogboeke</string>
 	<string name="save_settings">Stoor instellings</string>
 	<string name="see_more">Sien meer</string>

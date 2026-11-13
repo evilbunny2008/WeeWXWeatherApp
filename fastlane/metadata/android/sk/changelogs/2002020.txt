@@ -1,0 +1,1 @@
+• Nové nastavenie zámku otáčania, ktoré drží aplikáciu na výšku alebo na šírku

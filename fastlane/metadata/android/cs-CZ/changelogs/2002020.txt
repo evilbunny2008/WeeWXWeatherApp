@@ -1,0 +1,1 @@
+• Nové nastavení zámku otáčení, které drží aplikaci na výšku nebo na šířku

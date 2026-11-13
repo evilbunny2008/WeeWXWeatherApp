@@ -122,6 +122,10 @@
 	<string name="refresh">Atnaujinti</string>
 	<string name="refresh_time">Pasirinkite Atnaujinimo laikas</string>
 	<string name="remove_all_data">Ar tikrai norite pašalinti visus duomenis?</string>
+	<string name="rotation_landscape">Horizontali</string>
+	<string name="rotation_lock">Pasukimo užraktas</string>
+	<string name="rotation_off">Išjungta</string>
+	<string name="rotation_portrait">Vertikali</string>
 	<string name="save_app_debug_logs">Išsaugokite programos derinimo žurnalus</string>
 	<string name="save_settings">Išsaugoti nustatymus</string>
 	<string name="see_more">Rodyti daugiau</string>

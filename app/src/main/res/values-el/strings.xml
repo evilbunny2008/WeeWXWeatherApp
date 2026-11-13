@@ -116,6 +116,10 @@
 	<string name="refresh">Ανανέωση</string>
 	<string name="refresh_time">Επιλέξτε Χρόνος ανανέωσης</string>
 	<string name="remove_all_data">Είστε βέβαιοι ότι θέλετε να καταργήσετε όλα τα δεδομένα;</string>
+	<string name="rotation_landscape">Οριζόντια</string>
+	<string name="rotation_lock">Κλείδωμα περιστροφής</string>
+	<string name="rotation_off">Ανενεργό</string>
+	<string name="rotation_portrait">Κατακόρυφα</string>
 	<string name="save_app_debug_logs">Αποθήκευση αρχείων καταγραφής εντοπισμού σφαλμάτων εφαρμογών</string>
 	<string name="save_settings">Αποθήκευση ρυθμίσεων</string>
 	<string name="see_more">Δείτε περισσότερα</string>

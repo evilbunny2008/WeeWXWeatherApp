@@ -116,6 +116,10 @@
 	<string name="refresh">Päivitä</string>
 	<string name="refresh_time">Valitse Päivitysaika</string>
 	<string name="remove_all_data">Haluatko varmasti poistaa kaikki tiedot?</string>
+	<string name="rotation_landscape">Vaaka</string>
+	<string name="rotation_lock">Kiertolukko</string>
+	<string name="rotation_off">Pois</string>
+	<string name="rotation_portrait">Pysty</string>
 	<string name="save_app_debug_logs">Tallenna sovellusten virheenkorjauslokit</string>
 	<string name="save_settings">Tallenna asetukset</string>
 	<string name="see_more">Näytä lisää</string>

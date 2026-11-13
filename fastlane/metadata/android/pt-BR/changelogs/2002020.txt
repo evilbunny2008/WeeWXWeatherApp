@@ -1,0 +1,1 @@
+• Nova configuração de bloqueio de rotação para manter o app em retrato ou paisagem

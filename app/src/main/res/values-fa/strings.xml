@@ -116,6 +116,10 @@
 	<string name="refresh">بازخوانی</string>
 	<string name="refresh_time">Refresh Time را انتخاب کنید</string>
 	<string name="remove_all_data">آیا مطمئن هستید که می خواهید همه داده ها را حذف کنید؟</string>
+	<string name="rotation_landscape">افقی</string>
+	<string name="rotation_lock">قفل چرخش</string>
+	<string name="rotation_off">خاموش</string>
+	<string name="rotation_portrait">عمودی</string>
 	<string name="save_app_debug_logs">گزارش‌های اشکال‌زدایی برنامه را ذخیره کنید</string>
 	<string name="save_settings">تنظیمات را ذخیره کنید</string>
 	<string name="see_more">بیشتر ببینید</string>

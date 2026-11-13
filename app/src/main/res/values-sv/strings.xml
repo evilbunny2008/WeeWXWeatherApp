@@ -116,6 +116,10 @@
 	<string name="refresh">Uppdatera</string>
 	<string name="refresh_time">Välj Uppdatera tid</string>
 	<string name="remove_all_data">Är du säker på att du vill ta bort all data?</string>
+	<string name="rotation_landscape">Liggande</string>
+	<string name="rotation_lock">Rotationslås</string>
+	<string name="rotation_off">Av</string>
+	<string name="rotation_portrait">Stående</string>
 	<string name="save_app_debug_logs">Spara appfelsökningsloggar</string>
 	<string name="save_settings">Spara inställningar</string>
 	<string name="see_more">Visa mer</string>

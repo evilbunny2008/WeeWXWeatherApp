@@ -119,6 +119,10 @@
 	<string name="refresh">Aggiorna</string>
 	<string name="refresh_time">Scegli Aggiorna ora</string>
 	<string name="remove_all_data">Sei sicuro di voler rimuovere tutti i dati?</string>
+	<string name="rotation_landscape">Orizzontale</string>
+	<string name="rotation_lock">Blocco rotazione</string>
+	<string name="rotation_off">Disattivato</string>
+	<string name="rotation_portrait">Verticale</string>
 	<string name="save_app_debug_logs">Salva i log di debug dell’app</string>
 	<string name="save_settings">Salva impostazioni</string>
 	<string name="see_more">Mostra altro</string>

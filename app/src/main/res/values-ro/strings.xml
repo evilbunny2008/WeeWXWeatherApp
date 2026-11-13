@@ -119,6 +119,10 @@
 	<string name="refresh">Reîmprospătează</string>
 	<string name="refresh_time">Alegeți Timp de reîmprospătare</string>
 	<string name="remove_all_data">Sigur doriți să eliminați toate datele?</string>
+	<string name="rotation_landscape">Peisaj</string>
+	<string name="rotation_lock">Blocare rotire</string>
+	<string name="rotation_off">Dezactivat</string>
+	<string name="rotation_portrait">Portret</string>
 	<string name="save_app_debug_logs">Salvați jurnalele de depanare a aplicației</string>
 	<string name="save_settings">Salvați setările</string>
 	<string name="see_more">Vezi mai multe</string>
