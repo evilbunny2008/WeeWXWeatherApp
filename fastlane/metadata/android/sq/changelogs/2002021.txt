@@ -1,0 +1,1 @@
+• U rregullua ekrani i statistikave që ndonjëherë shfaqte vlera të vjetra, si shiu i djeshëm, kur përdoret MQTT

@@ -1,0 +1,1 @@
+• S'ha corregit que la pantalla d'estadístiques de vegades mostrés valors antics, com la pluja d'ahir, amb MQTT

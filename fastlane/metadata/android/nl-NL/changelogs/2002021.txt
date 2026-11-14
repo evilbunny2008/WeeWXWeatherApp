@@ -1,0 +1,1 @@
+• Opgelost dat het statistiekenscherm bij gebruik van MQTT soms verouderde waarden toonde, zoals de regen van gisteren

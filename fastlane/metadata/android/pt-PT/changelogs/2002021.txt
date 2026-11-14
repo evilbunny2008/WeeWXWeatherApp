@@ -1,0 +1,1 @@
+• Corrigido o ecrã de estatísticas que por vezes mostrava valores desatualizados, como a chuva de ontem, ao usar MQTT

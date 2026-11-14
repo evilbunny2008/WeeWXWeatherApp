@@ -1,0 +1,1 @@
+• Lagað að tölfræðiskjárinn sýndi stundum úrelt gildi, eins og úrkomu gærdagsins, þegar MQTT er notað

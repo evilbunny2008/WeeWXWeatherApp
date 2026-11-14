@@ -1,0 +1,1 @@
+• Rettet, at statistikskærmen nogle gange viste forældede værdier, f.eks. gårsdagens regn, ved brug af MQTT

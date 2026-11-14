@@ -1,0 +1,1 @@
+• MQTT kullanılırken istatistik ekranının bazen dünkü yağış gibi eski değerleri göstermesi düzeltildi

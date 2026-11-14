@@ -1,0 +1,1 @@
+• Ispravljeno: zaslon statistike ponekad je prikazivao zastarjele vrijednosti, poput jučerašnje kiše, uz MQTT

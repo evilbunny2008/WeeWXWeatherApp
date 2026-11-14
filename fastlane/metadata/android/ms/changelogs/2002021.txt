@@ -1,0 +1,1 @@
+• Membetulkan skrin statistik yang kadangkala menunjukkan nilai lapuk, seperti hujan semalam, apabila menggunakan MQTT

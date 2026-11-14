@@ -1,0 +1,1 @@
+• Corregido que la pantalla de estadísticas a veces mostrara valores desactualizados, como la lluvia de ayer, al usar MQTT

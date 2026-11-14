@@ -1,0 +1,1 @@
+• Naprawiono wyświetlanie na ekranie statystyk nieaktualnych wartości, np. wczorajszego deszczu, przy użyciu MQTT

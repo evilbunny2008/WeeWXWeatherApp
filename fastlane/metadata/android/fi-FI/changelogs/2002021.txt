@@ -1,0 +1,1 @@
+• Korjattu: tilastonäkymä näytti MQTT:tä käytettäessä joskus vanhentuneita arvoja, kuten eilisen sademäärän

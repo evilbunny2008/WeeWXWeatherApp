@@ -1,0 +1,1 @@
+• Correction de l'écran des statistiques qui affichait parfois des valeurs obsolètes, comme la pluie d'hier, avec MQTT

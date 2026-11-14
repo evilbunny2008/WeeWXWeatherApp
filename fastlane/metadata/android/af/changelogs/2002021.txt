@@ -1,0 +1,1 @@
+• Die statistiekskerm wys nie meer soms verouderde waardes, soos gister se reën, wanneer MQTT gebruik word nie

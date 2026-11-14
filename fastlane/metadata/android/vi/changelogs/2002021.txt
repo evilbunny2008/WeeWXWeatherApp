@@ -1,0 +1,1 @@
+• Đã sửa lỗi màn hình thống kê đôi khi hiển thị giá trị cũ, như lượng mưa hôm qua, khi dùng MQTT

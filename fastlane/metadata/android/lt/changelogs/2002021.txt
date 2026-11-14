@@ -1,0 +1,1 @@
+• Ištaisyta: naudojant MQTT statistikos ekranas kartais rodydavo pasenusias reikšmes, pvz., vakarykščius kritulius

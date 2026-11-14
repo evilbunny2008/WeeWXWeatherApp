@@ -1,0 +1,1 @@
+• Corrixiuse que a pantalla de estatísticas ás veces amosase valores vellos, como a chuvia de onte, ao usar MQTT

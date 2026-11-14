@@ -1,0 +1,1 @@
+• Inayos ang stats screen na minsan ay nagpapakita ng lumang value, gaya ng ulan kahapon, kapag gumagamit ng MQTT

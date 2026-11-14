@@ -1,0 +1,1 @@
+• Curregì il visur da statisticas che mussava mintgatant valurs veglias, sco la plievgia dad ier, cun MQTT

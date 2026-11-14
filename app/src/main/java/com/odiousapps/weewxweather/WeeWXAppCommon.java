@@ -2706,6 +2706,10 @@ class WeeWXAppCommon
 		//LogMessage("mergeJsonObjects() json_combined_str: " + json_combined_str);
 		KeyValue.putVar("json_combined_str", json_combined_str);
 
+		// The download may have replaced values MQTT already sent, so the next MQTT
+		// packet must be applied even if its values match what MQTT sent last time
+		KeyValue.values.clear();
+
 		return false;
 	}
 

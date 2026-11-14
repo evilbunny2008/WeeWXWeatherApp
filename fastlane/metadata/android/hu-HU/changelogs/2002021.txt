@@ -1,0 +1,1 @@
+• Javítva: MQTT használatakor a statisztika képernyő néha elavult értékeket, például a tegnapi csapadékot mutatta

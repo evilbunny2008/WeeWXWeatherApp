@@ -1,0 +1,1 @@
+• Opravené: obrazovka štatistík pri použití MQTT niekedy zobrazovala zastarané hodnoty, napríklad včerajšie zrážky

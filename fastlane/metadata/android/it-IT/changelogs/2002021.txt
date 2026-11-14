@@ -1,0 +1,1 @@
+• Corretta la schermata delle statistiche che a volte mostrava valori obsoleti, come la pioggia di ieri, usando MQTT

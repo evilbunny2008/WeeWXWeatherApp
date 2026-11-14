@@ -1,0 +1,1 @@
+• Memperbaiki layar statistik yang terkadang menampilkan nilai usang, seperti hujan kemarin, saat menggunakan MQTT

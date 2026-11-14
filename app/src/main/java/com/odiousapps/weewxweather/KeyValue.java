@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 import static com.odiousapps.weewxweather.WeeWXApp.SAVE_APP_DEBUG_LOGS;
@@ -63,7 +64,9 @@ class KeyValue
 	static final HashMap<String, String> labels = new HashMap<>();
 	static final HashMap<String, String> formats = new HashMap<>();
 
-	static final Map<String, Object> values = new HashMap<>();
+	// The last value MQTT sent for each key, so unchanged values can be skipped. MQTT writes
+	// it and a JSON download clears it, which can happen on different threads.
+	static final Map<String, Object> values = new ConcurrentHashMap<>();
 
 	// The 16 configured compass sector labels plus the unavailable-direction label.
 	// Empty until a compatible dictionary is loaded, retaining legacy behavior.

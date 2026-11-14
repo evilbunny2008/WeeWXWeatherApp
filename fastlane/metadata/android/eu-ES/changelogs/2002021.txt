@@ -1,0 +1,1 @@
+• Konpondu da estatistika-pantailak batzuetan balio zaharrak erakustea, atzoko euria adibidez, MQTT erabiltzean

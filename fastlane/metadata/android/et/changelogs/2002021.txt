@@ -1,0 +1,1 @@
+• Parandatud: statistikakuva näitas MQTT kasutamisel mõnikord aegunud väärtusi, näiteks eilset sademete hulka

@@ -1,0 +1,1 @@
+• Popravljeno: zaslon s statistiko je ob uporabi MQTT včasih prikazoval zastarele vrednosti, npr. včerajšnji dež
