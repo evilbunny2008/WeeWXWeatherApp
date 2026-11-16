@@ -1,0 +1,1 @@
+• Naprawiono sporadyczne zawieszanie się automatycznych aktualizacji, które nie wznawiały się do czasu ponownego uruchomienia urządzenia lub przeciągnięcia ekranu w dół w celu odświeżenia

@@ -1,0 +1,1 @@
+• Behoben, dass automatische Aktualisierungen manchmal hängen blieben und erst nach einem Neustart des Geräts oder Herunterziehen zum Aktualisieren fortgesetzt wurden

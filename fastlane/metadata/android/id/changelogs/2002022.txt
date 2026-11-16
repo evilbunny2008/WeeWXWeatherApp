@@ -1,0 +1,1 @@
+• Memperbaiki pembaruan otomatis yang terkadang macet dan tidak berlanjut hingga perangkat dimulai ulang atau layar ditarik ke bawah untuk menyegarkan

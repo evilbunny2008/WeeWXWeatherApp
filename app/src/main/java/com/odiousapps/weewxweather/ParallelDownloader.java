@@ -11,6 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -90,7 +91,9 @@ public class ParallelDownloader
 			try
 			{
 				results.add(future.get(30, TimeUnit.SECONDS));
-			} catch(ExecutionException | InterruptedException | TimeoutException e) {
+			} catch(ExecutionException | InterruptedException | TimeoutException | CancellationException e) {
+				// Don't leave a slow download running in the background after we've given up on it
+				future.cancel(true);
 				if(!shuttingdown)
 					results.add(new DownloadResult(id,null, false, e.getLocalizedMessage(),
 							"ERROR", 0,null, null));

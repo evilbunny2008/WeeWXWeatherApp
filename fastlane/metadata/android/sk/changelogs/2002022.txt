@@ -1,0 +1,1 @@
+• Opravené občasné zaseknutie automatických aktualizácií, ktoré sa neobnovili, kým sa zariadenie nereštartovalo alebo sa obrazovka nestiahla nadol na obnovenie

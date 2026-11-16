@@ -164,7 +164,7 @@ class WeeWXAppCommon
 					  int[] outTemp_trend_signal, long[] outTemp_trend_ts) {}
 	record NPWSLL(long nowTime, long periodTime, long waitTime, long startTime, long lastStart, long report_time) {}
 
-	static ParallelDownloader downloader;
+	static volatile ParallelDownloader downloader;
 
 	static boolean doingSaveSettings = false;
 	static StringBuilder saveSettingsLog = new StringBuilder();
@@ -3554,7 +3554,8 @@ class WeeWXAppCommon
 			return;
 		}
 
-		if(downloader != null && downloader.isRunning() && downloader.startTime + 1_000L > System.currentTimeMillis())
+		ParallelDownloader running = downloader;
+		if(running != null && running.isRunning() && running.startTime + 1_000L > System.currentTimeMillis())
 		{
 			if(errorCount() > 0)
 			{
@@ -3579,14 +3580,16 @@ class WeeWXAppCommon
 			return;
 		}
 
-		if(downloader != null && downloader.isRunning())
-			downloader.shutdown();
+		if(running != null && running.isRunning())
+			running.shutdown();
 
-		if(downloader != null)
+		if(running != null && downloader == running)
 			downloader = null;
 
 		boolean doWeather = weather;
 		boolean doForecast = forecast;
+
+		ParallelDownloader myDownloader = null;
 
 		try
 		{
@@ -3820,8 +3823,12 @@ class WeeWXAppCommon
 			boolean updatedRadar = false;
 			boolean updatedWebcam = false;
 
-			downloader = new ParallelDownloader(urls.size(), "processUpdates");
-			List<ParallelDownloader.DownloadResult> results = downloader.downloadAll(idtype, urls, contentTypes);
+			// Keep our own reference, another processUpdates() call can replace or null the static one mid-run
+			myDownloader = new ParallelDownloader(urls.size(), "processUpdates");
+			downloader = myDownloader;
+			List<ParallelDownloader.DownloadResult> results = myDownloader.downloadAll(idtype, urls, contentTypes);
+			if(results == null)
+				results = new ArrayList<>();
 
 			boolean allOk = results.stream().allMatch(ParallelDownloader.DownloadResult::success);
 			if(!allOk)
@@ -3941,8 +3948,6 @@ class WeeWXAppCommon
 				if(needToMerge && notMergeJsonObjects())
 					noteError(R.string.failed_to_merge_weather_data, new Object[]{json_labels[0], json_labels[2]});
 
-				downloader = null;
-
 				if(updatedWeather)
 				{
 					checkTempAlerts();
@@ -4007,6 +4012,29 @@ class WeeWXAppCommon
 		} catch(Exception e) {
 			LogMessage("WeeWXAppcommon.processUpdates() Error! e: " + e.getMessage(), KeyValue.e);
 			doStackOutput(e);
+
+			// Without these the refresh spinners never clear and the UI looks stuck updating
+			if(weather)
+				updateNotificationMessage(STOP_WEATHER_INTENT);
+
+			if(forecast)
+				updateNotificationMessage(STOP_FORECAST_INTENT);
+
+			if(radar)
+				updateNotificationMessage(STOP_RADAR_INTENT);
+
+			if(webcam)
+				updateNotificationMessage(STOP_WEBCAM_INTENT);
+		} finally {
+			// Fixed thread pools never exit on their own, so always shut ours down
+			if(myDownloader != null)
+			{
+				if(myDownloader.isRunning())
+					myDownloader.shutdown();
+
+				if(downloader == myDownloader)
+					downloader = null;
+			}
 		}
 	}
 

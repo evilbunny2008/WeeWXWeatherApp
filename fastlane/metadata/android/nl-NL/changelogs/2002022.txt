@@ -1,0 +1,1 @@
+• Probleem opgelost waarbij automatische updates soms bleven hangen en pas verdergingen na een herstart van het apparaat of het omlaag trekken van het scherm om te vernieuwen

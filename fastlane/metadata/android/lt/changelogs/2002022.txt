@@ -1,0 +1,1 @@
+• Ištaisyta, kad automatiniai atnaujinimai kartais užstrigdavo ir neatsinaujindavo, kol įrenginys nebuvo paleistas iš naujo arba ekranas patrauktas žemyn atnaujinti

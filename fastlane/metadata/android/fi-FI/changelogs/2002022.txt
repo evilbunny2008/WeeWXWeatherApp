@@ -1,0 +1,1 @@
+• Korjattu automaattisten päivitysten ajoittainen jumiutuminen, jolloin ne eivät jatkuneet ennen laitteen uudelleenkäynnistystä tai näytön alas vetämistä päivitystä varten

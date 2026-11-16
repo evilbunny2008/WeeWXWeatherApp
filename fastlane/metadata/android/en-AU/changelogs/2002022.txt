@@ -1,0 +1,1 @@
+• Fixed automatic updates sometimes getting stuck and not resuming until the device was rebooted or the screen was pulled down to refresh

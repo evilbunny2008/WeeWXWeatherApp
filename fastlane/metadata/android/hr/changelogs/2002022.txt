@@ -1,0 +1,1 @@
+• Ispravljeno povremeno zaglavljivanje automatskih ažuriranja koja se nisu nastavljala dok se uređaj ne bi ponovno pokrenuo ili zaslon povukao prema dolje za osvježavanje

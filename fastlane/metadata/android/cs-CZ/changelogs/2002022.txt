@@ -1,0 +1,1 @@
+• Opraveno občasné zaseknutí automatických aktualizací, které se neobnovily, dokud nebylo zařízení restartováno nebo obrazovka stažena dolů pro obnovení

@@ -1,0 +1,1 @@
+• Parandatud viga, mille tõttu automaatsed värskendused mõnikord takerdusid ega jätkunud enne seadme taaskäivitamist või ekraani allatõmbamist värskendamiseks

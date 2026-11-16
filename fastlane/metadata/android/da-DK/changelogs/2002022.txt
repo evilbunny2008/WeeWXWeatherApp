@@ -1,0 +1,1 @@
+• Rettet, at automatiske opdateringer nogle gange gik i stå og ikke genoptoges, før enheden blev genstartet, eller skærmen blev trukket ned for at opdatere

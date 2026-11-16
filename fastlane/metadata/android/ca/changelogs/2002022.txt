@@ -1,0 +1,1 @@
+• S'ha corregit que les actualitzacions automàtiques de vegades es quedessin encallades i no es reprenguessin fins que es reiniciava el dispositiu o s'estirava la pantalla cap avall per actualitzar

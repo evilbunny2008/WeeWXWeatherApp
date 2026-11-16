@@ -1,0 +1,1 @@
+• Đã sửa lỗi cập nhật tự động đôi khi bị kẹt và không tiếp tục cho đến khi khởi động lại thiết bị hoặc kéo màn hình xuống để làm mới

@@ -1,0 +1,1 @@
+• Javítva, hogy az automatikus frissítések néha elakadtak, és csak az eszköz újraindítása vagy a képernyő frissítéshez való lehúzása után folytatódtak

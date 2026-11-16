@@ -1,0 +1,1 @@
+• Otomatik güncellemelerin bazen takılıp cihaz yeniden başlatılana veya yenilemek için ekran aşağı çekilene kadar devam etmemesi düzeltildi

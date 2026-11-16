@@ -1,0 +1,1 @@
+• Corregido que las actualizaciones automáticas a veces se quedaran atascadas y no se reanudaran hasta reiniciar el dispositivo o deslizar la pantalla hacia abajo para actualizar

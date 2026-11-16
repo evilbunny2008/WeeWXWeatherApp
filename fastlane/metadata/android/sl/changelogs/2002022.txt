@@ -1,0 +1,1 @@
+• Odpravljeno občasno zatikanje samodejnih posodobitev, ki se niso nadaljevale, dokler naprava ni bila znova zagnana ali zaslon povlečen navzdol za osvežitev

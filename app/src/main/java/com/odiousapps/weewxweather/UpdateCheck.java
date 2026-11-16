@@ -63,6 +63,13 @@ public class UpdateCheck extends BroadcastReceiver
 			return;
 		}
 
+		// Reschedule before any skip below, otherwise a single skipped run (e.g. briefly off wifi)
+		// breaks the alarm chain and nothing updates again until a reboot or the app is reopened.
+		// setNextAlarm() has its own checks for manual refresh and the app not being setup yet.
+		cancelAlarm();
+
+		setNextAlarm();
+
 		if(notCheckConnection())
 		{
 			LogMessage("UpdateCheck.onReceive() Skipping update due to wifi setting.", KeyValue.d);
@@ -90,10 +97,6 @@ public class UpdateCheck extends BroadcastReceiver
 		}
 
 		LogMessage("UpdateCheck.onReceive() started.");
-
-		cancelAlarm();
-
-		setNextAlarm();
 
 		LogMessage("UpdateCheck.onReceive() " + npwsll.report_time() + " < " + npwsll.lastStart() + "?");
 
@@ -366,21 +369,25 @@ public class UpdateCheck extends BroadcastReceiver
 
 		backgroundTask = executor.submit(() ->
 		{
-			LogMessage("UpdateCheck.runInTheBackground() New background thread started...");
-			LogMessage("UpdateCheck.runInTheBackground() processUpdates(false, true, true, true, true, true);");
-			processUpdates(false, true, true, true, true);
-
-			if(!hasBootedFully)
+			try
 			{
-				hasBootedFully = true;
-				LogMessage("UpdateCheck.runInTheBackground() WeeWXApp.hasBootedFully is now true...");
+				LogMessage("UpdateCheck.runInTheBackground() New background thread started...");
+				LogMessage("UpdateCheck.runInTheBackground() processUpdates(false, true, true, true, true, true);");
+				processUpdates(false, true, true, true, true);
+			} finally {
+				if(!hasBootedFully)
+				{
+					hasBootedFully = true;
+					LogMessage("UpdateCheck.runInTheBackground() WeeWXApp.hasBootedFully is now true...");
+				}
+
+				LogMessage("UpdateCheck.runInTheBackground() Finished running the background updates, about to release the wake lock...");
+
+				bgStart = 0;
+
+				if(wl.isHeld())
+					wl.release();
 			}
-
-			LogMessage("UpdateCheck.runInTheBackground() Finished running the background updates, about to release the wake lock...");
-
-			bgStart = 0;
-
-			wl.release();
 		});
 	}
 }

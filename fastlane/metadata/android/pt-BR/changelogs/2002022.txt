@@ -1,0 +1,1 @@
+• Corrigido o problema em que as atualizações automáticas às vezes travavam e só voltavam após reiniciar o dispositivo ou puxar a tela para baixo para atualizar

@@ -1,0 +1,1 @@
+• Novērsta problēma, kad automātiskie atjauninājumi dažreiz iestrēga un neatsākās, līdz ierīce tika restartēta vai ekrāns tika pavilkts uz leju atsvaidzināšanai

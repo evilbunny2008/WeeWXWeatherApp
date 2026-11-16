@@ -1,0 +1,1 @@
+• Risolto il problema per cui gli aggiornamenti automatici a volte si bloccavano e non riprendevano fino al riavvio del dispositivo o al trascinamento verso il basso per aggiornare

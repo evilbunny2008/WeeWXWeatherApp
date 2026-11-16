@@ -1,0 +1,1 @@
+• Correction des mises à jour automatiques qui restaient parfois bloquées et ne reprenaient qu'après un redémarrage de l'appareil ou un glissement vers le bas pour actualiser
